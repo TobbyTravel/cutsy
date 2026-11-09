@@ -1,34 +1,42 @@
 # Cutsy
 
-A quiet, cute desktop companion for Windows 11. She walks along window tops, peeks, rests, and reacts when clicked. Click and drag her out of the way.
+![Cutsy sitting on the edge of a window in an illustrated Windows desktop](docs/media/cutsy-hero.png)
 
-Download the Windows 11 x64 prerelease from [GitHub Releases](https://github.com/TobbyTravel/cutsy/releases). The standalone EXE includes the default pack. The portable ZIP includes an editable pack and instructions.
+**A desktop mascot for Windows 11 that walks along window tops, peeks around corners, and reacts when you click her.**
 
-## Start here
+[**Download for Windows**](https://github.com/TobbyTravel/cutsy/releases) · [Make an editable pack](docs/PACK_EDITING.md) · [Roadmap](docs/ROADMAP.md)
 
-- [Product and interaction specification](docs/PRODUCT.md)
-- [Architecture and portability](docs/ARCHITECTURE.md)
-- [Roadmap and GitHub issues](docs/ROADMAP.md)
-- [Implementation handoff for GPT-6.1 Sol](docs/IMPLEMENTATION_HANDOFF.md)
-- [Asset audit and known defects](docs/ASSET_AUDIT.md)
-- [Pack format contract](docs/PACK_FORMAT.md)
-- [Acceptance and release tests](docs/TESTING.md)
+[![Windows CI](https://github.com/TobbyTravel/cutsy/actions/workflows/windows.yml/badge.svg?branch=main)](https://github.com/TobbyTravel/cutsy/actions/workflows/windows.yml)
 
-The repo includes 80 individual PNGs plus 22 source/reference PNGs. They are ordinary Git files; no additional download or Git LFS is required. The runtime pack uses 75 reviewed runtime sprites with separate masks, editable recipes and eight original sound cues.
+## Pick your download
 
-## Development
+| Edition | How to run it |
+| --- | --- |
+| **Standalone EXE** | Download and open **Cutsy.exe**. The default pack and .NET runtime are included. |
+| **Editable portable ZIP** | Extract the whole ZIP into a writable folder and open **Cutsy.exe** from there. Keep the pack and portable flag beside it to edit recipes and store preferences there. |
 
-Install the Windows x64 .NET SDK version pinned in global.json and PowerShell 7.4 or later. From the repository root, run these commands.
+The current release is an **unsigned prerelease** for **Windows 11 x64**. The release page includes checksums for both downloads. [Releases](https://github.com/TobbyTravel/cutsy/releases) · [Portable guide](docs/PORTABLE.md)
+
+## Meet Cutsy
+
+- **Click her** for a little reaction, or **drag her** to an exposed window top and watch her perch there. She follows a moving perch and falls to the floor when it disappears.
+- **Right-click her or her tray icon** to pause, mute, resize, recover her position, or turn on Gaming mode. She also hides for fullscreen apps and presentations.
+- **Open Settings → Pack and preview** to try a recipe or sound. The default pack has 75 sprites, 54 behaviors, and eight short sound effects. Edit the JSON to change timing, reactions, and window interactions. [Pack editing guide](docs/PACK_EDITING.md)
+
+## Build from source
+
+Use the .NET SDK pinned in [global.json](global.json) and PowerShell 7.4 or later on Windows.
 
 ~~~powershell
 pwsh -File scripts/build.ps1
 pwsh -File scripts/test.ps1
-pwsh -File scripts/verify-bootstrap.ps1
 pwsh -File scripts/publish.ps1
 ~~~
 
-The publish command creates Cutsy.exe, the editable portable ZIP and SHA256SUMS.txt under dist. See [portable instructions](docs/PORTABLE.md), [pack editing](docs/PACK_EDITING.md) and [baseline acceptance results](docs/V0.1_VERIFICATION.md) and [walking and window verification](docs/WALK_AND_WINDOWS_VERIFICATION.md).
+Publish writes the standalone EXE, editable ZIP, and SHA-256 checksums to dist. The solution separates the portable behavior engine from the Windows overlay and includes a command-line pack validator. [Architecture](docs/ARCHITECTURE.md) · [Pack format](docs/PACK_FORMAT.md) · [Verification](docs/WALK_AND_WINDOWS_VERIFICATION.md)
 
-The solution contains a portable core, a Windows Forms host, a pack CLI and xUnit core tests. Build output stays in each bin directory.
+## Project information
 
-This repository and its artwork are private. No public license or redistribution grant is supplied.
+[Product behavior](docs/PRODUCT.md) · [Artwork and provenance](docs/ASSET_AUDIT.md) · [Testing and release checks](docs/TESTING.md) · [Contributor handoff](docs/IMPLEMENTATION_HANDOFF.md) · [Report an issue](https://github.com/TobbyTravel/cutsy/issues)
+
+The code and bundled artwork currently have no published license.
