@@ -1,0 +1,2594 @@
+{
+  "schemaVersion": 1,
+  "algorithm": "Four-connected alpha>=96 components assigned by weighted centroid on original sheet; full components recovered, two-pixel matte edge preserved, alpha below 18 cleared. Largest component supplies body mask.",
+  "frames": [
+    {
+      "sourceAssetId": "sheet_01_walk_cycle_idle_neutral_r01_c01",
+      "legacyCrop": {
+        "left": 0,
+        "top": 0,
+        "right": 444,
+        "bottom": 444
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_01_walk_cycle_processed.png",
+      "sourceProcessedSha256": "2d5b287fd0b4887d263636a91324fce2bbf5386894d5e22986bb3ae8138a027d",
+      "sourceRawPath": "assets/source/original-sheets/sheet_01_walk_cycle_raw.png",
+      "sourceRawSha256": "1ea5dd491ad2d18ffb60cced55dd432b1525ab5860346b9dfe9cd730a2ccd76a",
+      "status": "superseded",
+      "runtimeId": "phone-stand",
+      "facing": "front",
+      "bakedInProps": [
+        "phone",
+        "boba",
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        89,
+        14,
+        357,
+        436
+      ],
+      "anchors": {
+        "feet": {
+          "x": 131,
+          "y": 421
+        }
+      },
+      "scaleCorrection": 0.950119,
+      "imageSha256": "df6e69b239048b33adf8cb29f8edc7656074fdc4017c1904143263b4ae409972",
+      "maskSha256": "164c8a28b414d98208d910aa19fab7d361bd045acc595d713cb5ed378418290c"
+    },
+    {
+      "sourceAssetId": "sheet_01_walk_cycle_idle_happy_r01_c02",
+      "legacyCrop": {
+        "left": 444,
+        "top": 0,
+        "right": 887,
+        "bottom": 444
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_01_walk_cycle_processed.png",
+      "sourceProcessedSha256": "2d5b287fd0b4887d263636a91324fce2bbf5386894d5e22986bb3ae8138a027d",
+      "sourceRawPath": "assets/source/original-sheets/sheet_01_walk_cycle_raw.png",
+      "sourceRawSha256": "1ea5dd491ad2d18ffb60cced55dd432b1525ab5860346b9dfe9cd730a2ccd76a",
+      "status": "superseded",
+      "runtimeId": "phone-smile",
+      "facing": "front",
+      "bakedInProps": [
+        "phone",
+        "boba",
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        533,
+        14,
+        801,
+        436
+      ],
+      "anchors": {
+        "feet": {
+          "x": 131,
+          "y": 421
+        }
+      },
+      "scaleCorrection": 0.952381,
+      "imageSha256": "c8ff3d8c8cb74bffc62dc6b0b3ea1fce35d51a12d1f4e84e7af30040abd51cd3",
+      "maskSha256": "b3add8c9b70f5848fa026a143e724f9fdfceccc57ba09478df38da1ea5307c4d"
+    },
+    {
+      "sourceAssetId": "sheet_01_walk_cycle_idle_glance_r01_c03",
+      "legacyCrop": {
+        "left": 887,
+        "top": 0,
+        "right": 1330,
+        "bottom": 444
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_01_walk_cycle_processed.png",
+      "sourceProcessedSha256": "2d5b287fd0b4887d263636a91324fce2bbf5386894d5e22986bb3ae8138a027d",
+      "sourceRawPath": "assets/source/original-sheets/sheet_01_walk_cycle_raw.png",
+      "sourceRawSha256": "1ea5dd491ad2d18ffb60cced55dd432b1525ab5860346b9dfe9cd730a2ccd76a",
+      "status": "superseded",
+      "runtimeId": "phone-glance",
+      "facing": "left",
+      "bakedInProps": [
+        "phone",
+        "boba",
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        987,
+        14,
+        1236,
+        436
+      ],
+      "anchors": {
+        "feet": {
+          "x": 118,
+          "y": 421
+        }
+      },
+      "scaleCorrection": 0.950119,
+      "imageSha256": "79deef4d49c2cb9179fd8f5c2575641802de84f5b89651441009b37917992494",
+      "maskSha256": "c1238391c812edad307f8cb524d19034cc085366429c1cea15c3d643091d5750"
+    },
+    {
+      "sourceAssetId": "sheet_01_walk_cycle_walk_side_pose_r01_c04",
+      "legacyCrop": {
+        "left": 1330,
+        "top": 0,
+        "right": 1774,
+        "bottom": 444
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_01_walk_cycle_processed.png",
+      "sourceProcessedSha256": "2d5b287fd0b4887d263636a91324fce2bbf5386894d5e22986bb3ae8138a027d",
+      "sourceRawPath": "assets/source/original-sheets/sheet_01_walk_cycle_raw.png",
+      "sourceRawSha256": "1ea5dd491ad2d18ffb60cced55dd432b1525ab5860346b9dfe9cd730a2ccd76a",
+      "status": "superseded",
+      "runtimeId": "phone-turn-right",
+      "facing": "right",
+      "bakedInProps": [
+        "phone",
+        "boba",
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        1419,
+        13,
+        1671,
+        436
+      ],
+      "anchors": {
+        "feet": {
+          "x": 126,
+          "y": 423
+        }
+      },
+      "scaleCorrection": 0.947867,
+      "imageSha256": "209a928c97931936aece24c13f2b7e846ea00d09e22af98c28292ec379f342ac",
+      "maskSha256": "72d788ee9c811775c819078a2638067aee5f04d14d79850d2d33ac83e2ca9621"
+    },
+    {
+      "sourceAssetId": "sheet_01_walk_cycle_walk_step_a_r02_c01",
+      "legacyCrop": {
+        "left": 0,
+        "top": 444,
+        "right": 444,
+        "bottom": 887
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_01_walk_cycle_processed.png",
+      "sourceProcessedSha256": "2d5b287fd0b4887d263636a91324fce2bbf5386894d5e22986bb3ae8138a027d",
+      "sourceRawPath": "assets/source/original-sheets/sheet_01_walk_cycle_raw.png",
+      "sourceRawSha256": "1ea5dd491ad2d18ffb60cced55dd432b1525ab5860346b9dfe9cd730a2ccd76a",
+      "status": "superseded",
+      "runtimeId": "phone-walk-left-a",
+      "facing": "left",
+      "bakedInProps": [
+        "phone",
+        "boba",
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        107,
+        461,
+        369,
+        877
+      ],
+      "anchors": {
+        "feet": {
+          "x": 132,
+          "y": 416
+        }
+      },
+      "scaleCorrection": 0.963855,
+      "imageSha256": "fe6dc261a5910cd3f8187018b92f6e46d0e8fd404c46bc64eba34afe945c2b6d",
+      "maskSha256": "8232061c75b831a1906175f6ddf8077c44a347029d0c778d19a264d014507f31"
+    },
+    {
+      "sourceAssetId": "sheet_01_walk_cycle_walk_step_b_r02_c02",
+      "legacyCrop": {
+        "left": 444,
+        "top": 444,
+        "right": 887,
+        "bottom": 887
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_01_walk_cycle_processed.png",
+      "sourceProcessedSha256": "2d5b287fd0b4887d263636a91324fce2bbf5386894d5e22986bb3ae8138a027d",
+      "sourceRawPath": "assets/source/original-sheets/sheet_01_walk_cycle_raw.png",
+      "sourceRawSha256": "1ea5dd491ad2d18ffb60cced55dd432b1525ab5860346b9dfe9cd730a2ccd76a",
+      "status": "superseded",
+      "runtimeId": "phone-walk-left-b",
+      "facing": "left",
+      "bakedInProps": [
+        "phone",
+        "boba",
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        549,
+        461,
+        801,
+        872
+      ],
+      "anchors": {
+        "feet": {
+          "x": 124,
+          "y": 411
+        }
+      },
+      "scaleCorrection": 0.97561,
+      "imageSha256": "d43fdc83e9ca7dbdb1bdfddf4bb8990a1506d14d7212ba1ede266833d16b5988",
+      "maskSha256": "e318a6cbe442217d967f9a6e84e2c0bacb73bb5d1ff928c4ebcf1236b17ef95b"
+    },
+    {
+      "sourceAssetId": "sheet_01_walk_cycle_walk_step_c_r02_c03",
+      "legacyCrop": {
+        "left": 887,
+        "top": 444,
+        "right": 1330,
+        "bottom": 887
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_01_walk_cycle_processed.png",
+      "sourceProcessedSha256": "2d5b287fd0b4887d263636a91324fce2bbf5386894d5e22986bb3ae8138a027d",
+      "sourceRawPath": "assets/source/original-sheets/sheet_01_walk_cycle_raw.png",
+      "sourceRawSha256": "1ea5dd491ad2d18ffb60cced55dd432b1525ab5860346b9dfe9cd730a2ccd76a",
+      "status": "superseded",
+      "runtimeId": "phone-walk-right-a",
+      "facing": "right",
+      "bakedInProps": [
+        "phone",
+        "boba",
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        956,
+        462,
+        1219,
+        872
+      ],
+      "anchors": {
+        "feet": {
+          "x": 131,
+          "y": 410
+        }
+      },
+      "scaleCorrection": 0.977995,
+      "imageSha256": "86b0f6f2f6e986989a6fa10ea9b02bca8dcffe2193f86a44da7c87f6c7b367bf",
+      "maskSha256": "7eb64bc2afbed16e189232ff7c134c57df62ea623bb09d418f14b5b0f5b70c2f"
+    },
+    {
+      "sourceAssetId": "sheet_01_walk_cycle_walk_step_d_r02_c04",
+      "legacyCrop": {
+        "left": 1330,
+        "top": 444,
+        "right": 1774,
+        "bottom": 887
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_01_walk_cycle_processed.png",
+      "sourceProcessedSha256": "2d5b287fd0b4887d263636a91324fce2bbf5386894d5e22986bb3ae8138a027d",
+      "sourceRawPath": "assets/source/original-sheets/sheet_01_walk_cycle_raw.png",
+      "sourceRawSha256": "1ea5dd491ad2d18ffb60cced55dd432b1525ab5860346b9dfe9cd730a2ccd76a",
+      "status": "superseded",
+      "runtimeId": "phone-walk-right-b",
+      "facing": "right",
+      "bakedInProps": [
+        "phone",
+        "boba",
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        1412,
+        461,
+        1665,
+        877
+      ],
+      "anchors": {
+        "feet": {
+          "x": 126,
+          "y": 415
+        }
+      },
+      "scaleCorrection": 0.966184,
+      "imageSha256": "d1bb78222b542e63a3f1b4dc05bcc0f1d2c713d1bf0cc6a40e1f3fd2f5b47428",
+      "maskSha256": "6f81649d47b2b364f73ddae6927595e2475eac75e6002301570234cbe9961cfc"
+    },
+    {
+      "sourceAssetId": "sheet_02_sit_and_react_sit_hold_drink_r01_c01",
+      "legacyCrop": {
+        "left": 0,
+        "top": 0,
+        "right": 444,
+        "bottom": 444
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_02_sit_and_react_processed.png",
+      "sourceProcessedSha256": "8f1c226d842d01a2432b407f907dbaf08453fb4b101ad420bd26fc415e23edc1",
+      "sourceRawPath": "assets/source/original-sheets/sheet_02_sit_and_react_raw.png",
+      "sourceRawSha256": "8cc2a1a1fcb9e54d712729d1bbf811b0d3f81971e24f38834d3d5832e66b337a",
+      "status": "superseded",
+      "runtimeId": "boba-crouch",
+      "facing": "left",
+      "bakedInProps": [
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        91,
+        86,
+        375,
+        411
+      ],
+      "anchors": {
+        "feet": {
+          "x": 174,
+          "y": 324
+        }
+      },
+      "scaleCorrection": 0.901235,
+      "imageSha256": "b0c8d5c502e996fdf2d2eddc4d162b6c3f62828863cdecd69ef36feca38c5298",
+      "maskSha256": "9d632bd45e2a876cef9b8ddfb8c27a2f4530a1cb641a83c341138b07eb410951"
+    },
+    {
+      "sourceAssetId": "sheet_02_sit_and_react_crouch_peek_r01_c02",
+      "legacyCrop": {
+        "left": 444,
+        "top": 0,
+        "right": 887,
+        "bottom": 444
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_02_sit_and_react_processed.png",
+      "sourceProcessedSha256": "8f1c226d842d01a2432b407f907dbaf08453fb4b101ad420bd26fc415e23edc1",
+      "sourceRawPath": "assets/source/original-sheets/sheet_02_sit_and_react_raw.png",
+      "sourceRawSha256": "8cc2a1a1fcb9e54d712729d1bbf811b0d3f81971e24f38834d3d5832e66b337a",
+      "status": "superseded",
+      "runtimeId": "jump-prep-left",
+      "facing": "left",
+      "bakedInProps": [
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        537,
+        52,
+        827,
+        412
+      ],
+      "anchors": {
+        "feet": {
+          "x": 168,
+          "y": 360
+        }
+      },
+      "scaleCorrection": 0.9,
+      "imageSha256": "dae60f54e69b9ec9c1b05a520e64370ceb84f2f9c09cdabaa9a81ec5123bc302",
+      "maskSha256": "fb8d74da016f4d2265f3919aeb932f0e092b53d8d7028d35ec1287b78fe92b4f"
+    },
+    {
+      "sourceAssetId": "sheet_02_sit_and_react_sit_smile_r01_c03",
+      "legacyCrop": {
+        "left": 887,
+        "top": 0,
+        "right": 1330,
+        "bottom": 444
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_02_sit_and_react_processed.png",
+      "sourceProcessedSha256": "8f1c226d842d01a2432b407f907dbaf08453fb4b101ad420bd26fc415e23edc1",
+      "sourceRawPath": "assets/source/original-sheets/sheet_02_sit_and_react_raw.png",
+      "sourceRawSha256": "8cc2a1a1fcb9e54d712729d1bbf811b0d3f81971e24f38834d3d5832e66b337a",
+      "status": "superseded",
+      "runtimeId": "jump-up",
+      "facing": "left",
+      "bakedInProps": [
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        977,
+        11,
+        1249,
+        416
+      ],
+      "anchors": {
+        "feet": {
+          "x": 144,
+          "y": 348
+        }
+      },
+      "scaleCorrection": 1.023529,
+      "imageSha256": "24c5222bd980b43d1a73d8c3fbf1e4871364b9aba10d429edc48543609f65425",
+      "maskSha256": "a8b89b94f9680ae348c5aabf77c86affa0492e33a4c7ba173a276b17def004ae"
+    },
+    {
+      "sourceAssetId": "sheet_02_sit_and_react_sit_celebrate_r01_c04",
+      "legacyCrop": {
+        "left": 1330,
+        "top": 0,
+        "right": 1774,
+        "bottom": 444
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_02_sit_and_react_processed.png",
+      "sourceProcessedSha256": "8f1c226d842d01a2432b407f907dbaf08453fb4b101ad420bd26fc415e23edc1",
+      "sourceRawPath": "assets/source/original-sheets/sheet_02_sit_and_react_raw.png",
+      "sourceRawSha256": "8cc2a1a1fcb9e54d712729d1bbf811b0d3f81971e24f38834d3d5832e66b337a",
+      "status": "superseded",
+      "runtimeId": "jump-cheer",
+      "facing": "front",
+      "bakedInProps": [
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        1404,
+        10,
+        1705,
+        344
+      ],
+      "anchors": {
+        "feet": {
+          "x": 146,
+          "y": 334
+        }
+      },
+      "scaleCorrection": 1.006135,
+      "imageSha256": "80e68ede3aa3aa91475d0f013341e90b42938d58f439642d8855cf67bcfe32b5",
+      "maskSha256": "428f706428ea08d7e0ae352bc59844e8db4d15ad9359a496b6976b1f7773a637"
+    },
+    {
+      "sourceAssetId": "sheet_02_sit_and_react_startled_r02_c01",
+      "legacyCrop": {
+        "left": 0,
+        "top": 444,
+        "right": 444,
+        "bottom": 887
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_02_sit_and_react_processed.png",
+      "sourceProcessedSha256": "8f1c226d842d01a2432b407f907dbaf08453fb4b101ad420bd26fc415e23edc1",
+      "sourceRawPath": "assets/source/original-sheets/sheet_02_sit_and_react_raw.png",
+      "sourceRawSha256": "8cc2a1a1fcb9e54d712729d1bbf811b0d3f81971e24f38834d3d5832e66b337a",
+      "status": "superseded",
+      "runtimeId": "jump-startled",
+      "facing": "front",
+      "bakedInProps": [
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        77,
+        462,
+        389,
+        825
+      ],
+      "anchors": {
+        "feet": {
+          "x": 151,
+          "y": 363
+        }
+      },
+      "scaleCorrection": 0.994475,
+      "imageSha256": "3138fac20711147f8af429a4263ace64eb6381eaf55ed6f15c82e87af00e4fdf",
+      "maskSha256": "7497e8fa5cdce1f5db8d2e32b70ed7bb8e83b165b884918156d1c9e6a18f4f88"
+    },
+    {
+      "sourceAssetId": "sheet_02_sit_and_react_surprised_drop_r02_c02",
+      "legacyCrop": {
+        "left": 444,
+        "top": 444,
+        "right": 887,
+        "bottom": 887
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_02_sit_and_react_processed.png",
+      "sourceProcessedSha256": "8f1c226d842d01a2432b407f907dbaf08453fb4b101ad420bd26fc415e23edc1",
+      "sourceRawPath": "assets/source/original-sheets/sheet_02_sit_and_react_raw.png",
+      "sourceRawSha256": "8cc2a1a1fcb9e54d712729d1bbf811b0d3f81971e24f38834d3d5832e66b337a",
+      "status": "superseded",
+      "runtimeId": "surprised-drop",
+      "facing": "front",
+      "bakedInProps": [
+        "phone",
+        "boba",
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        454,
+        468,
+        866,
+        826
+      ],
+      "anchors": {
+        "feet": {
+          "x": 217,
+          "y": 358
+        }
+      },
+      "scaleCorrection": 0.985994,
+      "imageSha256": "ad268e602175ace459e7beab64587d3a16fc98afda60678485a3afe040c7cbc9",
+      "maskSha256": "d1ace528e0db2b4e385ebb86162e3bd7c7eb49dd50d312c860890fa8bb9533bd"
+    },
+    {
+      "sourceAssetId": "sheet_02_sit_and_react_sit_sad_r02_c03",
+      "legacyCrop": {
+        "left": 887,
+        "top": 444,
+        "right": 1330,
+        "bottom": 887
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_02_sit_and_react_processed.png",
+      "sourceProcessedSha256": "8f1c226d842d01a2432b407f907dbaf08453fb4b101ad420bd26fc415e23edc1",
+      "sourceRawPath": "assets/source/original-sheets/sheet_02_sit_and_react_raw.png",
+      "sourceRawSha256": "8cc2a1a1fcb9e54d712729d1bbf811b0d3f81971e24f38834d3d5832e66b337a",
+      "status": "superseded",
+      "runtimeId": "landing-crouch",
+      "facing": "front",
+      "bakedInProps": [
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        949,
+        546,
+        1279,
+        860
+      ],
+      "anchors": {
+        "feet": {
+          "x": 172,
+          "y": 314
+        }
+      },
+      "scaleCorrection": 0.968153,
+      "imageSha256": "a595bcdf4c288398139d6081c52ebfe227aadce722d77d9cff07874dafab55bd",
+      "maskSha256": "d6c8d3dcdcb0b92bb9e417ee19320eb68fc5ffb81b60defea45184ab90e9e668"
+    },
+    {
+      "sourceAssetId": "sheet_02_sit_and_react_float_happy_r02_c04",
+      "legacyCrop": {
+        "left": 1330,
+        "top": 444,
+        "right": 1774,
+        "bottom": 887
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_02_sit_and_react_processed.png",
+      "sourceProcessedSha256": "8f1c226d842d01a2432b407f907dbaf08453fb4b101ad420bd26fc415e23edc1",
+      "sourceRawPath": "assets/source/original-sheets/sheet_02_sit_and_react_raw.png",
+      "sourceRawSha256": "8cc2a1a1fcb9e54d712729d1bbf811b0d3f81971e24f38834d3d5832e66b337a",
+      "status": "superseded",
+      "runtimeId": "jump-recover",
+      "facing": "front",
+      "bakedInProps": [
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        1393,
+        452,
+        1710,
+        854
+      ],
+      "anchors": {
+        "feet": {
+          "x": 178,
+          "y": 376
+        }
+      },
+      "scaleCorrection": 0.991826,
+      "imageSha256": "85b1a761335bc3e91df4977f039333c28c6acc66e7729d6b2413f1d03c3eebb9",
+      "maskSha256": "02b936f30ac3868054ef1f97cce748199a600780e095001a10de78bc1b2d4436"
+    },
+    {
+      "sourceAssetId": "sheet_03_window_edge_peek_low_r01_c01",
+      "legacyCrop": {
+        "left": 0,
+        "top": 0,
+        "right": 444,
+        "bottom": 444
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_03_window_edge_processed.png",
+      "sourceProcessedSha256": "23d60f39321e0238d9f31b54a2ca2a7077293617ee0f1ea0676d8b8cea3f697c",
+      "sourceRawPath": "assets/source/original-sheets/sheet_03_window_edge_raw.png",
+      "sourceRawSha256": "44714130e9f48a6dec24bd96592a1983e407dea095a117ec9265bdd918afa623",
+      "status": "superseded",
+      "runtimeId": "top-peek",
+      "facing": "front",
+      "bakedInProps": [],
+      "runtimeCropLTRBExclusive": [
+        63,
+        84,
+        390,
+        313
+      ],
+      "anchors": {
+        "feet": {
+          "x": 167,
+          "y": 228
+        },
+        "hands": {
+          "x": 167,
+          "y": 214
+        }
+      },
+      "scaleCorrection": 0.969163,
+      "imageSha256": "59d1e5af4217470147e274ff8281b4add116b90be31092c1d349ae976ba2101b",
+      "maskSha256": "5186e852bcc544b491620c25ab9d9b16a54432c86d39f05e32996cc8052207f8"
+    },
+    {
+      "sourceAssetId": "sheet_03_window_edge_peek_over_edge_r01_c02",
+      "legacyCrop": {
+        "left": 444,
+        "top": 0,
+        "right": 887,
+        "bottom": 444
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_03_window_edge_processed.png",
+      "sourceProcessedSha256": "23d60f39321e0238d9f31b54a2ca2a7077293617ee0f1ea0676d8b8cea3f697c",
+      "sourceRawPath": "assets/source/original-sheets/sheet_03_window_edge_raw.png",
+      "sourceRawSha256": "44714130e9f48a6dec24bd96592a1983e407dea095a117ec9265bdd918afa623",
+      "status": "superseded",
+      "runtimeId": "top-climb",
+      "facing": "front",
+      "bakedInProps": [
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        507,
+        22,
+        829,
+        401
+      ],
+      "anchors": {
+        "feet": {
+          "x": 155,
+          "y": 378
+        },
+        "hands": {
+          "x": 161,
+          "y": 257
+        }
+      },
+      "scaleCorrection": 0.878307,
+      "imageSha256": "7e819dcb7f90328b5a1c87cd4290325a7b0866d22e955eb70a1a5990dad8dfff",
+      "maskSha256": "d2894ec34733da61f76f14f98c4a1b9f1378c7e7ccee52fe2c4a6a95826bba50"
+    },
+    {
+      "sourceAssetId": "sheet_03_window_edge_sit_edge_r01_c03",
+      "legacyCrop": {
+        "left": 887,
+        "top": 0,
+        "right": 1330,
+        "bottom": 444
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_03_window_edge_processed.png",
+      "sourceProcessedSha256": "23d60f39321e0238d9f31b54a2ca2a7077293617ee0f1ea0676d8b8cea3f697c",
+      "sourceRawPath": "assets/source/original-sheets/sheet_03_window_edge_raw.png",
+      "sourceRawSha256": "44714130e9f48a6dec24bd96592a1983e407dea095a117ec9265bdd918afa623",
+      "status": "superseded",
+      "runtimeId": "edge-sit",
+      "facing": "front",
+      "bakedInProps": [
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        978,
+        12,
+        1246,
+        426
+      ],
+      "anchors": {
+        "feet": {
+          "x": 134,
+          "y": 413
+        },
+        "seat": {
+          "x": 134,
+          "y": 306
+        }
+      },
+      "scaleCorrection": 0.968523,
+      "imageSha256": "1dfd17874d212cec2ffacb35b2702f6ae203ad1392655dbb1cac318545a3dd4d",
+      "maskSha256": "14333194a664b54700975b52a70e7a933135c4820b110a20ec05b7401263e365"
+    },
+    {
+      "sourceAssetId": "sheet_03_window_edge_hang_over_edge_r01_c04",
+      "legacyCrop": {
+        "left": 1330,
+        "top": 0,
+        "right": 1774,
+        "bottom": 444
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_03_window_edge_processed.png",
+      "sourceProcessedSha256": "23d60f39321e0238d9f31b54a2ca2a7077293617ee0f1ea0676d8b8cea3f697c",
+      "sourceRawPath": "assets/source/original-sheets/sheet_03_window_edge_raw.png",
+      "sourceRawSha256": "44714130e9f48a6dec24bd96592a1983e407dea095a117ec9265bdd918afa623",
+      "status": "superseded",
+      "runtimeId": "edge-hang",
+      "facing": "front",
+      "bakedInProps": [
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        1414,
+        14,
+        1685,
+        435
+      ],
+      "anchors": {
+        "feet": {
+          "x": 136,
+          "y": 420
+        },
+        "hands": {
+          "x": 136,
+          "y": 30
+        }
+      },
+      "scaleCorrection": 0.954654,
+      "imageSha256": "bab9045bc931e5db12439f5818a5fc4fad737443cd9853c2ecf79dcc2b50f572",
+      "maskSha256": "a860d6596d107705b0fc1d7899df78946f5db177fa8ee727f3e6d2e914baca39"
+    },
+    {
+      "sourceAssetId": "sheet_03_window_edge_swing_edge_r02_c01",
+      "legacyCrop": {
+        "left": 0,
+        "top": 444,
+        "right": 444,
+        "bottom": 887
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_03_window_edge_processed.png",
+      "sourceProcessedSha256": "23d60f39321e0238d9f31b54a2ca2a7077293617ee0f1ea0676d8b8cea3f697c",
+      "sourceRawPath": "assets/source/original-sheets/sheet_03_window_edge_raw.png",
+      "sourceRawSha256": "44714130e9f48a6dec24bd96592a1983e407dea095a117ec9265bdd918afa623",
+      "status": "superseded",
+      "runtimeId": "edge-swing",
+      "facing": "front",
+      "bakedInProps": [
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        63,
+        454,
+        383,
+        862
+      ],
+      "anchors": {
+        "feet": {
+          "x": 151,
+          "y": 407
+        },
+        "hands": {
+          "x": 161,
+          "y": 33
+        }
+      },
+      "scaleCorrection": 0.985222,
+      "imageSha256": "15f6dd2750da2c5cf51866e483e30cc60de3dcce200e83b739c6e0fe4c92e094",
+      "maskSha256": "a5eddfb1923b5509880a7c6bc62ea10425b999996e2e94cbf396f17abaa8f2ae"
+    },
+    {
+      "sourceAssetId": "sheet_03_window_edge_climb_corner_r02_c02",
+      "legacyCrop": {
+        "left": 444,
+        "top": 444,
+        "right": 887,
+        "bottom": 887
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_03_window_edge_processed.png",
+      "sourceProcessedSha256": "23d60f39321e0238d9f31b54a2ca2a7077293617ee0f1ea0676d8b8cea3f697c",
+      "sourceRawPath": "assets/source/original-sheets/sheet_03_window_edge_raw.png",
+      "sourceRawSha256": "44714130e9f48a6dec24bd96592a1983e407dea095a117ec9265bdd918afa623",
+      "status": "superseded",
+      "runtimeId": "side-peek-right",
+      "facing": "left",
+      "bakedInProps": [
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        549,
+        453,
+        785,
+        873
+      ],
+      "anchors": {
+        "feet": {
+          "x": 106,
+          "y": 419
+        },
+        "sideGrip": {
+          "x": 0,
+          "y": 269
+        }
+      },
+      "scaleCorrection": 0.870813,
+      "imageSha256": "8bf13e76f479a76c78cdc4c4c4e04e563a1288abc31ee1059f4124ccd6b3c63a",
+      "maskSha256": "2d0d00973afa4cfe81d49342a75781d7d48dba5054e113d296cdce89b7b1c7ae"
+    },
+    {
+      "sourceAssetId": "sheet_03_window_edge_hang_side_r02_c03",
+      "legacyCrop": {
+        "left": 887,
+        "top": 444,
+        "right": 1330,
+        "bottom": 887
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_03_window_edge_processed.png",
+      "sourceProcessedSha256": "23d60f39321e0238d9f31b54a2ca2a7077293617ee0f1ea0676d8b8cea3f697c",
+      "sourceRawPath": "assets/source/original-sheets/sheet_03_window_edge_raw.png",
+      "sourceRawSha256": "44714130e9f48a6dec24bd96592a1983e407dea095a117ec9265bdd918afa623",
+      "status": "superseded",
+      "runtimeId": "side-peek-left",
+      "facing": "right",
+      "bakedInProps": [
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        983,
+        460,
+        1226,
+        873
+      ],
+      "anchors": {
+        "feet": {
+          "x": 133,
+          "y": 412
+        },
+        "sideGrip": {
+          "x": 242,
+          "y": 264
+        }
+      },
+      "scaleCorrection": 0.885645,
+      "imageSha256": "c63d69d3e60ef9fc23a55126d952cde8756259527fa306d5f5159196da78fbb9",
+      "maskSha256": "8bb13330b43e4fe1f10a4e4e728c0b48018c77afa6078719993519f5c45a7394"
+    },
+    {
+      "sourceAssetId": "sheet_03_window_edge_upside_down_r02_c04",
+      "legacyCrop": {
+        "left": 1330,
+        "top": 444,
+        "right": 1774,
+        "bottom": 887
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_03_window_edge_processed.png",
+      "sourceProcessedSha256": "23d60f39321e0238d9f31b54a2ca2a7077293617ee0f1ea0676d8b8cea3f697c",
+      "sourceRawPath": "assets/source/original-sheets/sheet_03_window_edge_raw.png",
+      "sourceRawSha256": "44714130e9f48a6dec24bd96592a1983e407dea095a117ec9265bdd918afa623",
+      "status": "superseded",
+      "runtimeId": "edge-inverted",
+      "facing": "front",
+      "bakedInProps": [
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        1392,
+        493,
+        1711,
+        838
+      ],
+      "anchors": {
+        "feet": {
+          "x": 163,
+          "y": 345
+        },
+        "hands": {
+          "x": 160,
+          "y": 21
+        }
+      },
+      "scaleCorrection": 1.15942,
+      "imageSha256": "bbabe4a2e40c8bf7377d22551bf85b7549d1fc3d67c1f0a27b73b25935e71e7b",
+      "maskSha256": "e86b140a14a37590d613c184de0e206773ab1238675c68fac4dccd7725ab3e41"
+    },
+    {
+      "sourceAssetId": "sheet_04_expressions_idle_neutral_r01_c01",
+      "legacyCrop": {
+        "left": 0,
+        "top": 0,
+        "right": 444,
+        "bottom": 444
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_04_expressions_processed.png",
+      "sourceProcessedSha256": "f7757900da089b1c4f3216dc6a3f6969e08e9e2eac7280645a9a04bad2d555b5",
+      "sourceRawPath": "assets/source/original-sheets/sheet_04_expressions_raw.png",
+      "sourceRawSha256": "21484f6782d827aa667a9a8c4cf4f1638e8e4531b69d5d7e2bcb1f54c9a085b4",
+      "status": "superseded",
+      "runtimeId": "phone-tap",
+      "facing": "left",
+      "bakedInProps": [
+        "phone",
+        "boba",
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        82,
+        8,
+        389,
+        439
+      ],
+      "anchors": {
+        "feet": {
+          "x": 167,
+          "y": 430
+        }
+      },
+      "scaleCorrection": 0.930233,
+      "imageSha256": "62cdff3cfc5b5f92871661befafb02aef8e3cdb6db643287961f52fc97f68a99",
+      "maskSha256": "4ff9c4dadcdf1a6515fb2114302bbb37ac75935504e333253c994921cd61cd6b"
+    },
+    {
+      "sourceAssetId": "sheet_04_expressions_happy_smile_r01_c02",
+      "legacyCrop": {
+        "left": 444,
+        "top": 0,
+        "right": 887,
+        "bottom": 444
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_04_expressions_processed.png",
+      "sourceProcessedSha256": "f7757900da089b1c4f3216dc6a3f6969e08e9e2eac7280645a9a04bad2d555b5",
+      "sourceRawPath": "assets/source/original-sheets/sheet_04_expressions_raw.png",
+      "sourceRawSha256": "21484f6782d827aa667a9a8c4cf4f1638e8e4531b69d5d7e2bcb1f54c9a085b4",
+      "status": "superseded",
+      "runtimeId": "boba-love",
+      "facing": "front",
+      "bakedInProps": [
+        "boba",
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        521,
+        8,
+        833,
+        439
+      ],
+      "anchors": {
+        "feet": {
+          "x": 170,
+          "y": 430
+        }
+      },
+      "scaleCorrection": 0.930233,
+      "imageSha256": "2c6d8c9f0adf25e4e24da2db3388b4b457615699d1dc71e64a69edf2a4a59ad5",
+      "maskSha256": "476495ea0a6ef5785888b77035ecb0136d5de2257b333700c0bf3fa0a4e974fc"
+    },
+    {
+      "sourceAssetId": "sheet_04_expressions_heart_eyes_r01_c03",
+      "legacyCrop": {
+        "left": 887,
+        "top": 0,
+        "right": 1330,
+        "bottom": 444
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_04_expressions_processed.png",
+      "sourceProcessedSha256": "f7757900da089b1c4f3216dc6a3f6969e08e9e2eac7280645a9a04bad2d555b5",
+      "sourceRawPath": "assets/source/original-sheets/sheet_04_expressions_raw.png",
+      "sourceRawSha256": "21484f6782d827aa667a9a8c4cf4f1638e8e4531b69d5d7e2bcb1f54c9a085b4",
+      "status": "superseded",
+      "runtimeId": "boba-wave",
+      "facing": "front",
+      "bakedInProps": [
+        "boba",
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        945,
+        11,
+        1268,
+        439
+      ],
+      "anchors": {
+        "feet": {
+          "x": 183,
+          "y": 427
+        }
+      },
+      "scaleCorrection": 0.938967,
+      "imageSha256": "5d36b2b95bc96679657092f5f1f47163961fb37f466b3b1bedb8065763cbed60",
+      "maskSha256": "d34e4c937778045494f1c4a5ec56c6cba78d92c60c0d4b9ddf76d87d788e7398"
+    },
+    {
+      "sourceAssetId": "sheet_04_expressions_curious_r01_c04",
+      "legacyCrop": {
+        "left": 1330,
+        "top": 0,
+        "right": 1774,
+        "bottom": 444
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_04_expressions_processed.png",
+      "sourceProcessedSha256": "f7757900da089b1c4f3216dc6a3f6969e08e9e2eac7280645a9a04bad2d555b5",
+      "sourceRawPath": "assets/source/original-sheets/sheet_04_expressions_raw.png",
+      "sourceRawSha256": "21484f6782d827aa667a9a8c4cf4f1638e8e4531b69d5d7e2bcb1f54c9a085b4",
+      "status": "superseded",
+      "runtimeId": "phone-curious",
+      "facing": "front",
+      "bakedInProps": [
+        "phone",
+        "boba",
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        1397,
+        12,
+        1687,
+        439
+      ],
+      "anchors": {
+        "feet": {
+          "x": 135,
+          "y": 427
+        }
+      },
+      "scaleCorrection": 0.938967,
+      "imageSha256": "eabc8ecd8f67f664e9b0d1d602f00bc8fa4ebce527cf71d8dd3d022bb444ba8e",
+      "maskSha256": "c95e7231bd39a003709aacb5478a7aa319d118a2198e2c3e5603710cebb327d4"
+    },
+    {
+      "sourceAssetId": "sheet_04_expressions_surprised_r02_c01",
+      "legacyCrop": {
+        "left": 0,
+        "top": 444,
+        "right": 444,
+        "bottom": 887
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_04_expressions_processed.png",
+      "sourceProcessedSha256": "f7757900da089b1c4f3216dc6a3f6969e08e9e2eac7280645a9a04bad2d555b5",
+      "sourceRawPath": "assets/source/original-sheets/sheet_04_expressions_raw.png",
+      "sourceRawSha256": "21484f6782d827aa667a9a8c4cf4f1638e8e4531b69d5d7e2bcb1f54c9a085b4",
+      "status": "superseded",
+      "runtimeId": "small-parcel",
+      "facing": "left",
+      "bakedInProps": [
+        "parcel",
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        86,
+        454,
+        404,
+        877
+      ],
+      "anchors": {
+        "feet": {
+          "x": 177,
+          "y": 422
+        }
+      },
+      "scaleCorrection": 0.947867,
+      "imageSha256": "3c1aeee873dcb97745b23310b09435110a35c62551eeeffeae29d14a819e635d",
+      "maskSha256": "6c37c86a0b5c21c15cc534a58b4f1c709d1c82aa0d43563afa795956b7688c95"
+    },
+    {
+      "sourceAssetId": "sheet_04_expressions_annoyed_r02_c02",
+      "legacyCrop": {
+        "left": 444,
+        "top": 444,
+        "right": 887,
+        "bottom": 887
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_04_expressions_processed.png",
+      "sourceProcessedSha256": "f7757900da089b1c4f3216dc6a3f6969e08e9e2eac7280645a9a04bad2d555b5",
+      "sourceRawPath": "assets/source/original-sheets/sheet_04_expressions_raw.png",
+      "sourceRawSha256": "21484f6782d827aa667a9a8c4cf4f1638e8e4531b69d5d7e2bcb1f54c9a085b4",
+      "status": "superseded",
+      "runtimeId": "small-laptop",
+      "facing": "front",
+      "bakedInProps": [
+        "laptop",
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        480,
+        470,
+        840,
+        868
+      ],
+      "anchors": {
+        "feet": {
+          "x": 190,
+          "y": 397
+        }
+      },
+      "scaleCorrection": 0.808081,
+      "imageSha256": "859d9a26d987bda9af253e98284c35cdb8560fead650fbd2285c390e34b1f5c6",
+      "maskSha256": "95f34a2f446bd984666e91437b7f89d870febc9a955c093ddcc19b1f2a95079a"
+    },
+    {
+      "sourceAssetId": "sheet_04_expressions_sulky_r02_c03",
+      "legacyCrop": {
+        "left": 887,
+        "top": 444,
+        "right": 1330,
+        "bottom": 887
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_04_expressions_processed.png",
+      "sourceProcessedSha256": "f7757900da089b1c4f3216dc6a3f6969e08e9e2eac7280645a9a04bad2d555b5",
+      "sourceRawPath": "assets/source/original-sheets/sheet_04_expressions_raw.png",
+      "sourceRawSha256": "21484f6782d827aa667a9a8c4cf4f1638e8e4531b69d5d7e2bcb1f54c9a085b4",
+      "status": "superseded",
+      "runtimeId": "small-sweep",
+      "facing": "left",
+      "bakedInProps": [
+        "broom",
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        918,
+        457,
+        1287,
+        876
+      ],
+      "anchors": {
+        "feet": {
+          "x": 247,
+          "y": 415
+        }
+      },
+      "scaleCorrection": 0.956938,
+      "imageSha256": "367a0e7c220d463098e71c40315c1f6e5ffb0909390c54a8bc91b0807119ef89",
+      "maskSha256": "627982489caf136598e8f8fbd9aa1a11e323821b9fa5b554c23de59d4a771e93"
+    },
+    {
+      "sourceAssetId": "sheet_04_expressions_thinking_r02_c04",
+      "legacyCrop": {
+        "left": 1330,
+        "top": 444,
+        "right": 1774,
+        "bottom": 887
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_04_expressions_processed.png",
+      "sourceProcessedSha256": "f7757900da089b1c4f3216dc6a3f6969e08e9e2eac7280645a9a04bad2d555b5",
+      "sourceRawPath": "assets/source/original-sheets/sheet_04_expressions_raw.png",
+      "sourceRawSha256": "21484f6782d827aa667a9a8c4cf4f1638e8e4531b69d5d7e2bcb1f54c9a085b4",
+      "status": "superseded",
+      "runtimeId": "small-plush",
+      "facing": "left",
+      "bakedInProps": [
+        "plush",
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        1358,
+        452,
+        1709,
+        877
+      ],
+      "anchors": {
+        "feet": {
+          "x": 216,
+          "y": 425
+        }
+      },
+      "scaleCorrection": 0.943396,
+      "imageSha256": "5160368c265cce52dd4aede233bee61a39e460dba32650db819dc5720c5f2b66",
+      "maskSha256": "fe1f1643ed221c9f7cf78f49c55cbac2ef74cd55e933f49ce355077b724b321c"
+    },
+    {
+      "sourceAssetId": "sheet_05_hanging_and_rest_idle_stand_r01_c01",
+      "legacyCrop": {
+        "left": 0,
+        "top": 0,
+        "right": 444,
+        "bottom": 444
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_05_hanging_and_rest_processed.png",
+      "sourceProcessedSha256": "1102dde5cc78578f565e16191f959124e8595a56be349b9a7ad1210d723508cb",
+      "sourceRawPath": "assets/source/original-sheets/sheet_05_hanging_and_rest_raw.png",
+      "sourceRawSha256": "51f5a77fb5c3d761bc94210d7506473734152b888adccbb619b5247a67a294a1",
+      "status": "superseded",
+      "runtimeId": "stand",
+      "facing": "front",
+      "bakedInProps": [
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        94,
+        13,
+        381,
+        432
+      ],
+      "anchors": {
+        "feet": {
+          "x": 138,
+          "y": 418
+        }
+      },
+      "scaleCorrection": 0.959233,
+      "imageSha256": "81b2b574bb53dbd2836c64f0bda4f56fd1d5747199f0ed85544d74868cf909b5",
+      "maskSha256": "d645660d227de2d13ee908c43a623dda39ccb970ae53e30845bcaac5f6efbc8a"
+    },
+    {
+      "sourceAssetId": "sheet_05_hanging_and_rest_wave_happy_r01_c02",
+      "legacyCrop": {
+        "left": 444,
+        "top": 0,
+        "right": 887,
+        "bottom": 444
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_05_hanging_and_rest_processed.png",
+      "sourceProcessedSha256": "1102dde5cc78578f565e16191f959124e8595a56be349b9a7ad1210d723508cb",
+      "sourceRawPath": "assets/source/original-sheets/sheet_05_hanging_and_rest_raw.png",
+      "sourceRawSha256": "51f5a77fb5c3d761bc94210d7506473734152b888adccbb619b5247a67a294a1",
+      "status": "superseded",
+      "runtimeId": "smile",
+      "facing": "front",
+      "bakedInProps": [
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        520,
+        13,
+        823,
+        432
+      ],
+      "anchors": {
+        "feet": {
+          "x": 154,
+          "y": 418
+        }
+      },
+      "scaleCorrection": 0.959233,
+      "imageSha256": "327ed68df967b4b0b10a24aa26a3180c83bed11eae7c26885ac4653cf07a93de",
+      "maskSha256": "b0b365e2e7f6c80e2b1466dd4522c4bb935dfb8f7032704c5feb040a0f68397d"
+    },
+    {
+      "sourceAssetId": "sheet_05_hanging_and_rest_blush_love_r01_c03",
+      "legacyCrop": {
+        "left": 887,
+        "top": 0,
+        "right": 1330,
+        "bottom": 444
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_05_hanging_and_rest_processed.png",
+      "sourceProcessedSha256": "1102dde5cc78578f565e16191f959124e8595a56be349b9a7ad1210d723508cb",
+      "sourceRawPath": "assets/source/original-sheets/sheet_05_hanging_and_rest_raw.png",
+      "sourceRawSha256": "51f5a77fb5c3d761bc94210d7506473734152b888adccbb619b5247a67a294a1",
+      "status": "superseded",
+      "runtimeId": "heart-eyes",
+      "facing": "front",
+      "bakedInProps": [
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        960,
+        13,
+        1277,
+        432
+      ],
+      "anchors": {
+        "feet": {
+          "x": 156,
+          "y": 418
+        }
+      },
+      "scaleCorrection": 0.956938,
+      "imageSha256": "56cac88b6945dd9d9ca2858e7fa6ae39c073ec060e6609cf3b3f3d7c8e924013",
+      "maskSha256": "3923675bd76111fd17559f2914d9621c36966952d5eb10b8b954ae93b5af1743"
+    },
+    {
+      "sourceAssetId": "sheet_05_hanging_and_rest_idle_soft_r01_c04",
+      "legacyCrop": {
+        "left": 1330,
+        "top": 0,
+        "right": 1774,
+        "bottom": 444
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_05_hanging_and_rest_processed.png",
+      "sourceProcessedSha256": "1102dde5cc78578f565e16191f959124e8595a56be349b9a7ad1210d723508cb",
+      "sourceRawPath": "assets/source/original-sheets/sheet_05_hanging_and_rest_raw.png",
+      "sourceRawSha256": "51f5a77fb5c3d761bc94210d7506473734152b888adccbb619b5247a67a294a1",
+      "status": "superseded",
+      "runtimeId": "sulk",
+      "facing": "front",
+      "bakedInProps": [
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        1396,
+        13,
+        1711,
+        432
+      ],
+      "anchors": {
+        "feet": {
+          "x": 169,
+          "y": 418
+        }
+      },
+      "scaleCorrection": 0.959233,
+      "imageSha256": "662bbfadd12fb57def80afd292259fb9c041978295c76633d72755928b1702b7",
+      "maskSha256": "403d6d024057accdb1785ba92a95119c5f50200ffe9aed338d055a177669edb2"
+    },
+    {
+      "sourceAssetId": "sheet_05_hanging_and_rest_surprised_r02_c01",
+      "legacyCrop": {
+        "left": 0,
+        "top": 444,
+        "right": 444,
+        "bottom": 887
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_05_hanging_and_rest_processed.png",
+      "sourceProcessedSha256": "1102dde5cc78578f565e16191f959124e8595a56be349b9a7ad1210d723508cb",
+      "sourceRawPath": "assets/source/original-sheets/sheet_05_hanging_and_rest_raw.png",
+      "sourceRawSha256": "51f5a77fb5c3d761bc94210d7506473734152b888adccbb619b5247a67a294a1",
+      "status": "superseded",
+      "runtimeId": "startled",
+      "facing": "front",
+      "bakedInProps": [
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        83,
+        459,
+        389,
+        874
+      ],
+      "anchors": {
+        "feet": {
+          "x": 150,
+          "y": 414
+        }
+      },
+      "scaleCorrection": 0.968523,
+      "imageSha256": "3fc43800344967a7416c5eb3e3dafac22e7fe3e4d64e280ce7994c355a39f65b",
+      "maskSha256": "1ed31a8d0bcc919315a453bc0e00bd70daec3b380f533758cee4f001a9bde091"
+    },
+    {
+      "sourceAssetId": "sheet_05_hanging_and_rest_tired_r02_c02",
+      "legacyCrop": {
+        "left": 444,
+        "top": 444,
+        "right": 887,
+        "bottom": 887
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_05_hanging_and_rest_processed.png",
+      "sourceProcessedSha256": "1102dde5cc78578f565e16191f959124e8595a56be349b9a7ad1210d723508cb",
+      "sourceRawPath": "assets/source/original-sheets/sheet_05_hanging_and_rest_raw.png",
+      "sourceRawSha256": "51f5a77fb5c3d761bc94210d7506473734152b888adccbb619b5247a67a294a1",
+      "status": "superseded",
+      "runtimeId": "yawn",
+      "facing": "front",
+      "bakedInProps": [
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        536,
+        461,
+        827,
+        873
+      ],
+      "anchors": {
+        "feet": {
+          "x": 150,
+          "y": 412
+        }
+      },
+      "scaleCorrection": 0.970874,
+      "imageSha256": "3ffd05a2ab8f0f92c24c29b6bb55f027522336dfb3502bf45f2b47b00e244cbe",
+      "maskSha256": "b4d3c79a8d579b01467b604daa6ef41468e45e3b82aaeff2b4a3c9aeccd8e1ca"
+    },
+    {
+      "sourceAssetId": "sheet_05_hanging_and_rest_sit_think_r02_c03",
+      "legacyCrop": {
+        "left": 887,
+        "top": 444,
+        "right": 1330,
+        "bottom": 887
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_05_hanging_and_rest_processed.png",
+      "sourceProcessedSha256": "1102dde5cc78578f565e16191f959124e8595a56be349b9a7ad1210d723508cb",
+      "sourceRawPath": "assets/source/original-sheets/sheet_05_hanging_and_rest_raw.png",
+      "sourceRawSha256": "51f5a77fb5c3d761bc94210d7506473734152b888adccbb619b5247a67a294a1",
+      "status": "superseded",
+      "runtimeId": "sit-thinking",
+      "facing": "front",
+      "bakedInProps": [
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        952,
+        500,
+        1259,
+        860
+      ],
+      "anchors": {
+        "feet": {
+          "x": 150,
+          "y": 360
+        }
+      },
+      "scaleCorrection": 0.846797,
+      "imageSha256": "33dbe0874c4993e00990493ce0dd22db291b7c8f92bbb4ffaf48ec3bf8ca1a88",
+      "maskSha256": "759dd94dce2b6674bae9a94e1187c03e2811f6be46db28d2b574cf14802b96a0"
+    },
+    {
+      "sourceAssetId": "sheet_05_hanging_and_rest_sleep_floor_r02_c04",
+      "legacyCrop": {
+        "left": 1330,
+        "top": 444,
+        "right": 1774,
+        "bottom": 887
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_05_hanging_and_rest_processed.png",
+      "sourceProcessedSha256": "1102dde5cc78578f565e16191f959124e8595a56be349b9a7ad1210d723508cb",
+      "sourceRawPath": "assets/source/original-sheets/sheet_05_hanging_and_rest_raw.png",
+      "sourceRawSha256": "51f5a77fb5c3d761bc94210d7506473734152b888adccbb619b5247a67a294a1",
+      "status": "superseded",
+      "runtimeId": "floor-nap",
+      "facing": "left",
+      "bakedInProps": [
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        1345,
+        543,
+        1749,
+        824
+      ],
+      "anchors": {
+        "feet": {
+          "x": 194,
+          "y": 281
+        }
+      },
+      "scaleCorrection": 0.896861,
+      "imageSha256": "a1501974a28ffcf8b99990e01058c7c002fe251ac9ea51f0c7653cba3d31cf6c",
+      "maskSha256": "8c7287d55dfdd0a8b2fa05089f9fb5f5bbc230a6c38012f03051d62639bc6151"
+    },
+    {
+      "sourceAssetId": "sheet_06_ledge_and_hanging_peek_table_r01_c01",
+      "status": "excluded",
+      "reason": "Baked rail and matte halo. Use rail-free sheet 03 variants.",
+      "sourceRawPath": "assets/source/original-sheets/sheet_06_ledge_and_hanging_raw.png",
+      "sourceRawSha256": "24806ef9dd2f520a549684ad7bfab388af9102f202e2b9eb51ba34fbdbbf4a16",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_06_ledge_and_hanging_processed.png",
+      "sourceProcessedSha256": "17cb9539f208980bd2f1c87c17697623b8cb70cd649ad38fc838783d7cc7c826"
+    },
+    {
+      "sourceAssetId": "sheet_06_ledge_and_hanging_sit_ledge_r01_c02",
+      "status": "excluded",
+      "reason": "Baked rail and matte halo. Use rail-free sheet 03 variants.",
+      "sourceRawPath": "assets/source/original-sheets/sheet_06_ledge_and_hanging_raw.png",
+      "sourceRawSha256": "24806ef9dd2f520a549684ad7bfab388af9102f202e2b9eb51ba34fbdbbf4a16",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_06_ledge_and_hanging_processed.png",
+      "sourceProcessedSha256": "17cb9539f208980bd2f1c87c17697623b8cb70cd649ad38fc838783d7cc7c826"
+    },
+    {
+      "sourceAssetId": "sheet_06_ledge_and_hanging_sit_ledge_happy_r01_c03",
+      "status": "excluded",
+      "reason": "Baked rail and matte halo. Use rail-free sheet 03 variants.",
+      "sourceRawPath": "assets/source/original-sheets/sheet_06_ledge_and_hanging_raw.png",
+      "sourceRawSha256": "24806ef9dd2f520a549684ad7bfab388af9102f202e2b9eb51ba34fbdbbf4a16",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_06_ledge_and_hanging_processed.png",
+      "sourceProcessedSha256": "17cb9539f208980bd2f1c87c17697623b8cb70cd649ad38fc838783d7cc7c826"
+    },
+    {
+      "sourceAssetId": "sheet_06_ledge_and_hanging_hang_bar_r01_c04",
+      "status": "excluded",
+      "reason": "Baked rail and matte halo. Use rail-free sheet 03 variants.",
+      "sourceRawPath": "assets/source/original-sheets/sheet_06_ledge_and_hanging_raw.png",
+      "sourceRawSha256": "24806ef9dd2f520a549684ad7bfab388af9102f202e2b9eb51ba34fbdbbf4a16",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_06_ledge_and_hanging_processed.png",
+      "sourceProcessedSha256": "17cb9539f208980bd2f1c87c17697623b8cb70cd649ad38fc838783d7cc7c826"
+    },
+    {
+      "sourceAssetId": "sheet_06_ledge_and_hanging_hang_bar_relaxed_r02_c01",
+      "status": "excluded",
+      "reason": "Baked rail and matte halo. Use rail-free sheet 03 variants.",
+      "sourceRawPath": "assets/source/original-sheets/sheet_06_ledge_and_hanging_raw.png",
+      "sourceRawSha256": "24806ef9dd2f520a549684ad7bfab388af9102f202e2b9eb51ba34fbdbbf4a16",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_06_ledge_and_hanging_processed.png",
+      "sourceProcessedSha256": "17cb9539f208980bd2f1c87c17697623b8cb70cd649ad38fc838783d7cc7c826"
+    },
+    {
+      "sourceAssetId": "sheet_06_ledge_and_hanging_hang_bar_inverted_r02_c02",
+      "status": "excluded",
+      "reason": "Baked rail and matte halo. Use rail-free sheet 03 variants.",
+      "sourceRawPath": "assets/source/original-sheets/sheet_06_ledge_and_hanging_raw.png",
+      "sourceRawSha256": "24806ef9dd2f520a549684ad7bfab388af9102f202e2b9eb51ba34fbdbbf4a16",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_06_ledge_and_hanging_processed.png",
+      "sourceProcessedSha256": "17cb9539f208980bd2f1c87c17697623b8cb70cd649ad38fc838783d7cc7c826"
+    },
+    {
+      "sourceAssetId": "sheet_06_ledge_and_hanging_peek_left_edge_r02_c03",
+      "status": "excluded",
+      "reason": "Baked rail and matte halo. Use rail-free sheet 03 variants.",
+      "sourceRawPath": "assets/source/original-sheets/sheet_06_ledge_and_hanging_raw.png",
+      "sourceRawSha256": "24806ef9dd2f520a549684ad7bfab388af9102f202e2b9eb51ba34fbdbbf4a16",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_06_ledge_and_hanging_processed.png",
+      "sourceProcessedSha256": "17cb9539f208980bd2f1c87c17697623b8cb70cd649ad38fc838783d7cc7c826"
+    },
+    {
+      "sourceAssetId": "sheet_06_ledge_and_hanging_peek_right_edge_r02_c04",
+      "status": "excluded",
+      "reason": "Baked rail and matte halo. Use rail-free sheet 03 variants.",
+      "sourceRawPath": "assets/source/original-sheets/sheet_06_ledge_and_hanging_raw.png",
+      "sourceRawSha256": "24806ef9dd2f520a549684ad7bfab388af9102f202e2b9eb51ba34fbdbbf4a16",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_06_ledge_and_hanging_processed.png",
+      "sourceProcessedSha256": "17cb9539f208980bd2f1c87c17697623b8cb70cd649ad38fc838783d7cc7c826"
+    },
+    {
+      "sourceAssetId": "sheet_07_fall_and_recover_crouch_tuck_r01_c01",
+      "legacyCrop": {
+        "left": 0,
+        "top": 0,
+        "right": 362,
+        "bottom": 543
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_07_fall_and_recover_processed.png",
+      "sourceProcessedSha256": "ac401de19e5989b21c6b3ca2415fb95257192b6568ec9b3bfc32a92d3f40f955",
+      "sourceRawPath": "assets/source/original-sheets/sheet_07_fall_and_recover_raw.png",
+      "sourceRawSha256": "91adcdc0911ebb6f11b348388503375ad978f229cd7cfbb3064d868534bd25d1",
+      "status": "superseded",
+      "runtimeId": "fall-anticipation",
+      "facing": "left",
+      "bakedInProps": [
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        32,
+        120,
+        360,
+        509
+      ],
+      "anchors": {
+        "feet": {
+          "x": 164,
+          "y": 388
+        }
+      },
+      "scaleCorrection": 0.867606,
+      "imageSha256": "a4d0dd63464c9482d2f88ec257bbb43c61e7b8d4145d64e833eccd91c6628dac",
+      "maskSha256": "8c4f7fbbf0df2f912744368958b670ff2673a653134c6b82925d8ac6b60a6365"
+    },
+    {
+      "sourceAssetId": "sheet_07_fall_and_recover_fumble_r01_c02",
+      "legacyCrop": {
+        "left": 362,
+        "top": 0,
+        "right": 724,
+        "bottom": 543
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_07_fall_and_recover_processed.png",
+      "sourceProcessedSha256": "ac401de19e5989b21c6b3ca2415fb95257192b6568ec9b3bfc32a92d3f40f955",
+      "sourceRawPath": "assets/source/original-sheets/sheet_07_fall_and_recover_raw.png",
+      "sourceRawSha256": "91adcdc0911ebb6f11b348388503375ad978f229cd7cfbb3064d868534bd25d1",
+      "status": "superseded",
+      "runtimeId": "fall-takeoff",
+      "facing": "left",
+      "bakedInProps": [
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        380,
+        74,
+        693,
+        469
+      ],
+      "anchors": {
+        "feet": {
+          "x": 156,
+          "y": 394
+        }
+      },
+      "scaleCorrection": 0.905852,
+      "imageSha256": "c597ef9f0b0782d075e5a9b3a2ea7b315971627e3e1f65688e352ba4da45d368",
+      "maskSha256": "92c4e7ec8cd04acd6d0440f4dc3ea177a136ffe95dee7f708b370189955d58be"
+    },
+    {
+      "sourceAssetId": "sheet_07_fall_and_recover_panic_r01_c03",
+      "legacyCrop": {
+        "left": 724,
+        "top": 0,
+        "right": 1086,
+        "bottom": 543
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_07_fall_and_recover_processed.png",
+      "sourceProcessedSha256": "ac401de19e5989b21c6b3ca2415fb95257192b6568ec9b3bfc32a92d3f40f955",
+      "sourceRawPath": "assets/source/original-sheets/sheet_07_fall_and_recover_raw.png",
+      "sourceRawSha256": "91adcdc0911ebb6f11b348388503375ad978f229cd7cfbb3064d868534bd25d1",
+      "status": "superseded",
+      "runtimeId": "fall-airborne",
+      "facing": "left",
+      "bakedInProps": [
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        741,
+        50,
+        1057,
+        512
+      ],
+      "anchors": {
+        "feet": {
+          "x": 158,
+          "y": 378
+        }
+      },
+      "scaleCorrection": 0.923077,
+      "imageSha256": "c99ee4c9cd00f48b8637430f0bac8a5ac8a97340ae21b7e0f955503393e7efed",
+      "maskSha256": "675b3e6f647ce0ecd1624af90906595bb2e56fdb1533466c8d16eb1ffd02c700"
+    },
+    {
+      "sourceAssetId": "sheet_07_fall_and_recover_fall_back_r01_c04",
+      "legacyCrop": {
+        "left": 1086,
+        "top": 0,
+        "right": 1448,
+        "bottom": 543
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_07_fall_and_recover_processed.png",
+      "sourceProcessedSha256": "ac401de19e5989b21c6b3ca2415fb95257192b6568ec9b3bfc32a92d3f40f955",
+      "sourceRawPath": "assets/source/original-sheets/sheet_07_fall_and_recover_raw.png",
+      "sourceRawSha256": "91adcdc0911ebb6f11b348388503375ad978f229cd7cfbb3064d868534bd25d1",
+      "status": "excluded",
+      "reason": "Hair is clipped by the source sheet itself. Use surprised-drop."
+    },
+    {
+      "sourceAssetId": "sheet_07_fall_and_recover_fall_low_r02_c01",
+      "legacyCrop": {
+        "left": 0,
+        "top": 543,
+        "right": 362,
+        "bottom": 1086
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_07_fall_and_recover_processed.png",
+      "sourceProcessedSha256": "ac401de19e5989b21c6b3ca2415fb95257192b6568ec9b3bfc32a92d3f40f955",
+      "sourceRawPath": "assets/source/original-sheets/sheet_07_fall_and_recover_raw.png",
+      "sourceRawSha256": "91adcdc0911ebb6f11b348388503375ad978f229cd7cfbb3064d868534bd25d1",
+      "status": "superseded",
+      "runtimeId": "fall-tumble",
+      "facing": "front",
+      "bakedInProps": [
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        15,
+        619,
+        359,
+        980
+      ],
+      "anchors": {
+        "feet": {
+          "x": 180,
+          "y": 337
+        }
+      },
+      "scaleCorrection": 0.916667,
+      "imageSha256": "e8f02b5d78169226a50e454d2f55f380b59fa7d9762b207f00a45c7c10a7fd1b",
+      "maskSha256": "2ee5d26ad6f3b688a373bf29164f72d59ffb95dd172a9927b845ac52d639730e"
+    },
+    {
+      "sourceAssetId": "sheet_07_fall_and_recover_spin_tumble_r02_c02",
+      "legacyCrop": {
+        "left": 362,
+        "top": 543,
+        "right": 724,
+        "bottom": 1086
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_07_fall_and_recover_processed.png",
+      "sourceProcessedSha256": "ac401de19e5989b21c6b3ca2415fb95257192b6568ec9b3bfc32a92d3f40f955",
+      "sourceRawPath": "assets/source/original-sheets/sheet_07_fall_and_recover_raw.png",
+      "sourceRawSha256": "91adcdc0911ebb6f11b348388503375ad978f229cd7cfbb3064d868534bd25d1",
+      "status": "superseded",
+      "runtimeId": "fall-impact",
+      "facing": "front",
+      "bakedInProps": [
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        365,
+        663,
+        723,
+        1030
+      ],
+      "anchors": {
+        "feet": {
+          "x": 180,
+          "y": 340
+        }
+      },
+      "scaleCorrection": 0.84153,
+      "imageSha256": "d34c9fb48b836bbf396d039ff999d37dae5a5f606cda28499ac7f7c705109cb6",
+      "maskSha256": "141f1dde2d6a5a66683ce7faff840bcbc1794d38125773c6f6373a6559014b11"
+    },
+    {
+      "sourceAssetId": "sheet_07_fall_and_recover_frustrated_sit_r02_c03",
+      "legacyCrop": {
+        "left": 724,
+        "top": 543,
+        "right": 1086,
+        "bottom": 1086
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_07_fall_and_recover_processed.png",
+      "sourceProcessedSha256": "ac401de19e5989b21c6b3ca2415fb95257192b6568ec9b3bfc32a92d3f40f955",
+      "sourceRawPath": "assets/source/original-sheets/sheet_07_fall_and_recover_raw.png",
+      "sourceRawSha256": "91adcdc0911ebb6f11b348388503375ad978f229cd7cfbb3064d868534bd25d1",
+      "status": "superseded",
+      "runtimeId": "fall-recover",
+      "facing": "left",
+      "bakedInProps": [
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        735,
+        686,
+        1082,
+        1012
+      ],
+      "anchors": {
+        "feet": {
+          "x": 162,
+          "y": 325
+        }
+      },
+      "scaleCorrection": 0.938272,
+      "imageSha256": "c26c53841317266ecde206df47ac03c37f756724914da675584161335b229560",
+      "maskSha256": "52ba7195b58c8b14ef7b29ddaa101966ae75bf287e07fcbf3e8fa6bb23c24ede"
+    },
+    {
+      "sourceAssetId": "sheet_07_fall_and_recover_land_recover_r02_c04",
+      "legacyCrop": {
+        "left": 1086,
+        "top": 543,
+        "right": 1448,
+        "bottom": 1086
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_07_fall_and_recover_processed.png",
+      "sourceProcessedSha256": "ac401de19e5989b21c6b3ca2415fb95257192b6568ec9b3bfc32a92d3f40f955",
+      "sourceRawPath": "assets/source/original-sheets/sheet_07_fall_and_recover_raw.png",
+      "sourceRawSha256": "91adcdc0911ebb6f11b348388503375ad978f229cd7cfbb3064d868534bd25d1",
+      "status": "superseded",
+      "runtimeId": "fall-celebrate",
+      "facing": "front",
+      "bakedInProps": [
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        1080,
+        579,
+        1425,
+        1007
+      ],
+      "anchors": {
+        "feet": {
+          "x": 175,
+          "y": 392
+        }
+      },
+      "scaleCorrection": 0.959184,
+      "imageSha256": "2e35f7f77ba088bcba35bfbdf87d8185941462c41463be82bfd88268ed8d6872",
+      "maskSha256": "873d116c076bf540cce53f3b2d565c79a2a63e843a37aa019a593512ab451523"
+    },
+    {
+      "sourceAssetId": "sheet_08_idle_expressions_idle_neutral_r01_c01",
+      "legacyCrop": {
+        "left": 0,
+        "top": 0,
+        "right": 362,
+        "bottom": 543
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_08_idle_expressions_processed.png",
+      "sourceProcessedSha256": "756a7e791d0fb5c69740c5c4835b33a12ea373bd0117e978fcd6a664aea250c9",
+      "sourceRawPath": "assets/source/original-sheets/sheet_08_idle_expressions_raw.png",
+      "sourceRawSha256": "5f09accc4a162e560466d4b694d3ae8c6879b7bd5695035f00c7b4eca0730427",
+      "status": "superseded",
+      "runtimeId": "boba-idle",
+      "facing": "front",
+      "bakedInProps": [
+        "boba",
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        22,
+        17,
+        343,
+        530
+      ],
+      "anchors": {
+        "feet": {
+          "x": 157,
+          "y": 512
+        }
+      },
+      "scaleCorrection": 0.782779,
+      "imageSha256": "f9377b014076a7bd0ac13feaa6075d7986b3848dc2aca04bc569670308760ce2",
+      "maskSha256": "29c8630c6f2908aae8a9d60b42467a7ac736b95b7c55b3d6e210338c4507caf7"
+    },
+    {
+      "sourceAssetId": "sheet_08_idle_expressions_idle_happy_r01_c02",
+      "legacyCrop": {
+        "left": 362,
+        "top": 0,
+        "right": 724,
+        "bottom": 543
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_08_idle_expressions_processed.png",
+      "sourceProcessedSha256": "756a7e791d0fb5c69740c5c4835b33a12ea373bd0117e978fcd6a664aea250c9",
+      "sourceRawPath": "assets/source/original-sheets/sheet_08_idle_expressions_raw.png",
+      "sourceRawSha256": "5f09accc4a162e560466d4b694d3ae8c6879b7bd5695035f00c7b4eca0730427",
+      "status": "superseded",
+      "runtimeId": "boba-sip",
+      "facing": "front",
+      "bakedInProps": [
+        "boba",
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        378,
+        17,
+        704,
+        530
+      ],
+      "anchors": {
+        "feet": {
+          "x": 163,
+          "y": 512
+        }
+      },
+      "scaleCorrection": 0.782779,
+      "imageSha256": "73398eef85d2c4d2efda0a7ad38bf2b8e2fa22d598cb2e8b9e49ca89b79dc032",
+      "maskSha256": "66c4e1445a9ce5bc4ecd8e15d7aa71438536a646d6a47d1cf25f46334223f28f"
+    },
+    {
+      "sourceAssetId": "sheet_08_idle_expressions_phone_check_r01_c03",
+      "legacyCrop": {
+        "left": 724,
+        "top": 0,
+        "right": 1086,
+        "bottom": 543
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_08_idle_expressions_processed.png",
+      "sourceProcessedSha256": "756a7e791d0fb5c69740c5c4835b33a12ea373bd0117e978fcd6a664aea250c9",
+      "sourceRawPath": "assets/source/original-sheets/sheet_08_idle_expressions_raw.png",
+      "sourceRawSha256": "5f09accc4a162e560466d4b694d3ae8c6879b7bd5695035f00c7b4eca0730427",
+      "status": "superseded",
+      "runtimeId": "phone-scroll",
+      "facing": "left",
+      "bakedInProps": [
+        "phone",
+        "boba",
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        746,
+        17,
+        1063,
+        530
+      ],
+      "anchors": {
+        "feet": {
+          "x": 161,
+          "y": 512
+        }
+      },
+      "scaleCorrection": 0.782779,
+      "imageSha256": "964fc519ae09a641fa916f94979f51206674cff0efe23499545f78b41f23f14e",
+      "maskSha256": "6e08de4c84751524adcef7763bfd565d3e2f9e1dc87662e55a37b195fd4599d9"
+    },
+    {
+      "sourceAssetId": "sheet_08_idle_expressions_drink_happy_r01_c04",
+      "legacyCrop": {
+        "left": 1086,
+        "top": 0,
+        "right": 1448,
+        "bottom": 543
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_08_idle_expressions_processed.png",
+      "sourceProcessedSha256": "756a7e791d0fb5c69740c5c4835b33a12ea373bd0117e978fcd6a664aea250c9",
+      "sourceRawPath": "assets/source/original-sheets/sheet_08_idle_expressions_raw.png",
+      "sourceRawSha256": "5f09accc4a162e560466d4b694d3ae8c6879b7bd5695035f00c7b4eca0730427",
+      "status": "superseded",
+      "runtimeId": "boba-hug",
+      "facing": "front",
+      "bakedInProps": [
+        "boba",
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        1102,
+        17,
+        1426,
+        530
+      ],
+      "anchors": {
+        "feet": {
+          "x": 160,
+          "y": 512
+        }
+      },
+      "scaleCorrection": 0.782779,
+      "imageSha256": "3f5be2ea74523e5af6c00711e07b37578d127440bdf1372c92a29c0a295a74d3",
+      "maskSha256": "8cafb74ae9e5e37511808621cf5c5e8495ef27d805aa1173a6d6dbbd76cdec19"
+    },
+    {
+      "sourceAssetId": "sheet_08_idle_expressions_wave_r02_c01",
+      "legacyCrop": {
+        "left": 0,
+        "top": 543,
+        "right": 362,
+        "bottom": 1086
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_08_idle_expressions_processed.png",
+      "sourceProcessedSha256": "756a7e791d0fb5c69740c5c4835b33a12ea373bd0117e978fcd6a664aea250c9",
+      "sourceRawPath": "assets/source/original-sheets/sheet_08_idle_expressions_raw.png",
+      "sourceRawSha256": "5f09accc4a162e560466d4b694d3ae8c6879b7bd5695035f00c7b4eca0730427",
+      "status": "superseded",
+      "runtimeId": "shy",
+      "facing": "front",
+      "bakedInProps": [
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        13,
+        560,
+        347,
+        1071
+      ],
+      "anchors": {
+        "feet": {
+          "x": 170,
+          "y": 511
+        }
+      },
+      "scaleCorrection": 0.784314,
+      "imageSha256": "36df5dfcd7d8084e5cfac102c519ff5ade1247e8f8bbed47309b92fa19913a90",
+      "maskSha256": "693f5fafb4128200397885afc06ffa721d05cbf74e094f9c431f16573b77a9d9"
+    },
+    {
+      "sourceAssetId": "sheet_08_idle_expressions_glance_r02_c02",
+      "legacyCrop": {
+        "left": 362,
+        "top": 543,
+        "right": 724,
+        "bottom": 1086
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_08_idle_expressions_processed.png",
+      "sourceProcessedSha256": "756a7e791d0fb5c69740c5c4835b33a12ea373bd0117e978fcd6a664aea250c9",
+      "sourceRawPath": "assets/source/original-sheets/sheet_08_idle_expressions_raw.png",
+      "sourceRawSha256": "5f09accc4a162e560466d4b694d3ae8c6879b7bd5695035f00c7b4eca0730427",
+      "status": "superseded",
+      "runtimeId": "proud",
+      "facing": "front",
+      "bakedInProps": [
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        376,
+        560,
+        706,
+        1071
+      ],
+      "anchors": {
+        "feet": {
+          "x": 168,
+          "y": 510
+        }
+      },
+      "scaleCorrection": 0.785855,
+      "imageSha256": "111481a113abbcb51bf411f9a577eb6fdccf083d7f7f6469a8733bdf3eceafff",
+      "maskSha256": "3f427debabd6a7276a6dc9740e4ad8a9354f818652f0e3af3b37430c5a4e8bb9"
+    },
+    {
+      "sourceAssetId": "sheet_08_idle_expressions_yawn_r02_c03",
+      "legacyCrop": {
+        "left": 724,
+        "top": 543,
+        "right": 1086,
+        "bottom": 1086
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_08_idle_expressions_processed.png",
+      "sourceProcessedSha256": "756a7e791d0fb5c69740c5c4835b33a12ea373bd0117e978fcd6a664aea250c9",
+      "sourceRawPath": "assets/source/original-sheets/sheet_08_idle_expressions_raw.png",
+      "sourceRawSha256": "5f09accc4a162e560466d4b694d3ae8c6879b7bd5695035f00c7b4eca0730427",
+      "status": "superseded",
+      "runtimeId": "sleepy",
+      "facing": "front",
+      "bakedInProps": [
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        740,
+        560,
+        1058,
+        1072
+      ],
+      "anchors": {
+        "feet": {
+          "x": 157,
+          "y": 511
+        }
+      },
+      "scaleCorrection": 0.784314,
+      "imageSha256": "e9d1aa897e468fe5ecab210c9aa7a61b50700aa05253bed72017266211a44702",
+      "maskSha256": "5afc07ed5bb4b3ee8dec34c1e0d1ebadfa2adc9347a07ad7d33d56e50e0b2e29"
+    },
+    {
+      "sourceAssetId": "sheet_08_idle_expressions_sleep_sit_r02_c04",
+      "legacyCrop": {
+        "left": 1086,
+        "top": 543,
+        "right": 1448,
+        "bottom": 1086
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_08_idle_expressions_processed.png",
+      "sourceProcessedSha256": "756a7e791d0fb5c69740c5c4835b33a12ea373bd0117e978fcd6a664aea250c9",
+      "sourceRawPath": "assets/source/original-sheets/sheet_08_idle_expressions_raw.png",
+      "sourceRawSha256": "5f09accc4a162e560466d4b694d3ae8c6879b7bd5695035f00c7b4eca0730427",
+      "status": "superseded",
+      "runtimeId": "seated-nap",
+      "facing": "left",
+      "bakedInProps": [
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        1098,
+        649,
+        1429,
+        1063
+      ],
+      "anchors": {
+        "feet": {
+          "x": 163,
+          "y": 413
+        }
+      },
+      "scaleCorrection": 0.760925,
+      "imageSha256": "54e6375bccfc4e972c1cba34c3a229f5eb7e0d2e6207a91bf736a5332ce40343",
+      "maskSha256": "4cf8569d55c724da0f7cf2b2fc0ec1a839d5e9fda9efe71e6d6cb8c13ed62f09"
+    },
+    {
+      "sourceAssetId": "sheet_09_busy_tasks_carry_box_r01_c01",
+      "legacyCrop": {
+        "left": 0,
+        "top": 0,
+        "right": 362,
+        "bottom": 543
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_09_busy_tasks_processed.png",
+      "sourceProcessedSha256": "636819243384ed609735a07703305f6b7e0cf1fa5b92a829900d2e94803cc337",
+      "sourceRawPath": "assets/source/original-sheets/sheet_09_busy_tasks_raw.png",
+      "sourceRawSha256": "a38b4a9b15c21f84f47d77b79da92582419a1b5a1328c369c7435ab8b52ba835",
+      "status": "superseded",
+      "runtimeId": "parcel-carry",
+      "facing": "left",
+      "bakedInProps": [
+        "parcel",
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        40,
+        70,
+        346,
+        491
+      ],
+      "anchors": {
+        "feet": {
+          "x": 176,
+          "y": 420
+        }
+      },
+      "scaleCorrection": 0.952381,
+      "imageSha256": "b247e87b6ceefb32cfff1d50c919c0924d7dcc6dce6edd3f32f33f602017d7a2",
+      "maskSha256": "d99eebf1c08f7ca3128626e990f38e98c5ac5deede90e84a4026c70ba08c1c57"
+    },
+    {
+      "sourceAssetId": "sheet_09_busy_tasks_carry_bag_r01_c02",
+      "legacyCrop": {
+        "left": 362,
+        "top": 0,
+        "right": 724,
+        "bottom": 543
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_09_busy_tasks_processed.png",
+      "sourceProcessedSha256": "636819243384ed609735a07703305f6b7e0cf1fa5b92a829900d2e94803cc337",
+      "sourceRawPath": "assets/source/original-sheets/sheet_09_busy_tasks_raw.png",
+      "sourceRawSha256": "a38b4a9b15c21f84f47d77b79da92582419a1b5a1328c369c7435ab8b52ba835",
+      "status": "superseded",
+      "runtimeId": "folder-push",
+      "facing": "left",
+      "bakedInProps": [
+        "folder",
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        343,
+        108,
+        721,
+        469
+      ],
+      "anchors": {
+        "feet": {
+          "x": 272,
+          "y": 359
+        }
+      },
+      "scaleCorrection": 1.002786,
+      "imageSha256": "5fcc00998fe3ee81bb996c168ebdc7e262967800b6b1bdbcbb4dd745a1f98980",
+      "maskSha256": "027fc7c52609021d0d8ced26bd6949b9af3010630f0254572c18cfedfb11782d"
+    },
+    {
+      "sourceAssetId": "sheet_09_busy_tasks_show_board_r01_c03",
+      "legacyCrop": {
+        "left": 724,
+        "top": 0,
+        "right": 1086,
+        "bottom": 543
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_09_busy_tasks_processed.png",
+      "sourceProcessedSha256": "636819243384ed609735a07703305f6b7e0cf1fa5b92a829900d2e94803cc337",
+      "sourceRawPath": "assets/source/original-sheets/sheet_09_busy_tasks_raw.png",
+      "sourceRawSha256": "a38b4a9b15c21f84f47d77b79da92582419a1b5a1328c369c7435ab8b52ba835",
+      "status": "superseded",
+      "runtimeId": "card-carry",
+      "facing": "left",
+      "bakedInProps": [
+        "window card",
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        725,
+        94,
+        1093,
+        469
+      ],
+      "anchors": {
+        "feet": {
+          "x": 232,
+          "y": 375
+        }
+      },
+      "scaleCorrection": 1.005348,
+      "imageSha256": "bae61e03c5f5472e2312c1e4b3bf8bf2d0563c657c430686e26f3681148ad33e",
+      "maskSha256": "715bbbc2fb8427956b52095a66109e5fb4383572ea646ef4a72ad93e0d4b2ed7"
+    },
+    {
+      "sourceAssetId": "sheet_09_busy_tasks_laptop_work_r01_c04",
+      "legacyCrop": {
+        "left": 1086,
+        "top": 0,
+        "right": 1448,
+        "bottom": 543
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_09_busy_tasks_processed.png",
+      "sourceProcessedSha256": "636819243384ed609735a07703305f6b7e0cf1fa5b92a829900d2e94803cc337",
+      "sourceRawPath": "assets/source/original-sheets/sheet_09_busy_tasks_raw.png",
+      "sourceRawSha256": "a38b4a9b15c21f84f47d77b79da92582419a1b5a1328c369c7435ab8b52ba835",
+      "status": "superseded",
+      "runtimeId": "laptop",
+      "facing": "front",
+      "bakedInProps": [
+        "laptop",
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        1122,
+        102,
+        1430,
+        469
+      ],
+      "anchors": {
+        "feet": {
+          "x": 163,
+          "y": 366
+        }
+      },
+      "scaleCorrection": 0.854795,
+      "imageSha256": "c1a845c6b870580f344279e32ba4714cf9f1b0105c4f64e4e8a4c5bd0fd208ff",
+      "maskSha256": "9440fd7ddde90307363b563a1fd685cf32bf29a376e4ac7f96fec5b29e771911"
+    },
+    {
+      "sourceAssetId": "sheet_09_busy_tasks_clean_broom_r02_c01",
+      "legacyCrop": {
+        "left": 0,
+        "top": 543,
+        "right": 362,
+        "bottom": 1086
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_09_busy_tasks_processed.png",
+      "sourceProcessedSha256": "636819243384ed609735a07703305f6b7e0cf1fa5b92a829900d2e94803cc337",
+      "sourceRawPath": "assets/source/original-sheets/sheet_09_busy_tasks_raw.png",
+      "sourceRawSha256": "a38b4a9b15c21f84f47d77b79da92582419a1b5a1328c369c7435ab8b52ba835",
+      "status": "superseded",
+      "runtimeId": "sweep",
+      "facing": "left",
+      "bakedInProps": [
+        "broom",
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        25,
+        579,
+        365,
+        1014
+      ],
+      "anchors": {
+        "feet": {
+          "x": 230,
+          "y": 434
+        }
+      },
+      "scaleCorrection": 0.923788,
+      "imageSha256": "2c51818ea4380538980ca842174d07c90b6a875be4e15cfc15c65b235f6fc21b",
+      "maskSha256": "1b40b128e7f00be91d948b68a2edb83ff833f3c437d73416e0a07ef6f8f09aa4"
+    },
+    {
+      "sourceAssetId": "sheet_09_busy_tasks_hold_alert_r02_c02",
+      "legacyCrop": {
+        "left": 362,
+        "top": 543,
+        "right": 724,
+        "bottom": 1086
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_09_busy_tasks_processed.png",
+      "sourceProcessedSha256": "636819243384ed609735a07703305f6b7e0cf1fa5b92a829900d2e94803cc337",
+      "sourceRawPath": "assets/source/original-sheets/sheet_09_busy_tasks_raw.png",
+      "sourceRawSha256": "a38b4a9b15c21f84f47d77b79da92582419a1b5a1328c369c7435ab8b52ba835",
+      "status": "superseded",
+      "runtimeId": "notice",
+      "facing": "front",
+      "bakedInProps": [
+        "tablet",
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        372,
+        570,
+        724,
+        1012
+      ],
+      "anchors": {
+        "feet": {
+          "x": 197,
+          "y": 442
+        }
+      },
+      "scaleCorrection": 0.904977,
+      "imageSha256": "0292e35fa87b1a385f56eebadf5cc8d0e16ec42731606a1a20cfb25a923ce97e",
+      "maskSha256": "61c65fb3f05016c284fa42521498014116d0d6c6346449352e3d7a05131809fd"
+    },
+    {
+      "sourceAssetId": "sheet_09_busy_tasks_hug_plush_r02_c03",
+      "legacyCrop": {
+        "left": 724,
+        "top": 543,
+        "right": 1086,
+        "bottom": 1086
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_09_busy_tasks_processed.png",
+      "sourceProcessedSha256": "636819243384ed609735a07703305f6b7e0cf1fa5b92a829900d2e94803cc337",
+      "sourceRawPath": "assets/source/original-sheets/sheet_09_busy_tasks_raw.png",
+      "sourceRawSha256": "a38b4a9b15c21f84f47d77b79da92582419a1b5a1328c369c7435ab8b52ba835",
+      "status": "superseded",
+      "runtimeId": "plush-hug",
+      "facing": "left",
+      "bakedInProps": [
+        "plush",
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        738,
+        567,
+        1056,
+        1014
+      ],
+      "anchors": {
+        "feet": {
+          "x": 176,
+          "y": 446
+        }
+      },
+      "scaleCorrection": 0.862921,
+      "imageSha256": "d6d42e12f8f70123296869fd429a2a4e8dc3b9400f98718764bb0b13863baf37",
+      "maskSha256": "6e4e6aabb45cd6406bd17fd9dd7e10a47b1e940c5bf1dad47452b39a1921d6e9"
+    },
+    {
+      "sourceAssetId": "sheet_09_busy_tasks_shopping_bag_r02_c04",
+      "legacyCrop": {
+        "left": 1086,
+        "top": 543,
+        "right": 1448,
+        "bottom": 1086
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_09_busy_tasks_processed.png",
+      "sourceProcessedSha256": "636819243384ed609735a07703305f6b7e0cf1fa5b92a829900d2e94803cc337",
+      "sourceRawPath": "assets/source/original-sheets/sheet_09_busy_tasks_raw.png",
+      "sourceRawSha256": "a38b4a9b15c21f84f47d77b79da92582419a1b5a1328c369c7435ab8b52ba835",
+      "status": "superseded",
+      "runtimeId": "offer-heart",
+      "facing": "front",
+      "bakedInProps": [
+        "heart",
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        1103,
+        564,
+        1424,
+        1012
+      ],
+      "anchors": {
+        "feet": {
+          "x": 177,
+          "y": 448
+        }
+      },
+      "scaleCorrection": 0.892857,
+      "imageSha256": "88403de082db3da15567aa744d649a9d766241fc6e9f89554c70d58318163ac2",
+      "maskSha256": "fe15d139ccc7f3e72a1de73ba172f56b47752d7b706d53047663c739ad3f15cb"
+    },
+    {
+      "sourceAssetId": "sheet_10_locomotion_and_wave_walk_ready_r01_c01",
+      "legacyCrop": {
+        "left": 0,
+        "top": 0,
+        "right": 362,
+        "bottom": 543
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_10_locomotion_and_wave_processed.png",
+      "sourceProcessedSha256": "e6751c9563a32456e79311de455a4e282c8a1231152d1d932c2afddc9febd12c",
+      "sourceRawPath": "assets/source/original-sheets/sheet_10_locomotion_and_wave_raw.png",
+      "sourceRawSha256": "5840b8607a0c941e8841e9692fc8ba43d24e383536e8d73fa54bd0716fee969e",
+      "status": "superseded",
+      "runtimeId": "walk-prep-left",
+      "facing": "left",
+      "bakedInProps": [
+        "phone",
+        "boba",
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        19,
+        60,
+        330,
+        489
+      ],
+      "anchors": {
+        "feet": {
+          "x": 152,
+          "y": 429
+        }
+      },
+      "scaleCorrection": 0.850467,
+      "imageSha256": "da2b3da88d19fe0578ab5c32ef3a9c06a85c84ff562130fcbbe7f49570c55889",
+      "maskSha256": "8ce3a463deb97f167fdc4e895acf9070ff370d33c85af63e3b24d61f2cc2c855"
+    },
+    {
+      "sourceAssetId": "sheet_10_locomotion_and_wave_walk_bounce_r01_c02",
+      "legacyCrop": {
+        "left": 362,
+        "top": 0,
+        "right": 724,
+        "bottom": 543
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_10_locomotion_and_wave_processed.png",
+      "sourceProcessedSha256": "e6751c9563a32456e79311de455a4e282c8a1231152d1d932c2afddc9febd12c",
+      "sourceRawPath": "assets/source/original-sheets/sheet_10_locomotion_and_wave_raw.png",
+      "sourceRawSha256": "5840b8607a0c941e8841e9692fc8ba43d24e383536e8d73fa54bd0716fee969e",
+      "status": "superseded",
+      "runtimeId": "walk-prep-right",
+      "facing": "right",
+      "bakedInProps": [
+        "phone",
+        "boba",
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        379,
+        60,
+        686,
+        489
+      ],
+      "anchors": {
+        "feet": {
+          "x": 150,
+          "y": 428
+        }
+      },
+      "scaleCorrection": 0.852459,
+      "imageSha256": "5d8f948b43307a1e2b7919fa37278670401030ba0f5ba054faa610f0b3786d0e",
+      "maskSha256": "ec11ca3f3d378ca030b9923703b02d2ed8ddccfb015a2f85338ff2a906a370fd"
+    },
+    {
+      "sourceAssetId": "sheet_10_locomotion_and_wave_walk_step_a_r01_c03",
+      "legacyCrop": {
+        "left": 724,
+        "top": 0,
+        "right": 1086,
+        "bottom": 543
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_10_locomotion_and_wave_processed.png",
+      "sourceProcessedSha256": "e6751c9563a32456e79311de455a4e282c8a1231152d1d932c2afddc9febd12c",
+      "sourceRawPath": "assets/source/original-sheets/sheet_10_locomotion_and_wave_raw.png",
+      "sourceRawSha256": "5840b8607a0c941e8841e9692fc8ba43d24e383536e8d73fa54bd0716fee969e",
+      "status": "superseded",
+      "runtimeId": "walk-left",
+      "facing": "left",
+      "bakedInProps": [
+        "phone",
+        "boba",
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        770,
+        37,
+        1057,
+        488
+      ],
+      "anchors": {
+        "feet": {
+          "x": 144,
+          "y": 450
+        }
+      },
+      "scaleCorrection": 0.890869,
+      "imageSha256": "fbaaa2d2abf46e05835813a37f26ce3c770ad0f6ced64ab17f02964d61ab7b0d",
+      "maskSha256": "737a28e8753d74cf1fd975ef27d081af6bee381d80aa04bd69de11a269af146c"
+    },
+    {
+      "sourceAssetId": "sheet_10_locomotion_and_wave_walk_step_b_r01_c04",
+      "legacyCrop": {
+        "left": 1086,
+        "top": 0,
+        "right": 1448,
+        "bottom": 543
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_10_locomotion_and_wave_processed.png",
+      "sourceProcessedSha256": "e6751c9563a32456e79311de455a4e282c8a1231152d1d932c2afddc9febd12c",
+      "sourceRawPath": "assets/source/original-sheets/sheet_10_locomotion_and_wave_raw.png",
+      "sourceRawSha256": "5840b8607a0c941e8841e9692fc8ba43d24e383536e8d73fa54bd0716fee969e",
+      "status": "superseded",
+      "runtimeId": "walk-right",
+      "facing": "right",
+      "bakedInProps": [
+        "phone",
+        "boba",
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        1109,
+        32,
+        1414,
+        488
+      ],
+      "anchors": {
+        "feet": {
+          "x": 152,
+          "y": 456
+        }
+      },
+      "scaleCorrection": 0.879121,
+      "imageSha256": "7b29cdde0f89b61c9a7f8c716a0f4576192e2ad845200c51c94cbe1b02bb6e29",
+      "maskSha256": "6fdfddbb8f232a67ddfddcb2242302fa1b3aee6f5d4e4015ad4e16bda677f51e"
+    },
+    {
+      "sourceAssetId": "sheet_10_locomotion_and_wave_wave_r02_c01",
+      "legacyCrop": {
+        "left": 0,
+        "top": 543,
+        "right": 362,
+        "bottom": 1086
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_10_locomotion_and_wave_processed.png",
+      "sourceProcessedSha256": "e6751c9563a32456e79311de455a4e282c8a1231152d1d932c2afddc9febd12c",
+      "sourceRawPath": "assets/source/original-sheets/sheet_10_locomotion_and_wave_raw.png",
+      "sourceRawSha256": "5840b8607a0c941e8841e9692fc8ba43d24e383536e8d73fa54bd0716fee969e",
+      "status": "superseded",
+      "runtimeId": "run-left",
+      "facing": "left",
+      "bakedInProps": [
+        "phone",
+        "boba",
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        15,
+        587,
+        330,
+        1040
+      ],
+      "anchors": {
+        "feet": {
+          "x": 154,
+          "y": 452
+        }
+      },
+      "scaleCorrection": 0.823009,
+      "imageSha256": "9f55af56bf175b0677838b20a4c5bee16de9e55c0e5d721eb2c143bc2cefbddb",
+      "maskSha256": "893a250669ad2f1bb7411596e4fa276f146fbe48789d7143960bef2ef64b0c04"
+    },
+    {
+      "sourceAssetId": "sheet_10_locomotion_and_wave_walk_turn_r02_c02",
+      "legacyCrop": {
+        "left": 362,
+        "top": 543,
+        "right": 724,
+        "bottom": 1086
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_10_locomotion_and_wave_processed.png",
+      "sourceProcessedSha256": "e6751c9563a32456e79311de455a4e282c8a1231152d1d932c2afddc9febd12c",
+      "sourceRawPath": "assets/source/original-sheets/sheet_10_locomotion_and_wave_raw.png",
+      "sourceRawSha256": "5840b8607a0c941e8841e9692fc8ba43d24e383536e8d73fa54bd0716fee969e",
+      "status": "superseded",
+      "runtimeId": "run-right",
+      "facing": "right",
+      "bakedInProps": [
+        "phone",
+        "boba",
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        372,
+        584,
+        695,
+        1040
+      ],
+      "anchors": {
+        "feet": {
+          "x": 159,
+          "y": 456
+        }
+      },
+      "scaleCorrection": 0.815789,
+      "imageSha256": "13c12c4c3e9012f7847323bae79a8205eb219ef517e423d48b8c0c90d3c33898",
+      "maskSha256": "27d04ddb1c6b59840fbe8be851fb2632b21b15d09fd5f85635ec316d2324cf05"
+    },
+    {
+      "sourceAssetId": "sheet_10_locomotion_and_wave_idle_look_back_r02_c03",
+      "legacyCrop": {
+        "left": 724,
+        "top": 543,
+        "right": 1086,
+        "bottom": 1086
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_10_locomotion_and_wave_processed.png",
+      "sourceProcessedSha256": "e6751c9563a32456e79311de455a4e282c8a1231152d1d932c2afddc9febd12c",
+      "sourceRawPath": "assets/source/original-sheets/sheet_10_locomotion_and_wave_raw.png",
+      "sourceRawSha256": "5840b8607a0c941e8841e9692fc8ba43d24e383536e8d73fa54bd0716fee969e",
+      "status": "superseded",
+      "runtimeId": "look-up",
+      "facing": "front",
+      "bakedInProps": [
+        "phone",
+        "boba",
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        749,
+        552,
+        1044,
+        1064
+      ],
+      "anchors": {
+        "feet": {
+          "x": 145,
+          "y": 512
+        }
+      },
+      "scaleCorrection": 0.785855,
+      "imageSha256": "9ea185f446a6b9a02c5decec8ea01720c3c2aa6e9f61ec6c1739f40e39ba5d6b",
+      "maskSha256": "26fc279341b9b00b133adda5051bba4ee990b1f49782339024109244021fc874"
+    },
+    {
+      "sourceAssetId": "sheet_10_locomotion_and_wave_walk_exit_r02_c04",
+      "legacyCrop": {
+        "left": 1086,
+        "top": 543,
+        "right": 1448,
+        "bottom": 1086
+      },
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_10_locomotion_and_wave_processed.png",
+      "sourceProcessedSha256": "e6751c9563a32456e79311de455a4e282c8a1231152d1d932c2afddc9febd12c",
+      "sourceRawPath": "assets/source/original-sheets/sheet_10_locomotion_and_wave_raw.png",
+      "sourceRawSha256": "5840b8607a0c941e8841e9692fc8ba43d24e383536e8d73fa54bd0716fee969e",
+      "status": "superseded",
+      "runtimeId": "look-back",
+      "facing": "right",
+      "bakedInProps": [
+        "phone",
+        "boba",
+        "bag"
+      ],
+      "runtimeCropLTRBExclusive": [
+        1098,
+        553,
+        1429,
+        1063
+      ],
+      "anchors": {
+        "feet": {
+          "x": 140,
+          "y": 510
+        }
+      },
+      "scaleCorrection": 0.784314,
+      "imageSha256": "b14b4d102398d1e8b2ea0e7ab5a84639ef917f379568c3033d4789949e1322c1",
+      "maskSha256": "47f9823bf1e286ba024d482255885f1014950e8ccdc1f10d3c319fe4d5da24e1"
+    }
+  ]
+}
