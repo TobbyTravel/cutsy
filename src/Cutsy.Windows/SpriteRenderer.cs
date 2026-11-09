@@ -27,6 +27,29 @@ internal sealed class PackContent
             files.Add(path, data);
             return data;
         });
+
+        foreach (string path in Pack.Sprites.Values.SelectMany(s => new[] { s.Path, s.MaskPath }).Distinct())
+        {
+            try
+            {
+                using var stream = new MemoryStream(files[path], writable: false);
+                using var image = Image.FromStream(stream, useEmbeddedColorManagement: false, validateImageData: true);
+            }
+            catch (Exception ex) when (ex is ArgumentException or OutOfMemoryException or System.Runtime.InteropServices.ExternalException)
+            {
+                throw new InvalidDataException($"{path}: Windows could not decode the PNG.", ex);
+            }
+        }
+    }
+
+    internal void Export(string directory)
+    {
+        foreach (var (path, bytes) in files)
+        {
+            string target = Path.Combine(directory, path);
+            Directory.CreateDirectory(Path.GetDirectoryName(target)!);
+            System.IO.File.WriteAllBytes(target, bytes);
+        }
     }
 
     internal byte[] File(string path) => files[path];
@@ -79,6 +102,25 @@ internal sealed class SpriteRenderer(LayeredWindow body, LayeredWindow decoratio
         if (last == pose)
             return;
 
+        var (layers, origin) = Prepare(pose);
+        body.Present(layers.Body, origin);
+        if (layers.Decoration is { } effect)
+            decorations.Present(effect, origin);
+        else
+            decorations.Hide();
+        last = pose;
+    }
+
+    internal void Paint(Graphics graphics, RenderPose pose)
+    {
+        var (layers, origin) = Prepare(pose);
+        graphics.DrawImageUnscaled(layers.Body, origin);
+        if (layers.Decoration is { } effect)
+            graphics.DrawImageUnscaled(effect, origin);
+    }
+
+    private (Layers Layers, Point Origin) Prepare(RenderPose pose)
+    {
         var pack = content!;
         var sprite = pack.Pack.Sprites[pose.SpriteId];
         byte[] art = pack.File(sprite.Path);
@@ -96,13 +138,7 @@ internal sealed class SpriteRenderer(LayeredWindow body, LayeredWindow decoratio
             visible.Intersect(new Rectangle(clip.X - origin.X, clip.Y - origin.Y, clip.Width, clip.Height));
 
         var key = new Key(pose.SpriteId, size, visible);
-        var layers = GetLayers(key, art, pack.File(sprite.MaskPath));
-        body.Present(layers.Body, origin);
-        if (layers.Decoration is { } effect)
-            decorations.Present(effect, origin);
-        else
-            decorations.Hide();
-        last = pose;
+        return (GetLayers(key, art, pack.File(sprite.MaskPath)), origin);
     }
 
     internal void Hide()

@@ -166,6 +166,13 @@ public sealed class BehaviorEngine
         if (!pack.Behaviors.TryGetValue(id, out var candidate) || desktop.Quiet || dragging ||
             candidate.RequiredCapabilities.Any(c => !desktop.Capabilities.Contains(c)))
             return false;
+        if (candidate.Eligibility.SurfaceKind is { } kind)
+        {
+            var surface = desktop.Surfaces.FirstOrDefault(s => s.Kind == kind && Fits(s));
+            if (surface is null)
+                return false;
+            SetSupport(surface, (surface.Start + surface.End) / 2);
+        }
         Start(candidate, isPreview: true);
         return true;
     }

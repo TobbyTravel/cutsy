@@ -1,6 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
+    <Compile Include="../Shared/PackDirectory.cs" Link="PackDirectory.cs" />
     <ProjectReference Include="..\Cutsy.Core\Cutsy.Core.csproj" />
   </ItemGroup>
 

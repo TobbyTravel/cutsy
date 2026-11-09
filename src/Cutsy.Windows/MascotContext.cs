@@ -1,6 +1,7 @@
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 using Cutsy.Core;
+using Cutsy.PackIO;
 using Timer = System.Windows.Forms.Timer;
 
 namespace Cutsy.Windows;
@@ -19,7 +20,10 @@ internal sealed partial class MascotContext : ApplicationContext
     private readonly BehaviorEngine engine;
     private readonly CuePlayer audio = new();
     private PackContent content;
-    private Form? settings;
+    private readonly SettingsStore storage = new();
+    private Preferences preferences;
+    private string? packNotice;
+    private SettingsForm? settings;
     private Point down;
     private WorldPoint grabOffset;
     private bool pressed;
@@ -29,25 +33,37 @@ internal sealed partial class MascotContext : ApplicationContext
 
     internal MascotContext()
     {
-        quiet = new QuietMode(body.Handle);
+        preferences = storage.Load();
+        logicalHeight = preferences.Height;
+        quiet = new QuietMode(body.Handle)
+        {
+            Fullscreen = preferences.HideInFullscreen,
+            Gaming = preferences.Gaming,
+            Exclusions = preferences.Exclusions
+        };
         quiet.Evaluate(Environment.TickCount64);
-        content = PackContent.Embedded();
+        content = LoadInitialPack();
         tracker.Refresh(Environment.TickCount64);
         engine = new BehaviorEngine(content.Pack, tracker.Snapshot(logicalHeight, quiet.Active), Random.Shared.Next());
+        engine.LogicalHeight = logicalHeight;
+        engine.Activity = ActivityWeight(preferences.Activity);
+        engine.Recover();
+        engine.StayHere = preferences.StayHere;
+        audio.Muted = preferences.Muted;
+        audio.Volume = preferences.Volume / 100.0;
         renderer = new SpriteRenderer(body, decorations);
         renderer.Use(content);
 
         menu.Items.Add("Pause", null, (_, _) => TogglePause());
-        menu.Items.Add("Stay here", null, (_, _) => engine.StayHere = !engine.StayHere);
-        menu.Items.Add("Mute", null, (_, _) => SetMuted(!audio.Muted));
+        menu.Items.Add("Stay here", null, (_, _) => ApplyPreferences(preferences with { StayHere = !engine.StayHere }));
+        menu.Items.Add("Mute", null, (_, _) => ApplyPreferences(preferences with { Muted = !audio.Muted }));
         var sizes = new ToolStripMenuItem("Size");
         foreach (int size in new[] { 80, 120, 160, 240, 320 })
             sizes.DropDownItems.Add(new ToolStripMenuItem($"{size} px", null, (_, _) => ResizeMascot(size)));
         menu.Items.Add(sizes);
         var gaming = new ToolStripMenuItem("Gaming mode", null, (_, _) =>
         {
-            quiet.Gaming = !quiet.Gaming;
-            CheckQuiet(force: true);
+            ApplyPreferences(preferences with { Gaming = !quiet.Gaming });
         });
         menu.Items.Add(gaming);
         menu.Items.Add("Settings", null, (_, _) => ShowSettings());
@@ -108,35 +124,34 @@ internal sealed partial class MascotContext : ApplicationContext
         if (!force && now < nextQuietCheck)
             return;
         nextQuietCheck = now + 500;
+        string? previousReason = quiet.Reason;
         bool changed = quiet.Evaluate(now);
         string status = quiet.Reason is { } reason ? $"Cutsy · {reason}" : "Cutsy";
-        tray.Text = status[..Math.Min(status.Length, 63)];
+        if (tray.Text != status)
+            tray.Text = status[..Math.Min(status.Length, 63)];
+        if (previousReason != quiet.Reason)
+            settings?.RefreshStatus();
         if (!changed)
             return;
         if (quiet.Active)
         {
             CancelPointer();
             renderer.Hide();
-            OnQuietEntered();
+            audio.Stop();
         }
         UpdateDesktop();
         Draw();
-    }
-
-    partial void OnQuietEntered();
-    partial void OnQuietEntered() => audio.Stop();
-
-    private void SetMuted(bool muted)
-    {
-        audio.Muted = muted;
-        if (muted)
-            audio.Stop();
     }
 
     private void UpdateDesktop() => engine.SetDesktop(tracker.Snapshot(logicalHeight, quiet.Active));
 
     private void HandleBodyMessage(Message message)
     {
+        if (message.Msg == Program.ShowSettingsMessage)
+        {
+            ShowSettings();
+            return;
+        }
         switch (message.Msg)
         {
             case Native.WmLeftDown when !pressed:
@@ -247,14 +262,7 @@ internal sealed partial class MascotContext : ApplicationContext
         Draw();
     }
 
-    private void ResizeMascot(int size)
-    {
-        CancelPointer();
-        logicalHeight = size;
-        engine.LogicalHeight = size;
-        UpdateDesktop();
-        Draw();
-    }
+    private void ResizeMascot(int size) => ApplyPreferences(preferences with { Height = size });
 
     private void TogglePause()
     {
@@ -268,29 +276,132 @@ internal sealed partial class MascotContext : ApplicationContext
     {
         if (settings is { IsDisposed: false })
         {
+            if (settings.WindowState == FormWindowState.Minimized)
+                settings.WindowState = FormWindowState.Normal;
             settings.Activate();
             return;
         }
 
-        settings = new Form
-        {
-            Text = "Cutsy Settings",
-            AutoScaleMode = AutoScaleMode.Dpi,
-            StartPosition = FormStartPosition.CenterScreen,
-            ClientSize = new Size(340, 118)
-        };
-        var layout = new FlowLayoutPanel { Dock = DockStyle.Fill, Padding = new Padding(12) };
-        layout.Controls.Add(new Label { Text = "Mascot height", AutoSize = true, Margin = new Padding(0, 6, 8, 0) });
-        var size = new NumericUpDown { Minimum = 80, Maximum = 320, Value = logicalHeight, Width = 80 };
-        size.ValueChanged += (_, _) => ResizeMascot((int)size.Value);
-        layout.Controls.Add(size);
-        var recover = new Button { Text = "Recover position", AutoSize = true };
-        recover.Click += (_, _) => Recover();
-        layout.SetFlowBreak(size, true);
-        layout.Controls.Add(recover);
-        settings.Controls.Add(layout);
+        settings = new SettingsForm(this);
+        settings.FormClosed += (_, _) => settings = null;
         settings.Show();
         settings.Activate();
+    }
+
+    internal Preferences CurrentPreferences => preferences;
+    internal ValidatedPack ActivePack => content.Pack;
+    internal string PackLocation => $"Pack folder: {storage.PackRoot}";
+    internal string Status => string.Join("  ", new[]
+    {
+        storage.Warning,
+        packNotice,
+        quiet.Reason,
+    }.Where(value => !string.IsNullOrEmpty(value)).DefaultIfEmpty(storage.Portable ? "Portable mode" : "Ready"));
+    internal string Diagnostics => $"{Status}{Environment.NewLine}Behavior: {engine.BehaviorId}{Environment.NewLine}" +
+        $"{content.Pack.Sprites.Count} sprites, {content.Pack.Behaviors.Count} recipes, {content.Pack.Sounds.Count} sounds." +
+        $"{Environment.NewLine}{storage.Diagnostics}";
+
+    internal void ApplyPreferences(Preferences updated)
+    {
+        CancelPointer();
+        preferences = updated;
+        logicalHeight = updated.Height;
+        engine.LogicalHeight = logicalHeight;
+        engine.Activity = ActivityWeight(updated.Activity);
+        engine.StayHere = updated.StayHere;
+        audio.Muted = updated.Muted;
+        double volume = updated.Volume / 100.0;
+        if (audio.Muted || audio.Volume != volume)
+            audio.Stop();
+        audio.Volume = volume;
+        quiet.Gaming = updated.Gaming;
+        quiet.Fullscreen = updated.HideInFullscreen;
+        quiet.Exclusions = updated.Exclusions;
+        CheckQuiet(force: true);
+        UpdateDesktop();
+        storage.Save(updated);
+        Draw();
+        if (storage.Warning is not null && settings is null)
+            tray.ShowBalloonTip(4000, "Cutsy", storage.Warning, ToolTipIcon.Warning);
+    }
+
+    private static double ActivityWeight(ActivityLevel level) => level switch
+    {
+        ActivityLevel.Restful => .32,
+        ActivityLevel.Lively => 1.85,
+        _ => 1
+    };
+
+    internal void OpenPackFolder() => storage.OpenPackFolder(
+        Directory.Exists(storage.PackRoot) ? content : PackContent.Embedded());
+
+    internal void RecoverFromSettings() => Recover();
+
+    internal void PaintPreview(Graphics graphics, RenderPose pose) => renderer.Paint(graphics, pose);
+
+    internal string PreviewCue(string id)
+    {
+        if (quiet.Active)
+            return "Sound is paused while quiet mode is active.";
+        if (audio.Muted || audio.Volume == 0)
+            return "Unmute Cutsy and set a volume above zero to preview sounds.";
+        return audio.Play(content, new SoundRequest(id, Interaction: true), preview: true)
+            ? $"Playing {id}."
+            : "The sound could not play. Wait for the current cue or check the output device.";
+    }
+
+    private PackContent LoadInitialPack()
+    {
+        try
+        {
+            if (Directory.Exists(storage.PackRoot))
+            {
+                var external = LoadExternalPack();
+                RecordPackNotice(external, "Editable pack loaded.");
+                return external;
+            }
+        }
+        catch (Exception ex) when (IsPackError(ex))
+        {
+            packNotice = $"Using the embedded pack. {ex.Message}";
+            storage.Note(packNotice);
+        }
+        return PackContent.Embedded();
+    }
+
+    private PackContent LoadExternalPack() => new(new PackDirectory(storage.PackRoot).Read);
+
+    internal void ReloadPack()
+    {
+        PackContent candidate;
+        bool external = Directory.Exists(storage.PackRoot);
+        try
+        {
+            candidate = external ? LoadExternalPack() : PackContent.Embedded();
+        }
+        catch (Exception ex) when (IsPackError(ex))
+        {
+            packNotice = $"Kept the current pack. {ex.Message}";
+            storage.Note(packNotice);
+            return;
+        }
+        CancelPointer();
+        audio.Stop();
+        content = candidate;
+        renderer.Use(candidate);
+        engine.ReplacePack(candidate.Pack);
+        RecordPackNotice(candidate, external ? "Editable pack reloaded." : "Embedded pack reloaded.");
+        Draw();
+    }
+
+    private static bool IsPackError(Exception ex) => ex is IOException or InvalidDataException or UnauthorizedAccessException;
+
+    private void RecordPackNotice(PackContent pack, string message)
+    {
+        packNotice = pack.Pack.Warnings.IsEmpty ? message : $"{message} {pack.Pack.Warnings[0]}";
+        storage.Note(message);
+        foreach (string warning in pack.Pack.Warnings)
+            storage.Note(warning);
     }
 
     protected override void Dispose(bool disposing)
