@@ -15,6 +15,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="../../packs/cutsy/proof/stand.png" LogicalName="Cutsy.Proof.Stand.png" />
+    <EmbeddedResource Include="../../packs/cutsy/proof/*.png;../../packs/cutsy/proof/pack.json;../../packs/cutsy/proof/behaviors.json" LogicalName="Cutsy.Pack/%(Filename)%(Extension)" />
   </ItemGroup>
 </Project>

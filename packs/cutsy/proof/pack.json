@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "cutsy-proof",
+  "displayName": "Cutsy overlay proof",
+  "version": "0.1",
+  "referenceHeightPx": 419,
+  "defaultBehaviorId": "idle",
+  "sprites": [
+    {
+      "id": "stand",
+      "path": "stand.png",
+      "sourceAssetId": "sheet_05_hanging_and_rest_idle_stand_r01_c01",
+      "facing": "front",
+      "contentBounds": { "x": 0, "y": 0, "width": 288, "height": 419 },
+      "anchors": { "feet": { "x": 133, "y": 419 } },
+      "scaleCorrection": 1,
+      "maskPath": "stand-mask.png"
+    }
+  ],
+  "sounds": [],
+  "behaviorFile": "behaviors.json"
+}
