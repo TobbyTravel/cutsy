@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\Cutsy.Core\Cutsy.Core.csproj" />
@@ -11,4 +11,7 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Include="../../src/Shared/PackDirectory.cs" Link="PackDirectory.cs" />
+  </ItemGroup>
 </Project>

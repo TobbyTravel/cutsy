@@ -11,4 +11,7 @@
     <Using Include="Xunit" />
     <ProjectReference Include="..\..\src\Cutsy.Core\Cutsy.Core.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="../../packs/example/*" Link="example/%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
 </Project>
