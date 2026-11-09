@@ -6,3 +6,5 @@ Windows 11 Pro build 22631, Ryzen 9 7900X, one 2560×1440 display at 96 DPI. Pro
 - Tobby observed the heart on body click and confirmed typing remained in the previously focused app.
 - Initial drag failed because the separate async key-state call returned zero during a held click. After switching to delivered mouse messages, Tobby confirmed pointer drag and release to the bottom work-area floor.
 - The heart is a separate transparent input-pass-through window. Direct click-through on the displayed heart, exact threshold/grab offset, focus after drag, tray recovery, capture-loss interruption and mixed-DPI/negative-origin interaction still need interactive checks.
+
+The visual cursor issue was corrected in commit d22b16f. Tobby confirmed the normal pointer over the mascot.
