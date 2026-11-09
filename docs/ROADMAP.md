@@ -1,6 +1,6 @@
 # Roadmap
 
-Status: repository bootstrap complete; application implementation pending. [Windows 11 v0.1 milestone](https://github.com/TobbyTravel/cutsy/milestone/1) contains the umbrella and C01–C10. K01 is deferred and outside the milestone.
+The Windows 11 v0.1 prerelease is distributed through [GitHub Releases](https://github.com/TobbyTravel/cutsy/releases). See [baseline acceptance results](V0.1_VERIFICATION.md) and [walking and window verification](WALK_AND_WINDOWS_VERIFICATION.md) for evidence and open checks. [Windows 11 v0.1 milestone](https://github.com/TobbyTravel/cutsy/milestone/1) contains the umbrella and C01–C10. K01 is deferred and outside the milestone.
 
 | Task | GitHub issue | Depends on |
 | --- | --- | --- |
@@ -32,3 +32,7 @@ The umbrella tracks all acceptance criteria. Close implementation issues only wi
 Use focused feature branches and PRs. GitHub issues are the live progress record; docs/issues contains initial specifications. Product and architecture documents are authoritative for shared behavior. Keep dependencies in this roadmap and linked issue bodies consistent when changing the order.
 
 A basic shell can use a single audited sprite before all 80 are corrected. Final content coverage cannot bypass C02. Runtime art repairs must preserve source hashes and provenance, using new derivative records rather than overwriting original sources.
+
+## After v0.1
+
+[Smoother directional walking](https://github.com/TobbyTravel/cutsy/issues/23) tracks the missing in-between art, asset handling, import and editable pack verification.

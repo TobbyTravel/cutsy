@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "example",
+  "displayName": "Example pack",
+  "version": "1.0.0",
+  "referenceHeightPx": 28,
+  "defaultBehaviorId": "idle",
+  "sprites": [
+    {
+      "id": "dot",
+      "path": "dot.png",
+      "sourceAssetId": "example-dot",
+      "facing": "front",
+      "contentBounds": {
+        "x": 4,
+        "y": 4,
+        "width": 24,
+        "height": 28
+      },
+      "anchors": {
+        "feet": {
+          "x": 16,
+          "y": 32
+        }
+      },
+      "scaleCorrection": 1,
+      "maskPath": "dot-mask.png"
+    }
+  ],
+  "sounds": [],
+  "behaviorFile": "behaviors.json"
+}

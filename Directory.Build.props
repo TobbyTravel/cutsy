@@ -1,0 +1,6 @@
+<Project>
+  <PropertyGroup>
+    <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
+    <NuGetLockFilePath Condition="&apos;$(CutsyPublish)&apos; == &apos;true&apos;">$(MSBuildProjectDirectory)/packages.win-x64.lock.json</NuGetLockFilePath>
+  </PropertyGroup>
+</Project>

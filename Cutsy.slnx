@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Cutsy.Core/Cutsy.Core.csproj" />
+    <Project Path="src/Cutsy.Windows/Cutsy.Windows.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Cutsy.Core.Tests/Cutsy.Core.Tests.csproj" />
+  </Folder>
+  <Folder Name="/tools/">
+    <Project Path="tools/Cutsy.PackTool/Cutsy.PackTool.csproj" />
+  </Folder>
+</Solution>

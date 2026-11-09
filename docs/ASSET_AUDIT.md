@@ -1,6 +1,6 @@
 # Asset audit: required before release
 
-Status: NOT complete. All 102 PNGs are present and their bytes are verified against the supplied pack. This does not establish visual correctness, frame alignment, natural animation, or release-ready transparency.
+Status: runtime derivatives and exclusions are recorded below. All 102 source PNGs are preserved and verified against the supplied pack. In-motion and desktop verification are tracked separately.
 
 ## Known findings
 
@@ -25,3 +25,15 @@ Status: NOT complete. All 102 PNGs are present and their bytes are verified agai
 6. Produce an updated machine-readable mapping and an HTML/contact-sheet preview with anchored sequence playback. Record unresolved defects rather than declaring cosmetic checks passed.
 
 Deliver reviewed frames and corrected runtime metadata in the pack, leaving historical reference files available under assets/source. Any image-editing workflow must follow the tools/skills available to that implementation session.
+
+## Runtime derivatives
+
+The source files and legacy labels remain available as provenance. The runtime art in packs/cutsy/runtime uses the visually assigned names and directions in scripts/derive-sprites.py. Its sprite index contains per-frame contact and scale corrections. The corresponding runtime-provenance.json accounts for all 80 originals, including original sheet hashes, actual extraction bounds, anchor coordinates and runtime hashes.
+
+The extraction uses full connected components from the processed sheets to recover art crossing the legacy cells. It separates body input masks from detached decorations. Eight sheet 06 poses were excluded because of the matte halo and built-in rails, with sheet 03 supplying the rail-free alternatives. The clipped sheet 07 surprise pose was excluded in favor of the complete surprise pose from sheet 02. The result is 71 runtime sprites with masks.
+
+To regenerate the derivatives and 160 px contact sheets, use Python with Pillow, NumPy and SciPy, then run python scripts/derive-sprites.py. It writes review images against dark, white, saturated and checkerboard backgrounds under artifacts. The previews mark the selected contact. In-motion continuity still depends on the authored recipes.
+
+## Supplemental walk poses
+
+The four same-facing passing and lift poses come from a supplemental sheet under assets/derivatives. They are additional source art. The original 102 imported PNGs remain under the immutable inventory. See packs/cutsy/walk-inbetweens-provenance.json for the source hash, reference sprites, crop coordinates, feet contacts and mask hashes. Regenerate these four crops and pack entries with python scripts/import-walk-inbetweens.py.

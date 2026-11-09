@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "behaviors": [
+    {
+      "id": "idle", "family": "idle", "selectionWeight": 1, "cooldownMs": 0,
+      "requiredCapabilities": [], "eligibility": {}, "interruptPolicy": "interruptible",
+      "steps": [{ "type": "hold", "spriteId": "stand", "durationMs": 2000 }], "next": []
+    },
+    {
+      "id": "click-hop", "family": "reaction", "selectionWeight": 1, "cooldownMs": 0,
+      "requiredCapabilities": ["pointer"], "eligibility": { "interaction": "click" },
+      "interruptPolicy": "interruptible",
+      "steps": [{ "type": "jump", "spriteId": "stand", "durationMs": 350, "height": 0.12 }], "next": []
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <Compile Include="../Shared/PackDirectory.cs" Link="PackDirectory.cs" />
+    <ProjectReference Include="..\Cutsy.Core\Cutsy.Core.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>Cutsy</AssemblyName>
+    <Version>0.1.0</Version>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationVisualStyles>false</ApplicationVisualStyles>
+    <ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="../../packs/cutsy/runtime/pack.json;../../packs/cutsy/runtime/behaviors.json" LogicalName="Cutsy.Pack/%(Filename)%(Extension)" />
+    <EmbeddedResource Include="../../packs/cutsy/runtime/art/*.png" LogicalName="Cutsy.Pack/art/%(Filename)%(Extension)" />
+    <EmbeddedResource Include="../../packs/cutsy/runtime/sounds/*.wav" LogicalName="Cutsy.Pack/sounds/%(Filename)%(Extension)" />
+    <EmbeddedResource Include="../../packs/cutsy/runtime/masks/*.png" LogicalName="Cutsy.Pack/masks/%(Filename)%(Extension)" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,46 @@
+name: Windows CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build-test:
+    runs-on: windows-2025
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-dotnet@26b0ec14cb23fa6904739307f278c14f94c95bf1 # v5
+        with:
+          global-json-file: global.json
+      - name: Build
+        shell: pwsh
+        run: ./scripts/build.ps1
+      - name: Test
+        shell: pwsh
+        run: ./scripts/test.ps1
+      - name: Verify source assets
+        shell: pwsh
+        run: ./scripts/verify-bootstrap.ps1
+      - name: Validate packs
+        shell: pwsh
+        run: |
+          $PSNativeCommandUseErrorActionPreference = $true
+          dotnet run --project tools/Cutsy.PackTool -c Release --no-restore -- validate packs/example
+          dotnet run --project tools/Cutsy.PackTool -c Release --no-restore -- validate packs/cutsy/runtime
+      - name: Build portable distribution
+        shell: pwsh
+        run: ./scripts/publish.ps1
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
+        with:
+          name: Cutsy-0.1.0-win-x64
+          path: |
+            dist/Cutsy.exe
+            dist/Cutsy-0.1.0-win-x64-portable.zip
+            dist/SHA256SUMS.txt
+          if-no-files-found: error
+          retention-days: 14
