@@ -2,7 +2,7 @@
 
 A quiet, cute desktop companion for Windows 11. She walks along window tops, peeks, rests, and reacts when clicked. Click and drag her out of the way.
 
-**Status: specification and asset bootstrap. No application executable exists yet.** The Windows 11 v0.1 milestone tracks implementation.
+**Status: Windows 11 v0.1 is in development.** The Windows 11 v0.1 milestone tracks implementation.
 
 ## Start here
 
@@ -18,6 +18,14 @@ The repo includes 80 individual PNGs plus 22 source/reference PNGs. They are ord
 
 ## Development
 
-Planned stack: C#/.NET 10; platform-independent core; Windows layered-window host; Windows Forms settings/tray. See each directory README for responsibilities. Build/test/publish scripts and CI are implemented in C01, not supplied as nonworking placeholders here.
+Install the Windows x64 .NET SDK version pinned in global.json and PowerShell 7.4 or later. From the repository root, run these commands.
+
+~~~powershell
+pwsh -File scripts/build.ps1
+pwsh -File scripts/test.ps1
+pwsh -File scripts/verify-bootstrap.ps1
+~~~
+
+The solution contains a portable core, a Windows Forms host, a pack CLI and xUnit core tests. Build output stays in each bin directory.
 
 This repository and its artwork are private. No public license or redistribution grant is supplied.

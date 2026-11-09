@@ -1,0 +1,28 @@
+name: Windows CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build-test:
+    runs-on: windows-2025
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-dotnet@26b0ec14cb23fa6904739307f278c14f94c95bf1 # v5
+        with:
+          global-json-file: global.json
+      - name: Build
+        shell: pwsh
+        run: ./scripts/build.ps1
+      - name: Test
+        shell: pwsh
+        run: ./scripts/test.ps1
+      - name: Verify source assets
+        shell: pwsh
+        run: ./scripts/verify-bootstrap.ps1

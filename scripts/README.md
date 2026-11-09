@@ -1,3 +1,7 @@
 # Scripts
 
-verify-bootstrap.ps1 is supplied and verifies the imported source assets and documentation. Run with pwsh -File scripts/verify-bootstrap.ps1 from the repository root. C01 adds build/test scripts; C10 adds publish/release scripts. Runtime build commands are not implemented yet.
+Use PowerShell 7.4 or later. Build and test use the SDK in global.json and the committed NuGet lock files.
+
+- **build.ps1** restores and builds the solution. Defaults to Release. Pass -Configuration Debug for a debug build.
+- **test.ps1** restores and runs the xUnit suite with the same configuration option.
+- **verify-bootstrap.ps1** checks source hashes, provenance, and repository links.
