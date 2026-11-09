@@ -1727,6 +1727,47 @@
       ]
     }
   ],
-  "sounds": [],
+  "sounds": [
+    {
+      "id": "pop",
+      "path": "sounds/pop.wav",
+      "gain": 0.8
+    },
+    {
+      "id": "hop",
+      "path": "sounds/hop.wav",
+      "gain": 0.72
+    },
+    {
+      "id": "landing-puff",
+      "path": "sounds/landing-puff.wav",
+      "gain": 0.64
+    },
+    {
+      "id": "happy-chirp",
+      "path": "sounds/happy-chirp.wav",
+      "gain": 0.68
+    },
+    {
+      "id": "affection-chime",
+      "path": "sounds/affection-chime.wav",
+      "gain": 0.64
+    },
+    {
+      "id": "surprise-squeak",
+      "path": "sounds/surprise-squeak.wav",
+      "gain": 0.6
+    },
+    {
+      "id": "sleepy-tone",
+      "path": "sounds/sleepy-tone.wav",
+      "gain": 0.62
+    },
+    {
+      "id": "completion-sparkle",
+      "path": "sounds/completion-sparkle.wav",
+      "gain": 0.68
+    }
+  ],
   "behaviorFile": "behaviors.json"
 }

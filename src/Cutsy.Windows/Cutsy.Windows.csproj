@@ -17,6 +17,7 @@
   <ItemGroup>
     <EmbeddedResource Include="../../packs/cutsy/runtime/pack.json;../../packs/cutsy/runtime/behaviors.json" LogicalName="Cutsy.Pack/%(Filename)%(Extension)" />
     <EmbeddedResource Include="../../packs/cutsy/runtime/art/*.png" LogicalName="Cutsy.Pack/art/%(Filename)%(Extension)" />
+    <EmbeddedResource Include="../../packs/cutsy/runtime/sounds/*.wav" LogicalName="Cutsy.Pack/sounds/%(Filename)%(Extension)" />
     <EmbeddedResource Include="../../packs/cutsy/runtime/masks/*.png" LogicalName="Cutsy.Pack/masks/%(Filename)%(Extension)" />
   </ItemGroup>
 </Project>

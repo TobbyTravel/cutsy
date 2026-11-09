@@ -412,7 +412,8 @@
         {
           "type": "hold",
           "spriteId": "stand",
-          "durationMs": 220
+          "durationMs": 220,
+          "soundId": "completion-sparkle"
         }
       ],
       "next": []
@@ -592,7 +593,8 @@
               "spriteId": "smile",
               "durationMs": 450
             }
-          ]
+          ],
+          "soundId": "sleepy-tone"
         },
         {
           "type": "hold",
@@ -645,7 +647,8 @@
               "spriteId": "smile",
               "durationMs": 480
             }
-          ]
+          ],
+          "soundId": "sleepy-tone"
         },
         {
           "type": "hold",
@@ -1151,7 +1154,8 @@
             }
           ],
           "height": 0.32,
-          "speed": -0.16
+          "speed": -0.16,
+          "soundId": "hop"
         },
         {
           "type": "hold",
@@ -1554,7 +1558,8 @@
         {
           "type": "hold",
           "spriteId": "heart-eyes",
-          "durationMs": 850
+          "durationMs": 850,
+          "soundId": "affection-chime"
         },
         {
           "type": "hold",
@@ -1580,7 +1585,8 @@
         {
           "type": "hold",
           "spriteId": "offer-heart",
-          "durationMs": 850
+          "durationMs": 850,
+          "soundId": "happy-chirp"
         },
         {
           "type": "hold",
@@ -1606,7 +1612,8 @@
         {
           "type": "hold",
           "spriteId": "smile",
-          "durationMs": 850
+          "durationMs": 850,
+          "soundId": "pop"
         },
         {
           "type": "hold",
@@ -1632,7 +1639,8 @@
         {
           "type": "hold",
           "spriteId": "surprised-drop",
-          "durationMs": 560
+          "durationMs": 560,
+          "soundId": "surprise-squeak"
         },
         {
           "type": "hold",
@@ -1734,7 +1742,8 @@
         {
           "type": "hold",
           "spriteId": "fall-impact",
-          "durationMs": 200
+          "durationMs": 200,
+          "soundId": "landing-puff"
         },
         {
           "type": "hold",

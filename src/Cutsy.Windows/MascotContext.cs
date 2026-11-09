@@ -17,11 +17,12 @@ internal sealed partial class MascotContext : ApplicationContext
     private readonly ContextMenuStrip menu = new();
     private readonly Timer simulation = new() { Interval = 33 };
     private readonly BehaviorEngine engine;
+    private readonly CuePlayer audio = new();
+    private PackContent content;
     private Form? settings;
     private Point down;
     private WorldPoint grabOffset;
     private bool pressed;
-    private bool muted;
     private int logicalHeight = 160;
     private double dragThreshold;
     private long lastTick;
@@ -30,7 +31,7 @@ internal sealed partial class MascotContext : ApplicationContext
     {
         quiet = new QuietMode(body.Handle);
         quiet.Evaluate(Environment.TickCount64);
-        PackContent content = PackContent.Embedded();
+        content = PackContent.Embedded();
         tracker.Refresh(Environment.TickCount64);
         engine = new BehaviorEngine(content.Pack, tracker.Snapshot(logicalHeight, quiet.Active), Random.Shared.Next());
         renderer = new SpriteRenderer(body, decorations);
@@ -38,7 +39,7 @@ internal sealed partial class MascotContext : ApplicationContext
 
         menu.Items.Add("Pause", null, (_, _) => TogglePause());
         menu.Items.Add("Stay here", null, (_, _) => engine.StayHere = !engine.StayHere);
-        menu.Items.Add("Mute", null, (_, _) => muted = !muted);
+        menu.Items.Add("Mute", null, (_, _) => SetMuted(!audio.Muted));
         var sizes = new ToolStripMenuItem("Size");
         foreach (int size in new[] { 80, 120, 160, 240, 320 })
             sizes.DropDownItems.Add(new ToolStripMenuItem($"{size} px", null, (_, _) => ResizeMascot(size)));
@@ -57,7 +58,7 @@ internal sealed partial class MascotContext : ApplicationContext
         {
             ((ToolStripMenuItem)menu.Items[0]).Checked = engine.Paused;
             ((ToolStripMenuItem)menu.Items[1]).Checked = engine.StayHere;
-            ((ToolStripMenuItem)menu.Items[2]).Checked = muted;
+            ((ToolStripMenuItem)menu.Items[2]).Checked = audio.Muted;
             gaming.Checked = quiet.Gaming;
             foreach (ToolStripMenuItem item in sizes.DropDownItems)
                 item.Checked = item.Text == $"{logicalHeight} px";
@@ -90,6 +91,8 @@ internal sealed partial class MascotContext : ApplicationContext
             UpdateDesktop();
 
         engine.Advance(elapsed);
+        if (engine.TakeSound() is { } cue && !quiet.Active && !engine.Paused)
+            audio.Play(content, cue);
         Draw();
     }
 
@@ -121,6 +124,14 @@ internal sealed partial class MascotContext : ApplicationContext
     }
 
     partial void OnQuietEntered();
+    partial void OnQuietEntered() => audio.Stop();
+
+    private void SetMuted(bool muted)
+    {
+        audio.Muted = muted;
+        if (muted)
+            audio.Stop();
+    }
 
     private void UpdateDesktop() => engine.SetDesktop(tracker.Snapshot(logicalHeight, quiet.Active));
 
@@ -249,6 +260,8 @@ internal sealed partial class MascotContext : ApplicationContext
     {
         CancelPointer();
         engine.Paused = !engine.Paused;
+        if (engine.Paused)
+            audio.Stop();
     }
 
     private void ShowSettings()
@@ -287,6 +300,7 @@ internal sealed partial class MascotContext : ApplicationContext
             simulation.Stop();
             CancelPointer();
             renderer.Dispose();
+            audio.Dispose();
             tracker.Dispose();
             quiet.Dispose();
             body.Dispose();
