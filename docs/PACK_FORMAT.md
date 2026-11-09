@@ -27,3 +27,11 @@ Include actual working examples for changing idle duration; adding a frame seque
 ## Coverage/provenance
 
 Record each of the 80 source frame IDs as used, superseded by a corrected extraction, or excluded with a reason. Target at least 64 usable frames in shipped behaviors, without forcing poor animation. New derivatives retain their source image hash and crop/transformation metadata. Never rename a legacy asset and lose its mapping.
+
+## Runtime validation and limits
+
+See the JSON schemas in packs/schema and the self-contained packs/example for the wire format. Run the CLI with `dotnet run --project tools/Cutsy.PackTool -- validate packs/example`. The CLI and application share the same parser and reference checks. The CLI returns 1 for invalid packs and 0 for a valid pack, with separate warnings for unavailable optional sounds.
+
+Use non-interlaced 8-bit PNG with grayscale, RGB, grayscale-alpha or RGBA pixels. Image files are limited to 8 MiB each and 2048×2048 pixels, with a 96 MiB aggregate decoded budget across images and masks. Each JSON file is limited to 2 MiB. Packs allow up to 160 sprites and 160 behaviors, with up to 64 steps per behavior and 64 frames per sequence. IDs are case-sensitive. Optional WAV cues use canonical mono 16-bit PCM, 8–48 kHz, at most two seconds, and up to 256 KiB each.
+
+A step's `durationMs` overrides its animation sequence duration. If it is longer, the animation repeats for that step. `speed` is signed and measured in character heights per second for surface movement, or in character heights of horizontal travel for a jump. `height` sets the jump arc in character heights. An attach step selects a nearby edge by `target`; `anchor` names the matching sprite contact. Set `clip` to keep pixels on the exposed side. Steps with only an action such as `playSound` can take zero time, but each behavior must have at least one timed step. The engine limits transitions per simulation tick.

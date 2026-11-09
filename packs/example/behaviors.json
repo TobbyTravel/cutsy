@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "behaviors": [
+    {
+      "id": "idle",
+      "family": "idle",
+      "selectionWeight": 1,
+      "cooldownMs": 0,
+      "requiredCapabilities": [],
+      "eligibility": {},
+      "interruptPolicy": "interruptible",
+      "steps": [
+        {
+          "type": "hold",
+          "spriteId": "dot",
+          "durationMs": 2000
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "hop",
+      "family": "reaction",
+      "selectionWeight": 1,
+      "cooldownMs": 1000,
+      "requiredCapabilities": [
+        "pointer"
+      ],
+      "eligibility": {
+        "interaction": "click"
+      },
+      "interruptPolicy": "interruptible",
+      "steps": [
+        {
+          "type": "jump",
+          "spriteId": "dot",
+          "height": 0.2,
+          "durationMs": 300
+        }
+      ],
+      "next": []
+    }
+  ]
+}
