@@ -1,0 +1,1732 @@
+{
+  "schemaVersion": 1,
+  "id": "cutsy",
+  "displayName": "Cutsy",
+  "version": "0.1.0",
+  "referenceHeightPx": 400,
+  "defaultBehaviorId": "idle",
+  "sprites": [
+    {
+      "id": "phone-stand",
+      "sourceAssetId": "sheet_01_walk_cycle_idle_neutral_r01_c01",
+      "facing": "front",
+      "path": "art/phone-stand.png",
+      "maskPath": "masks/phone-stand.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 268,
+        "height": 422
+      },
+      "anchors": {
+        "feet": {
+          "x": 131,
+          "y": 421
+        }
+      },
+      "scaleCorrection": 0.950119,
+      "bakedInProps": [
+        "phone",
+        "boba",
+        "bag"
+      ]
+    },
+    {
+      "id": "phone-smile",
+      "sourceAssetId": "sheet_01_walk_cycle_idle_happy_r01_c02",
+      "facing": "front",
+      "path": "art/phone-smile.png",
+      "maskPath": "masks/phone-smile.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 268,
+        "height": 422
+      },
+      "anchors": {
+        "feet": {
+          "x": 131,
+          "y": 421
+        }
+      },
+      "scaleCorrection": 0.952381,
+      "bakedInProps": [
+        "phone",
+        "boba",
+        "bag"
+      ]
+    },
+    {
+      "id": "phone-glance",
+      "sourceAssetId": "sheet_01_walk_cycle_idle_glance_r01_c03",
+      "facing": "left",
+      "path": "art/phone-glance.png",
+      "maskPath": "masks/phone-glance.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 249,
+        "height": 422
+      },
+      "anchors": {
+        "feet": {
+          "x": 118,
+          "y": 421
+        }
+      },
+      "scaleCorrection": 0.950119,
+      "bakedInProps": [
+        "phone",
+        "boba",
+        "bag"
+      ]
+    },
+    {
+      "id": "phone-turn-right",
+      "sourceAssetId": "sheet_01_walk_cycle_walk_side_pose_r01_c04",
+      "facing": "right",
+      "path": "art/phone-turn-right.png",
+      "maskPath": "masks/phone-turn-right.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 252,
+        "height": 423
+      },
+      "anchors": {
+        "feet": {
+          "x": 126,
+          "y": 423
+        }
+      },
+      "scaleCorrection": 0.947867,
+      "bakedInProps": [
+        "phone",
+        "boba",
+        "bag"
+      ]
+    },
+    {
+      "id": "phone-walk-left-a",
+      "sourceAssetId": "sheet_01_walk_cycle_walk_step_a_r02_c01",
+      "facing": "left",
+      "path": "art/phone-walk-left-a.png",
+      "maskPath": "masks/phone-walk-left-a.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 262,
+        "height": 416
+      },
+      "anchors": {
+        "feet": {
+          "x": 132,
+          "y": 416
+        }
+      },
+      "scaleCorrection": 0.963855,
+      "bakedInProps": [
+        "phone",
+        "boba",
+        "bag"
+      ]
+    },
+    {
+      "id": "phone-walk-left-b",
+      "sourceAssetId": "sheet_01_walk_cycle_walk_step_b_r02_c02",
+      "facing": "left",
+      "path": "art/phone-walk-left-b.png",
+      "maskPath": "masks/phone-walk-left-b.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 252,
+        "height": 411
+      },
+      "anchors": {
+        "feet": {
+          "x": 124,
+          "y": 411
+        }
+      },
+      "scaleCorrection": 0.97561,
+      "bakedInProps": [
+        "phone",
+        "boba",
+        "bag"
+      ]
+    },
+    {
+      "id": "phone-walk-right-a",
+      "sourceAssetId": "sheet_01_walk_cycle_walk_step_c_r02_c03",
+      "facing": "right",
+      "path": "art/phone-walk-right-a.png",
+      "maskPath": "masks/phone-walk-right-a.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 263,
+        "height": 410
+      },
+      "anchors": {
+        "feet": {
+          "x": 131,
+          "y": 410
+        }
+      },
+      "scaleCorrection": 0.977995,
+      "bakedInProps": [
+        "phone",
+        "boba",
+        "bag"
+      ]
+    },
+    {
+      "id": "phone-walk-right-b",
+      "sourceAssetId": "sheet_01_walk_cycle_walk_step_d_r02_c04",
+      "facing": "right",
+      "path": "art/phone-walk-right-b.png",
+      "maskPath": "masks/phone-walk-right-b.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 253,
+        "height": 416
+      },
+      "anchors": {
+        "feet": {
+          "x": 126,
+          "y": 415
+        }
+      },
+      "scaleCorrection": 0.966184,
+      "bakedInProps": [
+        "phone",
+        "boba",
+        "bag"
+      ]
+    },
+    {
+      "id": "boba-crouch",
+      "sourceAssetId": "sheet_02_sit_and_react_sit_hold_drink_r01_c01",
+      "facing": "left",
+      "path": "art/boba-crouch.png",
+      "maskPath": "masks/boba-crouch.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 284,
+        "height": 325
+      },
+      "anchors": {
+        "feet": {
+          "x": 174,
+          "y": 324
+        }
+      },
+      "scaleCorrection": 0.901235,
+      "bakedInProps": [
+        "bag"
+      ]
+    },
+    {
+      "id": "jump-prep-left",
+      "sourceAssetId": "sheet_02_sit_and_react_crouch_peek_r01_c02",
+      "facing": "left",
+      "path": "art/jump-prep-left.png",
+      "maskPath": "masks/jump-prep-left.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 290,
+        "height": 360
+      },
+      "anchors": {
+        "feet": {
+          "x": 168,
+          "y": 360
+        }
+      },
+      "scaleCorrection": 0.9,
+      "bakedInProps": [
+        "bag"
+      ]
+    },
+    {
+      "id": "jump-up",
+      "sourceAssetId": "sheet_02_sit_and_react_sit_smile_r01_c03",
+      "facing": "left",
+      "path": "art/jump-up.png",
+      "maskPath": "masks/jump-up.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 272,
+        "height": 405
+      },
+      "anchors": {
+        "feet": {
+          "x": 144,
+          "y": 348
+        }
+      },
+      "scaleCorrection": 1.023529,
+      "bakedInProps": [
+        "bag"
+      ]
+    },
+    {
+      "id": "jump-cheer",
+      "sourceAssetId": "sheet_02_sit_and_react_sit_celebrate_r01_c04",
+      "facing": "front",
+      "path": "art/jump-cheer.png",
+      "maskPath": "masks/jump-cheer.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 301,
+        "height": 334
+      },
+      "anchors": {
+        "feet": {
+          "x": 146,
+          "y": 334
+        }
+      },
+      "scaleCorrection": 1.006135,
+      "bakedInProps": [
+        "bag"
+      ]
+    },
+    {
+      "id": "jump-startled",
+      "sourceAssetId": "sheet_02_sit_and_react_startled_r02_c01",
+      "facing": "front",
+      "path": "art/jump-startled.png",
+      "maskPath": "masks/jump-startled.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 312,
+        "height": 363
+      },
+      "anchors": {
+        "feet": {
+          "x": 151,
+          "y": 363
+        }
+      },
+      "scaleCorrection": 0.994475,
+      "bakedInProps": [
+        "bag"
+      ]
+    },
+    {
+      "id": "surprised-drop",
+      "sourceAssetId": "sheet_02_sit_and_react_surprised_drop_r02_c02",
+      "facing": "front",
+      "path": "art/surprised-drop.png",
+      "maskPath": "masks/surprised-drop.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 412,
+        "height": 358
+      },
+      "anchors": {
+        "feet": {
+          "x": 217,
+          "y": 358
+        }
+      },
+      "scaleCorrection": 0.985994,
+      "bakedInProps": [
+        "phone",
+        "boba",
+        "bag"
+      ]
+    },
+    {
+      "id": "landing-crouch",
+      "sourceAssetId": "sheet_02_sit_and_react_sit_sad_r02_c03",
+      "facing": "front",
+      "path": "art/landing-crouch.png",
+      "maskPath": "masks/landing-crouch.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 330,
+        "height": 314
+      },
+      "anchors": {
+        "feet": {
+          "x": 172,
+          "y": 314
+        }
+      },
+      "scaleCorrection": 0.968153,
+      "bakedInProps": [
+        "bag"
+      ]
+    },
+    {
+      "id": "jump-recover",
+      "sourceAssetId": "sheet_02_sit_and_react_float_happy_r02_c04",
+      "facing": "front",
+      "path": "art/jump-recover.png",
+      "maskPath": "masks/jump-recover.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 317,
+        "height": 402
+      },
+      "anchors": {
+        "feet": {
+          "x": 178,
+          "y": 376
+        }
+      },
+      "scaleCorrection": 0.991826,
+      "bakedInProps": [
+        "bag"
+      ]
+    },
+    {
+      "id": "top-peek",
+      "sourceAssetId": "sheet_03_window_edge_peek_low_r01_c01",
+      "facing": "front",
+      "path": "art/top-peek.png",
+      "maskPath": "masks/top-peek.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 327,
+        "height": 229
+      },
+      "anchors": {
+        "feet": {
+          "x": 167,
+          "y": 228
+        },
+        "hands": {
+          "x": 167,
+          "y": 214
+        }
+      },
+      "scaleCorrection": 0.969163,
+      "bakedInProps": []
+    },
+    {
+      "id": "top-climb",
+      "sourceAssetId": "sheet_03_window_edge_peek_over_edge_r01_c02",
+      "facing": "front",
+      "path": "art/top-climb.png",
+      "maskPath": "masks/top-climb.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 322,
+        "height": 379
+      },
+      "anchors": {
+        "feet": {
+          "x": 155,
+          "y": 378
+        },
+        "hands": {
+          "x": 161,
+          "y": 257
+        }
+      },
+      "scaleCorrection": 0.878307,
+      "bakedInProps": [
+        "bag"
+      ]
+    },
+    {
+      "id": "edge-sit",
+      "sourceAssetId": "sheet_03_window_edge_sit_edge_r01_c03",
+      "facing": "front",
+      "path": "art/edge-sit.png",
+      "maskPath": "masks/edge-sit.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 268,
+        "height": 414
+      },
+      "anchors": {
+        "feet": {
+          "x": 134,
+          "y": 413
+        },
+        "seat": {
+          "x": 134,
+          "y": 306
+        }
+      },
+      "scaleCorrection": 0.968523,
+      "bakedInProps": [
+        "bag"
+      ]
+    },
+    {
+      "id": "edge-hang",
+      "sourceAssetId": "sheet_03_window_edge_hang_over_edge_r01_c04",
+      "facing": "front",
+      "path": "art/edge-hang.png",
+      "maskPath": "masks/edge-hang.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 271,
+        "height": 421
+      },
+      "anchors": {
+        "feet": {
+          "x": 136,
+          "y": 420
+        },
+        "hands": {
+          "x": 136,
+          "y": 30
+        }
+      },
+      "scaleCorrection": 0.954654,
+      "bakedInProps": [
+        "bag"
+      ]
+    },
+    {
+      "id": "edge-swing",
+      "sourceAssetId": "sheet_03_window_edge_swing_edge_r02_c01",
+      "facing": "front",
+      "path": "art/edge-swing.png",
+      "maskPath": "masks/edge-swing.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 408
+      },
+      "anchors": {
+        "feet": {
+          "x": 151,
+          "y": 407
+        },
+        "hands": {
+          "x": 161,
+          "y": 33
+        }
+      },
+      "scaleCorrection": 0.985222,
+      "bakedInProps": [
+        "bag"
+      ]
+    },
+    {
+      "id": "side-peek-right",
+      "sourceAssetId": "sheet_03_window_edge_climb_corner_r02_c02",
+      "facing": "left",
+      "path": "art/side-peek-right.png",
+      "maskPath": "masks/side-peek-right.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 236,
+        "height": 420
+      },
+      "anchors": {
+        "feet": {
+          "x": 106,
+          "y": 419
+        },
+        "sideGrip": {
+          "x": 0,
+          "y": 269
+        }
+      },
+      "scaleCorrection": 0.870813,
+      "bakedInProps": [
+        "bag"
+      ]
+    },
+    {
+      "id": "side-peek-left",
+      "sourceAssetId": "sheet_03_window_edge_hang_side_r02_c03",
+      "facing": "right",
+      "path": "art/side-peek-left.png",
+      "maskPath": "masks/side-peek-left.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 243,
+        "height": 413
+      },
+      "anchors": {
+        "feet": {
+          "x": 133,
+          "y": 412
+        },
+        "sideGrip": {
+          "x": 242,
+          "y": 264
+        }
+      },
+      "scaleCorrection": 0.885645,
+      "bakedInProps": [
+        "bag"
+      ]
+    },
+    {
+      "id": "edge-inverted",
+      "sourceAssetId": "sheet_03_window_edge_upside_down_r02_c04",
+      "facing": "front",
+      "path": "art/edge-inverted.png",
+      "maskPath": "masks/edge-inverted.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 319,
+        "height": 345
+      },
+      "anchors": {
+        "feet": {
+          "x": 163,
+          "y": 345
+        },
+        "hands": {
+          "x": 160,
+          "y": 21
+        }
+      },
+      "scaleCorrection": 1.15942,
+      "bakedInProps": [
+        "bag"
+      ]
+    },
+    {
+      "id": "phone-tap",
+      "sourceAssetId": "sheet_04_expressions_idle_neutral_r01_c01",
+      "facing": "left",
+      "path": "art/phone-tap.png",
+      "maskPath": "masks/phone-tap.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 307,
+        "height": 431
+      },
+      "anchors": {
+        "feet": {
+          "x": 167,
+          "y": 430
+        }
+      },
+      "scaleCorrection": 0.930233,
+      "bakedInProps": [
+        "phone",
+        "boba",
+        "bag"
+      ]
+    },
+    {
+      "id": "boba-love",
+      "sourceAssetId": "sheet_04_expressions_happy_smile_r01_c02",
+      "facing": "front",
+      "path": "art/boba-love.png",
+      "maskPath": "masks/boba-love.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 312,
+        "height": 431
+      },
+      "anchors": {
+        "feet": {
+          "x": 170,
+          "y": 430
+        }
+      },
+      "scaleCorrection": 0.930233,
+      "bakedInProps": [
+        "boba",
+        "bag"
+      ]
+    },
+    {
+      "id": "boba-wave",
+      "sourceAssetId": "sheet_04_expressions_heart_eyes_r01_c03",
+      "facing": "front",
+      "path": "art/boba-wave.png",
+      "maskPath": "masks/boba-wave.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 323,
+        "height": 428
+      },
+      "anchors": {
+        "feet": {
+          "x": 183,
+          "y": 427
+        }
+      },
+      "scaleCorrection": 0.938967,
+      "bakedInProps": [
+        "boba",
+        "bag"
+      ]
+    },
+    {
+      "id": "phone-curious",
+      "sourceAssetId": "sheet_04_expressions_curious_r01_c04",
+      "facing": "front",
+      "path": "art/phone-curious.png",
+      "maskPath": "masks/phone-curious.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 290,
+        "height": 427
+      },
+      "anchors": {
+        "feet": {
+          "x": 135,
+          "y": 427
+        }
+      },
+      "scaleCorrection": 0.938967,
+      "bakedInProps": [
+        "phone",
+        "boba",
+        "bag"
+      ]
+    },
+    {
+      "id": "small-parcel",
+      "sourceAssetId": "sheet_04_expressions_surprised_r02_c01",
+      "facing": "left",
+      "path": "art/small-parcel.png",
+      "maskPath": "masks/small-parcel.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 318,
+        "height": 423
+      },
+      "anchors": {
+        "feet": {
+          "x": 177,
+          "y": 422
+        }
+      },
+      "scaleCorrection": 0.947867,
+      "bakedInProps": [
+        "parcel",
+        "bag"
+      ]
+    },
+    {
+      "id": "small-laptop",
+      "sourceAssetId": "sheet_04_expressions_annoyed_r02_c02",
+      "facing": "front",
+      "path": "art/small-laptop.png",
+      "maskPath": "masks/small-laptop.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 360,
+        "height": 398
+      },
+      "anchors": {
+        "feet": {
+          "x": 190,
+          "y": 397
+        }
+      },
+      "scaleCorrection": 0.808081,
+      "bakedInProps": [
+        "laptop",
+        "bag"
+      ]
+    },
+    {
+      "id": "small-sweep",
+      "sourceAssetId": "sheet_04_expressions_sulky_r02_c03",
+      "facing": "left",
+      "path": "art/small-sweep.png",
+      "maskPath": "masks/small-sweep.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 369,
+        "height": 419
+      },
+      "anchors": {
+        "feet": {
+          "x": 247,
+          "y": 415
+        }
+      },
+      "scaleCorrection": 0.956938,
+      "bakedInProps": [
+        "broom",
+        "bag"
+      ]
+    },
+    {
+      "id": "small-plush",
+      "sourceAssetId": "sheet_04_expressions_thinking_r02_c04",
+      "facing": "left",
+      "path": "art/small-plush.png",
+      "maskPath": "masks/small-plush.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 351,
+        "height": 425
+      },
+      "anchors": {
+        "feet": {
+          "x": 216,
+          "y": 425
+        }
+      },
+      "scaleCorrection": 0.943396,
+      "bakedInProps": [
+        "plush",
+        "bag"
+      ]
+    },
+    {
+      "id": "stand",
+      "sourceAssetId": "sheet_05_hanging_and_rest_idle_stand_r01_c01",
+      "facing": "front",
+      "path": "art/stand.png",
+      "maskPath": "masks/stand.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 287,
+        "height": 419
+      },
+      "anchors": {
+        "feet": {
+          "x": 138,
+          "y": 418
+        }
+      },
+      "scaleCorrection": 0.959233,
+      "bakedInProps": [
+        "bag"
+      ]
+    },
+    {
+      "id": "smile",
+      "sourceAssetId": "sheet_05_hanging_and_rest_wave_happy_r01_c02",
+      "facing": "front",
+      "path": "art/smile.png",
+      "maskPath": "masks/smile.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 303,
+        "height": 419
+      },
+      "anchors": {
+        "feet": {
+          "x": 154,
+          "y": 418
+        }
+      },
+      "scaleCorrection": 0.959233,
+      "bakedInProps": [
+        "bag"
+      ]
+    },
+    {
+      "id": "heart-eyes",
+      "sourceAssetId": "sheet_05_hanging_and_rest_blush_love_r01_c03",
+      "facing": "front",
+      "path": "art/heart-eyes.png",
+      "maskPath": "masks/heart-eyes.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 317,
+        "height": 419
+      },
+      "anchors": {
+        "feet": {
+          "x": 156,
+          "y": 418
+        }
+      },
+      "scaleCorrection": 0.956938,
+      "bakedInProps": [
+        "bag"
+      ]
+    },
+    {
+      "id": "sulk",
+      "sourceAssetId": "sheet_05_hanging_and_rest_idle_soft_r01_c04",
+      "facing": "front",
+      "path": "art/sulk.png",
+      "maskPath": "masks/sulk.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 315,
+        "height": 419
+      },
+      "anchors": {
+        "feet": {
+          "x": 169,
+          "y": 418
+        }
+      },
+      "scaleCorrection": 0.959233,
+      "bakedInProps": [
+        "bag"
+      ]
+    },
+    {
+      "id": "startled",
+      "sourceAssetId": "sheet_05_hanging_and_rest_surprised_r02_c01",
+      "facing": "front",
+      "path": "art/startled.png",
+      "maskPath": "masks/startled.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 306,
+        "height": 415
+      },
+      "anchors": {
+        "feet": {
+          "x": 150,
+          "y": 414
+        }
+      },
+      "scaleCorrection": 0.968523,
+      "bakedInProps": [
+        "bag"
+      ]
+    },
+    {
+      "id": "yawn",
+      "sourceAssetId": "sheet_05_hanging_and_rest_tired_r02_c02",
+      "facing": "front",
+      "path": "art/yawn.png",
+      "maskPath": "masks/yawn.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 291,
+        "height": 412
+      },
+      "anchors": {
+        "feet": {
+          "x": 150,
+          "y": 412
+        }
+      },
+      "scaleCorrection": 0.970874,
+      "bakedInProps": [
+        "bag"
+      ]
+    },
+    {
+      "id": "sit-thinking",
+      "sourceAssetId": "sheet_05_hanging_and_rest_sit_think_r02_c03",
+      "facing": "front",
+      "path": "art/sit-thinking.png",
+      "maskPath": "masks/sit-thinking.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 307,
+        "height": 360
+      },
+      "anchors": {
+        "feet": {
+          "x": 150,
+          "y": 360
+        }
+      },
+      "scaleCorrection": 0.846797,
+      "bakedInProps": [
+        "bag"
+      ]
+    },
+    {
+      "id": "floor-nap",
+      "sourceAssetId": "sheet_05_hanging_and_rest_sleep_floor_r02_c04",
+      "facing": "left",
+      "path": "art/floor-nap.png",
+      "maskPath": "masks/floor-nap.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 404,
+        "height": 281
+      },
+      "anchors": {
+        "feet": {
+          "x": 194,
+          "y": 281
+        }
+      },
+      "scaleCorrection": 0.896861,
+      "bakedInProps": [
+        "bag"
+      ]
+    },
+    {
+      "id": "fall-anticipation",
+      "sourceAssetId": "sheet_07_fall_and_recover_crouch_tuck_r01_c01",
+      "facing": "left",
+      "path": "art/fall-anticipation.png",
+      "maskPath": "masks/fall-anticipation.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 328,
+        "height": 389
+      },
+      "anchors": {
+        "feet": {
+          "x": 164,
+          "y": 388
+        }
+      },
+      "scaleCorrection": 0.867606,
+      "bakedInProps": [
+        "bag"
+      ]
+    },
+    {
+      "id": "fall-takeoff",
+      "sourceAssetId": "sheet_07_fall_and_recover_fumble_r01_c02",
+      "facing": "left",
+      "path": "art/fall-takeoff.png",
+      "maskPath": "masks/fall-takeoff.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 313,
+        "height": 395
+      },
+      "anchors": {
+        "feet": {
+          "x": 156,
+          "y": 394
+        }
+      },
+      "scaleCorrection": 0.905852,
+      "bakedInProps": [
+        "bag"
+      ]
+    },
+    {
+      "id": "fall-airborne",
+      "sourceAssetId": "sheet_07_fall_and_recover_panic_r01_c03",
+      "facing": "left",
+      "path": "art/fall-airborne.png",
+      "maskPath": "masks/fall-airborne.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 316,
+        "height": 462
+      },
+      "anchors": {
+        "feet": {
+          "x": 158,
+          "y": 378
+        }
+      },
+      "scaleCorrection": 0.923077,
+      "bakedInProps": [
+        "bag"
+      ]
+    },
+    {
+      "id": "fall-tumble",
+      "sourceAssetId": "sheet_07_fall_and_recover_fall_low_r02_c01",
+      "facing": "front",
+      "path": "art/fall-tumble.png",
+      "maskPath": "masks/fall-tumble.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 344,
+        "height": 361
+      },
+      "anchors": {
+        "feet": {
+          "x": 180,
+          "y": 337
+        }
+      },
+      "scaleCorrection": 0.916667,
+      "bakedInProps": [
+        "bag"
+      ]
+    },
+    {
+      "id": "fall-impact",
+      "sourceAssetId": "sheet_07_fall_and_recover_spin_tumble_r02_c02",
+      "facing": "front",
+      "path": "art/fall-impact.png",
+      "maskPath": "masks/fall-impact.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 358,
+        "height": 367
+      },
+      "anchors": {
+        "feet": {
+          "x": 180,
+          "y": 340
+        }
+      },
+      "scaleCorrection": 0.84153,
+      "bakedInProps": [
+        "bag"
+      ]
+    },
+    {
+      "id": "fall-recover",
+      "sourceAssetId": "sheet_07_fall_and_recover_frustrated_sit_r02_c03",
+      "facing": "left",
+      "path": "art/fall-recover.png",
+      "maskPath": "masks/fall-recover.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 347,
+        "height": 326
+      },
+      "anchors": {
+        "feet": {
+          "x": 162,
+          "y": 325
+        }
+      },
+      "scaleCorrection": 0.938272,
+      "bakedInProps": [
+        "bag"
+      ]
+    },
+    {
+      "id": "fall-celebrate",
+      "sourceAssetId": "sheet_07_fall_and_recover_land_recover_r02_c04",
+      "facing": "front",
+      "path": "art/fall-celebrate.png",
+      "maskPath": "masks/fall-celebrate.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 345,
+        "height": 428
+      },
+      "anchors": {
+        "feet": {
+          "x": 175,
+          "y": 392
+        }
+      },
+      "scaleCorrection": 0.959184,
+      "bakedInProps": [
+        "bag"
+      ]
+    },
+    {
+      "id": "boba-idle",
+      "sourceAssetId": "sheet_08_idle_expressions_idle_neutral_r01_c01",
+      "facing": "front",
+      "path": "art/boba-idle.png",
+      "maskPath": "masks/boba-idle.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 321,
+        "height": 513
+      },
+      "anchors": {
+        "feet": {
+          "x": 157,
+          "y": 512
+        }
+      },
+      "scaleCorrection": 0.782779,
+      "bakedInProps": [
+        "boba",
+        "bag"
+      ]
+    },
+    {
+      "id": "boba-sip",
+      "sourceAssetId": "sheet_08_idle_expressions_idle_happy_r01_c02",
+      "facing": "front",
+      "path": "art/boba-sip.png",
+      "maskPath": "masks/boba-sip.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 326,
+        "height": 513
+      },
+      "anchors": {
+        "feet": {
+          "x": 163,
+          "y": 512
+        }
+      },
+      "scaleCorrection": 0.782779,
+      "bakedInProps": [
+        "boba",
+        "bag"
+      ]
+    },
+    {
+      "id": "phone-scroll",
+      "sourceAssetId": "sheet_08_idle_expressions_phone_check_r01_c03",
+      "facing": "left",
+      "path": "art/phone-scroll.png",
+      "maskPath": "masks/phone-scroll.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 317,
+        "height": 513
+      },
+      "anchors": {
+        "feet": {
+          "x": 161,
+          "y": 512
+        }
+      },
+      "scaleCorrection": 0.782779,
+      "bakedInProps": [
+        "phone",
+        "boba",
+        "bag"
+      ]
+    },
+    {
+      "id": "boba-hug",
+      "sourceAssetId": "sheet_08_idle_expressions_drink_happy_r01_c04",
+      "facing": "front",
+      "path": "art/boba-hug.png",
+      "maskPath": "masks/boba-hug.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 324,
+        "height": 513
+      },
+      "anchors": {
+        "feet": {
+          "x": 160,
+          "y": 512
+        }
+      },
+      "scaleCorrection": 0.782779,
+      "bakedInProps": [
+        "boba",
+        "bag"
+      ]
+    },
+    {
+      "id": "shy",
+      "sourceAssetId": "sheet_08_idle_expressions_wave_r02_c01",
+      "facing": "front",
+      "path": "art/shy.png",
+      "maskPath": "masks/shy.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 334,
+        "height": 511
+      },
+      "anchors": {
+        "feet": {
+          "x": 170,
+          "y": 511
+        }
+      },
+      "scaleCorrection": 0.784314,
+      "bakedInProps": [
+        "bag"
+      ]
+    },
+    {
+      "id": "proud",
+      "sourceAssetId": "sheet_08_idle_expressions_glance_r02_c02",
+      "facing": "front",
+      "path": "art/proud.png",
+      "maskPath": "masks/proud.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 330,
+        "height": 511
+      },
+      "anchors": {
+        "feet": {
+          "x": 168,
+          "y": 510
+        }
+      },
+      "scaleCorrection": 0.785855,
+      "bakedInProps": [
+        "bag"
+      ]
+    },
+    {
+      "id": "sleepy",
+      "sourceAssetId": "sheet_08_idle_expressions_yawn_r02_c03",
+      "facing": "front",
+      "path": "art/sleepy.png",
+      "maskPath": "masks/sleepy.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 318,
+        "height": 512
+      },
+      "anchors": {
+        "feet": {
+          "x": 157,
+          "y": 511
+        }
+      },
+      "scaleCorrection": 0.784314,
+      "bakedInProps": [
+        "bag"
+      ]
+    },
+    {
+      "id": "seated-nap",
+      "sourceAssetId": "sheet_08_idle_expressions_sleep_sit_r02_c04",
+      "facing": "left",
+      "path": "art/seated-nap.png",
+      "maskPath": "masks/seated-nap.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 331,
+        "height": 414
+      },
+      "anchors": {
+        "feet": {
+          "x": 163,
+          "y": 413
+        }
+      },
+      "scaleCorrection": 0.760925,
+      "bakedInProps": [
+        "bag"
+      ]
+    },
+    {
+      "id": "parcel-carry",
+      "sourceAssetId": "sheet_09_busy_tasks_carry_box_r01_c01",
+      "facing": "left",
+      "path": "art/parcel-carry.png",
+      "maskPath": "masks/parcel-carry.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 306,
+        "height": 421
+      },
+      "anchors": {
+        "feet": {
+          "x": 176,
+          "y": 420
+        }
+      },
+      "scaleCorrection": 0.952381,
+      "bakedInProps": [
+        "parcel",
+        "bag"
+      ]
+    },
+    {
+      "id": "folder-push",
+      "sourceAssetId": "sheet_09_busy_tasks_carry_bag_r01_c02",
+      "facing": "left",
+      "path": "art/folder-push.png",
+      "maskPath": "masks/folder-push.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 378,
+        "height": 361
+      },
+      "anchors": {
+        "feet": {
+          "x": 272,
+          "y": 359
+        }
+      },
+      "scaleCorrection": 1.002786,
+      "bakedInProps": [
+        "folder",
+        "bag"
+      ]
+    },
+    {
+      "id": "card-carry",
+      "sourceAssetId": "sheet_09_busy_tasks_show_board_r01_c03",
+      "facing": "left",
+      "path": "art/card-carry.png",
+      "maskPath": "masks/card-carry.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 368,
+        "height": 375
+      },
+      "anchors": {
+        "feet": {
+          "x": 232,
+          "y": 375
+        }
+      },
+      "scaleCorrection": 1.005348,
+      "bakedInProps": [
+        "window card",
+        "bag"
+      ]
+    },
+    {
+      "id": "laptop",
+      "sourceAssetId": "sheet_09_busy_tasks_laptop_work_r01_c04",
+      "facing": "front",
+      "path": "art/laptop.png",
+      "maskPath": "masks/laptop.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 308,
+        "height": 367
+      },
+      "anchors": {
+        "feet": {
+          "x": 163,
+          "y": 366
+        }
+      },
+      "scaleCorrection": 0.854795,
+      "bakedInProps": [
+        "laptop",
+        "bag"
+      ]
+    },
+    {
+      "id": "sweep",
+      "sourceAssetId": "sheet_09_busy_tasks_clean_broom_r02_c01",
+      "facing": "left",
+      "path": "art/sweep.png",
+      "maskPath": "masks/sweep.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 340,
+        "height": 435
+      },
+      "anchors": {
+        "feet": {
+          "x": 230,
+          "y": 434
+        }
+      },
+      "scaleCorrection": 0.923788,
+      "bakedInProps": [
+        "broom",
+        "bag"
+      ]
+    },
+    {
+      "id": "notice",
+      "sourceAssetId": "sheet_09_busy_tasks_hold_alert_r02_c02",
+      "facing": "front",
+      "path": "art/notice.png",
+      "maskPath": "masks/notice.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 352,
+        "height": 442
+      },
+      "anchors": {
+        "feet": {
+          "x": 197,
+          "y": 442
+        }
+      },
+      "scaleCorrection": 0.904977,
+      "bakedInProps": [
+        "tablet",
+        "bag"
+      ]
+    },
+    {
+      "id": "plush-hug",
+      "sourceAssetId": "sheet_09_busy_tasks_hug_plush_r02_c03",
+      "facing": "left",
+      "path": "art/plush-hug.png",
+      "maskPath": "masks/plush-hug.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 318,
+        "height": 447
+      },
+      "anchors": {
+        "feet": {
+          "x": 176,
+          "y": 446
+        }
+      },
+      "scaleCorrection": 0.862921,
+      "bakedInProps": [
+        "plush",
+        "bag"
+      ]
+    },
+    {
+      "id": "offer-heart",
+      "sourceAssetId": "sheet_09_busy_tasks_shopping_bag_r02_c04",
+      "facing": "front",
+      "path": "art/offer-heart.png",
+      "maskPath": "masks/offer-heart.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 321,
+        "height": 448
+      },
+      "anchors": {
+        "feet": {
+          "x": 177,
+          "y": 448
+        }
+      },
+      "scaleCorrection": 0.892857,
+      "bakedInProps": [
+        "heart",
+        "bag"
+      ]
+    },
+    {
+      "id": "walk-prep-left",
+      "sourceAssetId": "sheet_10_locomotion_and_wave_walk_ready_r01_c01",
+      "facing": "left",
+      "path": "art/walk-prep-left.png",
+      "maskPath": "masks/walk-prep-left.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 311,
+        "height": 429
+      },
+      "anchors": {
+        "feet": {
+          "x": 152,
+          "y": 429
+        }
+      },
+      "scaleCorrection": 0.850467,
+      "bakedInProps": [
+        "phone",
+        "boba",
+        "bag"
+      ]
+    },
+    {
+      "id": "walk-prep-right",
+      "sourceAssetId": "sheet_10_locomotion_and_wave_walk_bounce_r01_c02",
+      "facing": "right",
+      "path": "art/walk-prep-right.png",
+      "maskPath": "masks/walk-prep-right.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 307,
+        "height": 429
+      },
+      "anchors": {
+        "feet": {
+          "x": 150,
+          "y": 428
+        }
+      },
+      "scaleCorrection": 0.852459,
+      "bakedInProps": [
+        "phone",
+        "boba",
+        "bag"
+      ]
+    },
+    {
+      "id": "walk-left",
+      "sourceAssetId": "sheet_10_locomotion_and_wave_walk_step_a_r01_c03",
+      "facing": "left",
+      "path": "art/walk-left.png",
+      "maskPath": "masks/walk-left.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 287,
+        "height": 451
+      },
+      "anchors": {
+        "feet": {
+          "x": 144,
+          "y": 450
+        }
+      },
+      "scaleCorrection": 0.890869,
+      "bakedInProps": [
+        "phone",
+        "boba",
+        "bag"
+      ]
+    },
+    {
+      "id": "walk-right",
+      "sourceAssetId": "sheet_10_locomotion_and_wave_walk_step_b_r01_c04",
+      "facing": "right",
+      "path": "art/walk-right.png",
+      "maskPath": "masks/walk-right.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 305,
+        "height": 456
+      },
+      "anchors": {
+        "feet": {
+          "x": 152,
+          "y": 456
+        }
+      },
+      "scaleCorrection": 0.879121,
+      "bakedInProps": [
+        "phone",
+        "boba",
+        "bag"
+      ]
+    },
+    {
+      "id": "run-left",
+      "sourceAssetId": "sheet_10_locomotion_and_wave_wave_r02_c01",
+      "facing": "left",
+      "path": "art/run-left.png",
+      "maskPath": "masks/run-left.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 315,
+        "height": 453
+      },
+      "anchors": {
+        "feet": {
+          "x": 154,
+          "y": 452
+        }
+      },
+      "scaleCorrection": 0.823009,
+      "bakedInProps": [
+        "phone",
+        "boba",
+        "bag"
+      ]
+    },
+    {
+      "id": "run-right",
+      "sourceAssetId": "sheet_10_locomotion_and_wave_walk_turn_r02_c02",
+      "facing": "right",
+      "path": "art/run-right.png",
+      "maskPath": "masks/run-right.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 323,
+        "height": 456
+      },
+      "anchors": {
+        "feet": {
+          "x": 159,
+          "y": 456
+        }
+      },
+      "scaleCorrection": 0.815789,
+      "bakedInProps": [
+        "phone",
+        "boba",
+        "bag"
+      ]
+    },
+    {
+      "id": "look-up",
+      "sourceAssetId": "sheet_10_locomotion_and_wave_idle_look_back_r02_c03",
+      "facing": "front",
+      "path": "art/look-up.png",
+      "maskPath": "masks/look-up.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 295,
+        "height": 512
+      },
+      "anchors": {
+        "feet": {
+          "x": 145,
+          "y": 512
+        }
+      },
+      "scaleCorrection": 0.785855,
+      "bakedInProps": [
+        "phone",
+        "boba",
+        "bag"
+      ]
+    },
+    {
+      "id": "look-back",
+      "sourceAssetId": "sheet_10_locomotion_and_wave_walk_exit_r02_c04",
+      "facing": "right",
+      "path": "art/look-back.png",
+      "maskPath": "masks/look-back.png",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 331,
+        "height": 510
+      },
+      "anchors": {
+        "feet": {
+          "x": 140,
+          "y": 510
+        }
+      },
+      "scaleCorrection": 0.784314,
+      "bakedInProps": [
+        "phone",
+        "boba",
+        "bag"
+      ]
+    }
+  ],
+  "sounds": [],
+  "behaviorFile": "behaviors.json"
+}

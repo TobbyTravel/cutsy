@@ -1,0 +1,1753 @@
+{
+  "schemaVersion": 1,
+  "behaviors": [
+    {
+      "id": "idle",
+      "family": "idle",
+      "selectionWeight": 5,
+      "cooldownMs": 0,
+      "requiredCapabilities": [],
+      "eligibility": {},
+      "interruptPolicy": "interruptible",
+      "steps": [
+        {
+          "type": "hold",
+          "spriteId": "stand",
+          "durationMs": 5100
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "smile",
+      "family": "idle",
+      "selectionWeight": 3,
+      "cooldownMs": 18000,
+      "requiredCapabilities": [],
+      "eligibility": {
+        "grounded": true
+      },
+      "interruptPolicy": "interruptible",
+      "steps": [
+        {
+          "type": "hold",
+          "spriteId": "stand",
+          "durationMs": 180
+        },
+        {
+          "type": "playFrames",
+          "frames": [
+            {
+              "spriteId": "smile",
+              "durationMs": 1000
+            }
+          ]
+        },
+        {
+          "type": "hold",
+          "spriteId": "stand",
+          "durationMs": 220
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "shy-glance",
+      "family": "idle",
+      "selectionWeight": 2,
+      "cooldownMs": 26000,
+      "requiredCapabilities": [],
+      "eligibility": {
+        "grounded": true
+      },
+      "interruptPolicy": "interruptible",
+      "steps": [
+        {
+          "type": "hold",
+          "spriteId": "stand",
+          "durationMs": 180
+        },
+        {
+          "type": "playFrames",
+          "frames": [
+            {
+              "spriteId": "shy",
+              "durationMs": 1250
+            }
+          ]
+        },
+        {
+          "type": "hold",
+          "spriteId": "stand",
+          "durationMs": 220
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "sulk",
+      "family": "idle",
+      "selectionWeight": 1,
+      "cooldownMs": 26000,
+      "requiredCapabilities": [],
+      "eligibility": {
+        "grounded": true
+      },
+      "interruptPolicy": "interruptible",
+      "steps": [
+        {
+          "type": "hold",
+          "spriteId": "stand",
+          "durationMs": 180
+        },
+        {
+          "type": "playFrames",
+          "frames": [
+            {
+              "spriteId": "sulk",
+              "durationMs": 1600
+            }
+          ]
+        },
+        {
+          "type": "hold",
+          "spriteId": "stand",
+          "durationMs": 220
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "thinking",
+      "family": "idle",
+      "selectionWeight": 1,
+      "cooldownMs": 26000,
+      "requiredCapabilities": [],
+      "eligibility": {
+        "grounded": true
+      },
+      "interruptPolicy": "interruptible",
+      "steps": [
+        {
+          "type": "hold",
+          "spriteId": "stand",
+          "durationMs": 180
+        },
+        {
+          "type": "playFrames",
+          "frames": [
+            {
+              "spriteId": "sit-thinking",
+              "durationMs": 3900
+            }
+          ]
+        },
+        {
+          "type": "hold",
+          "spriteId": "stand",
+          "durationMs": 220
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "proud",
+      "family": "idle",
+      "selectionWeight": 1,
+      "cooldownMs": 26000,
+      "requiredCapabilities": [],
+      "eligibility": {
+        "grounded": true
+      },
+      "interruptPolicy": "interruptible",
+      "steps": [
+        {
+          "type": "hold",
+          "spriteId": "stand",
+          "durationMs": 180
+        },
+        {
+          "type": "playFrames",
+          "frames": [
+            {
+              "spriteId": "proud",
+              "durationMs": 1400
+            }
+          ]
+        },
+        {
+          "type": "hold",
+          "spriteId": "stand",
+          "durationMs": 220
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "phone",
+      "family": "idle",
+      "selectionWeight": 1,
+      "cooldownMs": 26000,
+      "requiredCapabilities": [],
+      "eligibility": {
+        "grounded": true
+      },
+      "interruptPolicy": "interruptible",
+      "steps": [
+        {
+          "type": "hold",
+          "spriteId": "stand",
+          "durationMs": 180
+        },
+        {
+          "type": "playFrames",
+          "frames": [
+            {
+              "spriteId": "phone-stand",
+              "durationMs": 500
+            },
+            {
+              "spriteId": "phone-glance",
+              "durationMs": 800
+            },
+            {
+              "spriteId": "phone-scroll",
+              "durationMs": 1700
+            },
+            {
+              "spriteId": "phone-tap",
+              "durationMs": 1100
+            },
+            {
+              "spriteId": "phone-curious",
+              "durationMs": 900
+            },
+            {
+              "spriteId": "phone-smile",
+              "durationMs": 600
+            }
+          ]
+        },
+        {
+          "type": "hold",
+          "spriteId": "stand",
+          "durationMs": 220
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "boba",
+      "family": "idle",
+      "selectionWeight": 1,
+      "cooldownMs": 26000,
+      "requiredCapabilities": [],
+      "eligibility": {
+        "grounded": true
+      },
+      "interruptPolicy": "interruptible",
+      "steps": [
+        {
+          "type": "hold",
+          "spriteId": "stand",
+          "durationMs": 180
+        },
+        {
+          "type": "playFrames",
+          "frames": [
+            {
+              "spriteId": "boba-idle",
+              "durationMs": 600
+            },
+            {
+              "spriteId": "boba-sip",
+              "durationMs": 1500
+            },
+            {
+              "spriteId": "boba-love",
+              "durationMs": 900
+            },
+            {
+              "spriteId": "boba-hug",
+              "durationMs": 1100
+            },
+            {
+              "spriteId": "boba-wave",
+              "durationMs": 650
+            }
+          ]
+        },
+        {
+          "type": "hold",
+          "spriteId": "stand",
+          "durationMs": 220
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "boba-break",
+      "family": "idle",
+      "selectionWeight": 1,
+      "cooldownMs": 52000,
+      "requiredCapabilities": [],
+      "eligibility": {
+        "grounded": true
+      },
+      "interruptPolicy": "interruptible",
+      "steps": [
+        {
+          "type": "hold",
+          "spriteId": "stand",
+          "durationMs": 180
+        },
+        {
+          "type": "playFrames",
+          "frames": [
+            {
+              "spriteId": "boba-crouch",
+              "durationMs": 2500
+            }
+          ]
+        },
+        {
+          "type": "hold",
+          "spriteId": "stand",
+          "durationMs": 220
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "laptop",
+      "family": "idle",
+      "selectionWeight": 1,
+      "cooldownMs": 55000,
+      "requiredCapabilities": [],
+      "eligibility": {
+        "grounded": true
+      },
+      "interruptPolicy": "interruptible",
+      "steps": [
+        {
+          "type": "hold",
+          "spriteId": "stand",
+          "durationMs": 180
+        },
+        {
+          "type": "playFrames",
+          "frames": [
+            {
+              "spriteId": "laptop",
+              "durationMs": 3500
+            }
+          ]
+        },
+        {
+          "type": "hold",
+          "spriteId": "stand",
+          "durationMs": 220
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "small-laptop",
+      "family": "idle",
+      "selectionWeight": 1,
+      "cooldownMs": 60000,
+      "requiredCapabilities": [],
+      "eligibility": {
+        "grounded": true
+      },
+      "interruptPolicy": "interruptible",
+      "steps": [
+        {
+          "type": "hold",
+          "spriteId": "stand",
+          "durationMs": 180
+        },
+        {
+          "type": "playFrames",
+          "frames": [
+            {
+              "spriteId": "small-laptop",
+              "durationMs": 3200
+            }
+          ]
+        },
+        {
+          "type": "hold",
+          "spriteId": "stand",
+          "durationMs": 220
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "sweep",
+      "family": "idle",
+      "selectionWeight": 1,
+      "cooldownMs": 52000,
+      "requiredCapabilities": [],
+      "eligibility": {
+        "grounded": true
+      },
+      "interruptPolicy": "interruptible",
+      "steps": [
+        {
+          "type": "hold",
+          "spriteId": "stand",
+          "durationMs": 180
+        },
+        {
+          "type": "playFrames",
+          "frames": [
+            {
+              "spriteId": "sweep",
+              "durationMs": 2600
+            }
+          ]
+        },
+        {
+          "type": "hold",
+          "spriteId": "stand",
+          "durationMs": 220
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "small-sweep",
+      "family": "idle",
+      "selectionWeight": 1,
+      "cooldownMs": 57000,
+      "requiredCapabilities": [],
+      "eligibility": {
+        "grounded": true
+      },
+      "interruptPolicy": "interruptible",
+      "steps": [
+        {
+          "type": "hold",
+          "spriteId": "stand",
+          "durationMs": 180
+        },
+        {
+          "type": "playFrames",
+          "frames": [
+            {
+              "spriteId": "small-sweep",
+              "durationMs": 2200
+            }
+          ]
+        },
+        {
+          "type": "hold",
+          "spriteId": "stand",
+          "durationMs": 220
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "notice",
+      "family": "idle",
+      "selectionWeight": 1,
+      "cooldownMs": 48000,
+      "requiredCapabilities": [],
+      "eligibility": {
+        "grounded": true
+      },
+      "interruptPolicy": "interruptible",
+      "steps": [
+        {
+          "type": "hold",
+          "spriteId": "stand",
+          "durationMs": 180
+        },
+        {
+          "type": "playFrames",
+          "frames": [
+            {
+              "spriteId": "notice",
+              "durationMs": 1700
+            }
+          ]
+        },
+        {
+          "type": "hold",
+          "spriteId": "stand",
+          "durationMs": 220
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "plush",
+      "family": "idle",
+      "selectionWeight": 1,
+      "cooldownMs": 48000,
+      "requiredCapabilities": [],
+      "eligibility": {
+        "grounded": true
+      },
+      "interruptPolicy": "interruptible",
+      "steps": [
+        {
+          "type": "hold",
+          "spriteId": "stand",
+          "durationMs": 180
+        },
+        {
+          "type": "playFrames",
+          "frames": [
+            {
+              "spriteId": "plush-hug",
+              "durationMs": 2400
+            }
+          ]
+        },
+        {
+          "type": "hold",
+          "spriteId": "stand",
+          "durationMs": 220
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "small-plush",
+      "family": "idle",
+      "selectionWeight": 1,
+      "cooldownMs": 50000,
+      "requiredCapabilities": [],
+      "eligibility": {
+        "grounded": true
+      },
+      "interruptPolicy": "interruptible",
+      "steps": [
+        {
+          "type": "hold",
+          "spriteId": "stand",
+          "durationMs": 180
+        },
+        {
+          "type": "playFrames",
+          "frames": [
+            {
+              "spriteId": "small-plush",
+              "durationMs": 1800
+            }
+          ]
+        },
+        {
+          "type": "hold",
+          "spriteId": "stand",
+          "durationMs": 220
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "seated-nap",
+      "family": "idle",
+      "selectionWeight": 1,
+      "cooldownMs": 90000,
+      "requiredCapabilities": [],
+      "eligibility": {
+        "grounded": true
+      },
+      "interruptPolicy": "interruptible",
+      "steps": [
+        {
+          "type": "hold",
+          "spriteId": "stand",
+          "durationMs": 180
+        },
+        {
+          "type": "playFrames",
+          "frames": [
+            {
+              "spriteId": "yawn",
+              "durationMs": 1150
+            },
+            {
+              "spriteId": "sit-thinking",
+              "durationMs": 350
+            },
+            {
+              "spriteId": "seated-nap",
+              "durationMs": 10000
+            },
+            {
+              "spriteId": "sit-thinking",
+              "durationMs": 520
+            },
+            {
+              "spriteId": "sleepy",
+              "durationMs": 600
+            },
+            {
+              "spriteId": "smile",
+              "durationMs": 450
+            }
+          ]
+        },
+        {
+          "type": "hold",
+          "spriteId": "stand",
+          "durationMs": 220
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "floor-nap",
+      "family": "idle",
+      "selectionWeight": 1,
+      "cooldownMs": 110000,
+      "requiredCapabilities": [],
+      "eligibility": {
+        "grounded": true
+      },
+      "interruptPolicy": "interruptible",
+      "steps": [
+        {
+          "type": "hold",
+          "spriteId": "stand",
+          "durationMs": 180
+        },
+        {
+          "type": "playFrames",
+          "frames": [
+            {
+              "spriteId": "sleepy",
+              "durationMs": 1400
+            },
+            {
+              "spriteId": "sit-thinking",
+              "durationMs": 650
+            },
+            {
+              "spriteId": "floor-nap",
+              "durationMs": 13500
+            },
+            {
+              "spriteId": "sit-thinking",
+              "durationMs": 850
+            },
+            {
+              "spriteId": "yawn",
+              "durationMs": 700
+            },
+            {
+              "spriteId": "smile",
+              "durationMs": 480
+            }
+          ]
+        },
+        {
+          "type": "hold",
+          "spriteId": "stand",
+          "durationMs": 220
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "walk-left",
+      "family": "movement",
+      "selectionWeight": 5,
+      "cooldownMs": 9500,
+      "requiredCapabilities": [],
+      "eligibility": {
+        "grounded": true
+      },
+      "interruptPolicy": "interruptible",
+      "steps": [
+        {
+          "type": "hold",
+          "spriteId": "phone-stand",
+          "durationMs": 200
+        },
+        {
+          "type": "hold",
+          "spriteId": "phone-glance",
+          "durationMs": 190
+        },
+        {
+          "type": "hold",
+          "spriteId": "walk-prep-left",
+          "durationMs": 180
+        },
+        {
+          "type": "moveAlongSurface",
+          "durationMs": 2400,
+          "frames": [
+            {
+              "spriteId": "phone-walk-left-a",
+              "durationMs": 155
+            },
+            {
+              "spriteId": "phone-walk-left-b",
+              "durationMs": 155
+            },
+            {
+              "spriteId": "walk-left",
+              "durationMs": 155
+            },
+            {
+              "spriteId": "phone-walk-left-b",
+              "durationMs": 155
+            }
+          ],
+          "speed": -0.54
+        },
+        {
+          "type": "hold",
+          "spriteId": "phone-glance",
+          "durationMs": 160
+        },
+        {
+          "type": "hold",
+          "spriteId": "phone-stand",
+          "durationMs": 260
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "run-left",
+      "family": "movement",
+      "selectionWeight": 0.65,
+      "cooldownMs": 55000,
+      "requiredCapabilities": [],
+      "eligibility": {
+        "grounded": true
+      },
+      "interruptPolicy": "interruptible",
+      "steps": [
+        {
+          "type": "hold",
+          "spriteId": "phone-stand",
+          "durationMs": 170
+        },
+        {
+          "type": "hold",
+          "spriteId": "walk-prep-left",
+          "durationMs": 220
+        },
+        {
+          "type": "moveAlongSurface",
+          "durationMs": 960,
+          "frames": [
+            {
+              "spriteId": "run-left",
+              "durationMs": 170
+            },
+            {
+              "spriteId": "walk-left",
+              "durationMs": 115
+            }
+          ],
+          "speed": -1.35
+        },
+        {
+          "type": "hold",
+          "spriteId": "phone-glance",
+          "durationMs": 160
+        },
+        {
+          "type": "hold",
+          "spriteId": "phone-stand",
+          "durationMs": 200
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "top-walk-left",
+      "family": "edge",
+      "selectionWeight": 4,
+      "cooldownMs": 13000,
+      "requiredCapabilities": [
+        "windowEdges"
+      ],
+      "eligibility": {
+        "surfaceKind": "windowTop",
+        "minimumWidth": 1.15
+      },
+      "interruptPolicy": "interruptible",
+      "steps": [
+        {
+          "type": "hold",
+          "spriteId": "phone-stand",
+          "durationMs": 150
+        },
+        {
+          "type": "hold",
+          "spriteId": "phone-glance",
+          "durationMs": 210
+        },
+        {
+          "type": "moveAlongSurface",
+          "durationMs": 2400,
+          "frames": [
+            {
+              "spriteId": "phone-walk-left-a",
+              "durationMs": 155
+            },
+            {
+              "spriteId": "phone-walk-left-b",
+              "durationMs": 155
+            },
+            {
+              "spriteId": "walk-left",
+              "durationMs": 155
+            },
+            {
+              "spriteId": "phone-walk-left-b",
+              "durationMs": 155
+            }
+          ],
+          "speed": -0.46
+        },
+        {
+          "type": "hold",
+          "spriteId": "phone-glance",
+          "durationMs": 170
+        },
+        {
+          "type": "hold",
+          "spriteId": "phone-stand",
+          "durationMs": 220
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "walk-right",
+      "family": "movement",
+      "selectionWeight": 5,
+      "cooldownMs": 9500,
+      "requiredCapabilities": [],
+      "eligibility": {
+        "grounded": true
+      },
+      "interruptPolicy": "interruptible",
+      "steps": [
+        {
+          "type": "hold",
+          "spriteId": "phone-stand",
+          "durationMs": 200
+        },
+        {
+          "type": "hold",
+          "spriteId": "phone-turn-right",
+          "durationMs": 190
+        },
+        {
+          "type": "hold",
+          "spriteId": "walk-prep-right",
+          "durationMs": 180
+        },
+        {
+          "type": "moveAlongSurface",
+          "durationMs": 2400,
+          "frames": [
+            {
+              "spriteId": "phone-walk-right-a",
+              "durationMs": 155
+            },
+            {
+              "spriteId": "phone-walk-right-b",
+              "durationMs": 155
+            },
+            {
+              "spriteId": "walk-right",
+              "durationMs": 155
+            },
+            {
+              "spriteId": "phone-walk-right-b",
+              "durationMs": 155
+            }
+          ],
+          "speed": 0.54
+        },
+        {
+          "type": "hold",
+          "spriteId": "phone-turn-right",
+          "durationMs": 160
+        },
+        {
+          "type": "hold",
+          "spriteId": "phone-stand",
+          "durationMs": 260
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "run-right",
+      "family": "movement",
+      "selectionWeight": 0.65,
+      "cooldownMs": 55000,
+      "requiredCapabilities": [],
+      "eligibility": {
+        "grounded": true
+      },
+      "interruptPolicy": "interruptible",
+      "steps": [
+        {
+          "type": "hold",
+          "spriteId": "phone-stand",
+          "durationMs": 170
+        },
+        {
+          "type": "hold",
+          "spriteId": "walk-prep-right",
+          "durationMs": 220
+        },
+        {
+          "type": "moveAlongSurface",
+          "durationMs": 960,
+          "frames": [
+            {
+              "spriteId": "run-right",
+              "durationMs": 170
+            },
+            {
+              "spriteId": "walk-right",
+              "durationMs": 115
+            }
+          ],
+          "speed": 1.35
+        },
+        {
+          "type": "hold",
+          "spriteId": "phone-turn-right",
+          "durationMs": 160
+        },
+        {
+          "type": "hold",
+          "spriteId": "phone-stand",
+          "durationMs": 200
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "top-walk-right",
+      "family": "edge",
+      "selectionWeight": 4,
+      "cooldownMs": 13000,
+      "requiredCapabilities": [
+        "windowEdges"
+      ],
+      "eligibility": {
+        "surfaceKind": "windowTop",
+        "minimumWidth": 1.15
+      },
+      "interruptPolicy": "interruptible",
+      "steps": [
+        {
+          "type": "hold",
+          "spriteId": "phone-stand",
+          "durationMs": 150
+        },
+        {
+          "type": "hold",
+          "spriteId": "phone-turn-right",
+          "durationMs": 210
+        },
+        {
+          "type": "moveAlongSurface",
+          "durationMs": 2400,
+          "frames": [
+            {
+              "spriteId": "phone-walk-right-a",
+              "durationMs": 155
+            },
+            {
+              "spriteId": "phone-walk-right-b",
+              "durationMs": 155
+            },
+            {
+              "spriteId": "walk-right",
+              "durationMs": 155
+            },
+            {
+              "spriteId": "phone-walk-right-b",
+              "durationMs": 155
+            }
+          ],
+          "speed": 0.46
+        },
+        {
+          "type": "hold",
+          "spriteId": "phone-turn-right",
+          "durationMs": 170
+        },
+        {
+          "type": "hold",
+          "spriteId": "phone-stand",
+          "durationMs": 220
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "parcel",
+      "family": "movement",
+      "selectionWeight": 0.65,
+      "cooldownMs": 45000,
+      "requiredCapabilities": [],
+      "eligibility": {
+        "grounded": true
+      },
+      "interruptPolicy": "interruptible",
+      "steps": [
+        {
+          "type": "hold",
+          "spriteId": "stand",
+          "durationMs": 260
+        },
+        {
+          "type": "moveAlongSurface",
+          "spriteId": "parcel-carry",
+          "durationMs": 1900,
+          "speed": -0.3
+        },
+        {
+          "type": "hold",
+          "spriteId": "stand",
+          "durationMs": 400
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "small-parcel",
+      "family": "movement",
+      "selectionWeight": 0.65,
+      "cooldownMs": 45000,
+      "requiredCapabilities": [],
+      "eligibility": {
+        "grounded": true
+      },
+      "interruptPolicy": "interruptible",
+      "steps": [
+        {
+          "type": "hold",
+          "spriteId": "stand",
+          "durationMs": 260
+        },
+        {
+          "type": "moveAlongSurface",
+          "spriteId": "small-parcel",
+          "durationMs": 1900,
+          "speed": -0.3
+        },
+        {
+          "type": "hold",
+          "spriteId": "stand",
+          "durationMs": 400
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "push-folder",
+      "family": "movement",
+      "selectionWeight": 0.65,
+      "cooldownMs": 45000,
+      "requiredCapabilities": [],
+      "eligibility": {
+        "grounded": true
+      },
+      "interruptPolicy": "interruptible",
+      "steps": [
+        {
+          "type": "hold",
+          "spriteId": "stand",
+          "durationMs": 260
+        },
+        {
+          "type": "moveAlongSurface",
+          "spriteId": "folder-push",
+          "durationMs": 1900,
+          "speed": -0.3
+        },
+        {
+          "type": "hold",
+          "spriteId": "stand",
+          "durationMs": 400
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "window-card",
+      "family": "movement",
+      "selectionWeight": 0.65,
+      "cooldownMs": 45000,
+      "requiredCapabilities": [],
+      "eligibility": {
+        "grounded": true
+      },
+      "interruptPolicy": "interruptible",
+      "steps": [
+        {
+          "type": "hold",
+          "spriteId": "stand",
+          "durationMs": 260
+        },
+        {
+          "type": "moveAlongSurface",
+          "spriteId": "card-carry",
+          "durationMs": 1900,
+          "speed": -0.3
+        },
+        {
+          "type": "hold",
+          "spriteId": "stand",
+          "durationMs": 400
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "happy-hop",
+      "family": "movement",
+      "selectionWeight": 1.4,
+      "cooldownMs": 20000,
+      "requiredCapabilities": [],
+      "eligibility": {
+        "grounded": true
+      },
+      "interruptPolicy": "interruptible",
+      "steps": [
+        {
+          "type": "hold",
+          "spriteId": "jump-prep-left",
+          "durationMs": 185
+        },
+        {
+          "type": "jump",
+          "durationMs": 530,
+          "frames": [
+            {
+              "spriteId": "jump-up",
+              "durationMs": 145
+            },
+            {
+              "spriteId": "jump-cheer",
+              "durationMs": 300
+            },
+            {
+              "spriteId": "jump-up",
+              "durationMs": 100
+            }
+          ],
+          "height": 0.32,
+          "speed": -0.16
+        },
+        {
+          "type": "hold",
+          "spriteId": "landing-crouch",
+          "durationMs": 240
+        },
+        {
+          "type": "hold",
+          "spriteId": "jump-recover",
+          "durationMs": 280
+        },
+        {
+          "type": "hold",
+          "spriteId": "stand",
+          "durationMs": 500
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "look-around",
+      "family": "reaction",
+      "selectionWeight": 1,
+      "cooldownMs": 28000,
+      "requiredCapabilities": [],
+      "eligibility": {
+        "grounded": true
+      },
+      "interruptPolicy": "interruptible",
+      "steps": [
+        {
+          "type": "hold",
+          "spriteId": "phone-stand",
+          "durationMs": 220
+        },
+        {
+          "type": "hold",
+          "spriteId": "look-up",
+          "durationMs": 1000
+        },
+        {
+          "type": "hold",
+          "spriteId": "look-back",
+          "durationMs": 900
+        },
+        {
+          "type": "hold",
+          "spriteId": "phone-stand",
+          "durationMs": 350
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "perch-hop",
+      "family": "edge",
+      "selectionWeight": 3,
+      "cooldownMs": 19000,
+      "requiredCapabilities": [
+        "windowEdges"
+      ],
+      "eligibility": {
+        "grounded": true,
+        "surfaceKind": "floor",
+        "nearbySurface": "windowTop"
+      },
+      "interruptPolicy": "interruptible",
+      "steps": [
+        {
+          "type": "hold",
+          "spriteId": "fall-anticipation",
+          "durationMs": 210
+        },
+        {
+          "type": "jump",
+          "durationMs": 780,
+          "frames": [
+            {
+              "spriteId": "fall-takeoff",
+              "durationMs": 170
+            },
+            {
+              "spriteId": "fall-airborne",
+              "durationMs": 650
+            }
+          ],
+          "target": "windowTop",
+          "height": 0.34
+        },
+        {
+          "type": "hold",
+          "spriteId": "fall-recover",
+          "durationMs": 260
+        },
+        {
+          "type": "hold",
+          "spriteId": "stand",
+          "durationMs": 500
+        }
+      ],
+      "next": [
+        {
+          "behaviorId": "window-sit",
+          "weight": 4
+        },
+        {
+          "behaviorId": "climb",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "window-sit",
+      "family": "edge",
+      "selectionWeight": 4,
+      "cooldownMs": 24000,
+      "requiredCapabilities": [
+        "windowEdges"
+      ],
+      "eligibility": {
+        "surfaceKind": "windowTop"
+      },
+      "interruptPolicy": "interruptible",
+      "steps": [
+        {
+          "type": "hold",
+          "spriteId": "edge-sit",
+          "durationMs": 5700,
+          "anchor": "seat"
+        },
+        {
+          "type": "hold",
+          "spriteId": "stand",
+          "durationMs": 400,
+          "anchor": "feet"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "top-peek",
+      "family": "edge",
+      "selectionWeight": 2,
+      "cooldownMs": 22000,
+      "requiredCapabilities": [
+        "windowEdges"
+      ],
+      "eligibility": {
+        "surfaceKind": "windowTop"
+      },
+      "interruptPolicy": "interruptible",
+      "steps": [
+        {
+          "type": "hold",
+          "spriteId": "top-peek",
+          "durationMs": 1900,
+          "anchor": "hands",
+          "clip": true
+        },
+        {
+          "type": "hold",
+          "spriteId": "top-climb",
+          "durationMs": 500,
+          "anchor": "hands"
+        },
+        {
+          "type": "hold",
+          "spriteId": "stand",
+          "durationMs": 420,
+          "anchor": "feet"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "climb",
+      "family": "edge",
+      "selectionWeight": 2,
+      "cooldownMs": 30000,
+      "requiredCapabilities": [
+        "windowEdges"
+      ],
+      "eligibility": {
+        "surfaceKind": "windowTop"
+      },
+      "interruptPolicy": "interruptible",
+      "steps": [
+        {
+          "type": "hold",
+          "spriteId": "top-climb",
+          "durationMs": 920,
+          "anchor": "hands"
+        },
+        {
+          "type": "hold",
+          "spriteId": "edge-sit",
+          "durationMs": 2200,
+          "anchor": "seat"
+        },
+        {
+          "type": "hold",
+          "spriteId": "stand",
+          "durationMs": 320,
+          "anchor": "feet"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "peek-left",
+      "family": "edge",
+      "selectionWeight": 1.5,
+      "cooldownMs": 31000,
+      "requiredCapabilities": [
+        "windowEdges"
+      ],
+      "eligibility": {
+        "nearbySurface": "windowLeft",
+        "grounded": true
+      },
+      "interruptPolicy": "interruptible",
+      "steps": [
+        {
+          "type": "attach",
+          "target": "windowLeft",
+          "spriteId": "side-peek-left",
+          "anchor": "sideGrip",
+          "clip": true,
+          "durationMs": 2250
+        },
+        {
+          "type": "fall",
+          "spriteId": "fall-airborne",
+          "anchor": "feet",
+          "durationMs": 850
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "peek-right",
+      "family": "edge",
+      "selectionWeight": 1.5,
+      "cooldownMs": 31000,
+      "requiredCapabilities": [
+        "windowEdges"
+      ],
+      "eligibility": {
+        "nearbySurface": "windowRight",
+        "grounded": true
+      },
+      "interruptPolicy": "interruptible",
+      "steps": [
+        {
+          "type": "attach",
+          "target": "windowRight",
+          "spriteId": "side-peek-right",
+          "anchor": "sideGrip",
+          "clip": true,
+          "durationMs": 2250
+        },
+        {
+          "type": "fall",
+          "spriteId": "fall-airborne",
+          "anchor": "feet",
+          "durationMs": 850
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "hang-and-swing",
+      "family": "edge",
+      "selectionWeight": 1,
+      "cooldownMs": 37000,
+      "requiredCapabilities": [
+        "windowEdges"
+      ],
+      "eligibility": {
+        "nearbySurface": "windowBottom",
+        "grounded": true
+      },
+      "interruptPolicy": "interruptible",
+      "steps": [
+        {
+          "type": "attach",
+          "target": "windowBottom",
+          "spriteId": "edge-hang",
+          "anchor": "hands",
+          "durationMs": 950
+        },
+        {
+          "type": "playFrames",
+          "frames": [
+            {
+              "spriteId": "edge-hang",
+              "durationMs": 310
+            },
+            {
+              "spriteId": "edge-swing",
+              "durationMs": 360
+            },
+            {
+              "spriteId": "edge-hang",
+              "durationMs": 380
+            },
+            {
+              "spriteId": "edge-swing",
+              "durationMs": 310
+            }
+          ],
+          "anchor": "hands"
+        },
+        {
+          "type": "fall",
+          "spriteId": "fall-tumble",
+          "anchor": "feet",
+          "durationMs": 650
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "upside-down",
+      "family": "edge",
+      "selectionWeight": 0.45,
+      "cooldownMs": 80000,
+      "requiredCapabilities": [
+        "windowEdges"
+      ],
+      "eligibility": {
+        "nearbySurface": "windowBottom",
+        "grounded": true
+      },
+      "interruptPolicy": "interruptible",
+      "steps": [
+        {
+          "type": "attach",
+          "target": "windowBottom",
+          "spriteId": "edge-inverted",
+          "anchor": "hands",
+          "durationMs": 1650
+        },
+        {
+          "type": "fall",
+          "spriteId": "fall-tumble",
+          "anchor": "feet",
+          "durationMs": 700
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "hop-off-window",
+      "family": "edge",
+      "selectionWeight": 1.5,
+      "cooldownMs": 24000,
+      "requiredCapabilities": [
+        "windowEdges"
+      ],
+      "eligibility": {
+        "surfaceKind": "windowTop"
+      },
+      "interruptPolicy": "interruptible",
+      "steps": [
+        {
+          "type": "hold",
+          "spriteId": "fall-anticipation",
+          "durationMs": 190
+        },
+        {
+          "type": "jump",
+          "durationMs": 490,
+          "frames": [
+            {
+              "spriteId": "jump-startled",
+              "durationMs": 480
+            }
+          ],
+          "target": "floor",
+          "height": 0.28,
+          "speed": 0.3
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "click-heart",
+      "family": "reaction",
+      "selectionWeight": 5,
+      "cooldownMs": 0,
+      "requiredCapabilities": [
+        "pointer"
+      ],
+      "eligibility": {
+        "interaction": "click"
+      },
+      "interruptPolicy": "interruptible",
+      "steps": [
+        {
+          "type": "hold",
+          "spriteId": "heart-eyes",
+          "durationMs": 850
+        },
+        {
+          "type": "hold",
+          "spriteId": "smile",
+          "durationMs": 400
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "click-offer-heart",
+      "family": "reaction",
+      "selectionWeight": 3,
+      "cooldownMs": 0,
+      "requiredCapabilities": [
+        "pointer"
+      ],
+      "eligibility": {
+        "interaction": "click"
+      },
+      "interruptPolicy": "interruptible",
+      "steps": [
+        {
+          "type": "hold",
+          "spriteId": "offer-heart",
+          "durationMs": 850
+        },
+        {
+          "type": "hold",
+          "spriteId": "smile",
+          "durationMs": 400
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "click-smile",
+      "family": "reaction",
+      "selectionWeight": 2,
+      "cooldownMs": 0,
+      "requiredCapabilities": [
+        "pointer"
+      ],
+      "eligibility": {
+        "interaction": "click"
+      },
+      "interruptPolicy": "interruptible",
+      "steps": [
+        {
+          "type": "hold",
+          "spriteId": "smile",
+          "durationMs": 850
+        },
+        {
+          "type": "hold",
+          "spriteId": "smile",
+          "durationMs": 400
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "pickup",
+      "family": "reaction",
+      "selectionWeight": 1,
+      "cooldownMs": 0,
+      "requiredCapabilities": [
+        "pointer"
+      ],
+      "eligibility": {
+        "interaction": "pickup"
+      },
+      "interruptPolicy": "interruptible",
+      "steps": [
+        {
+          "type": "hold",
+          "spriteId": "surprised-drop",
+          "durationMs": 560
+        },
+        {
+          "type": "hold",
+          "spriteId": "startled",
+          "durationMs": 1500
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "drop",
+      "family": "reaction",
+      "selectionWeight": 1,
+      "cooldownMs": 0,
+      "requiredCapabilities": [
+        "pointer"
+      ],
+      "eligibility": {
+        "interaction": "drop",
+        "grounded": false
+      },
+      "interruptPolicy": "interruptible",
+      "steps": [
+        {
+          "type": "hold",
+          "spriteId": "fall-airborne",
+          "durationMs": 1600
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "snap",
+      "family": "reaction",
+      "selectionWeight": 1,
+      "cooldownMs": 0,
+      "requiredCapabilities": [
+        "pointer"
+      ],
+      "eligibility": {
+        "interaction": "drop",
+        "grounded": true
+      },
+      "interruptPolicy": "interruptible",
+      "steps": [
+        {
+          "type": "hold",
+          "spriteId": "landing-crouch",
+          "durationMs": 170
+        },
+        {
+          "type": "hold",
+          "spriteId": "fall-celebrate",
+          "durationMs": 260
+        },
+        {
+          "type": "hold",
+          "spriteId": "smile",
+          "durationMs": 600
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "lost-support",
+      "family": "reaction",
+      "selectionWeight": 1,
+      "cooldownMs": 0,
+      "requiredCapabilities": [],
+      "eligibility": {
+        "interaction": "lostSupport"
+      },
+      "interruptPolicy": "interruptible",
+      "steps": [
+        {
+          "type": "hold",
+          "spriteId": "fall-tumble",
+          "durationMs": 400
+        },
+        {
+          "type": "hold",
+          "spriteId": "fall-airborne",
+          "durationMs": 2000
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "land",
+      "family": "reaction",
+      "selectionWeight": 1,
+      "cooldownMs": 0,
+      "requiredCapabilities": [],
+      "eligibility": {
+        "interaction": "land"
+      },
+      "interruptPolicy": "interruptible",
+      "steps": [
+        {
+          "type": "hold",
+          "spriteId": "fall-impact",
+          "durationMs": 200
+        },
+        {
+          "type": "hold",
+          "spriteId": "fall-recover",
+          "durationMs": 420
+        },
+        {
+          "type": "hold",
+          "spriteId": "smile",
+          "durationMs": 430
+        }
+      ],
+      "next": []
+    }
+  ]
+}

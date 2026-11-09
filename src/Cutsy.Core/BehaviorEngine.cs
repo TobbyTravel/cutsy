@@ -98,11 +98,13 @@ public sealed class BehaviorEngine
             if (next is null)
             {
                 LoseSupport();
+                if (!desktop.Quiet)
+                    React(Interaction.LostSupport);
             }
             else
             {
                 WorldPoint old = Contact;
-                Contact = next.Contact(SurfaceOrigin(next) + alongOrigin);
+                SetSupport(next, SurfaceOrigin(next) + alongOrigin);
                 if (stayHere || seconds < graceUntil)
                     stayAnchor = new WorldPoint(stayAnchor.X + Contact.X - old.X, stayAnchor.Y + Contact.Y - old.Y);
                 support = next;
@@ -339,7 +341,10 @@ public sealed class BehaviorEngine
             Contact.X >= s.Start && Contact.X <= s.End && s.Line >= Contact.Y - 1 && s.Line <= y)
             .OrderBy(s => s.Line).FirstOrDefault();
         if (floor is not null)
+        {
             SetSupport(floor, Contact.X);
+            React(Interaction.Land);
+        }
         else
         {
             Contact = new WorldPoint(Contact.X, y);
@@ -398,7 +403,7 @@ public sealed class BehaviorEngine
     {
         var candidate = Choose(pack.SelectionOrder.Where(b => Eligible(b, action)).Select(b => (b, b.SelectionWeight)));
         if (candidate is not null)
-            Start(candidate, fromInteraction: true);
+            Start(candidate, fromInteraction: action is Interaction.Click or Interaction.Pickup or Interaction.Drop);
     }
 
     private bool Eligible(Behavior candidate, Interaction? interaction)
@@ -409,12 +414,20 @@ public sealed class BehaviorEngine
             (rule.SurfaceKind is { } kind && support?.Kind != kind) ||
             (rule.Grounded is { } grounded && grounded != (support?.SupportsFeet == true)) ||
             (rule.Attached is { } attached && attached != (support is { Kind: not SurfaceKind.Floor })) ||
+            (rule.NearbySurface is { } nearby && NearbySurface(nearby) is null) ||
             (rule.Facing is { } facing && pack.Sprites[spriteId].Facing != facing) ||
             rule.MinimumWidth > 0 && (support is null || support.End - support.Start < rule.MinimumWidth * HeightAt(Contact)))
             return false;
         if (interaction is null && candidate.Family != BehaviorFamily.Idle && (falling ||
             seconds < graceUntil || Activity <= 0))
             return false;
+        if (candidate.Family == BehaviorFamily.Movement && support is { SupportsFeet: true } surface)
+        {
+            double delta = candidate.Steps.FirstOrDefault(step => step.Type == StepType.MoveAlongSurface)?.Speed ?? 0;
+            double room = delta < 0 ? Contact.X - surface.Start : surface.End - Contact.X;
+            if (delta != 0 && room < HeightAt(Contact) * .65)
+                return false;
+        }
         if (stayHere && candidate.Family == BehaviorFamily.Edge && interaction is null)
             return false;
         return true;

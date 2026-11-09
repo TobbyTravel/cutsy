@@ -75,9 +75,12 @@
                 "enum": [
                   "click",
                   "pickup",
-                  "drop"
+                  "drop",
+                  "lostSupport",
+                  "land"
                 ]
               },
+              "nearbySurface": { "enum": ["floor", "windowTop", "windowLeft", "windowRight", "windowBottom"] },
               "minimumWidth": {
                 "type": "number",
                 "minimum": 0,

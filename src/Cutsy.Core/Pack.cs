@@ -7,7 +7,7 @@ public enum Facing { None, Front, Left, Right }
 public enum SurfaceKind { Floor, WindowTop, WindowLeft, WindowRight, WindowBottom }
 public enum BehaviorFamily { Idle, Movement, Edge, Reaction }
 public enum StepType { PlayFrames, Hold, MoveAlongSurface, Jump, Fall, Attach, Detach, React, PlaySound }
-public enum Interaction { Click, Pickup, Drop }
+public enum Interaction { Click, Pickup, Drop, LostSupport, Land }
 public enum InterruptPolicy { Interruptible, Finish, Loop }
 
 public readonly record struct Bounds(int X, int Y, int Width, int Height)
@@ -28,7 +28,7 @@ public sealed record Frame(string SpriteId, int DurationMs);
 public sealed record Transition(string BehaviorId, double Weight);
 public sealed record Eligibility(
     SurfaceKind? SurfaceKind = null, Facing? Facing = null, bool? Grounded = null, bool? Attached = null,
-    Interaction? Interaction = null, double MinimumWidth = 0);
+    Interaction? Interaction = null, double MinimumWidth = 0, SurfaceKind? NearbySurface = null);
 public sealed record Step(
     StepType Type, int DurationMs = 0, string? SpriteId = null, ImmutableArray<Frame> Frames = default,
     double Speed = 0, double Height = 0, SurfaceKind? Target = null, string? Anchor = null,
