@@ -1,0 +1,31 @@
+DESKTOP MASCOT ANIMATION SPECIFICATION
+=====================================
+
+Coordinate system and pivots
+----------------------------
+Use the bottom-centre of each frame (x=0.50, y=0.92 in normalized sprite space) as the default feet pivot. Keep that pivot aligned to the desktop baseline or the top/bottom window edge so she does not appear to float. Use pixel-perfect drawing or nearest-neighbour only when scaling down; use high-quality filtering when scaling up.
+
+For hanging and ledge actions, override the default pivot to the visible hand/ledge contact point, approximately x=0.50, y=0.08 for the centred hanging frames and x=0.08 or x=0.92 for side-peek frames. Keep that contact point stationary as the animation plays.
+
+Recommended state behavior
+--------------------------
+* Idle: randomly select a sheet_04 or sheet_08 idle/expression frame every 3-8 seconds; use a 2 FPS micro-loop rather than rapid cycling.
+* Walk: `walk_right` is 4 frames at 7 FPS. Move the actor 5-9% of its foot width per frame. Mirror only the walking-cycle frames when the bag/phone swapping sides is acceptable.
+* Window top: use `sheet_03_window_edge` or `sheet_06_ledge_and_hanging`; set z-order above the target window and lock the hand or feet pivot to the top edge.
+* Window bottom / under-window: use `peek_low`, `peek_over_edge`, `peek_left_edge`, and `peek_right_edge`; clip the lower portion behind the window edge and allow 10-25% overlap.
+* Side edges: `peek_left_edge` and `peek_right_edge` should enter from 20-40% offscreen, pause for 0.7-1.4 seconds, then retreat.
+* Fall: use `fall_recover` at 8 FPS without looping. Start only after a fall distance of at least 1.5 sprite heights. Land with feet pivot on the desktop/window edge and transition to idle, sit, or frustrated_sit.
+* Hanging: use `hang_bar` at 4 FPS; never translate the hand pivot between frames. If a window closes, release into `fall_recover`.
+* Busy/props: `sheet_09_busy_tasks` is a pose library, not a continuous morph sequence. Crossfade via a neutral idle frame rather than interpolating prop changes.
+
+Action timing
+-------------
+No action should run constantly. Suggested weighted distribution for an unobtrusive mascot: idle 55%, walk 20%, window-edge peek/hang 15%, task prop poses 7%, fall/recovery or rare reactions 3%. Add 0.2-0.5 seconds of anticipation/settling by holding the first/last frame rather than generating extra in-betweens.
+
+Collision and placement
+-----------------------
+Use a compact collision capsule that covers the lower 55% of standing frames, not the whole rectangle: hair, bag, arms, and props intentionally overhang. Treat the frame as visual-only and use the stored pivot as the anchoring truth. Do not use the rectangle edges for collision.
+
+Transparency
+------------
+All standalone sprites are RGBA PNGs. `sheet_06_ledge_and_hanging` was cleaned because the retrieved source included a faint light background. The unmodified source remains in `original_sheets/`; the processed sheet and extracted sprites use the alpha-cleaned version.

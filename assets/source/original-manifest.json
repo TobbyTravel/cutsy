@@ -1,0 +1,3220 @@
+{
+  "format_version": 1,
+  "package": "desktop_mascot_assets_bundle_updated",
+  "created_utc": "2026-11-09T12:00:14+00:00",
+  "sprite_sheet_grid": {
+    "columns": 4,
+    "rows": 2,
+    "order": "row-major"
+  },
+  "coordinate_convention": "row and column are 1-based; crop rectangles use left, top, right, bottom with right/bottom exclusive.",
+  "alpha_policy": "All exported sprites are RGBA PNG. Raw source sheets are retained unchanged. Only sheet_06 receives a separately named connected light-background alpha cleanup.",
+  "anchors": [
+    {
+      "id": "anchor_grumpy_phone_drink",
+      "file": "anchor_images/anchor_grumpy_phone_drink_raw.png",
+      "purpose": "style and visual-reference artwork; not cut into animation frames",
+      "dimensions_px": {
+        "width": 1024,
+        "height": 1536
+      },
+      "alpha": {
+        "min": 0,
+        "max": 254,
+        "transparent_pixels": 721973,
+        "partially_transparent_pixels": 850891,
+        "opaque_pixels": 0
+      }
+    },
+    {
+      "id": "anchor_cute_phone_boba",
+      "file": "anchor_images/anchor_cute_phone_boba_raw.png",
+      "purpose": "style and visual-reference artwork; not cut into animation frames",
+      "dimensions_px": {
+        "width": 1024,
+        "height": 1536
+      },
+      "alpha": {
+        "min": 0,
+        "max": 254,
+        "transparent_pixels": 729441,
+        "partially_transparent_pixels": 843423,
+        "opaque_pixels": 0
+      }
+    }
+  ],
+  "sheets": [
+    {
+      "id": "sheet_01_walk_cycle",
+      "raw_file": "original_sheets/sheet_01_walk_cycle_raw.png",
+      "processed_file": "processed_sheets/sheet_01_walk_cycle_processed.png",
+      "dimensions_px": {
+        "width": 1774,
+        "height": 887
+      },
+      "grid": {
+        "columns": 4,
+        "rows": 2,
+        "x_bounds": [
+          0,
+          444,
+          887,
+          1330,
+          1774
+        ],
+        "y_bounds": [
+          0,
+          444,
+          887
+        ]
+      },
+      "raw_alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 936447,
+        "partially_transparent_pixels": 635713,
+        "opaque_pixels": 1378
+      },
+      "processed_alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 936447,
+        "partially_transparent_pixels": 635713,
+        "opaque_pixels": 1378
+      },
+      "cleanup": {
+        "applied": false,
+        "method": null,
+        "pixels_made_fully_transparent": 0
+      }
+    },
+    {
+      "id": "sheet_02_sit_and_react",
+      "raw_file": "original_sheets/sheet_02_sit_and_react_raw.png",
+      "processed_file": "processed_sheets/sheet_02_sit_and_react_processed.png",
+      "dimensions_px": {
+        "width": 1774,
+        "height": 887
+      },
+      "grid": {
+        "columns": 4,
+        "rows": 2,
+        "x_bounds": [
+          0,
+          444,
+          887,
+          1330,
+          1774
+        ],
+        "y_bounds": [
+          0,
+          444,
+          887
+        ]
+      },
+      "raw_alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 847390,
+        "partially_transparent_pixels": 725499,
+        "opaque_pixels": 649
+      },
+      "processed_alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 847390,
+        "partially_transparent_pixels": 725499,
+        "opaque_pixels": 649
+      },
+      "cleanup": {
+        "applied": false,
+        "method": null,
+        "pixels_made_fully_transparent": 0
+      }
+    },
+    {
+      "id": "sheet_03_window_edge",
+      "raw_file": "original_sheets/sheet_03_window_edge_raw.png",
+      "processed_file": "processed_sheets/sheet_03_window_edge_processed.png",
+      "dimensions_px": {
+        "width": 1774,
+        "height": 887
+      },
+      "grid": {
+        "columns": 4,
+        "rows": 2,
+        "x_bounds": [
+          0,
+          444,
+          887,
+          1330,
+          1774
+        ],
+        "y_bounds": [
+          0,
+          444,
+          887
+        ]
+      },
+      "raw_alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 937038,
+        "partially_transparent_pixels": 634454,
+        "opaque_pixels": 2046
+      },
+      "processed_alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 937038,
+        "partially_transparent_pixels": 634454,
+        "opaque_pixels": 2046
+      },
+      "cleanup": {
+        "applied": false,
+        "method": null,
+        "pixels_made_fully_transparent": 0
+      }
+    },
+    {
+      "id": "sheet_04_expressions",
+      "raw_file": "original_sheets/sheet_04_expressions_raw.png",
+      "processed_file": "processed_sheets/sheet_04_expressions_processed.png",
+      "dimensions_px": {
+        "width": 1774,
+        "height": 887
+      },
+      "grid": {
+        "columns": 4,
+        "rows": 2,
+        "x_bounds": [
+          0,
+          444,
+          887,
+          1330,
+          1774
+        ],
+        "y_bounds": [
+          0,
+          444,
+          887
+        ]
+      },
+      "raw_alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 790726,
+        "partially_transparent_pixels": 781854,
+        "opaque_pixels": 958
+      },
+      "processed_alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 790726,
+        "partially_transparent_pixels": 781854,
+        "opaque_pixels": 958
+      },
+      "cleanup": {
+        "applied": false,
+        "method": null,
+        "pixels_made_fully_transparent": 0
+      }
+    },
+    {
+      "id": "sheet_05_hanging_and_rest",
+      "raw_file": "original_sheets/sheet_05_hanging_and_rest_raw.png",
+      "processed_file": "processed_sheets/sheet_05_hanging_and_rest_processed.png",
+      "dimensions_px": {
+        "width": 1774,
+        "height": 887
+      },
+      "grid": {
+        "columns": 4,
+        "rows": 2,
+        "x_bounds": [
+          0,
+          444,
+          887,
+          1330,
+          1774
+        ],
+        "y_bounds": [
+          0,
+          444,
+          887
+        ]
+      },
+      "raw_alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 876793,
+        "partially_transparent_pixels": 695125,
+        "opaque_pixels": 1620
+      },
+      "processed_alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 876793,
+        "partially_transparent_pixels": 695125,
+        "opaque_pixels": 1620
+      },
+      "cleanup": {
+        "applied": false,
+        "method": null,
+        "pixels_made_fully_transparent": 0
+      }
+    },
+    {
+      "id": "sheet_06_ledge_and_hanging",
+      "raw_file": "original_sheets/sheet_06_ledge_and_hanging_raw.png",
+      "processed_file": "processed_sheets/sheet_06_ledge_and_hanging_processed.png",
+      "dimensions_px": {
+        "width": 1448,
+        "height": 1086
+      },
+      "grid": {
+        "columns": 4,
+        "rows": 2,
+        "x_bounds": [
+          0,
+          362,
+          724,
+          1086,
+          1448
+        ],
+        "y_bounds": [
+          0,
+          543,
+          1086
+        ]
+      },
+      "raw_alpha": {
+        "min": 23,
+        "max": 255,
+        "transparent_pixels": 0,
+        "partially_transparent_pixels": 1572506,
+        "opaque_pixels": 22
+      },
+      "processed_alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 906696,
+        "partially_transparent_pixels": 665810,
+        "opaque_pixels": 22
+      },
+      "cleanup": {
+        "applied": true,
+        "method": "edge-connected light-neutral background flood fill; raw source retained unchanged",
+        "pixels_made_fully_transparent": 906696
+      }
+    },
+    {
+      "id": "sheet_07_fall_and_recover",
+      "raw_file": "original_sheets/sheet_07_fall_and_recover_raw.png",
+      "processed_file": "processed_sheets/sheet_07_fall_and_recover_processed.png",
+      "dimensions_px": {
+        "width": 1448,
+        "height": 1086
+      },
+      "grid": {
+        "columns": 4,
+        "rows": 2,
+        "x_bounds": [
+          0,
+          362,
+          724,
+          1086,
+          1448
+        ],
+        "y_bounds": [
+          0,
+          543,
+          1086
+        ]
+      },
+      "raw_alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 857166,
+        "partially_transparent_pixels": 713621,
+        "opaque_pixels": 1741
+      },
+      "processed_alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 857166,
+        "partially_transparent_pixels": 713621,
+        "opaque_pixels": 1741
+      },
+      "cleanup": {
+        "applied": false,
+        "method": null,
+        "pixels_made_fully_transparent": 0
+      }
+    },
+    {
+      "id": "sheet_08_idle_expressions",
+      "raw_file": "original_sheets/sheet_08_idle_expressions_raw.png",
+      "processed_file": "processed_sheets/sheet_08_idle_expressions_processed.png",
+      "dimensions_px": {
+        "width": 1448,
+        "height": 1086
+      },
+      "grid": {
+        "columns": 4,
+        "rows": 2,
+        "x_bounds": [
+          0,
+          362,
+          724,
+          1086,
+          1448
+        ],
+        "y_bounds": [
+          0,
+          543,
+          1086
+        ]
+      },
+      "raw_alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 604391,
+        "partially_transparent_pixels": 966632,
+        "opaque_pixels": 1505
+      },
+      "processed_alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 604391,
+        "partially_transparent_pixels": 966632,
+        "opaque_pixels": 1505
+      },
+      "cleanup": {
+        "applied": false,
+        "method": null,
+        "pixels_made_fully_transparent": 0
+      }
+    },
+    {
+      "id": "sheet_09_busy_tasks",
+      "raw_file": "original_sheets/sheet_09_busy_tasks_raw.png",
+      "processed_file": "processed_sheets/sheet_09_busy_tasks_processed.png",
+      "dimensions_px": {
+        "width": 1448,
+        "height": 1086
+      },
+      "grid": {
+        "columns": 4,
+        "rows": 2,
+        "x_bounds": [
+          0,
+          362,
+          724,
+          1086,
+          1448
+        ],
+        "y_bounds": [
+          0,
+          543,
+          1086
+        ]
+      },
+      "raw_alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 801804,
+        "partially_transparent_pixels": 769428,
+        "opaque_pixels": 1296
+      },
+      "processed_alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 801804,
+        "partially_transparent_pixels": 769428,
+        "opaque_pixels": 1296
+      },
+      "cleanup": {
+        "applied": false,
+        "method": null,
+        "pixels_made_fully_transparent": 0
+      }
+    },
+    {
+      "id": "sheet_10_locomotion_and_wave",
+      "raw_file": "original_sheets/sheet_10_locomotion_and_wave_raw.png",
+      "processed_file": "processed_sheets/sheet_10_locomotion_and_wave_processed.png",
+      "dimensions_px": {
+        "width": 1448,
+        "height": 1086
+      },
+      "grid": {
+        "columns": 4,
+        "rows": 2,
+        "x_bounds": [
+          0,
+          362,
+          724,
+          1086,
+          1448
+        ],
+        "y_bounds": [
+          0,
+          543,
+          1086
+        ]
+      },
+      "raw_alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 786698,
+        "partially_transparent_pixels": 783949,
+        "opaque_pixels": 1881
+      },
+      "processed_alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 786698,
+        "partially_transparent_pixels": 783949,
+        "opaque_pixels": 1881
+      },
+      "cleanup": {
+        "applied": false,
+        "method": null,
+        "pixels_made_fully_transparent": 0
+      }
+    }
+  ],
+  "assets": [
+    {
+      "id": "sheet_01_walk_cycle_idle_neutral_r01_c01",
+      "file": "sprites/sheet_01_walk_cycle_idle_neutral_r01_c01.png",
+      "source_sheet": "sheet_01_walk_cycle",
+      "source_raw_file": "original_sheets/sheet_01_walk_cycle_raw.png",
+      "source_processed_file": "processed_sheets/sheet_01_walk_cycle_processed.png",
+      "row": 1,
+      "column": 1,
+      "row_major_index": 1,
+      "action_or_emotion": "neutral standing",
+      "crop_rect_px": {
+        "left": 0,
+        "top": 0,
+        "right": 444,
+        "bottom": 444
+      },
+      "dimensions_px": {
+        "width": 444,
+        "height": 444
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 116615,
+        "partially_transparent_pixels": 80281,
+        "opaque_pixels": 240
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_01_walk_cycle_idle_happy_r01_c02",
+      "file": "sprites/sheet_01_walk_cycle_idle_happy_r01_c02.png",
+      "source_sheet": "sheet_01_walk_cycle",
+      "source_raw_file": "original_sheets/sheet_01_walk_cycle_raw.png",
+      "source_processed_file": "processed_sheets/sheet_01_walk_cycle_processed.png",
+      "row": 1,
+      "column": 2,
+      "row_major_index": 2,
+      "action_or_emotion": "eyes-closed happy standing",
+      "crop_rect_px": {
+        "left": 444,
+        "top": 0,
+        "right": 887,
+        "bottom": 444
+      },
+      "dimensions_px": {
+        "width": 443,
+        "height": 444
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 113754,
+        "partially_transparent_pixels": 82735,
+        "opaque_pixels": 203
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_01_walk_cycle_idle_glance_r01_c03",
+      "file": "sprites/sheet_01_walk_cycle_idle_glance_r01_c03.png",
+      "source_sheet": "sheet_01_walk_cycle",
+      "source_raw_file": "original_sheets/sheet_01_walk_cycle_raw.png",
+      "source_processed_file": "processed_sheets/sheet_01_walk_cycle_processed.png",
+      "row": 1,
+      "column": 3,
+      "row_major_index": 3,
+      "action_or_emotion": "standing side glance",
+      "crop_rect_px": {
+        "left": 887,
+        "top": 0,
+        "right": 1330,
+        "bottom": 444
+      },
+      "dimensions_px": {
+        "width": 443,
+        "height": 444
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 118212,
+        "partially_transparent_pixels": 78306,
+        "opaque_pixels": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_01_walk_cycle_walk_side_pose_r01_c04",
+      "file": "sprites/sheet_01_walk_cycle_walk_side_pose_r01_c04.png",
+      "source_sheet": "sheet_01_walk_cycle",
+      "source_raw_file": "original_sheets/sheet_01_walk_cycle_raw.png",
+      "source_processed_file": "processed_sheets/sheet_01_walk_cycle_processed.png",
+      "row": 1,
+      "column": 4,
+      "row_major_index": 4,
+      "action_or_emotion": "side-on walking pose",
+      "crop_rect_px": {
+        "left": 1330,
+        "top": 0,
+        "right": 1774,
+        "bottom": 444
+      },
+      "dimensions_px": {
+        "width": 444,
+        "height": 444
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 119203,
+        "partially_transparent_pixels": 77790,
+        "opaque_pixels": 143
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_01_walk_cycle_walk_step_a_r02_c01",
+      "file": "sprites/sheet_01_walk_cycle_walk_step_a_r02_c01.png",
+      "source_sheet": "sheet_01_walk_cycle",
+      "source_raw_file": "original_sheets/sheet_01_walk_cycle_raw.png",
+      "source_processed_file": "processed_sheets/sheet_01_walk_cycle_processed.png",
+      "row": 2,
+      "column": 1,
+      "row_major_index": 5,
+      "action_or_emotion": "walking, phone raised",
+      "crop_rect_px": {
+        "left": 0,
+        "top": 444,
+        "right": 444,
+        "bottom": 887
+      },
+      "dimensions_px": {
+        "width": 444,
+        "height": 443
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 115640,
+        "partially_transparent_pixels": 80902,
+        "opaque_pixels": 150
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_01_walk_cycle_walk_step_b_r02_c02",
+      "file": "sprites/sheet_01_walk_cycle_walk_step_b_r02_c02.png",
+      "source_sheet": "sheet_01_walk_cycle",
+      "source_raw_file": "original_sheets/sheet_01_walk_cycle_raw.png",
+      "source_processed_file": "processed_sheets/sheet_01_walk_cycle_processed.png",
+      "row": 2,
+      "column": 2,
+      "row_major_index": 6,
+      "action_or_emotion": "walking, forward step",
+      "crop_rect_px": {
+        "left": 444,
+        "top": 444,
+        "right": 887,
+        "bottom": 887
+      },
+      "dimensions_px": {
+        "width": 443,
+        "height": 443
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 115102,
+        "partially_transparent_pixels": 80970,
+        "opaque_pixels": 177
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_01_walk_cycle_walk_step_c_r02_c03",
+      "file": "sprites/sheet_01_walk_cycle_walk_step_c_r02_c03.png",
+      "source_sheet": "sheet_01_walk_cycle",
+      "source_raw_file": "original_sheets/sheet_01_walk_cycle_raw.png",
+      "source_processed_file": "processed_sheets/sheet_01_walk_cycle_processed.png",
+      "row": 2,
+      "column": 3,
+      "row_major_index": 7,
+      "action_or_emotion": "walking, alternate step",
+      "crop_rect_px": {
+        "left": 887,
+        "top": 444,
+        "right": 1330,
+        "bottom": 887
+      },
+      "dimensions_px": {
+        "width": 443,
+        "height": 443
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 117876,
+        "partially_transparent_pixels": 78233,
+        "opaque_pixels": 140
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_01_walk_cycle_walk_step_d_r02_c04",
+      "file": "sprites/sheet_01_walk_cycle_walk_step_d_r02_c04.png",
+      "source_sheet": "sheet_01_walk_cycle",
+      "source_raw_file": "original_sheets/sheet_01_walk_cycle_raw.png",
+      "source_processed_file": "processed_sheets/sheet_01_walk_cycle_processed.png",
+      "row": 2,
+      "column": 4,
+      "row_major_index": 8,
+      "action_or_emotion": "walking, side profile",
+      "crop_rect_px": {
+        "left": 1330,
+        "top": 444,
+        "right": 1774,
+        "bottom": 887
+      },
+      "dimensions_px": {
+        "width": 444,
+        "height": 443
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 120045,
+        "partially_transparent_pixels": 76496,
+        "opaque_pixels": 151
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_02_sit_and_react_sit_hold_drink_r01_c01",
+      "file": "sprites/sheet_02_sit_and_react_sit_hold_drink_r01_c01.png",
+      "source_sheet": "sheet_02_sit_and_react",
+      "source_raw_file": "original_sheets/sheet_02_sit_and_react_raw.png",
+      "source_processed_file": "processed_sheets/sheet_02_sit_and_react_processed.png",
+      "row": 1,
+      "column": 1,
+      "row_major_index": 1,
+      "action_or_emotion": "seated, holding drink",
+      "crop_rect_px": {
+        "left": 0,
+        "top": 0,
+        "right": 444,
+        "bottom": 444
+      },
+      "dimensions_px": {
+        "width": 444,
+        "height": 444
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 115137,
+        "partially_transparent_pixels": 81935,
+        "opaque_pixels": 64
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_02_sit_and_react_crouch_peek_r01_c02",
+      "file": "sprites/sheet_02_sit_and_react_crouch_peek_r01_c02.png",
+      "source_sheet": "sheet_02_sit_and_react",
+      "source_raw_file": "original_sheets/sheet_02_sit_and_react_raw.png",
+      "source_processed_file": "processed_sheets/sheet_02_sit_and_react_processed.png",
+      "row": 1,
+      "column": 2,
+      "row_major_index": 2,
+      "action_or_emotion": "crouched, peeking",
+      "crop_rect_px": {
+        "left": 444,
+        "top": 0,
+        "right": 887,
+        "bottom": 444
+      },
+      "dimensions_px": {
+        "width": 443,
+        "height": 444
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 110978,
+        "partially_transparent_pixels": 85652,
+        "opaque_pixels": 62
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_02_sit_and_react_sit_smile_r01_c03",
+      "file": "sprites/sheet_02_sit_and_react_sit_smile_r01_c03.png",
+      "source_sheet": "sheet_02_sit_and_react",
+      "source_raw_file": "original_sheets/sheet_02_sit_and_react_raw.png",
+      "source_processed_file": "processed_sheets/sheet_02_sit_and_react_processed.png",
+      "row": 1,
+      "column": 3,
+      "row_major_index": 3,
+      "action_or_emotion": "seated happy smile",
+      "crop_rect_px": {
+        "left": 887,
+        "top": 0,
+        "right": 1330,
+        "bottom": 444
+      },
+      "dimensions_px": {
+        "width": 443,
+        "height": 444
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 115634,
+        "partially_transparent_pixels": 80998,
+        "opaque_pixels": 60
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_02_sit_and_react_sit_celebrate_r01_c04",
+      "file": "sprites/sheet_02_sit_and_react_sit_celebrate_r01_c04.png",
+      "source_sheet": "sheet_02_sit_and_react",
+      "source_raw_file": "original_sheets/sheet_02_sit_and_react_raw.png",
+      "source_processed_file": "processed_sheets/sheet_02_sit_and_react_processed.png",
+      "row": 1,
+      "column": 4,
+      "row_major_index": 4,
+      "action_or_emotion": "seated celebration",
+      "crop_rect_px": {
+        "left": 1330,
+        "top": 0,
+        "right": 1774,
+        "bottom": 444
+      },
+      "dimensions_px": {
+        "width": 444,
+        "height": 444
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 112036,
+        "partially_transparent_pixels": 85038,
+        "opaque_pixels": 62
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_02_sit_and_react_startled_r02_c01",
+      "file": "sprites/sheet_02_sit_and_react_startled_r02_c01.png",
+      "source_sheet": "sheet_02_sit_and_react",
+      "source_raw_file": "original_sheets/sheet_02_sit_and_react_raw.png",
+      "source_processed_file": "processed_sheets/sheet_02_sit_and_react_processed.png",
+      "row": 2,
+      "column": 1,
+      "row_major_index": 5,
+      "action_or_emotion": "startled with phone",
+      "crop_rect_px": {
+        "left": 0,
+        "top": 444,
+        "right": 444,
+        "bottom": 887
+      },
+      "dimensions_px": {
+        "width": 444,
+        "height": 443
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 105357,
+        "partially_transparent_pixels": 91248,
+        "opaque_pixels": 87
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_02_sit_and_react_surprised_drop_r02_c02",
+      "file": "sprites/sheet_02_sit_and_react_surprised_drop_r02_c02.png",
+      "source_sheet": "sheet_02_sit_and_react",
+      "source_raw_file": "original_sheets/sheet_02_sit_and_react_raw.png",
+      "source_processed_file": "processed_sheets/sheet_02_sit_and_react_processed.png",
+      "row": 2,
+      "column": 2,
+      "row_major_index": 6,
+      "action_or_emotion": "surprised, dropped item",
+      "crop_rect_px": {
+        "left": 444,
+        "top": 444,
+        "right": 887,
+        "bottom": 887
+      },
+      "dimensions_px": {
+        "width": 443,
+        "height": 443
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 88423,
+        "partially_transparent_pixels": 107739,
+        "opaque_pixels": 87
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_02_sit_and_react_sit_sad_r02_c03",
+      "file": "sprites/sheet_02_sit_and_react_sit_sad_r02_c03.png",
+      "source_sheet": "sheet_02_sit_and_react",
+      "source_raw_file": "original_sheets/sheet_02_sit_and_react_raw.png",
+      "source_processed_file": "processed_sheets/sheet_02_sit_and_react_processed.png",
+      "row": 2,
+      "column": 3,
+      "row_major_index": 7,
+      "action_or_emotion": "seated sad",
+      "crop_rect_px": {
+        "left": 887,
+        "top": 444,
+        "right": 1330,
+        "bottom": 887
+      },
+      "dimensions_px": {
+        "width": 443,
+        "height": 443
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 99105,
+        "partially_transparent_pixels": 97006,
+        "opaque_pixels": 138
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_02_sit_and_react_float_happy_r02_c04",
+      "file": "sprites/sheet_02_sit_and_react_float_happy_r02_c04.png",
+      "source_sheet": "sheet_02_sit_and_react",
+      "source_raw_file": "original_sheets/sheet_02_sit_and_react_raw.png",
+      "source_processed_file": "processed_sheets/sheet_02_sit_and_react_processed.png",
+      "row": 2,
+      "column": 4,
+      "row_major_index": 8,
+      "action_or_emotion": "buoyant happy pose",
+      "crop_rect_px": {
+        "left": 1330,
+        "top": 444,
+        "right": 1774,
+        "bottom": 887
+      },
+      "dimensions_px": {
+        "width": 444,
+        "height": 443
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 100720,
+        "partially_transparent_pixels": 95883,
+        "opaque_pixels": 89
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_03_window_edge_peek_low_r01_c01",
+      "file": "sprites/sheet_03_window_edge_peek_low_r01_c01.png",
+      "source_sheet": "sheet_03_window_edge",
+      "source_raw_file": "original_sheets/sheet_03_window_edge_raw.png",
+      "source_processed_file": "processed_sheets/sheet_03_window_edge_processed.png",
+      "row": 1,
+      "column": 1,
+      "row_major_index": 1,
+      "action_or_emotion": "low peeking",
+      "crop_rect_px": {
+        "left": 0,
+        "top": 0,
+        "right": 444,
+        "bottom": 444
+      },
+      "dimensions_px": {
+        "width": 444,
+        "height": 444
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 139142,
+        "partially_transparent_pixels": 57771,
+        "opaque_pixels": 223
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_03_window_edge_peek_over_edge_r01_c02",
+      "file": "sprites/sheet_03_window_edge_peek_over_edge_r01_c02.png",
+      "source_sheet": "sheet_03_window_edge",
+      "source_raw_file": "original_sheets/sheet_03_window_edge_raw.png",
+      "source_processed_file": "processed_sheets/sheet_03_window_edge_processed.png",
+      "row": 1,
+      "column": 2,
+      "row_major_index": 2,
+      "action_or_emotion": "peeking over edge",
+      "crop_rect_px": {
+        "left": 444,
+        "top": 0,
+        "right": 887,
+        "bottom": 444
+      },
+      "dimensions_px": {
+        "width": 443,
+        "height": 444
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 113954,
+        "partially_transparent_pixels": 82484,
+        "opaque_pixels": 254
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_03_window_edge_sit_edge_r01_c03",
+      "file": "sprites/sheet_03_window_edge_sit_edge_r01_c03.png",
+      "source_sheet": "sheet_03_window_edge",
+      "source_raw_file": "original_sheets/sheet_03_window_edge_raw.png",
+      "source_processed_file": "processed_sheets/sheet_03_window_edge_processed.png",
+      "row": 1,
+      "column": 3,
+      "row_major_index": 3,
+      "action_or_emotion": "sitting on edge",
+      "crop_rect_px": {
+        "left": 887,
+        "top": 0,
+        "right": 1330,
+        "bottom": 444
+      },
+      "dimensions_px": {
+        "width": 443,
+        "height": 444
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 114789,
+        "partially_transparent_pixels": 81697,
+        "opaque_pixels": 206
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_03_window_edge_hang_over_edge_r01_c04",
+      "file": "sprites/sheet_03_window_edge_hang_over_edge_r01_c04.png",
+      "source_sheet": "sheet_03_window_edge",
+      "source_raw_file": "original_sheets/sheet_03_window_edge_raw.png",
+      "source_processed_file": "processed_sheets/sheet_03_window_edge_processed.png",
+      "row": 1,
+      "column": 4,
+      "row_major_index": 4,
+      "action_or_emotion": "hanging from edge",
+      "crop_rect_px": {
+        "left": 1330,
+        "top": 0,
+        "right": 1774,
+        "bottom": 444
+      },
+      "dimensions_px": {
+        "width": 444,
+        "height": 444
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 111879,
+        "partially_transparent_pixels": 85018,
+        "opaque_pixels": 239
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_03_window_edge_swing_edge_r02_c01",
+      "file": "sprites/sheet_03_window_edge_swing_edge_r02_c01.png",
+      "source_sheet": "sheet_03_window_edge",
+      "source_raw_file": "original_sheets/sheet_03_window_edge_raw.png",
+      "source_processed_file": "processed_sheets/sheet_03_window_edge_processed.png",
+      "row": 2,
+      "column": 1,
+      "row_major_index": 5,
+      "action_or_emotion": "edge swing",
+      "crop_rect_px": {
+        "left": 0,
+        "top": 444,
+        "right": 444,
+        "bottom": 887
+      },
+      "dimensions_px": {
+        "width": 444,
+        "height": 443
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 105546,
+        "partially_transparent_pixels": 90831,
+        "opaque_pixels": 315
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_03_window_edge_climb_corner_r02_c02",
+      "file": "sprites/sheet_03_window_edge_climb_corner_r02_c02.png",
+      "source_sheet": "sheet_03_window_edge",
+      "source_raw_file": "original_sheets/sheet_03_window_edge_raw.png",
+      "source_processed_file": "processed_sheets/sheet_03_window_edge_processed.png",
+      "row": 2,
+      "column": 2,
+      "row_major_index": 6,
+      "action_or_emotion": "climbing around corner",
+      "crop_rect_px": {
+        "left": 444,
+        "top": 444,
+        "right": 887,
+        "bottom": 887
+      },
+      "dimensions_px": {
+        "width": 443,
+        "height": 443
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 123440,
+        "partially_transparent_pixels": 72460,
+        "opaque_pixels": 349
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_03_window_edge_hang_side_r02_c03",
+      "file": "sprites/sheet_03_window_edge_hang_side_r02_c03.png",
+      "source_sheet": "sheet_03_window_edge",
+      "source_raw_file": "original_sheets/sheet_03_window_edge_raw.png",
+      "source_processed_file": "processed_sheets/sheet_03_window_edge_processed.png",
+      "row": 2,
+      "column": 3,
+      "row_major_index": 7,
+      "action_or_emotion": "sideways hanging",
+      "crop_rect_px": {
+        "left": 887,
+        "top": 444,
+        "right": 1330,
+        "bottom": 887
+      },
+      "dimensions_px": {
+        "width": 443,
+        "height": 443
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 119159,
+        "partially_transparent_pixels": 76757,
+        "opaque_pixels": 333
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_03_window_edge_upside_down_r02_c04",
+      "file": "sprites/sheet_03_window_edge_upside_down_r02_c04.png",
+      "source_sheet": "sheet_03_window_edge",
+      "source_raw_file": "original_sheets/sheet_03_window_edge_raw.png",
+      "source_processed_file": "processed_sheets/sheet_03_window_edge_processed.png",
+      "row": 2,
+      "column": 4,
+      "row_major_index": 8,
+      "action_or_emotion": "upside-down hang",
+      "crop_rect_px": {
+        "left": 1330,
+        "top": 444,
+        "right": 1774,
+        "bottom": 887
+      },
+      "dimensions_px": {
+        "width": 444,
+        "height": 443
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 109129,
+        "partially_transparent_pixels": 87436,
+        "opaque_pixels": 127
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_04_expressions_idle_neutral_r01_c01",
+      "file": "sprites/sheet_04_expressions_idle_neutral_r01_c01.png",
+      "source_sheet": "sheet_04_expressions",
+      "source_raw_file": "original_sheets/sheet_04_expressions_raw.png",
+      "source_processed_file": "processed_sheets/sheet_04_expressions_processed.png",
+      "row": 1,
+      "column": 1,
+      "row_major_index": 1,
+      "action_or_emotion": "neutral standing",
+      "crop_rect_px": {
+        "left": 0,
+        "top": 0,
+        "right": 444,
+        "bottom": 444
+      },
+      "dimensions_px": {
+        "width": 444,
+        "height": 444
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 104672,
+        "partially_transparent_pixels": 92374,
+        "opaque_pixels": 90
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_04_expressions_happy_smile_r01_c02",
+      "file": "sprites/sheet_04_expressions_happy_smile_r01_c02.png",
+      "source_sheet": "sheet_04_expressions",
+      "source_raw_file": "original_sheets/sheet_04_expressions_raw.png",
+      "source_processed_file": "processed_sheets/sheet_04_expressions_processed.png",
+      "row": 1,
+      "column": 2,
+      "row_major_index": 2,
+      "action_or_emotion": "eyes-closed smile",
+      "crop_rect_px": {
+        "left": 444,
+        "top": 0,
+        "right": 887,
+        "bottom": 444
+      },
+      "dimensions_px": {
+        "width": 443,
+        "height": 444
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 103265,
+        "partially_transparent_pixels": 93305,
+        "opaque_pixels": 122
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_04_expressions_heart_eyes_r01_c03",
+      "file": "sprites/sheet_04_expressions_heart_eyes_r01_c03.png",
+      "source_sheet": "sheet_04_expressions",
+      "source_raw_file": "original_sheets/sheet_04_expressions_raw.png",
+      "source_processed_file": "processed_sheets/sheet_04_expressions_processed.png",
+      "row": 1,
+      "column": 3,
+      "row_major_index": 3,
+      "action_or_emotion": "heart-eyes affection",
+      "crop_rect_px": {
+        "left": 887,
+        "top": 0,
+        "right": 1330,
+        "bottom": 444
+      },
+      "dimensions_px": {
+        "width": 443,
+        "height": 444
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 99010,
+        "partially_transparent_pixels": 97587,
+        "opaque_pixels": 95
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_04_expressions_curious_r01_c04",
+      "file": "sprites/sheet_04_expressions_curious_r01_c04.png",
+      "source_sheet": "sheet_04_expressions",
+      "source_raw_file": "original_sheets/sheet_04_expressions_raw.png",
+      "source_processed_file": "processed_sheets/sheet_04_expressions_processed.png",
+      "row": 1,
+      "column": 4,
+      "row_major_index": 4,
+      "action_or_emotion": "curious look",
+      "crop_rect_px": {
+        "left": 1330,
+        "top": 0,
+        "right": 1774,
+        "bottom": 444
+      },
+      "dimensions_px": {
+        "width": 444,
+        "height": 444
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 105370,
+        "partially_transparent_pixels": 91613,
+        "opaque_pixels": 153
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_04_expressions_surprised_r02_c01",
+      "file": "sprites/sheet_04_expressions_surprised_r02_c01.png",
+      "source_sheet": "sheet_04_expressions",
+      "source_raw_file": "original_sheets/sheet_04_expressions_raw.png",
+      "source_processed_file": "processed_sheets/sheet_04_expressions_processed.png",
+      "row": 2,
+      "column": 1,
+      "row_major_index": 5,
+      "action_or_emotion": "wide-eyed surprise",
+      "crop_rect_px": {
+        "left": 0,
+        "top": 444,
+        "right": 444,
+        "bottom": 887
+      },
+      "dimensions_px": {
+        "width": 444,
+        "height": 443
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 99940,
+        "partially_transparent_pixels": 96645,
+        "opaque_pixels": 107
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_04_expressions_annoyed_r02_c02",
+      "file": "sprites/sheet_04_expressions_annoyed_r02_c02.png",
+      "source_sheet": "sheet_04_expressions",
+      "source_raw_file": "original_sheets/sheet_04_expressions_raw.png",
+      "source_processed_file": "processed_sheets/sheet_04_expressions_processed.png",
+      "row": 2,
+      "column": 2,
+      "row_major_index": 6,
+      "action_or_emotion": "annoyed expression",
+      "crop_rect_px": {
+        "left": 444,
+        "top": 444,
+        "right": 887,
+        "bottom": 887
+      },
+      "dimensions_px": {
+        "width": 443,
+        "height": 443
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 87858,
+        "partially_transparent_pixels": 108233,
+        "opaque_pixels": 158
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_04_expressions_sulky_r02_c03",
+      "file": "sprites/sheet_04_expressions_sulky_r02_c03.png",
+      "source_sheet": "sheet_04_expressions",
+      "source_raw_file": "original_sheets/sheet_04_expressions_raw.png",
+      "source_processed_file": "processed_sheets/sheet_04_expressions_processed.png",
+      "row": 2,
+      "column": 3,
+      "row_major_index": 7,
+      "action_or_emotion": "sulky seated expression",
+      "crop_rect_px": {
+        "left": 887,
+        "top": 444,
+        "right": 1330,
+        "bottom": 887
+      },
+      "dimensions_px": {
+        "width": 443,
+        "height": 443
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 91794,
+        "partially_transparent_pixels": 104327,
+        "opaque_pixels": 128
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_04_expressions_thinking_r02_c04",
+      "file": "sprites/sheet_04_expressions_thinking_r02_c04.png",
+      "source_sheet": "sheet_04_expressions",
+      "source_raw_file": "original_sheets/sheet_04_expressions_raw.png",
+      "source_processed_file": "processed_sheets/sheet_04_expressions_processed.png",
+      "row": 2,
+      "column": 4,
+      "row_major_index": 8,
+      "action_or_emotion": "thinking pose",
+      "crop_rect_px": {
+        "left": 1330,
+        "top": 444,
+        "right": 1774,
+        "bottom": 887
+      },
+      "dimensions_px": {
+        "width": 444,
+        "height": 443
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 98817,
+        "partially_transparent_pixels": 97770,
+        "opaque_pixels": 105
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_05_hanging_and_rest_idle_stand_r01_c01",
+      "file": "sprites/sheet_05_hanging_and_rest_idle_stand_r01_c01.png",
+      "source_sheet": "sheet_05_hanging_and_rest",
+      "source_raw_file": "original_sheets/sheet_05_hanging_and_rest_raw.png",
+      "source_processed_file": "processed_sheets/sheet_05_hanging_and_rest_processed.png",
+      "row": 1,
+      "column": 1,
+      "row_major_index": 1,
+      "action_or_emotion": "neutral standing",
+      "crop_rect_px": {
+        "left": 0,
+        "top": 0,
+        "right": 444,
+        "bottom": 444
+      },
+      "dimensions_px": {
+        "width": 444,
+        "height": 444
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 110699,
+        "partially_transparent_pixels": 86277,
+        "opaque_pixels": 160
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_05_hanging_and_rest_wave_happy_r01_c02",
+      "file": "sprites/sheet_05_hanging_and_rest_wave_happy_r01_c02.png",
+      "source_sheet": "sheet_05_hanging_and_rest",
+      "source_raw_file": "original_sheets/sheet_05_hanging_and_rest_raw.png",
+      "source_processed_file": "processed_sheets/sheet_05_hanging_and_rest_processed.png",
+      "row": 1,
+      "column": 2,
+      "row_major_index": 2,
+      "action_or_emotion": "happy wave",
+      "crop_rect_px": {
+        "left": 444,
+        "top": 0,
+        "right": 887,
+        "bottom": 444
+      },
+      "dimensions_px": {
+        "width": 443,
+        "height": 444
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 108564,
+        "partially_transparent_pixels": 87897,
+        "opaque_pixels": 231
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_05_hanging_and_rest_blush_love_r01_c03",
+      "file": "sprites/sheet_05_hanging_and_rest_blush_love_r01_c03.png",
+      "source_sheet": "sheet_05_hanging_and_rest",
+      "source_raw_file": "original_sheets/sheet_05_hanging_and_rest_raw.png",
+      "source_processed_file": "processed_sheets/sheet_05_hanging_and_rest_processed.png",
+      "row": 1,
+      "column": 3,
+      "row_major_index": 3,
+      "action_or_emotion": "blushing affection",
+      "crop_rect_px": {
+        "left": 887,
+        "top": 0,
+        "right": 1330,
+        "bottom": 444
+      },
+      "dimensions_px": {
+        "width": 443,
+        "height": 444
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 103905,
+        "partially_transparent_pixels": 92558,
+        "opaque_pixels": 229
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_05_hanging_and_rest_idle_soft_r01_c04",
+      "file": "sprites/sheet_05_hanging_and_rest_idle_soft_r01_c04.png",
+      "source_sheet": "sheet_05_hanging_and_rest",
+      "source_raw_file": "original_sheets/sheet_05_hanging_and_rest_raw.png",
+      "source_processed_file": "processed_sheets/sheet_05_hanging_and_rest_processed.png",
+      "row": 1,
+      "column": 4,
+      "row_major_index": 4,
+      "action_or_emotion": "soft neutral standing",
+      "crop_rect_px": {
+        "left": 1330,
+        "top": 0,
+        "right": 1774,
+        "bottom": 444
+      },
+      "dimensions_px": {
+        "width": 444,
+        "height": 444
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 111139,
+        "partially_transparent_pixels": 85731,
+        "opaque_pixels": 266
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_05_hanging_and_rest_surprised_r02_c01",
+      "file": "sprites/sheet_05_hanging_and_rest_surprised_r02_c01.png",
+      "source_sheet": "sheet_05_hanging_and_rest",
+      "source_raw_file": "original_sheets/sheet_05_hanging_and_rest_raw.png",
+      "source_processed_file": "processed_sheets/sheet_05_hanging_and_rest_processed.png",
+      "row": 2,
+      "column": 1,
+      "row_major_index": 5,
+      "action_or_emotion": "surprised reaction",
+      "crop_rect_px": {
+        "left": 0,
+        "top": 444,
+        "right": 444,
+        "bottom": 887
+      },
+      "dimensions_px": {
+        "width": 444,
+        "height": 443
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 103856,
+        "partially_transparent_pixels": 92662,
+        "opaque_pixels": 174
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_05_hanging_and_rest_tired_r02_c02",
+      "file": "sprites/sheet_05_hanging_and_rest_tired_r02_c02.png",
+      "source_sheet": "sheet_05_hanging_and_rest",
+      "source_raw_file": "original_sheets/sheet_05_hanging_and_rest_raw.png",
+      "source_processed_file": "processed_sheets/sheet_05_hanging_and_rest_processed.png",
+      "row": 2,
+      "column": 2,
+      "row_major_index": 6,
+      "action_or_emotion": "tired face rub",
+      "crop_rect_px": {
+        "left": 444,
+        "top": 444,
+        "right": 887,
+        "bottom": 887
+      },
+      "dimensions_px": {
+        "width": 443,
+        "height": 443
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 109940,
+        "partially_transparent_pixels": 86094,
+        "opaque_pixels": 215
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_05_hanging_and_rest_sit_think_r02_c03",
+      "file": "sprites/sheet_05_hanging_and_rest_sit_think_r02_c03.png",
+      "source_sheet": "sheet_05_hanging_and_rest",
+      "source_raw_file": "original_sheets/sheet_05_hanging_and_rest_raw.png",
+      "source_processed_file": "processed_sheets/sheet_05_hanging_and_rest_processed.png",
+      "row": 2,
+      "column": 3,
+      "row_major_index": 7,
+      "action_or_emotion": "seated thinking",
+      "crop_rect_px": {
+        "left": 887,
+        "top": 444,
+        "right": 1330,
+        "bottom": 887
+      },
+      "dimensions_px": {
+        "width": 443,
+        "height": 443
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 105842,
+        "partially_transparent_pixels": 90294,
+        "opaque_pixels": 113
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_05_hanging_and_rest_sleep_floor_r02_c04",
+      "file": "sprites/sheet_05_hanging_and_rest_sleep_floor_r02_c04.png",
+      "source_sheet": "sheet_05_hanging_and_rest",
+      "source_raw_file": "original_sheets/sheet_05_hanging_and_rest_raw.png",
+      "source_processed_file": "processed_sheets/sheet_05_hanging_and_rest_processed.png",
+      "row": 2,
+      "column": 4,
+      "row_major_index": 8,
+      "action_or_emotion": "sleeping on floor",
+      "crop_rect_px": {
+        "left": 1330,
+        "top": 444,
+        "right": 1774,
+        "bottom": 887
+      },
+      "dimensions_px": {
+        "width": 444,
+        "height": 443
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 122848,
+        "partially_transparent_pixels": 73612,
+        "opaque_pixels": 232
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_06_ledge_and_hanging_peek_table_r01_c01",
+      "file": "sprites/sheet_06_ledge_and_hanging_peek_table_r01_c01.png",
+      "source_sheet": "sheet_06_ledge_and_hanging",
+      "source_raw_file": "original_sheets/sheet_06_ledge_and_hanging_raw.png",
+      "source_processed_file": "processed_sheets/sheet_06_ledge_and_hanging_processed.png",
+      "row": 1,
+      "column": 1,
+      "row_major_index": 1,
+      "action_or_emotion": "peeking over a table or ledge",
+      "crop_rect_px": {
+        "left": 0,
+        "top": 0,
+        "right": 362,
+        "bottom": 543
+      },
+      "dimensions_px": {
+        "width": 362,
+        "height": 543
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 143545,
+        "partially_transparent_pixels": 53019,
+        "opaque_pixels": 2
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_06_ledge_and_hanging_sit_ledge_r01_c02",
+      "file": "sprites/sheet_06_ledge_and_hanging_sit_ledge_r01_c02.png",
+      "source_sheet": "sheet_06_ledge_and_hanging",
+      "source_raw_file": "original_sheets/sheet_06_ledge_and_hanging_raw.png",
+      "source_processed_file": "processed_sheets/sheet_06_ledge_and_hanging_processed.png",
+      "row": 1,
+      "column": 2,
+      "row_major_index": 2,
+      "action_or_emotion": "sitting on ledge",
+      "crop_rect_px": {
+        "left": 362,
+        "top": 0,
+        "right": 724,
+        "bottom": 543
+      },
+      "dimensions_px": {
+        "width": 362,
+        "height": 543
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 113860,
+        "partially_transparent_pixels": 82705,
+        "opaque_pixels": 1
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_06_ledge_and_hanging_sit_ledge_happy_r01_c03",
+      "file": "sprites/sheet_06_ledge_and_hanging_sit_ledge_happy_r01_c03.png",
+      "source_sheet": "sheet_06_ledge_and_hanging",
+      "source_raw_file": "original_sheets/sheet_06_ledge_and_hanging_raw.png",
+      "source_processed_file": "processed_sheets/sheet_06_ledge_and_hanging_processed.png",
+      "row": 1,
+      "column": 3,
+      "row_major_index": 3,
+      "action_or_emotion": "happy ledge sit",
+      "crop_rect_px": {
+        "left": 724,
+        "top": 0,
+        "right": 1086,
+        "bottom": 543
+      },
+      "dimensions_px": {
+        "width": 362,
+        "height": 543
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 99716,
+        "partially_transparent_pixels": 96846,
+        "opaque_pixels": 4
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_06_ledge_and_hanging_hang_bar_r01_c04",
+      "file": "sprites/sheet_06_ledge_and_hanging_hang_bar_r01_c04.png",
+      "source_sheet": "sheet_06_ledge_and_hanging",
+      "source_raw_file": "original_sheets/sheet_06_ledge_and_hanging_raw.png",
+      "source_processed_file": "processed_sheets/sheet_06_ledge_and_hanging_processed.png",
+      "row": 1,
+      "column": 4,
+      "row_major_index": 4,
+      "action_or_emotion": "hanging from horizontal bar",
+      "crop_rect_px": {
+        "left": 1086,
+        "top": 0,
+        "right": 1448,
+        "bottom": 543
+      },
+      "dimensions_px": {
+        "width": 362,
+        "height": 543
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 113608,
+        "partially_transparent_pixels": 82952,
+        "opaque_pixels": 6
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_06_ledge_and_hanging_hang_bar_relaxed_r02_c01",
+      "file": "sprites/sheet_06_ledge_and_hanging_hang_bar_relaxed_r02_c01.png",
+      "source_sheet": "sheet_06_ledge_and_hanging",
+      "source_raw_file": "original_sheets/sheet_06_ledge_and_hanging_raw.png",
+      "source_processed_file": "processed_sheets/sheet_06_ledge_and_hanging_processed.png",
+      "row": 2,
+      "column": 1,
+      "row_major_index": 5,
+      "action_or_emotion": "relaxed bar hang",
+      "crop_rect_px": {
+        "left": 0,
+        "top": 543,
+        "right": 362,
+        "bottom": 1086
+      },
+      "dimensions_px": {
+        "width": 362,
+        "height": 543
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 104069,
+        "partially_transparent_pixels": 92495,
+        "opaque_pixels": 2
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_06_ledge_and_hanging_hang_bar_inverted_r02_c02",
+      "file": "sprites/sheet_06_ledge_and_hanging_hang_bar_inverted_r02_c02.png",
+      "source_sheet": "sheet_06_ledge_and_hanging",
+      "source_raw_file": "original_sheets/sheet_06_ledge_and_hanging_raw.png",
+      "source_processed_file": "processed_sheets/sheet_06_ledge_and_hanging_processed.png",
+      "row": 2,
+      "column": 2,
+      "row_major_index": 6,
+      "action_or_emotion": "inverted bar hang",
+      "crop_rect_px": {
+        "left": 362,
+        "top": 543,
+        "right": 724,
+        "bottom": 1086
+      },
+      "dimensions_px": {
+        "width": 362,
+        "height": 543
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 101271,
+        "partially_transparent_pixels": 95288,
+        "opaque_pixels": 7
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_06_ledge_and_hanging_peek_left_edge_r02_c03",
+      "file": "sprites/sheet_06_ledge_and_hanging_peek_left_edge_r02_c03.png",
+      "source_sheet": "sheet_06_ledge_and_hanging",
+      "source_raw_file": "original_sheets/sheet_06_ledge_and_hanging_raw.png",
+      "source_processed_file": "processed_sheets/sheet_06_ledge_and_hanging_processed.png",
+      "row": 2,
+      "column": 3,
+      "row_major_index": 7,
+      "action_or_emotion": "peeking from left edge",
+      "crop_rect_px": {
+        "left": 724,
+        "top": 543,
+        "right": 1086,
+        "bottom": 1086
+      },
+      "dimensions_px": {
+        "width": 362,
+        "height": 543
+      },
+      "alpha": {
+        "min": 0,
+        "max": 254,
+        "transparent_pixels": 118218,
+        "partially_transparent_pixels": 78348,
+        "opaque_pixels": 0
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_06_ledge_and_hanging_peek_right_edge_r02_c04",
+      "file": "sprites/sheet_06_ledge_and_hanging_peek_right_edge_r02_c04.png",
+      "source_sheet": "sheet_06_ledge_and_hanging",
+      "source_raw_file": "original_sheets/sheet_06_ledge_and_hanging_raw.png",
+      "source_processed_file": "processed_sheets/sheet_06_ledge_and_hanging_processed.png",
+      "row": 2,
+      "column": 4,
+      "row_major_index": 8,
+      "action_or_emotion": "peeking from right edge",
+      "crop_rect_px": {
+        "left": 1086,
+        "top": 543,
+        "right": 1448,
+        "bottom": 1086
+      },
+      "dimensions_px": {
+        "width": 362,
+        "height": 543
+      },
+      "alpha": {
+        "min": 0,
+        "max": 253,
+        "transparent_pixels": 112409,
+        "partially_transparent_pixels": 84157,
+        "opaque_pixels": 0
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_07_fall_and_recover_crouch_tuck_r01_c01",
+      "file": "sprites/sheet_07_fall_and_recover_crouch_tuck_r01_c01.png",
+      "source_sheet": "sheet_07_fall_and_recover",
+      "source_raw_file": "original_sheets/sheet_07_fall_and_recover_raw.png",
+      "source_processed_file": "processed_sheets/sheet_07_fall_and_recover_processed.png",
+      "row": 1,
+      "column": 1,
+      "row_major_index": 1,
+      "action_or_emotion": "crouched tucked pose",
+      "crop_rect_px": {
+        "left": 0,
+        "top": 0,
+        "right": 362,
+        "bottom": 543
+      },
+      "dimensions_px": {
+        "width": 362,
+        "height": 543
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 106938,
+        "partially_transparent_pixels": 89385,
+        "opaque_pixels": 243
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_07_fall_and_recover_fumble_r01_c02",
+      "file": "sprites/sheet_07_fall_and_recover_fumble_r01_c02.png",
+      "source_sheet": "sheet_07_fall_and_recover",
+      "source_raw_file": "original_sheets/sheet_07_fall_and_recover_raw.png",
+      "source_processed_file": "processed_sheets/sheet_07_fall_and_recover_processed.png",
+      "row": 1,
+      "column": 2,
+      "row_major_index": 2,
+      "action_or_emotion": "fumbling, item in motion",
+      "crop_rect_px": {
+        "left": 362,
+        "top": 0,
+        "right": 724,
+        "bottom": 543
+      },
+      "dimensions_px": {
+        "width": 362,
+        "height": 543
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 106401,
+        "partially_transparent_pixels": 89967,
+        "opaque_pixels": 198
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_07_fall_and_recover_panic_r01_c03",
+      "file": "sprites/sheet_07_fall_and_recover_panic_r01_c03.png",
+      "source_sheet": "sheet_07_fall_and_recover",
+      "source_raw_file": "original_sheets/sheet_07_fall_and_recover_raw.png",
+      "source_processed_file": "processed_sheets/sheet_07_fall_and_recover_processed.png",
+      "row": 1,
+      "column": 3,
+      "row_major_index": 3,
+      "action_or_emotion": "panicked arms up",
+      "crop_rect_px": {
+        "left": 724,
+        "top": 0,
+        "right": 1086,
+        "bottom": 543
+      },
+      "dimensions_px": {
+        "width": 362,
+        "height": 543
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 111759,
+        "partially_transparent_pixels": 84592,
+        "opaque_pixels": 215
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_07_fall_and_recover_fall_back_r01_c04",
+      "file": "sprites/sheet_07_fall_and_recover_fall_back_r01_c04.png",
+      "source_sheet": "sheet_07_fall_and_recover",
+      "source_raw_file": "original_sheets/sheet_07_fall_and_recover_raw.png",
+      "source_processed_file": "processed_sheets/sheet_07_fall_and_recover_processed.png",
+      "row": 1,
+      "column": 4,
+      "row_major_index": 4,
+      "action_or_emotion": "falling backward",
+      "crop_rect_px": {
+        "left": 1086,
+        "top": 0,
+        "right": 1448,
+        "bottom": 543
+      },
+      "dimensions_px": {
+        "width": 362,
+        "height": 543
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 105975,
+        "partially_transparent_pixels": 90311,
+        "opaque_pixels": 280
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_07_fall_and_recover_fall_low_r02_c01",
+      "file": "sprites/sheet_07_fall_and_recover_fall_low_r02_c01.png",
+      "source_sheet": "sheet_07_fall_and_recover",
+      "source_raw_file": "original_sheets/sheet_07_fall_and_recover_raw.png",
+      "source_processed_file": "processed_sheets/sheet_07_fall_and_recover_processed.png",
+      "row": 2,
+      "column": 1,
+      "row_major_index": 5,
+      "action_or_emotion": "low stumble",
+      "crop_rect_px": {
+        "left": 0,
+        "top": 543,
+        "right": 362,
+        "bottom": 1086
+      },
+      "dimensions_px": {
+        "width": 362,
+        "height": 543
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 110268,
+        "partially_transparent_pixels": 86085,
+        "opaque_pixels": 213
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_07_fall_and_recover_spin_tumble_r02_c02",
+      "file": "sprites/sheet_07_fall_and_recover_spin_tumble_r02_c02.png",
+      "source_sheet": "sheet_07_fall_and_recover",
+      "source_raw_file": "original_sheets/sheet_07_fall_and_recover_raw.png",
+      "source_processed_file": "processed_sheets/sheet_07_fall_and_recover_processed.png",
+      "row": 2,
+      "column": 2,
+      "row_major_index": 6,
+      "action_or_emotion": "spinning tumble",
+      "crop_rect_px": {
+        "left": 362,
+        "top": 543,
+        "right": 724,
+        "bottom": 1086
+      },
+      "dimensions_px": {
+        "width": 362,
+        "height": 543
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 100742,
+        "partially_transparent_pixels": 95630,
+        "opaque_pixels": 194
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_07_fall_and_recover_frustrated_sit_r02_c03",
+      "file": "sprites/sheet_07_fall_and_recover_frustrated_sit_r02_c03.png",
+      "source_sheet": "sheet_07_fall_and_recover",
+      "source_raw_file": "original_sheets/sheet_07_fall_and_recover_raw.png",
+      "source_processed_file": "processed_sheets/sheet_07_fall_and_recover_processed.png",
+      "row": 2,
+      "column": 3,
+      "row_major_index": 7,
+      "action_or_emotion": "frustrated seated",
+      "crop_rect_px": {
+        "left": 724,
+        "top": 543,
+        "right": 1086,
+        "bottom": 1086
+      },
+      "dimensions_px": {
+        "width": 362,
+        "height": 543
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 111344,
+        "partially_transparent_pixels": 85078,
+        "opaque_pixels": 144
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_07_fall_and_recover_land_recover_r02_c04",
+      "file": "sprites/sheet_07_fall_and_recover_land_recover_r02_c04.png",
+      "source_sheet": "sheet_07_fall_and_recover",
+      "source_raw_file": "original_sheets/sheet_07_fall_and_recover_raw.png",
+      "source_processed_file": "processed_sheets/sheet_07_fall_and_recover_processed.png",
+      "row": 2,
+      "column": 4,
+      "row_major_index": 8,
+      "action_or_emotion": "landing and recovery",
+      "crop_rect_px": {
+        "left": 1086,
+        "top": 543,
+        "right": 1448,
+        "bottom": 1086
+      },
+      "dimensions_px": {
+        "width": 362,
+        "height": 543
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 103739,
+        "partially_transparent_pixels": 92573,
+        "opaque_pixels": 254
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_08_idle_expressions_idle_neutral_r01_c01",
+      "file": "sprites/sheet_08_idle_expressions_idle_neutral_r01_c01.png",
+      "source_sheet": "sheet_08_idle_expressions",
+      "source_raw_file": "original_sheets/sheet_08_idle_expressions_raw.png",
+      "source_processed_file": "processed_sheets/sheet_08_idle_expressions_processed.png",
+      "row": 1,
+      "column": 1,
+      "row_major_index": 1,
+      "action_or_emotion": "neutral holding drink",
+      "crop_rect_px": {
+        "left": 0,
+        "top": 0,
+        "right": 362,
+        "bottom": 543
+      },
+      "dimensions_px": {
+        "width": 362,
+        "height": 543
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 73109,
+        "partially_transparent_pixels": 123263,
+        "opaque_pixels": 194
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_08_idle_expressions_idle_happy_r01_c02",
+      "file": "sprites/sheet_08_idle_expressions_idle_happy_r01_c02.png",
+      "source_sheet": "sheet_08_idle_expressions",
+      "source_raw_file": "original_sheets/sheet_08_idle_expressions_raw.png",
+      "source_processed_file": "processed_sheets/sheet_08_idle_expressions_processed.png",
+      "row": 1,
+      "column": 2,
+      "row_major_index": 2,
+      "action_or_emotion": "happy holding drink",
+      "crop_rect_px": {
+        "left": 362,
+        "top": 0,
+        "right": 724,
+        "bottom": 543
+      },
+      "dimensions_px": {
+        "width": 362,
+        "height": 543
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 69877,
+        "partially_transparent_pixels": 126508,
+        "opaque_pixels": 181
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_08_idle_expressions_phone_check_r01_c03",
+      "file": "sprites/sheet_08_idle_expressions_phone_check_r01_c03.png",
+      "source_sheet": "sheet_08_idle_expressions",
+      "source_raw_file": "original_sheets/sheet_08_idle_expressions_raw.png",
+      "source_processed_file": "processed_sheets/sheet_08_idle_expressions_processed.png",
+      "row": 1,
+      "column": 3,
+      "row_major_index": 3,
+      "action_or_emotion": "checking phone",
+      "crop_rect_px": {
+        "left": 724,
+        "top": 0,
+        "right": 1086,
+        "bottom": 543
+      },
+      "dimensions_px": {
+        "width": 362,
+        "height": 543
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 71812,
+        "partially_transparent_pixels": 124583,
+        "opaque_pixels": 171
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_08_idle_expressions_drink_happy_r01_c04",
+      "file": "sprites/sheet_08_idle_expressions_drink_happy_r01_c04.png",
+      "source_sheet": "sheet_08_idle_expressions",
+      "source_raw_file": "original_sheets/sheet_08_idle_expressions_raw.png",
+      "source_processed_file": "processed_sheets/sheet_08_idle_expressions_processed.png",
+      "row": 1,
+      "column": 4,
+      "row_major_index": 4,
+      "action_or_emotion": "happy with drink",
+      "crop_rect_px": {
+        "left": 1086,
+        "top": 0,
+        "right": 1448,
+        "bottom": 543
+      },
+      "dimensions_px": {
+        "width": 362,
+        "height": 543
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 76442,
+        "partially_transparent_pixels": 119969,
+        "opaque_pixels": 155
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_08_idle_expressions_wave_r02_c01",
+      "file": "sprites/sheet_08_idle_expressions_wave_r02_c01.png",
+      "source_sheet": "sheet_08_idle_expressions",
+      "source_raw_file": "original_sheets/sheet_08_idle_expressions_raw.png",
+      "source_processed_file": "processed_sheets/sheet_08_idle_expressions_processed.png",
+      "row": 2,
+      "column": 1,
+      "row_major_index": 5,
+      "action_or_emotion": "friendly wave",
+      "crop_rect_px": {
+        "left": 0,
+        "top": 543,
+        "right": 362,
+        "bottom": 1086
+      },
+      "dimensions_px": {
+        "width": 362,
+        "height": 543
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 74988,
+        "partially_transparent_pixels": 121347,
+        "opaque_pixels": 231
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_08_idle_expressions_glance_r02_c02",
+      "file": "sprites/sheet_08_idle_expressions_glance_r02_c02.png",
+      "source_sheet": "sheet_08_idle_expressions",
+      "source_raw_file": "original_sheets/sheet_08_idle_expressions_raw.png",
+      "source_processed_file": "processed_sheets/sheet_08_idle_expressions_processed.png",
+      "row": 2,
+      "column": 2,
+      "row_major_index": 6,
+      "action_or_emotion": "side glance",
+      "crop_rect_px": {
+        "left": 362,
+        "top": 543,
+        "right": 724,
+        "bottom": 1086
+      },
+      "dimensions_px": {
+        "width": 362,
+        "height": 543
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 73046,
+        "partially_transparent_pixels": 123267,
+        "opaque_pixels": 253
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_08_idle_expressions_yawn_r02_c03",
+      "file": "sprites/sheet_08_idle_expressions_yawn_r02_c03.png",
+      "source_sheet": "sheet_08_idle_expressions",
+      "source_raw_file": "original_sheets/sheet_08_idle_expressions_raw.png",
+      "source_processed_file": "processed_sheets/sheet_08_idle_expressions_processed.png",
+      "row": 2,
+      "column": 3,
+      "row_major_index": 7,
+      "action_or_emotion": "sleepy yawn",
+      "crop_rect_px": {
+        "left": 724,
+        "top": 543,
+        "right": 1086,
+        "bottom": 1086
+      },
+      "dimensions_px": {
+        "width": 362,
+        "height": 543
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 76201,
+        "partially_transparent_pixels": 120154,
+        "opaque_pixels": 211
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_08_idle_expressions_sleep_sit_r02_c04",
+      "file": "sprites/sheet_08_idle_expressions_sleep_sit_r02_c04.png",
+      "source_sheet": "sheet_08_idle_expressions",
+      "source_raw_file": "original_sheets/sheet_08_idle_expressions_raw.png",
+      "source_processed_file": "processed_sheets/sheet_08_idle_expressions_processed.png",
+      "row": 2,
+      "column": 4,
+      "row_major_index": 8,
+      "action_or_emotion": "seated nap",
+      "crop_rect_px": {
+        "left": 1086,
+        "top": 543,
+        "right": 1448,
+        "bottom": 1086
+      },
+      "dimensions_px": {
+        "width": 362,
+        "height": 543
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 88916,
+        "partially_transparent_pixels": 107541,
+        "opaque_pixels": 109
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_09_busy_tasks_carry_box_r01_c01",
+      "file": "sprites/sheet_09_busy_tasks_carry_box_r01_c01.png",
+      "source_sheet": "sheet_09_busy_tasks",
+      "source_raw_file": "original_sheets/sheet_09_busy_tasks_raw.png",
+      "source_processed_file": "processed_sheets/sheet_09_busy_tasks_processed.png",
+      "row": 1,
+      "column": 1,
+      "row_major_index": 1,
+      "action_or_emotion": "carrying a box",
+      "crop_rect_px": {
+        "left": 0,
+        "top": 0,
+        "right": 362,
+        "bottom": 543
+      },
+      "dimensions_px": {
+        "width": 362,
+        "height": 543
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 101692,
+        "partially_transparent_pixels": 94725,
+        "opaque_pixels": 149
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_09_busy_tasks_carry_bag_r01_c02",
+      "file": "sprites/sheet_09_busy_tasks_carry_bag_r01_c02.png",
+      "source_sheet": "sheet_09_busy_tasks",
+      "source_raw_file": "original_sheets/sheet_09_busy_tasks_raw.png",
+      "source_processed_file": "processed_sheets/sheet_09_busy_tasks_processed.png",
+      "row": 1,
+      "column": 2,
+      "row_major_index": 2,
+      "action_or_emotion": "carrying a bag",
+      "crop_rect_px": {
+        "left": 362,
+        "top": 0,
+        "right": 724,
+        "bottom": 543
+      },
+      "dimensions_px": {
+        "width": 362,
+        "height": 543
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 99082,
+        "partially_transparent_pixels": 97360,
+        "opaque_pixels": 124
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_09_busy_tasks_show_board_r01_c03",
+      "file": "sprites/sheet_09_busy_tasks_show_board_r01_c03.png",
+      "source_sheet": "sheet_09_busy_tasks",
+      "source_raw_file": "original_sheets/sheet_09_busy_tasks_raw.png",
+      "source_processed_file": "processed_sheets/sheet_09_busy_tasks_processed.png",
+      "row": 1,
+      "column": 3,
+      "row_major_index": 3,
+      "action_or_emotion": "showing a board or sign",
+      "crop_rect_px": {
+        "left": 724,
+        "top": 0,
+        "right": 1086,
+        "bottom": 543
+      },
+      "dimensions_px": {
+        "width": 362,
+        "height": 543
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 100689,
+        "partially_transparent_pixels": 95705,
+        "opaque_pixels": 172
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_09_busy_tasks_laptop_work_r01_c04",
+      "file": "sprites/sheet_09_busy_tasks_laptop_work_r01_c04.png",
+      "source_sheet": "sheet_09_busy_tasks",
+      "source_raw_file": "original_sheets/sheet_09_busy_tasks_raw.png",
+      "source_processed_file": "processed_sheets/sheet_09_busy_tasks_processed.png",
+      "row": 1,
+      "column": 4,
+      "row_major_index": 4,
+      "action_or_emotion": "using laptop",
+      "crop_rect_px": {
+        "left": 1086,
+        "top": 0,
+        "right": 1448,
+        "bottom": 543
+      },
+      "dimensions_px": {
+        "width": 362,
+        "height": 543
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 108343,
+        "partially_transparent_pixels": 88121,
+        "opaque_pixels": 102
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_09_busy_tasks_clean_broom_r02_c01",
+      "file": "sprites/sheet_09_busy_tasks_clean_broom_r02_c01.png",
+      "source_sheet": "sheet_09_busy_tasks",
+      "source_raw_file": "original_sheets/sheet_09_busy_tasks_raw.png",
+      "source_processed_file": "processed_sheets/sheet_09_busy_tasks_processed.png",
+      "row": 2,
+      "column": 1,
+      "row_major_index": 5,
+      "action_or_emotion": "sweeping",
+      "crop_rect_px": {
+        "left": 0,
+        "top": 543,
+        "right": 362,
+        "bottom": 1086
+      },
+      "dimensions_px": {
+        "width": 362,
+        "height": 543
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 93099,
+        "partially_transparent_pixels": 103276,
+        "opaque_pixels": 191
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_09_busy_tasks_hold_alert_r02_c02",
+      "file": "sprites/sheet_09_busy_tasks_hold_alert_r02_c02.png",
+      "source_sheet": "sheet_09_busy_tasks",
+      "source_raw_file": "original_sheets/sheet_09_busy_tasks_raw.png",
+      "source_processed_file": "processed_sheets/sheet_09_busy_tasks_processed.png",
+      "row": 2,
+      "column": 2,
+      "row_major_index": 6,
+      "action_or_emotion": "holding alert or task card",
+      "crop_rect_px": {
+        "left": 362,
+        "top": 543,
+        "right": 724,
+        "bottom": 1086
+      },
+      "dimensions_px": {
+        "width": 362,
+        "height": 543
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 95665,
+        "partially_transparent_pixels": 100717,
+        "opaque_pixels": 184
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_09_busy_tasks_hug_plush_r02_c03",
+      "file": "sprites/sheet_09_busy_tasks_hug_plush_r02_c03.png",
+      "source_sheet": "sheet_09_busy_tasks",
+      "source_raw_file": "original_sheets/sheet_09_busy_tasks_raw.png",
+      "source_processed_file": "processed_sheets/sheet_09_busy_tasks_processed.png",
+      "row": 2,
+      "column": 3,
+      "row_major_index": 7,
+      "action_or_emotion": "hugging plush",
+      "crop_rect_px": {
+        "left": 724,
+        "top": 543,
+        "right": 1086,
+        "bottom": 1086
+      },
+      "dimensions_px": {
+        "width": 362,
+        "height": 543
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 100259,
+        "partially_transparent_pixels": 96093,
+        "opaque_pixels": 214
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_09_busy_tasks_shopping_bag_r02_c04",
+      "file": "sprites/sheet_09_busy_tasks_shopping_bag_r02_c04.png",
+      "source_sheet": "sheet_09_busy_tasks",
+      "source_raw_file": "original_sheets/sheet_09_busy_tasks_raw.png",
+      "source_processed_file": "processed_sheets/sheet_09_busy_tasks_processed.png",
+      "row": 2,
+      "column": 4,
+      "row_major_index": 8,
+      "action_or_emotion": "shopping bag celebration",
+      "crop_rect_px": {
+        "left": 1086,
+        "top": 543,
+        "right": 1448,
+        "bottom": 1086
+      },
+      "dimensions_px": {
+        "width": 362,
+        "height": 543
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 102975,
+        "partially_transparent_pixels": 93431,
+        "opaque_pixels": 160
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_10_locomotion_and_wave_walk_ready_r01_c01",
+      "file": "sprites/sheet_10_locomotion_and_wave_walk_ready_r01_c01.png",
+      "source_sheet": "sheet_10_locomotion_and_wave",
+      "source_raw_file": "original_sheets/sheet_10_locomotion_and_wave_raw.png",
+      "source_processed_file": "processed_sheets/sheet_10_locomotion_and_wave_processed.png",
+      "row": 1,
+      "column": 1,
+      "row_major_index": 1,
+      "action_or_emotion": "walk-ready stance",
+      "crop_rect_px": {
+        "left": 0,
+        "top": 0,
+        "right": 362,
+        "bottom": 543
+      },
+      "dimensions_px": {
+        "width": 362,
+        "height": 543
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 103460,
+        "partially_transparent_pixels": 92934,
+        "opaque_pixels": 172
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_10_locomotion_and_wave_walk_bounce_r01_c02",
+      "file": "sprites/sheet_10_locomotion_and_wave_walk_bounce_r01_c02.png",
+      "source_sheet": "sheet_10_locomotion_and_wave",
+      "source_raw_file": "original_sheets/sheet_10_locomotion_and_wave_raw.png",
+      "source_processed_file": "processed_sheets/sheet_10_locomotion_and_wave_processed.png",
+      "row": 1,
+      "column": 2,
+      "row_major_index": 2,
+      "action_or_emotion": "walking bounce",
+      "crop_rect_px": {
+        "left": 362,
+        "top": 0,
+        "right": 724,
+        "bottom": 543
+      },
+      "dimensions_px": {
+        "width": 362,
+        "height": 543
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 106244,
+        "partially_transparent_pixels": 90176,
+        "opaque_pixels": 146
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_10_locomotion_and_wave_walk_step_a_r01_c03",
+      "file": "sprites/sheet_10_locomotion_and_wave_walk_step_a_r01_c03.png",
+      "source_sheet": "sheet_10_locomotion_and_wave",
+      "source_raw_file": "original_sheets/sheet_10_locomotion_and_wave_raw.png",
+      "source_processed_file": "processed_sheets/sheet_10_locomotion_and_wave_processed.png",
+      "row": 1,
+      "column": 3,
+      "row_major_index": 3,
+      "action_or_emotion": "walking step A",
+      "crop_rect_px": {
+        "left": 724,
+        "top": 0,
+        "right": 1086,
+        "bottom": 543
+      },
+      "dimensions_px": {
+        "width": 362,
+        "height": 543
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 104087,
+        "partially_transparent_pixels": 92207,
+        "opaque_pixels": 272
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_10_locomotion_and_wave_walk_step_b_r01_c04",
+      "file": "sprites/sheet_10_locomotion_and_wave_walk_step_b_r01_c04.png",
+      "source_sheet": "sheet_10_locomotion_and_wave",
+      "source_raw_file": "original_sheets/sheet_10_locomotion_and_wave_raw.png",
+      "source_processed_file": "processed_sheets/sheet_10_locomotion_and_wave_processed.png",
+      "row": 1,
+      "column": 4,
+      "row_major_index": 4,
+      "action_or_emotion": "walking step B",
+      "crop_rect_px": {
+        "left": 1086,
+        "top": 0,
+        "right": 1448,
+        "bottom": 543
+      },
+      "dimensions_px": {
+        "width": 362,
+        "height": 543
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 103548,
+        "partially_transparent_pixels": 92765,
+        "opaque_pixels": 253
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_10_locomotion_and_wave_wave_r02_c01",
+      "file": "sprites/sheet_10_locomotion_and_wave_wave_r02_c01.png",
+      "source_sheet": "sheet_10_locomotion_and_wave",
+      "source_raw_file": "original_sheets/sheet_10_locomotion_and_wave_raw.png",
+      "source_processed_file": "processed_sheets/sheet_10_locomotion_and_wave_processed.png",
+      "row": 2,
+      "column": 1,
+      "row_major_index": 5,
+      "action_or_emotion": "wave",
+      "crop_rect_px": {
+        "left": 0,
+        "top": 543,
+        "right": 362,
+        "bottom": 1086
+      },
+      "dimensions_px": {
+        "width": 362,
+        "height": 543
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 96980,
+        "partially_transparent_pixels": 99362,
+        "opaque_pixels": 224
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_10_locomotion_and_wave_walk_turn_r02_c02",
+      "file": "sprites/sheet_10_locomotion_and_wave_walk_turn_r02_c02.png",
+      "source_sheet": "sheet_10_locomotion_and_wave",
+      "source_raw_file": "original_sheets/sheet_10_locomotion_and_wave_raw.png",
+      "source_processed_file": "processed_sheets/sheet_10_locomotion_and_wave_processed.png",
+      "row": 2,
+      "column": 2,
+      "row_major_index": 6,
+      "action_or_emotion": "turning walk",
+      "crop_rect_px": {
+        "left": 362,
+        "top": 543,
+        "right": 724,
+        "bottom": 1086
+      },
+      "dimensions_px": {
+        "width": 362,
+        "height": 543
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 96811,
+        "partially_transparent_pixels": 99507,
+        "opaque_pixels": 248
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_10_locomotion_and_wave_idle_look_back_r02_c03",
+      "file": "sprites/sheet_10_locomotion_and_wave_idle_look_back_r02_c03.png",
+      "source_sheet": "sheet_10_locomotion_and_wave",
+      "source_raw_file": "original_sheets/sheet_10_locomotion_and_wave_raw.png",
+      "source_processed_file": "processed_sheets/sheet_10_locomotion_and_wave_processed.png",
+      "row": 2,
+      "column": 3,
+      "row_major_index": 7,
+      "action_or_emotion": "looking back",
+      "crop_rect_px": {
+        "left": 724,
+        "top": 543,
+        "right": 1086,
+        "bottom": 1086
+      },
+      "dimensions_px": {
+        "width": 362,
+        "height": 543
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 88411,
+        "partially_transparent_pixels": 107868,
+        "opaque_pixels": 287
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    },
+    {
+      "id": "sheet_10_locomotion_and_wave_walk_exit_r02_c04",
+      "file": "sprites/sheet_10_locomotion_and_wave_walk_exit_r02_c04.png",
+      "source_sheet": "sheet_10_locomotion_and_wave",
+      "source_raw_file": "original_sheets/sheet_10_locomotion_and_wave_raw.png",
+      "source_processed_file": "processed_sheets/sheet_10_locomotion_and_wave_processed.png",
+      "row": 2,
+      "column": 4,
+      "row_major_index": 8,
+      "action_or_emotion": "walking away",
+      "crop_rect_px": {
+        "left": 1086,
+        "top": 543,
+        "right": 1448,
+        "bottom": 1086
+      },
+      "dimensions_px": {
+        "width": 362,
+        "height": 543
+      },
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparent_pixels": 87157,
+        "partially_transparent_pixels": 109130,
+        "opaque_pixels": 279
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.92,
+        "guidance": "Default feet pivot. For hanging and edge poses, override at the hand/ledge contact point defined in ANIMATION_SPEC.txt."
+      }
+    }
+  ],
+  "animation_sets": [
+    {
+      "id": "idle_soft",
+      "frames": [
+        "sheet_04_expressions_idle_neutral_r01_c01",
+        "sheet_04_expressions_curious_r01_c04",
+        "sheet_04_expressions_idle_neutral_r01_c01",
+        "sheet_04_expressions_happy_smile_r01_c02"
+      ],
+      "fps": 2,
+      "loop": true,
+      "behavior": "Use while resting on desktop or window top."
+    },
+    {
+      "id": "walk_right",
+      "frames": [
+        "sheet_01_walk_cycle_walk_step_a_r02_c01",
+        "sheet_01_walk_cycle_walk_step_b_r02_c02",
+        "sheet_01_walk_cycle_walk_step_c_r02_c03",
+        "sheet_01_walk_cycle_walk_step_d_r02_c04"
+      ],
+      "fps": 7,
+      "loop": true,
+      "behavior": "Advance along a horizontal desktop/window edge; mirror for left motion only if the bag/phone asymmetry is acceptable."
+    },
+    {
+      "id": "walk_soft",
+      "frames": [
+        "sheet_10_locomotion_and_wave_walk_ready_r01_c01",
+        "sheet_10_locomotion_and_wave_walk_bounce_r01_c02",
+        "sheet_10_locomotion_and_wave_walk_step_a_r01_c03",
+        "sheet_10_locomotion_and_wave_walk_step_b_r01_c04"
+      ],
+      "fps": 6,
+      "loop": true,
+      "behavior": "Gentler alternate walking loop."
+    },
+    {
+      "id": "peek_edge",
+      "frames": [
+        "sheet_03_window_edge_peek_low_r01_c01",
+        "sheet_03_window_edge_peek_over_edge_r01_c02",
+        "sheet_03_window_edge_peek_low_r01_c01",
+        "sheet_03_window_edge_peek_over_edge_r01_c02"
+      ],
+      "fps": 3,
+      "loop": true,
+      "behavior": "Place at a window or screen edge, clipping below or behind the edge."
+    },
+    {
+      "id": "hang_bar",
+      "frames": [
+        "sheet_06_ledge_and_hanging_hang_bar_r01_c04",
+        "sheet_06_ledge_and_hanging_hang_bar_relaxed_r02_c01",
+        "sheet_06_ledge_and_hanging_hang_bar_r01_c04",
+        "sheet_06_ledge_and_hanging_hang_bar_inverted_r02_c02"
+      ],
+      "fps": 4,
+      "loop": true,
+      "behavior": "Anchor pivot at hands; keep contact point locked to the edge."
+    },
+    {
+      "id": "fall_recover",
+      "frames": [
+        "sheet_07_fall_and_recover_panic_r01_c03",
+        "sheet_07_fall_and_recover_fall_back_r01_c04",
+        "sheet_07_fall_and_recover_fall_low_r02_c01",
+        "sheet_07_fall_and_recover_land_recover_r02_c04"
+      ],
+      "fps": 8,
+      "loop": false,
+      "behavior": "Play after an intentional loss of support; transition to idle or sit."
+    },
+    {
+      "id": "busy_tasks",
+      "frames": [
+        "sheet_09_busy_tasks_carry_box_r01_c01",
+        "sheet_09_busy_tasks_carry_bag_r01_c02",
+        "sheet_09_busy_tasks_show_board_r01_c03",
+        "sheet_09_busy_tasks_laptop_work_r01_c04",
+        "sheet_09_busy_tasks_clean_broom_r02_c01",
+        "sheet_09_busy_tasks_hold_alert_r02_c02",
+        "sheet_09_busy_tasks_hug_plush_r02_c03",
+        "sheet_09_busy_tasks_shopping_bag_r02_c04"
+      ],
+      "fps": 1,
+      "loop": false,
+      "behavior": "Choose a single task pose or use as a slow montage; do not interpolate between unrelated props."
+    }
+  ]
+}

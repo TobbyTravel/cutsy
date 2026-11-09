@@ -1,0 +1,16 @@
+**/bin/
+**/obj/
+.vs/
+.idea/
+TestResults/
+artifacts/
+dist/
+work/
+*.user
+*.suo
+*.zip
+*.log
+.env
+.env.*
+!.env.example
+settings.local.json

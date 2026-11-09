@@ -1,0 +1,74 @@
+[
+  {
+    "number": 1,
+    "title": "C00: Deliver Windows 11 v0.1",
+    "id": "C00",
+    "url": "https://github.com/TobbyTravel/cutsy/issues/1"
+  },
+  {
+    "number": 2,
+    "title": "C01: Establish the solution, build, and CI",
+    "id": "C01",
+    "url": "https://github.com/TobbyTravel/cutsy/issues/2"
+  },
+  {
+    "number": 3,
+    "title": "C02: Audit and normalize the mascot pack",
+    "id": "C02",
+    "url": "https://github.com/TobbyTravel/cutsy/issues/3"
+  },
+  {
+    "number": 4,
+    "title": "C03: Implement the interactive desktop shell",
+    "id": "C03",
+    "url": "https://github.com/TobbyTravel/cutsy/issues/4"
+  },
+  {
+    "number": 5,
+    "title": "C04: Implement the JSON pack loader and behavior engine",
+    "id": "C04",
+    "url": "https://github.com/TobbyTravel/cutsy/issues/5"
+  },
+  {
+    "number": 6,
+    "title": "C05: Add window surfaces and edge interactions",
+    "id": "C05",
+    "url": "https://github.com/TobbyTravel/cutsy/issues/6"
+  },
+  {
+    "number": 7,
+    "title": "C06: Author the complete default behavior library",
+    "id": "C06",
+    "url": "https://github.com/TobbyTravel/cutsy/issues/7"
+  },
+  {
+    "number": 8,
+    "title": "C07: Implement fullscreen and gaming quiet mode",
+    "id": "C07",
+    "url": "https://github.com/TobbyTravel/cutsy/issues/8"
+  },
+  {
+    "number": 9,
+    "title": "C08: Create and integrate quiet sound effects",
+    "id": "C08",
+    "url": "https://github.com/TobbyTravel/cutsy/issues/9"
+  },
+  {
+    "number": 10,
+    "title": "C09: Complete settings and pack editing workflow",
+    "id": "C09",
+    "url": "https://github.com/TobbyTravel/cutsy/issues/10"
+  },
+  {
+    "number": 11,
+    "title": "C10: Package and qualify the portable release",
+    "id": "C10",
+    "url": "https://github.com/TobbyTravel/cutsy/issues/11"
+  },
+  {
+    "number": 12,
+    "title": "K01: Investigate KDE Wayland and KWin integration",
+    "id": "K01",
+    "url": "https://github.com/TobbyTravel/cutsy/issues/12"
+  }
+]

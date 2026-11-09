@@ -1,0 +1,1880 @@
+{
+  "schemaVersion": 1,
+  "origin": "ChatGPT conversation 6a8abf90-13c0-83e9-b3f1-b2ab89447ee0",
+  "importedFrom": "desktop_mascot_assets_bundle_updated",
+  "pathConvention": "All path and sourceRawPath/sourceProcessedPath values are repository-relative; sourceBundlePath and historical manifest paths identify the archived source bundle only.",
+  "sourceImages": [
+    {
+      "id": "anchor_grumpy_phone_drink",
+      "path": "assets/source/anchors/anchor_grumpy_phone_drink_raw.png",
+      "originalDownloadName": "Grumpy Chibi Girl with Phone and Drink.png"
+    },
+    {
+      "id": "anchor_cute_phone_boba",
+      "path": "assets/source/anchors/anchor_cute_phone_boba_raw.png",
+      "originalDownloadName": "Chibi Girl with Phone and Boba.png"
+    },
+    {
+      "id": "sheet_01_walk_cycle",
+      "path": "assets/source/original-sheets/sheet_01_walk_cycle_raw.png",
+      "originalDownloadName": "ChatGPT Image Nov 9, 2026, 07_54_18 PM-1.png",
+      "historicalProcessing": {
+        "applied": false,
+        "method": null,
+        "pixels_made_fully_transparent": 0
+      }
+    },
+    {
+      "id": "sheet_02_sit_and_react",
+      "path": "assets/source/original-sheets/sheet_02_sit_and_react_raw.png",
+      "originalDownloadName": "ChatGPT Image Nov 9, 2026, 07_54_19 PM-2.png",
+      "historicalProcessing": {
+        "applied": false,
+        "method": null,
+        "pixels_made_fully_transparent": 0
+      }
+    },
+    {
+      "id": "sheet_03_window_edge",
+      "path": "assets/source/original-sheets/sheet_03_window_edge_raw.png",
+      "originalDownloadName": "ChatGPT Image Nov 9, 2026, 07_54_20 PM-3.png",
+      "historicalProcessing": {
+        "applied": false,
+        "method": null,
+        "pixels_made_fully_transparent": 0
+      }
+    },
+    {
+      "id": "sheet_04_expressions",
+      "path": "assets/source/original-sheets/sheet_04_expressions_raw.png",
+      "originalDownloadName": "ChatGPT Image Nov 9, 2026, 07_54_21 PM-4.png",
+      "historicalProcessing": {
+        "applied": false,
+        "method": null,
+        "pixels_made_fully_transparent": 0
+      }
+    },
+    {
+      "id": "sheet_05_hanging_and_rest",
+      "path": "assets/source/original-sheets/sheet_05_hanging_and_rest_raw.png",
+      "originalDownloadName": "ChatGPT Image Nov 9, 2026, 07_54_23 PM-5.png",
+      "historicalProcessing": {
+        "applied": false,
+        "method": null,
+        "pixels_made_fully_transparent": 0
+      }
+    },
+    {
+      "id": "sheet_06_ledge_and_hanging",
+      "path": "assets/source/original-sheets/sheet_06_ledge_and_hanging_raw.png",
+      "originalDownloadName": "ChatGPT Image Nov 9, 2026, 07_54_42 PM-1.png",
+      "historicalProcessing": {
+        "applied": true,
+        "method": "edge-connected light-neutral background flood fill; raw source retained unchanged",
+        "pixels_made_fully_transparent": 906696
+      }
+    },
+    {
+      "id": "sheet_07_fall_and_recover",
+      "path": "assets/source/original-sheets/sheet_07_fall_and_recover_raw.png",
+      "originalDownloadName": "ChatGPT Image Nov 9, 2026, 07_54_43 PM-2.png",
+      "historicalProcessing": {
+        "applied": false,
+        "method": null,
+        "pixels_made_fully_transparent": 0
+      }
+    },
+    {
+      "id": "sheet_08_idle_expressions",
+      "path": "assets/source/original-sheets/sheet_08_idle_expressions_raw.png",
+      "originalDownloadName": "ChatGPT Image Nov 9, 2026, 07_54_44 PM-3.png",
+      "historicalProcessing": {
+        "applied": false,
+        "method": null,
+        "pixels_made_fully_transparent": 0
+      }
+    },
+    {
+      "id": "sheet_09_busy_tasks",
+      "path": "assets/source/original-sheets/sheet_09_busy_tasks_raw.png",
+      "originalDownloadName": "ChatGPT Image Nov 9, 2026, 07_54_46 PM-4.png",
+      "historicalProcessing": {
+        "applied": false,
+        "method": null,
+        "pixels_made_fully_transparent": 0
+      }
+    },
+    {
+      "id": "sheet_10_locomotion_and_wave",
+      "path": "assets/source/original-sheets/sheet_10_locomotion_and_wave_raw.png",
+      "originalDownloadName": "ChatGPT Image Nov 9, 2026, 07_54_47 PM-5.png",
+      "historicalProcessing": {
+        "applied": false,
+        "method": null,
+        "pixels_made_fully_transparent": 0
+      }
+    }
+  ],
+  "files": [
+    {
+      "path": "assets/source/anchors/anchor_cute_phone_boba_raw.png",
+      "sourceBundlePath": "anchor_images/anchor_cute_phone_boba_raw.png",
+      "sha256": "7448d7ce76702e4319d860fb597a4463476ae852a7eb8841ec35f24f377861ba",
+      "bytes": 1954328,
+      "role": "anchor_images"
+    },
+    {
+      "path": "assets/source/anchors/anchor_grumpy_phone_drink_raw.png",
+      "sourceBundlePath": "anchor_images/anchor_grumpy_phone_drink_raw.png",
+      "sha256": "8565dca85b5feb621e8e4d36e0e3cb6a6162109aae6e5635aab1a8bf807d8dce",
+      "bytes": 1859944,
+      "role": "anchor_images"
+    },
+    {
+      "path": "assets/source/original-sheets/sheet_01_walk_cycle_raw.png",
+      "sourceBundlePath": "original_sheets/sheet_01_walk_cycle_raw.png",
+      "sha256": "1ea5dd491ad2d18ffb60cced55dd432b1525ab5860346b9dfe9cd730a2ccd76a",
+      "bytes": 1529574,
+      "role": "original_sheets"
+    },
+    {
+      "path": "assets/source/original-sheets/sheet_02_sit_and_react_raw.png",
+      "sourceBundlePath": "original_sheets/sheet_02_sit_and_react_raw.png",
+      "sha256": "8cc2a1a1fcb9e54d712729d1bbf811b0d3f81971e24f38834d3d5832e66b337a",
+      "bytes": 1703107,
+      "role": "original_sheets"
+    },
+    {
+      "path": "assets/source/original-sheets/sheet_03_window_edge_raw.png",
+      "sourceBundlePath": "original_sheets/sheet_03_window_edge_raw.png",
+      "sha256": "44714130e9f48a6dec24bd96592a1983e407dea095a117ec9265bdd918afa623",
+      "bytes": 1481405,
+      "role": "original_sheets"
+    },
+    {
+      "path": "assets/source/original-sheets/sheet_04_expressions_raw.png",
+      "sourceBundlePath": "original_sheets/sheet_04_expressions_raw.png",
+      "sha256": "21484f6782d827aa667a9a8c4cf4f1638e8e4531b69d5d7e2bcb1f54c9a085b4",
+      "bytes": 1857881,
+      "role": "original_sheets"
+    },
+    {
+      "path": "assets/source/original-sheets/sheet_05_hanging_and_rest_raw.png",
+      "sourceBundlePath": "original_sheets/sheet_05_hanging_and_rest_raw.png",
+      "sha256": "51f5a77fb5c3d761bc94210d7506473734152b888adccbb619b5247a67a294a1",
+      "bytes": 1632617,
+      "role": "original_sheets"
+    },
+    {
+      "path": "assets/source/original-sheets/sheet_06_ledge_and_hanging_raw.png",
+      "sourceBundlePath": "original_sheets/sheet_06_ledge_and_hanging_raw.png",
+      "sha256": "24806ef9dd2f520a549684ad7bfab388af9102f202e2b9eb51ba34fbdbbf4a16",
+      "bytes": 2696742,
+      "role": "original_sheets"
+    },
+    {
+      "path": "assets/source/original-sheets/sheet_07_fall_and_recover_raw.png",
+      "sourceBundlePath": "original_sheets/sheet_07_fall_and_recover_raw.png",
+      "sha256": "91adcdc0911ebb6f11b348388503375ad978f229cd7cfbb3064d868534bd25d1",
+      "bytes": 1837461,
+      "role": "original_sheets"
+    },
+    {
+      "path": "assets/source/original-sheets/sheet_08_idle_expressions_raw.png",
+      "sourceBundlePath": "original_sheets/sheet_08_idle_expressions_raw.png",
+      "sha256": "5f09accc4a162e560466d4b694d3ae8c6879b7bd5695035f00c7b4eca0730427",
+      "bytes": 2185825,
+      "role": "original_sheets"
+    },
+    {
+      "path": "assets/source/original-sheets/sheet_09_busy_tasks_raw.png",
+      "sourceBundlePath": "original_sheets/sheet_09_busy_tasks_raw.png",
+      "sha256": "a38b4a9b15c21f84f47d77b79da92582419a1b5a1328c369c7435ab8b52ba835",
+      "bytes": 1890002,
+      "role": "original_sheets"
+    },
+    {
+      "path": "assets/source/original-sheets/sheet_10_locomotion_and_wave_raw.png",
+      "sourceBundlePath": "original_sheets/sheet_10_locomotion_and_wave_raw.png",
+      "sha256": "5840b8607a0c941e8841e9692fc8ba43d24e383536e8d73fa54bd0716fee969e",
+      "bytes": 1892202,
+      "role": "original_sheets"
+    },
+    {
+      "path": "assets/source/processed-sheets/sheet_01_walk_cycle_processed.png",
+      "sourceBundlePath": "processed_sheets/sheet_01_walk_cycle_processed.png",
+      "sha256": "2d5b287fd0b4887d263636a91324fce2bbf5386894d5e22986bb3ae8138a027d",
+      "bytes": 1444932,
+      "role": "processed_sheets"
+    },
+    {
+      "path": "assets/source/processed-sheets/sheet_02_sit_and_react_processed.png",
+      "sourceBundlePath": "processed_sheets/sheet_02_sit_and_react_processed.png",
+      "sha256": "8f1c226d842d01a2432b407f907dbaf08453fb4b101ad420bd26fc415e23edc1",
+      "bytes": 1573574,
+      "role": "processed_sheets"
+    },
+    {
+      "path": "assets/source/processed-sheets/sheet_03_window_edge_processed.png",
+      "sourceBundlePath": "processed_sheets/sheet_03_window_edge_processed.png",
+      "sha256": "23d60f39321e0238d9f31b54a2ca2a7077293617ee0f1ea0676d8b8cea3f697c",
+      "bytes": 1419287,
+      "role": "processed_sheets"
+    },
+    {
+      "path": "assets/source/processed-sheets/sheet_04_expressions_processed.png",
+      "sourceBundlePath": "processed_sheets/sheet_04_expressions_processed.png",
+      "sha256": "f7757900da089b1c4f3216dc6a3f6969e08e9e2eac7280645a9a04bad2d555b5",
+      "bytes": 1771601,
+      "role": "processed_sheets"
+    },
+    {
+      "path": "assets/source/processed-sheets/sheet_05_hanging_and_rest_processed.png",
+      "sourceBundlePath": "processed_sheets/sheet_05_hanging_and_rest_processed.png",
+      "sha256": "1102dde5cc78578f565e16191f959124e8595a56be349b9a7ad1210d723508cb",
+      "bytes": 1554092,
+      "role": "processed_sheets"
+    },
+    {
+      "path": "assets/source/processed-sheets/sheet_06_ledge_and_hanging_processed.png",
+      "sourceBundlePath": "processed_sheets/sheet_06_ledge_and_hanging_processed.png",
+      "sha256": "17cb9539f208980bd2f1c87c17697623b8cb70cd649ad38fc838783d7cc7c826",
+      "bytes": 2341168,
+      "role": "processed_sheets"
+    },
+    {
+      "path": "assets/source/processed-sheets/sheet_07_fall_and_recover_processed.png",
+      "sourceBundlePath": "processed_sheets/sheet_07_fall_and_recover_processed.png",
+      "sha256": "ac401de19e5989b21c6b3ca2415fb95257192b6568ec9b3bfc32a92d3f40f955",
+      "bytes": 1740913,
+      "role": "processed_sheets"
+    },
+    {
+      "path": "assets/source/processed-sheets/sheet_08_idle_expressions_processed.png",
+      "sourceBundlePath": "processed_sheets/sheet_08_idle_expressions_processed.png",
+      "sha256": "756a7e791d0fb5c69740c5c4835b33a12ea373bd0117e978fcd6a664aea250c9",
+      "bytes": 2063227,
+      "role": "processed_sheets"
+    },
+    {
+      "path": "assets/source/processed-sheets/sheet_09_busy_tasks_processed.png",
+      "sourceBundlePath": "processed_sheets/sheet_09_busy_tasks_processed.png",
+      "sha256": "636819243384ed609735a07703305f6b7e0cf1fa5b92a829900d2e94803cc337",
+      "bytes": 1786484,
+      "role": "processed_sheets"
+    },
+    {
+      "path": "assets/source/processed-sheets/sheet_10_locomotion_and_wave_processed.png",
+      "sourceBundlePath": "processed_sheets/sheet_10_locomotion_and_wave_processed.png",
+      "sha256": "e6751c9563a32456e79311de455a4e282c8a1231152d1d932c2afddc9febd12c",
+      "bytes": 1798961,
+      "role": "processed_sheets"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_01_walk_cycle_idle_glance_r01_c03.png",
+      "sourceBundlePath": "sprites/sheet_01_walk_cycle_idle_glance_r01_c03.png",
+      "sha256": "57e1dccf9a45775a9f741c3d4baec97aa292d8637824041e5c95a0512e59b2e0",
+      "bytes": 179335,
+      "role": "sprites",
+      "assetId": "sheet_01_walk_cycle_idle_glance_r01_c03",
+      "sourceSheet": "sheet_01_walk_cycle",
+      "row": 1,
+      "column": 3,
+      "cropRectPx": {
+        "left": 887,
+        "top": 0,
+        "right": 1330,
+        "bottom": 444
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_01_walk_cycle_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_01_walk_cycle_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_01_walk_cycle_idle_happy_r01_c02.png",
+      "sourceBundlePath": "sprites/sheet_01_walk_cycle_idle_happy_r01_c02.png",
+      "sha256": "d1c3ad96643cb517c39e9d5fc2ee58fea4ca97d01b3a59bb11da772f26f2d0e5",
+      "bytes": 186933,
+      "role": "sprites",
+      "assetId": "sheet_01_walk_cycle_idle_happy_r01_c02",
+      "sourceSheet": "sheet_01_walk_cycle",
+      "row": 1,
+      "column": 2,
+      "cropRectPx": {
+        "left": 444,
+        "top": 0,
+        "right": 887,
+        "bottom": 444
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_01_walk_cycle_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_01_walk_cycle_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_01_walk_cycle_idle_neutral_r01_c01.png",
+      "sourceBundlePath": "sprites/sheet_01_walk_cycle_idle_neutral_r01_c01.png",
+      "sha256": "b41fd8b6415b4d99c90f03fd802319d77a74a59fc87adb03d08f902fed383f51",
+      "bytes": 187435,
+      "role": "sprites",
+      "assetId": "sheet_01_walk_cycle_idle_neutral_r01_c01",
+      "sourceSheet": "sheet_01_walk_cycle",
+      "row": 1,
+      "column": 1,
+      "cropRectPx": {
+        "left": 0,
+        "top": 0,
+        "right": 444,
+        "bottom": 444
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_01_walk_cycle_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_01_walk_cycle_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_01_walk_cycle_walk_side_pose_r01_c04.png",
+      "sourceBundlePath": "sprites/sheet_01_walk_cycle_walk_side_pose_r01_c04.png",
+      "sha256": "6f6dcae4a0977253228535dc9b18fbab87dd83eaa247c60e300aabbd60ffd892",
+      "bytes": 173183,
+      "role": "sprites",
+      "assetId": "sheet_01_walk_cycle_walk_side_pose_r01_c04",
+      "sourceSheet": "sheet_01_walk_cycle",
+      "row": 1,
+      "column": 4,
+      "cropRectPx": {
+        "left": 1330,
+        "top": 0,
+        "right": 1774,
+        "bottom": 444
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_01_walk_cycle_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_01_walk_cycle_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_01_walk_cycle_walk_step_a_r02_c01.png",
+      "sourceBundlePath": "sprites/sheet_01_walk_cycle_walk_step_a_r02_c01.png",
+      "sha256": "c608d560fd6d27c965efc47b497da154b9d4803ca7ac6d1e04cd4c10ff40b0c1",
+      "bytes": 186289,
+      "role": "sprites",
+      "assetId": "sheet_01_walk_cycle_walk_step_a_r02_c01",
+      "sourceSheet": "sheet_01_walk_cycle",
+      "row": 2,
+      "column": 1,
+      "cropRectPx": {
+        "left": 0,
+        "top": 444,
+        "right": 444,
+        "bottom": 887
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_01_walk_cycle_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_01_walk_cycle_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_01_walk_cycle_walk_step_b_r02_c02.png",
+      "sourceBundlePath": "sprites/sheet_01_walk_cycle_walk_step_b_r02_c02.png",
+      "sha256": "eb2af91fbaf813a14f168fc032371bee6d3f0199f084f5c3416656ffe8efef92",
+      "bytes": 182537,
+      "role": "sprites",
+      "assetId": "sheet_01_walk_cycle_walk_step_b_r02_c02",
+      "sourceSheet": "sheet_01_walk_cycle",
+      "row": 2,
+      "column": 2,
+      "cropRectPx": {
+        "left": 444,
+        "top": 444,
+        "right": 887,
+        "bottom": 887
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_01_walk_cycle_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_01_walk_cycle_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_01_walk_cycle_walk_step_c_r02_c03.png",
+      "sourceBundlePath": "sprites/sheet_01_walk_cycle_walk_step_c_r02_c03.png",
+      "sha256": "c6b311e40606932646a9678060562b85a313ebc8ea42212219588699260e146b",
+      "bytes": 180358,
+      "role": "sprites",
+      "assetId": "sheet_01_walk_cycle_walk_step_c_r02_c03",
+      "sourceSheet": "sheet_01_walk_cycle",
+      "row": 2,
+      "column": 3,
+      "cropRectPx": {
+        "left": 887,
+        "top": 444,
+        "right": 1330,
+        "bottom": 887
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_01_walk_cycle_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_01_walk_cycle_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_01_walk_cycle_walk_step_d_r02_c04.png",
+      "sourceBundlePath": "sprites/sheet_01_walk_cycle_walk_step_d_r02_c04.png",
+      "sha256": "842d5057dc315532f8472e7901dce7e31912903b3c1244a463f91ebd6414762a",
+      "bytes": 174709,
+      "role": "sprites",
+      "assetId": "sheet_01_walk_cycle_walk_step_d_r02_c04",
+      "sourceSheet": "sheet_01_walk_cycle",
+      "row": 2,
+      "column": 4,
+      "cropRectPx": {
+        "left": 1330,
+        "top": 444,
+        "right": 1774,
+        "bottom": 887
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_01_walk_cycle_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_01_walk_cycle_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_02_sit_and_react_crouch_peek_r01_c02.png",
+      "sourceBundlePath": "sprites/sheet_02_sit_and_react_crouch_peek_r01_c02.png",
+      "sha256": "5054ce99bc99a066ba34130fa9ea6be24bac886ab566b8236cb5942b4f87b29a",
+      "bytes": 184243,
+      "role": "sprites",
+      "assetId": "sheet_02_sit_and_react_crouch_peek_r01_c02",
+      "sourceSheet": "sheet_02_sit_and_react",
+      "row": 1,
+      "column": 2,
+      "cropRectPx": {
+        "left": 444,
+        "top": 0,
+        "right": 887,
+        "bottom": 444
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_02_sit_and_react_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_02_sit_and_react_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_02_sit_and_react_float_happy_r02_c04.png",
+      "sourceBundlePath": "sprites/sheet_02_sit_and_react_float_happy_r02_c04.png",
+      "sha256": "6c9860258e7ebd08feea1d9af963f2d463181f70cd0f8d87082d0cf042e6719c",
+      "bytes": 196922,
+      "role": "sprites",
+      "assetId": "sheet_02_sit_and_react_float_happy_r02_c04",
+      "sourceSheet": "sheet_02_sit_and_react",
+      "row": 2,
+      "column": 4,
+      "cropRectPx": {
+        "left": 1330,
+        "top": 444,
+        "right": 1774,
+        "bottom": 887
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_02_sit_and_react_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_02_sit_and_react_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_02_sit_and_react_sit_celebrate_r01_c04.png",
+      "sourceBundlePath": "sprites/sheet_02_sit_and_react_sit_celebrate_r01_c04.png",
+      "sha256": "f0c1942ddd5d3f7143fa4277f52fd04b2b9c3c8b485afe0c7e4c8d971a159d5b",
+      "bytes": 185643,
+      "role": "sprites",
+      "assetId": "sheet_02_sit_and_react_sit_celebrate_r01_c04",
+      "sourceSheet": "sheet_02_sit_and_react",
+      "row": 1,
+      "column": 4,
+      "cropRectPx": {
+        "left": 1330,
+        "top": 0,
+        "right": 1774,
+        "bottom": 444
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_02_sit_and_react_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_02_sit_and_react_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_02_sit_and_react_sit_hold_drink_r01_c01.png",
+      "sourceBundlePath": "sprites/sheet_02_sit_and_react_sit_hold_drink_r01_c01.png",
+      "sha256": "8fe21f744140a539fe85caa192612a44f1f1e45c2271692f83536176c0b4d58a",
+      "bytes": 183145,
+      "role": "sprites",
+      "assetId": "sheet_02_sit_and_react_sit_hold_drink_r01_c01",
+      "sourceSheet": "sheet_02_sit_and_react",
+      "row": 1,
+      "column": 1,
+      "cropRectPx": {
+        "left": 0,
+        "top": 0,
+        "right": 444,
+        "bottom": 444
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_02_sit_and_react_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_02_sit_and_react_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_02_sit_and_react_sit_sad_r02_c03.png",
+      "sourceBundlePath": "sprites/sheet_02_sit_and_react_sit_sad_r02_c03.png",
+      "sha256": "2093effc4d4ccd37dfbaec8814f73d702557012fc60e8e2fee224a553557518a",
+      "bytes": 190967,
+      "role": "sprites",
+      "assetId": "sheet_02_sit_and_react_sit_sad_r02_c03",
+      "sourceSheet": "sheet_02_sit_and_react",
+      "row": 2,
+      "column": 3,
+      "cropRectPx": {
+        "left": 887,
+        "top": 444,
+        "right": 1330,
+        "bottom": 887
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_02_sit_and_react_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_02_sit_and_react_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_02_sit_and_react_sit_smile_r01_c03.png",
+      "sourceBundlePath": "sprites/sheet_02_sit_and_react_sit_smile_r01_c03.png",
+      "sha256": "c2275aee6fd71ac258db894d97f9b9ea70457ed88ca23e27966e761b6d94328f",
+      "bytes": 174692,
+      "role": "sprites",
+      "assetId": "sheet_02_sit_and_react_sit_smile_r01_c03",
+      "sourceSheet": "sheet_02_sit_and_react",
+      "row": 1,
+      "column": 3,
+      "cropRectPx": {
+        "left": 887,
+        "top": 0,
+        "right": 1330,
+        "bottom": 444
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_02_sit_and_react_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_02_sit_and_react_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_02_sit_and_react_startled_r02_c01.png",
+      "sourceBundlePath": "sprites/sheet_02_sit_and_react_startled_r02_c01.png",
+      "sha256": "4986718fb2bb5e9d38f55481ae07cdfebd6b9e322e63008d564489915371abc0",
+      "bytes": 194485,
+      "role": "sprites",
+      "assetId": "sheet_02_sit_and_react_startled_r02_c01",
+      "sourceSheet": "sheet_02_sit_and_react",
+      "row": 2,
+      "column": 1,
+      "cropRectPx": {
+        "left": 0,
+        "top": 444,
+        "right": 444,
+        "bottom": 887
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_02_sit_and_react_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_02_sit_and_react_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_02_sit_and_react_surprised_drop_r02_c02.png",
+      "sourceBundlePath": "sprites/sheet_02_sit_and_react_surprised_drop_r02_c02.png",
+      "sha256": "992fee9ec44c745a2c9d332d830ef25ed4e756762185ab3b7af19ddd31ff1b7a",
+      "bytes": 246088,
+      "role": "sprites",
+      "assetId": "sheet_02_sit_and_react_surprised_drop_r02_c02",
+      "sourceSheet": "sheet_02_sit_and_react",
+      "row": 2,
+      "column": 2,
+      "cropRectPx": {
+        "left": 444,
+        "top": 444,
+        "right": 887,
+        "bottom": 887
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_02_sit_and_react_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_02_sit_and_react_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_03_window_edge_climb_corner_r02_c02.png",
+      "sourceBundlePath": "sprites/sheet_03_window_edge_climb_corner_r02_c02.png",
+      "sha256": "977af1565d534f4bc8d3124321afa5af8fbdbfc3e80fff4fd4d99d635dad1411",
+      "bytes": 159996,
+      "role": "sprites",
+      "assetId": "sheet_03_window_edge_climb_corner_r02_c02",
+      "sourceSheet": "sheet_03_window_edge",
+      "row": 2,
+      "column": 2,
+      "cropRectPx": {
+        "left": 444,
+        "top": 444,
+        "right": 887,
+        "bottom": 887
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_03_window_edge_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_03_window_edge_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_03_window_edge_hang_over_edge_r01_c04.png",
+      "sourceBundlePath": "sprites/sheet_03_window_edge_hang_over_edge_r01_c04.png",
+      "sha256": "da0c7bf93f56cb800aa23e1b8ffa20bbf3b443aa5afdc63b514dcb0394677cc2",
+      "bytes": 182937,
+      "role": "sprites",
+      "assetId": "sheet_03_window_edge_hang_over_edge_r01_c04",
+      "sourceSheet": "sheet_03_window_edge",
+      "row": 1,
+      "column": 4,
+      "cropRectPx": {
+        "left": 1330,
+        "top": 0,
+        "right": 1774,
+        "bottom": 444
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_03_window_edge_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_03_window_edge_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_03_window_edge_hang_side_r02_c03.png",
+      "sourceBundlePath": "sprites/sheet_03_window_edge_hang_side_r02_c03.png",
+      "sha256": "f0dee1035b7fec822b906585ada12dcc96a544757d79c4ca6b0f38dd4cc2be58",
+      "bytes": 165207,
+      "role": "sprites",
+      "assetId": "sheet_03_window_edge_hang_side_r02_c03",
+      "sourceSheet": "sheet_03_window_edge",
+      "row": 2,
+      "column": 3,
+      "cropRectPx": {
+        "left": 887,
+        "top": 444,
+        "right": 1330,
+        "bottom": 887
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_03_window_edge_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_03_window_edge_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_03_window_edge_peek_low_r01_c01.png",
+      "sourceBundlePath": "sprites/sheet_03_window_edge_peek_low_r01_c01.png",
+      "sha256": "4f7fd162ca4cab420c0cd8743134c19d3cca282710c0dc870ccf01fdeeb72be8",
+      "bytes": 124897,
+      "role": "sprites",
+      "assetId": "sheet_03_window_edge_peek_low_r01_c01",
+      "sourceSheet": "sheet_03_window_edge",
+      "row": 1,
+      "column": 1,
+      "cropRectPx": {
+        "left": 0,
+        "top": 0,
+        "right": 444,
+        "bottom": 444
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_03_window_edge_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_03_window_edge_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_03_window_edge_peek_over_edge_r01_c02.png",
+      "sourceBundlePath": "sprites/sheet_03_window_edge_peek_over_edge_r01_c02.png",
+      "sha256": "077d440d2ef29e13aa9572abade9acc5cf759f7305df3e15c687ec3ff582d7d1",
+      "bytes": 187839,
+      "role": "sprites",
+      "assetId": "sheet_03_window_edge_peek_over_edge_r01_c02",
+      "sourceSheet": "sheet_03_window_edge",
+      "row": 1,
+      "column": 2,
+      "cropRectPx": {
+        "left": 444,
+        "top": 0,
+        "right": 887,
+        "bottom": 444
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_03_window_edge_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_03_window_edge_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_03_window_edge_sit_edge_r01_c03.png",
+      "sourceBundlePath": "sprites/sheet_03_window_edge_sit_edge_r01_c03.png",
+      "sha256": "38a4feef8970fe8924ab513874fbcd4af519f379043e773dde5c5c57bc7b98f9",
+      "bytes": 186278,
+      "role": "sprites",
+      "assetId": "sheet_03_window_edge_sit_edge_r01_c03",
+      "sourceSheet": "sheet_03_window_edge",
+      "row": 1,
+      "column": 3,
+      "cropRectPx": {
+        "left": 887,
+        "top": 0,
+        "right": 1330,
+        "bottom": 444
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_03_window_edge_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_03_window_edge_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_03_window_edge_swing_edge_r02_c01.png",
+      "sourceBundlePath": "sprites/sheet_03_window_edge_swing_edge_r02_c01.png",
+      "sha256": "22b9358914490f8f23b0bbd212364bd07747f1a5210d7c317e8ce276dc72c5ee",
+      "bytes": 205958,
+      "role": "sprites",
+      "assetId": "sheet_03_window_edge_swing_edge_r02_c01",
+      "sourceSheet": "sheet_03_window_edge",
+      "row": 2,
+      "column": 1,
+      "cropRectPx": {
+        "left": 0,
+        "top": 444,
+        "right": 444,
+        "bottom": 887
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_03_window_edge_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_03_window_edge_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_03_window_edge_upside_down_r02_c04.png",
+      "sourceBundlePath": "sprites/sheet_03_window_edge_upside_down_r02_c04.png",
+      "sha256": "f924cb49df3425f864858aa7829f0cf515b1e2f2a4ca65234c674d80ebb84a4c",
+      "bytes": 190356,
+      "role": "sprites",
+      "assetId": "sheet_03_window_edge_upside_down_r02_c04",
+      "sourceSheet": "sheet_03_window_edge",
+      "row": 2,
+      "column": 4,
+      "cropRectPx": {
+        "left": 1330,
+        "top": 444,
+        "right": 1774,
+        "bottom": 887
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_03_window_edge_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_03_window_edge_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_04_expressions_annoyed_r02_c02.png",
+      "sourceBundlePath": "sprites/sheet_04_expressions_annoyed_r02_c02.png",
+      "sha256": "78a957a67a53823bdb7e3250d43623f249a8c93eb30a82c861e9fcfb74b5d4a1",
+      "bytes": 236217,
+      "role": "sprites",
+      "assetId": "sheet_04_expressions_annoyed_r02_c02",
+      "sourceSheet": "sheet_04_expressions",
+      "row": 2,
+      "column": 2,
+      "cropRectPx": {
+        "left": 444,
+        "top": 444,
+        "right": 887,
+        "bottom": 887
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_04_expressions_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_04_expressions_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_04_expressions_curious_r01_c04.png",
+      "sourceBundlePath": "sprites/sheet_04_expressions_curious_r01_c04.png",
+      "sha256": "c475aef58b31644f2a314e9d7ed86eaeaaee2e218830ee8930ab11c2b0a293ef",
+      "bytes": 208563,
+      "role": "sprites",
+      "assetId": "sheet_04_expressions_curious_r01_c04",
+      "sourceSheet": "sheet_04_expressions",
+      "row": 1,
+      "column": 4,
+      "cropRectPx": {
+        "left": 1330,
+        "top": 0,
+        "right": 1774,
+        "bottom": 444
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_04_expressions_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_04_expressions_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_04_expressions_happy_smile_r01_c02.png",
+      "sourceBundlePath": "sprites/sheet_04_expressions_happy_smile_r01_c02.png",
+      "sha256": "78f3d5ea48c7b4f692aaa6b5934103c73701281fe8e01cc2d83d31b578db03ef",
+      "bytes": 210333,
+      "role": "sprites",
+      "assetId": "sheet_04_expressions_happy_smile_r01_c02",
+      "sourceSheet": "sheet_04_expressions",
+      "row": 1,
+      "column": 2,
+      "cropRectPx": {
+        "left": 444,
+        "top": 0,
+        "right": 887,
+        "bottom": 444
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_04_expressions_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_04_expressions_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_04_expressions_heart_eyes_r01_c03.png",
+      "sourceBundlePath": "sprites/sheet_04_expressions_heart_eyes_r01_c03.png",
+      "sha256": "866e27175730964cb793a158dbe758242b3efb14933a8743cc1c38b7120b5ebd",
+      "bytes": 219303,
+      "role": "sprites",
+      "assetId": "sheet_04_expressions_heart_eyes_r01_c03",
+      "sourceSheet": "sheet_04_expressions",
+      "row": 1,
+      "column": 3,
+      "cropRectPx": {
+        "left": 887,
+        "top": 0,
+        "right": 1330,
+        "bottom": 444
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_04_expressions_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_04_expressions_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_04_expressions_idle_neutral_r01_c01.png",
+      "sourceBundlePath": "sprites/sheet_04_expressions_idle_neutral_r01_c01.png",
+      "sha256": "b990727fb11ba4bb2e38bf19e6c7859ff7b4a42f53a64f4209c6e55c77ffc32b",
+      "bytes": 210558,
+      "role": "sprites",
+      "assetId": "sheet_04_expressions_idle_neutral_r01_c01",
+      "sourceSheet": "sheet_04_expressions",
+      "row": 1,
+      "column": 1,
+      "cropRectPx": {
+        "left": 0,
+        "top": 0,
+        "right": 444,
+        "bottom": 444
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_04_expressions_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_04_expressions_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_04_expressions_sulky_r02_c03.png",
+      "sourceBundlePath": "sprites/sheet_04_expressions_sulky_r02_c03.png",
+      "sha256": "a5a15a8cbf941e01eea2da3c29566e10bc4d6754c27a1bc7bfddf0a56fa79ff5",
+      "bytes": 240957,
+      "role": "sprites",
+      "assetId": "sheet_04_expressions_sulky_r02_c03",
+      "sourceSheet": "sheet_04_expressions",
+      "row": 2,
+      "column": 3,
+      "cropRectPx": {
+        "left": 887,
+        "top": 444,
+        "right": 1330,
+        "bottom": 887
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_04_expressions_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_04_expressions_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_04_expressions_surprised_r02_c01.png",
+      "sourceBundlePath": "sprites/sheet_04_expressions_surprised_r02_c01.png",
+      "sha256": "3f8e6d7a3667a25fe00074b8e1fe81ad53ece4801a6d97641a2d71513db42c2c",
+      "bytes": 220613,
+      "role": "sprites",
+      "assetId": "sheet_04_expressions_surprised_r02_c01",
+      "sourceSheet": "sheet_04_expressions",
+      "row": 2,
+      "column": 1,
+      "cropRectPx": {
+        "left": 0,
+        "top": 444,
+        "right": 444,
+        "bottom": 887
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_04_expressions_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_04_expressions_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_04_expressions_thinking_r02_c04.png",
+      "sourceBundlePath": "sprites/sheet_04_expressions_thinking_r02_c04.png",
+      "sha256": "09201ff15e49477dc1ef34c0f944f371919281cd3fa217908233911026a505b3",
+      "bytes": 221301,
+      "role": "sprites",
+      "assetId": "sheet_04_expressions_thinking_r02_c04",
+      "sourceSheet": "sheet_04_expressions",
+      "row": 2,
+      "column": 4,
+      "cropRectPx": {
+        "left": 1330,
+        "top": 444,
+        "right": 1774,
+        "bottom": 887
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_04_expressions_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_04_expressions_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_05_hanging_and_rest_blush_love_r01_c03.png",
+      "sourceBundlePath": "sprites/sheet_05_hanging_and_rest_blush_love_r01_c03.png",
+      "sha256": "67ea7b313a03efebe4b7335dce171c98a4ad28dc2a0e99918140f310755249f8",
+      "bytes": 206276,
+      "role": "sprites",
+      "assetId": "sheet_05_hanging_and_rest_blush_love_r01_c03",
+      "sourceSheet": "sheet_05_hanging_and_rest",
+      "row": 1,
+      "column": 3,
+      "cropRectPx": {
+        "left": 887,
+        "top": 0,
+        "right": 1330,
+        "bottom": 444
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_05_hanging_and_rest_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_05_hanging_and_rest_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_05_hanging_and_rest_idle_soft_r01_c04.png",
+      "sourceBundlePath": "sprites/sheet_05_hanging_and_rest_idle_soft_r01_c04.png",
+      "sha256": "f589440c535fc982371f8abc9c22fab089753e0044591f09307d10939f3fcadf",
+      "bytes": 197475,
+      "role": "sprites",
+      "assetId": "sheet_05_hanging_and_rest_idle_soft_r01_c04",
+      "sourceSheet": "sheet_05_hanging_and_rest",
+      "row": 1,
+      "column": 4,
+      "cropRectPx": {
+        "left": 1330,
+        "top": 0,
+        "right": 1774,
+        "bottom": 444
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_05_hanging_and_rest_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_05_hanging_and_rest_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_05_hanging_and_rest_idle_stand_r01_c01.png",
+      "sourceBundlePath": "sprites/sheet_05_hanging_and_rest_idle_stand_r01_c01.png",
+      "sha256": "b6c403a26ae91bfd06ad3c040d375709fd1a775cae7c0900adbdfa32d6c052d6",
+      "bytes": 192478,
+      "role": "sprites",
+      "assetId": "sheet_05_hanging_and_rest_idle_stand_r01_c01",
+      "sourceSheet": "sheet_05_hanging_and_rest",
+      "row": 1,
+      "column": 1,
+      "cropRectPx": {
+        "left": 0,
+        "top": 0,
+        "right": 444,
+        "bottom": 444
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_05_hanging_and_rest_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_05_hanging_and_rest_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_05_hanging_and_rest_sit_think_r02_c03.png",
+      "sourceBundlePath": "sprites/sheet_05_hanging_and_rest_sit_think_r02_c03.png",
+      "sha256": "866e1706b64b29b1978c7b678498d41984c2a5b3fed5d85b2ab1f748953d1ddf",
+      "bytes": 197409,
+      "role": "sprites",
+      "assetId": "sheet_05_hanging_and_rest_sit_think_r02_c03",
+      "sourceSheet": "sheet_05_hanging_and_rest",
+      "row": 2,
+      "column": 3,
+      "cropRectPx": {
+        "left": 887,
+        "top": 444,
+        "right": 1330,
+        "bottom": 887
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_05_hanging_and_rest_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_05_hanging_and_rest_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_05_hanging_and_rest_sleep_floor_r02_c04.png",
+      "sourceBundlePath": "sprites/sheet_05_hanging_and_rest_sleep_floor_r02_c04.png",
+      "sha256": "2053052b7e15a21350871ac917c48a2353f27ef62bbbe6976ca407fae9240df1",
+      "bytes": 157908,
+      "role": "sprites",
+      "assetId": "sheet_05_hanging_and_rest_sleep_floor_r02_c04",
+      "sourceSheet": "sheet_05_hanging_and_rest",
+      "row": 2,
+      "column": 4,
+      "cropRectPx": {
+        "left": 1330,
+        "top": 444,
+        "right": 1774,
+        "bottom": 887
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_05_hanging_and_rest_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_05_hanging_and_rest_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_05_hanging_and_rest_surprised_r02_c01.png",
+      "sourceBundlePath": "sprites/sheet_05_hanging_and_rest_surprised_r02_c01.png",
+      "sha256": "74b32d0549aae76f1499087bee08ad486e3459ed019ea7727fa4fe8d1134dfab",
+      "bytes": 207908,
+      "role": "sprites",
+      "assetId": "sheet_05_hanging_and_rest_surprised_r02_c01",
+      "sourceSheet": "sheet_05_hanging_and_rest",
+      "row": 2,
+      "column": 1,
+      "cropRectPx": {
+        "left": 0,
+        "top": 444,
+        "right": 444,
+        "bottom": 887
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_05_hanging_and_rest_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_05_hanging_and_rest_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_05_hanging_and_rest_tired_r02_c02.png",
+      "sourceBundlePath": "sprites/sheet_05_hanging_and_rest_tired_r02_c02.png",
+      "sha256": "3ec4d6a8272833d47ae9ed089b4a86b4dfb21788425af168e09f8d1e70f7e197",
+      "bytes": 190604,
+      "role": "sprites",
+      "assetId": "sheet_05_hanging_and_rest_tired_r02_c02",
+      "sourceSheet": "sheet_05_hanging_and_rest",
+      "row": 2,
+      "column": 2,
+      "cropRectPx": {
+        "left": 444,
+        "top": 444,
+        "right": 887,
+        "bottom": 887
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_05_hanging_and_rest_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_05_hanging_and_rest_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_05_hanging_and_rest_wave_happy_r01_c02.png",
+      "sourceBundlePath": "sprites/sheet_05_hanging_and_rest_wave_happy_r01_c02.png",
+      "sha256": "cac16fc19297e3d67cf3d2bb0eafe203081c3db4a9e9ebbf649dc4fb44ec245b",
+      "bytes": 195668,
+      "role": "sprites",
+      "assetId": "sheet_05_hanging_and_rest_wave_happy_r01_c02",
+      "sourceSheet": "sheet_05_hanging_and_rest",
+      "row": 1,
+      "column": 2,
+      "cropRectPx": {
+        "left": 444,
+        "top": 0,
+        "right": 887,
+        "bottom": 444
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_05_hanging_and_rest_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_05_hanging_and_rest_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_06_ledge_and_hanging_hang_bar_inverted_r02_c02.png",
+      "sourceBundlePath": "sprites/sheet_06_ledge_and_hanging_hang_bar_inverted_r02_c02.png",
+      "sha256": "663e8598c99d9ea4522df3e4dc32a166604e6a2319a244c420636ba2f8790eac",
+      "bytes": 312600,
+      "role": "sprites",
+      "assetId": "sheet_06_ledge_and_hanging_hang_bar_inverted_r02_c02",
+      "sourceSheet": "sheet_06_ledge_and_hanging",
+      "row": 2,
+      "column": 2,
+      "cropRectPx": {
+        "left": 362,
+        "top": 543,
+        "right": 724,
+        "bottom": 1086
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_06_ledge_and_hanging_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_06_ledge_and_hanging_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_06_ledge_and_hanging_hang_bar_r01_c04.png",
+      "sourceBundlePath": "sprites/sheet_06_ledge_and_hanging_hang_bar_r01_c04.png",
+      "sha256": "efe2ce360de5095ff21eb2cf27dcc48a449a46ae07cffb388769e94bc58444e7",
+      "bytes": 287073,
+      "role": "sprites",
+      "assetId": "sheet_06_ledge_and_hanging_hang_bar_r01_c04",
+      "sourceSheet": "sheet_06_ledge_and_hanging",
+      "row": 1,
+      "column": 4,
+      "cropRectPx": {
+        "left": 1086,
+        "top": 0,
+        "right": 1448,
+        "bottom": 543
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_06_ledge_and_hanging_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_06_ledge_and_hanging_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_06_ledge_and_hanging_hang_bar_relaxed_r02_c01.png",
+      "sourceBundlePath": "sprites/sheet_06_ledge_and_hanging_hang_bar_relaxed_r02_c01.png",
+      "sha256": "b8ced02ce16ac0d71894f9b8f49c0b75870cba54bbb1ce080eb23def67a7a40a",
+      "bytes": 302232,
+      "role": "sprites",
+      "assetId": "sheet_06_ledge_and_hanging_hang_bar_relaxed_r02_c01",
+      "sourceSheet": "sheet_06_ledge_and_hanging",
+      "row": 2,
+      "column": 1,
+      "cropRectPx": {
+        "left": 0,
+        "top": 543,
+        "right": 362,
+        "bottom": 1086
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_06_ledge_and_hanging_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_06_ledge_and_hanging_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_06_ledge_and_hanging_peek_left_edge_r02_c03.png",
+      "sourceBundlePath": "sprites/sheet_06_ledge_and_hanging_peek_left_edge_r02_c03.png",
+      "sha256": "cd27de1e0a7b1cd5d9a0b08187906330b9df9de991cc1c173b5bdc67ea1b11d3",
+      "bytes": 279118,
+      "role": "sprites",
+      "assetId": "sheet_06_ledge_and_hanging_peek_left_edge_r02_c03",
+      "sourceSheet": "sheet_06_ledge_and_hanging",
+      "row": 2,
+      "column": 3,
+      "cropRectPx": {
+        "left": 724,
+        "top": 543,
+        "right": 1086,
+        "bottom": 1086
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_06_ledge_and_hanging_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_06_ledge_and_hanging_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_06_ledge_and_hanging_peek_right_edge_r02_c04.png",
+      "sourceBundlePath": "sprites/sheet_06_ledge_and_hanging_peek_right_edge_r02_c04.png",
+      "sha256": "215e4f1b1b3b76b13f5b021b5ab0d2476375dedab2867765306d160099d87f45",
+      "bytes": 289844,
+      "role": "sprites",
+      "assetId": "sheet_06_ledge_and_hanging_peek_right_edge_r02_c04",
+      "sourceSheet": "sheet_06_ledge_and_hanging",
+      "row": 2,
+      "column": 4,
+      "cropRectPx": {
+        "left": 1086,
+        "top": 543,
+        "right": 1448,
+        "bottom": 1086
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_06_ledge_and_hanging_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_06_ledge_and_hanging_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_06_ledge_and_hanging_peek_table_r01_c01.png",
+      "sourceBundlePath": "sprites/sheet_06_ledge_and_hanging_peek_table_r01_c01.png",
+      "sha256": "35b10cb42e1e30ce3570d72575876f96b39051fdb11f8bc7f5b8df268495a614",
+      "bytes": 219921,
+      "role": "sprites",
+      "assetId": "sheet_06_ledge_and_hanging_peek_table_r01_c01",
+      "sourceSheet": "sheet_06_ledge_and_hanging",
+      "row": 1,
+      "column": 1,
+      "cropRectPx": {
+        "left": 0,
+        "top": 0,
+        "right": 362,
+        "bottom": 543
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_06_ledge_and_hanging_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_06_ledge_and_hanging_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_06_ledge_and_hanging_sit_ledge_happy_r01_c03.png",
+      "sourceBundlePath": "sprites/sheet_06_ledge_and_hanging_sit_ledge_happy_r01_c03.png",
+      "sha256": "90787ead80634b30a6449aff5f630abe340ec9474f88aaded8b67afea8e77021",
+      "bytes": 318415,
+      "role": "sprites",
+      "assetId": "sheet_06_ledge_and_hanging_sit_ledge_happy_r01_c03",
+      "sourceSheet": "sheet_06_ledge_and_hanging",
+      "row": 1,
+      "column": 3,
+      "cropRectPx": {
+        "left": 724,
+        "top": 0,
+        "right": 1086,
+        "bottom": 543
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_06_ledge_and_hanging_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_06_ledge_and_hanging_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_06_ledge_and_hanging_sit_ledge_r01_c02.png",
+      "sourceBundlePath": "sprites/sheet_06_ledge_and_hanging_sit_ledge_r01_c02.png",
+      "sha256": "8b093254019afd88e6f401b97a37ca460d0aeaf3a8a7484ed498b35c3448858d",
+      "bytes": 294964,
+      "role": "sprites",
+      "assetId": "sheet_06_ledge_and_hanging_sit_ledge_r01_c02",
+      "sourceSheet": "sheet_06_ledge_and_hanging",
+      "row": 1,
+      "column": 2,
+      "cropRectPx": {
+        "left": 362,
+        "top": 0,
+        "right": 724,
+        "bottom": 543
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_06_ledge_and_hanging_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_06_ledge_and_hanging_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_07_fall_and_recover_crouch_tuck_r01_c01.png",
+      "sourceBundlePath": "sprites/sheet_07_fall_and_recover_crouch_tuck_r01_c01.png",
+      "sha256": "c622000c05c5048eefe5821c757ffae4e277fc7b9bc4f200d7cb0b61f0d84818",
+      "bytes": 212320,
+      "role": "sprites",
+      "assetId": "sheet_07_fall_and_recover_crouch_tuck_r01_c01",
+      "sourceSheet": "sheet_07_fall_and_recover",
+      "row": 1,
+      "column": 1,
+      "cropRectPx": {
+        "left": 0,
+        "top": 0,
+        "right": 362,
+        "bottom": 543
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_07_fall_and_recover_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_07_fall_and_recover_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_07_fall_and_recover_fall_back_r01_c04.png",
+      "sourceBundlePath": "sprites/sheet_07_fall_and_recover_fall_back_r01_c04.png",
+      "sha256": "ab9d6d18bbd59110e0ee0d049b9acc0576f21dc46d8c36483e2812a11465f84d",
+      "bytes": 220455,
+      "role": "sprites",
+      "assetId": "sheet_07_fall_and_recover_fall_back_r01_c04",
+      "sourceSheet": "sheet_07_fall_and_recover",
+      "row": 1,
+      "column": 4,
+      "cropRectPx": {
+        "left": 1086,
+        "top": 0,
+        "right": 1448,
+        "bottom": 543
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_07_fall_and_recover_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_07_fall_and_recover_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_07_fall_and_recover_fall_low_r02_c01.png",
+      "sourceBundlePath": "sprites/sheet_07_fall_and_recover_fall_low_r02_c01.png",
+      "sha256": "786b04f35883cf6d72ec767cf6a211e00ddd6e6002556ae3058a5f609318d9f9",
+      "bytes": 211955,
+      "role": "sprites",
+      "assetId": "sheet_07_fall_and_recover_fall_low_r02_c01",
+      "sourceSheet": "sheet_07_fall_and_recover",
+      "row": 2,
+      "column": 1,
+      "cropRectPx": {
+        "left": 0,
+        "top": 543,
+        "right": 362,
+        "bottom": 1086
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_07_fall_and_recover_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_07_fall_and_recover_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_07_fall_and_recover_frustrated_sit_r02_c03.png",
+      "sourceBundlePath": "sprites/sheet_07_fall_and_recover_frustrated_sit_r02_c03.png",
+      "sha256": "4dc00582e0569fcf414570ce187099525e4342159bac4cd781611b8dd0f43279",
+      "bytes": 197213,
+      "role": "sprites",
+      "assetId": "sheet_07_fall_and_recover_frustrated_sit_r02_c03",
+      "sourceSheet": "sheet_07_fall_and_recover",
+      "row": 2,
+      "column": 3,
+      "cropRectPx": {
+        "left": 724,
+        "top": 543,
+        "right": 1086,
+        "bottom": 1086
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_07_fall_and_recover_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_07_fall_and_recover_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_07_fall_and_recover_fumble_r01_c02.png",
+      "sourceBundlePath": "sprites/sheet_07_fall_and_recover_fumble_r01_c02.png",
+      "sha256": "2fdfd4d773840e1ecd738eae121cb5443b83cabc11733760a6efabf66c9b8e67",
+      "bytes": 218545,
+      "role": "sprites",
+      "assetId": "sheet_07_fall_and_recover_fumble_r01_c02",
+      "sourceSheet": "sheet_07_fall_and_recover",
+      "row": 1,
+      "column": 2,
+      "cropRectPx": {
+        "left": 362,
+        "top": 0,
+        "right": 724,
+        "bottom": 543
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_07_fall_and_recover_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_07_fall_and_recover_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_07_fall_and_recover_land_recover_r02_c04.png",
+      "sourceBundlePath": "sprites/sheet_07_fall_and_recover_land_recover_r02_c04.png",
+      "sha256": "7ac21f5fbcdbc34c01b1c1032b2c8be8ab196e3bcef4851a7f42d3b61f6ef649",
+      "bytes": 230258,
+      "role": "sprites",
+      "assetId": "sheet_07_fall_and_recover_land_recover_r02_c04",
+      "sourceSheet": "sheet_07_fall_and_recover",
+      "row": 2,
+      "column": 4,
+      "cropRectPx": {
+        "left": 1086,
+        "top": 543,
+        "right": 1448,
+        "bottom": 1086
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_07_fall_and_recover_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_07_fall_and_recover_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_07_fall_and_recover_panic_r01_c03.png",
+      "sourceBundlePath": "sprites/sheet_07_fall_and_recover_panic_r01_c03.png",
+      "sha256": "f3fdb2206336d3d49cd62323e09528e6576942354f61f2721414b286a3016466",
+      "bytes": 201001,
+      "role": "sprites",
+      "assetId": "sheet_07_fall_and_recover_panic_r01_c03",
+      "sourceSheet": "sheet_07_fall_and_recover",
+      "row": 1,
+      "column": 3,
+      "cropRectPx": {
+        "left": 724,
+        "top": 0,
+        "right": 1086,
+        "bottom": 543
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_07_fall_and_recover_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_07_fall_and_recover_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_07_fall_and_recover_spin_tumble_r02_c02.png",
+      "sourceBundlePath": "sprites/sheet_07_fall_and_recover_spin_tumble_r02_c02.png",
+      "sha256": "bc4358ac9002aac2d519a13656d42e8a8af1a97bc7aba29b3e6d41469f611436",
+      "bytes": 228996,
+      "role": "sprites",
+      "assetId": "sheet_07_fall_and_recover_spin_tumble_r02_c02",
+      "sourceSheet": "sheet_07_fall_and_recover",
+      "row": 2,
+      "column": 2,
+      "cropRectPx": {
+        "left": 362,
+        "top": 543,
+        "right": 724,
+        "bottom": 1086
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_07_fall_and_recover_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_07_fall_and_recover_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_08_idle_expressions_drink_happy_r01_c04.png",
+      "sourceBundlePath": "sprites/sheet_08_idle_expressions_drink_happy_r01_c04.png",
+      "sha256": "6cd57d24f2bfd8ef210160f72ddfefaac24acdb997224e1adb724020599cfdb3",
+      "bytes": 257054,
+      "role": "sprites",
+      "assetId": "sheet_08_idle_expressions_drink_happy_r01_c04",
+      "sourceSheet": "sheet_08_idle_expressions",
+      "row": 1,
+      "column": 4,
+      "cropRectPx": {
+        "left": 1086,
+        "top": 0,
+        "right": 1448,
+        "bottom": 543
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_08_idle_expressions_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_08_idle_expressions_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_08_idle_expressions_glance_r02_c02.png",
+      "sourceBundlePath": "sprites/sheet_08_idle_expressions_glance_r02_c02.png",
+      "sha256": "24f028a47fc0451601bf0c48f4a59c782eb3ff1f87b2c46374f4b2cb711d51cf",
+      "bytes": 267067,
+      "role": "sprites",
+      "assetId": "sheet_08_idle_expressions_glance_r02_c02",
+      "sourceSheet": "sheet_08_idle_expressions",
+      "row": 2,
+      "column": 2,
+      "cropRectPx": {
+        "left": 362,
+        "top": 543,
+        "right": 724,
+        "bottom": 1086
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_08_idle_expressions_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_08_idle_expressions_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_08_idle_expressions_idle_happy_r01_c02.png",
+      "sourceBundlePath": "sprites/sheet_08_idle_expressions_idle_happy_r01_c02.png",
+      "sha256": "65a4cbd15620b930cb4e9682cfeb20bd8fe34a98bf133e181c177e966c21bae7",
+      "bytes": 264842,
+      "role": "sprites",
+      "assetId": "sheet_08_idle_expressions_idle_happy_r01_c02",
+      "sourceSheet": "sheet_08_idle_expressions",
+      "row": 1,
+      "column": 2,
+      "cropRectPx": {
+        "left": 362,
+        "top": 0,
+        "right": 724,
+        "bottom": 543
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_08_idle_expressions_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_08_idle_expressions_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_08_idle_expressions_idle_neutral_r01_c01.png",
+      "sourceBundlePath": "sprites/sheet_08_idle_expressions_idle_neutral_r01_c01.png",
+      "sha256": "b1af8168f9095f5e06cf1c64cfcb8b40780fee8dd74aee827947feb275a5699f",
+      "bytes": 259019,
+      "role": "sprites",
+      "assetId": "sheet_08_idle_expressions_idle_neutral_r01_c01",
+      "sourceSheet": "sheet_08_idle_expressions",
+      "row": 1,
+      "column": 1,
+      "cropRectPx": {
+        "left": 0,
+        "top": 0,
+        "right": 362,
+        "bottom": 543
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_08_idle_expressions_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_08_idle_expressions_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_08_idle_expressions_phone_check_r01_c03.png",
+      "sourceBundlePath": "sprites/sheet_08_idle_expressions_phone_check_r01_c03.png",
+      "sha256": "64fe6fb5070765f60c4f5d25c57daed61ea461145ea60df96429e43642125fc6",
+      "bytes": 261994,
+      "role": "sprites",
+      "assetId": "sheet_08_idle_expressions_phone_check_r01_c03",
+      "sourceSheet": "sheet_08_idle_expressions",
+      "row": 1,
+      "column": 3,
+      "cropRectPx": {
+        "left": 724,
+        "top": 0,
+        "right": 1086,
+        "bottom": 543
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_08_idle_expressions_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_08_idle_expressions_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_08_idle_expressions_sleep_sit_r02_c04.png",
+      "sourceBundlePath": "sprites/sheet_08_idle_expressions_sleep_sit_r02_c04.png",
+      "sha256": "16e1176a029068f4a344001e3cb4ed341f9c6710bce7fb4e75f57d5a62a6e071",
+      "bytes": 234475,
+      "role": "sprites",
+      "assetId": "sheet_08_idle_expressions_sleep_sit_r02_c04",
+      "sourceSheet": "sheet_08_idle_expressions",
+      "row": 2,
+      "column": 4,
+      "cropRectPx": {
+        "left": 1086,
+        "top": 543,
+        "right": 1448,
+        "bottom": 1086
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_08_idle_expressions_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_08_idle_expressions_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_08_idle_expressions_wave_r02_c01.png",
+      "sourceBundlePath": "sprites/sheet_08_idle_expressions_wave_r02_c01.png",
+      "sha256": "07eec96db261abd60fb3f9f6c3138b3a67a6bee0f81138c52ee7ecf2ac17e7c3",
+      "bytes": 264043,
+      "role": "sprites",
+      "assetId": "sheet_08_idle_expressions_wave_r02_c01",
+      "sourceSheet": "sheet_08_idle_expressions",
+      "row": 2,
+      "column": 1,
+      "cropRectPx": {
+        "left": 0,
+        "top": 543,
+        "right": 362,
+        "bottom": 1086
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_08_idle_expressions_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_08_idle_expressions_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_08_idle_expressions_yawn_r02_c03.png",
+      "sourceBundlePath": "sprites/sheet_08_idle_expressions_yawn_r02_c03.png",
+      "sha256": "3abf1dc9e35c5170b71bb79f2f1281eefa766f3463291ddab328f650349a35c7",
+      "bytes": 257734,
+      "role": "sprites",
+      "assetId": "sheet_08_idle_expressions_yawn_r02_c03",
+      "sourceSheet": "sheet_08_idle_expressions",
+      "row": 2,
+      "column": 3,
+      "cropRectPx": {
+        "left": 724,
+        "top": 543,
+        "right": 1086,
+        "bottom": 1086
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_08_idle_expressions_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_08_idle_expressions_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_09_busy_tasks_carry_bag_r01_c02.png",
+      "sourceBundlePath": "sprites/sheet_09_busy_tasks_carry_bag_r01_c02.png",
+      "sha256": "5a8273303d2a1024a2dab6be61915d3f25af106c9430c6ba96501e5e7dd2bd3a",
+      "bytes": 210682,
+      "role": "sprites",
+      "assetId": "sheet_09_busy_tasks_carry_bag_r01_c02",
+      "sourceSheet": "sheet_09_busy_tasks",
+      "row": 1,
+      "column": 2,
+      "cropRectPx": {
+        "left": 362,
+        "top": 0,
+        "right": 724,
+        "bottom": 543
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_09_busy_tasks_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_09_busy_tasks_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_09_busy_tasks_carry_box_r01_c01.png",
+      "sourceBundlePath": "sprites/sheet_09_busy_tasks_carry_box_r01_c01.png",
+      "sha256": "6fe6d0491bbc082dce29ca50cdb37c64998f1097f5743c71d9155085e0a2025e",
+      "bytes": 219928,
+      "role": "sprites",
+      "assetId": "sheet_09_busy_tasks_carry_box_r01_c01",
+      "sourceSheet": "sheet_09_busy_tasks",
+      "row": 1,
+      "column": 1,
+      "cropRectPx": {
+        "left": 0,
+        "top": 0,
+        "right": 362,
+        "bottom": 543
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_09_busy_tasks_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_09_busy_tasks_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_09_busy_tasks_clean_broom_r02_c01.png",
+      "sourceBundlePath": "sprites/sheet_09_busy_tasks_clean_broom_r02_c01.png",
+      "sha256": "8af4fe4634182e23d8989afc34c82d8d42f99882ee9a62ebeeafee826c32292c",
+      "bytes": 247779,
+      "role": "sprites",
+      "assetId": "sheet_09_busy_tasks_clean_broom_r02_c01",
+      "sourceSheet": "sheet_09_busy_tasks",
+      "row": 2,
+      "column": 1,
+      "cropRectPx": {
+        "left": 0,
+        "top": 543,
+        "right": 362,
+        "bottom": 1086
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_09_busy_tasks_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_09_busy_tasks_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_09_busy_tasks_hold_alert_r02_c02.png",
+      "sourceBundlePath": "sprites/sheet_09_busy_tasks_hold_alert_r02_c02.png",
+      "sha256": "6647f1156247c296845d97145bfd9c8a9066981f4bd4cf5e5ec49c34414cece0",
+      "bytes": 235594,
+      "role": "sprites",
+      "assetId": "sheet_09_busy_tasks_hold_alert_r02_c02",
+      "sourceSheet": "sheet_09_busy_tasks",
+      "row": 2,
+      "column": 2,
+      "cropRectPx": {
+        "left": 362,
+        "top": 543,
+        "right": 724,
+        "bottom": 1086
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_09_busy_tasks_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_09_busy_tasks_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_09_busy_tasks_hug_plush_r02_c03.png",
+      "sourceBundlePath": "sprites/sheet_09_busy_tasks_hug_plush_r02_c03.png",
+      "sha256": "b7bb804981546450b6d7e96b253176e1ae99a66f4083f67121804f8abdb0d42c",
+      "bytes": 227265,
+      "role": "sprites",
+      "assetId": "sheet_09_busy_tasks_hug_plush_r02_c03",
+      "sourceSheet": "sheet_09_busy_tasks",
+      "row": 2,
+      "column": 3,
+      "cropRectPx": {
+        "left": 724,
+        "top": 543,
+        "right": 1086,
+        "bottom": 1086
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_09_busy_tasks_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_09_busy_tasks_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_09_busy_tasks_laptop_work_r01_c04.png",
+      "sourceBundlePath": "sprites/sheet_09_busy_tasks_laptop_work_r01_c04.png",
+      "sha256": "699d33179963c90a422e43572695583a2eca14a27abaf4f1ddc62f18f4eab7aa",
+      "bytes": 207090,
+      "role": "sprites",
+      "assetId": "sheet_09_busy_tasks_laptop_work_r01_c04",
+      "sourceSheet": "sheet_09_busy_tasks",
+      "row": 1,
+      "column": 4,
+      "cropRectPx": {
+        "left": 1086,
+        "top": 0,
+        "right": 1448,
+        "bottom": 543
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_09_busy_tasks_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_09_busy_tasks_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_09_busy_tasks_shopping_bag_r02_c04.png",
+      "sourceBundlePath": "sprites/sheet_09_busy_tasks_shopping_bag_r02_c04.png",
+      "sha256": "d23b72ad0a1da2770d42ae6fb486a4d9f46de65893371c90667480f6af0ac28b",
+      "bytes": 222967,
+      "role": "sprites",
+      "assetId": "sheet_09_busy_tasks_shopping_bag_r02_c04",
+      "sourceSheet": "sheet_09_busy_tasks",
+      "row": 2,
+      "column": 4,
+      "cropRectPx": {
+        "left": 1086,
+        "top": 543,
+        "right": 1448,
+        "bottom": 1086
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_09_busy_tasks_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_09_busy_tasks_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_09_busy_tasks_show_board_r01_c03.png",
+      "sourceBundlePath": "sprites/sheet_09_busy_tasks_show_board_r01_c03.png",
+      "sha256": "b25d3d8b47533c33e82fcffb2c16885ee847d7bd4f08b476742176e509274963",
+      "bytes": 210941,
+      "role": "sprites",
+      "assetId": "sheet_09_busy_tasks_show_board_r01_c03",
+      "sourceSheet": "sheet_09_busy_tasks",
+      "row": 1,
+      "column": 3,
+      "cropRectPx": {
+        "left": 724,
+        "top": 0,
+        "right": 1086,
+        "bottom": 543
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_09_busy_tasks_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_09_busy_tasks_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_10_locomotion_and_wave_idle_look_back_r02_c03.png",
+      "sourceBundlePath": "sprites/sheet_10_locomotion_and_wave_idle_look_back_r02_c03.png",
+      "sha256": "b4c23317564b3dfb638ee3875574a7eebe7f8bf2f473e633f51a808f0a84e348",
+      "bytes": 240203,
+      "role": "sprites",
+      "assetId": "sheet_10_locomotion_and_wave_idle_look_back_r02_c03",
+      "sourceSheet": "sheet_10_locomotion_and_wave",
+      "row": 2,
+      "column": 3,
+      "cropRectPx": {
+        "left": 724,
+        "top": 543,
+        "right": 1086,
+        "bottom": 1086
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_10_locomotion_and_wave_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_10_locomotion_and_wave_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_10_locomotion_and_wave_walk_bounce_r01_c02.png",
+      "sourceBundlePath": "sprites/sheet_10_locomotion_and_wave_walk_bounce_r01_c02.png",
+      "sha256": "aca6c21cc6d8247dc416adec19567134e9469c0f464979c56afc9a3441c6c148",
+      "bytes": 207868,
+      "role": "sprites",
+      "assetId": "sheet_10_locomotion_and_wave_walk_bounce_r01_c02",
+      "sourceSheet": "sheet_10_locomotion_and_wave",
+      "row": 1,
+      "column": 2,
+      "cropRectPx": {
+        "left": 362,
+        "top": 0,
+        "right": 724,
+        "bottom": 543
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_10_locomotion_and_wave_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_10_locomotion_and_wave_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_10_locomotion_and_wave_walk_exit_r02_c04.png",
+      "sourceBundlePath": "sprites/sheet_10_locomotion_and_wave_walk_exit_r02_c04.png",
+      "sha256": "b911d08781c70ef05aa5eaa1200b78eedd13382e8ee07ba8fc3a673e5f1d10d6",
+      "bytes": 243073,
+      "role": "sprites",
+      "assetId": "sheet_10_locomotion_and_wave_walk_exit_r02_c04",
+      "sourceSheet": "sheet_10_locomotion_and_wave",
+      "row": 2,
+      "column": 4,
+      "cropRectPx": {
+        "left": 1086,
+        "top": 543,
+        "right": 1448,
+        "bottom": 1086
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_10_locomotion_and_wave_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_10_locomotion_and_wave_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_10_locomotion_and_wave_walk_ready_r01_c01.png",
+      "sourceBundlePath": "sprites/sheet_10_locomotion_and_wave_walk_ready_r01_c01.png",
+      "sha256": "916bec1da22b1671abd2e3ee95eb0018ffd213a5b4ff6f61e4ffa78d328fa95c",
+      "bytes": 213735,
+      "role": "sprites",
+      "assetId": "sheet_10_locomotion_and_wave_walk_ready_r01_c01",
+      "sourceSheet": "sheet_10_locomotion_and_wave",
+      "row": 1,
+      "column": 1,
+      "cropRectPx": {
+        "left": 0,
+        "top": 0,
+        "right": 362,
+        "bottom": 543
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_10_locomotion_and_wave_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_10_locomotion_and_wave_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_10_locomotion_and_wave_walk_step_a_r01_c03.png",
+      "sourceBundlePath": "sprites/sheet_10_locomotion_and_wave_walk_step_a_r01_c03.png",
+      "sha256": "5b561ac529b7084c16c5018d4f46ba093a56b3a325edb7b2e8dd7650755288ef",
+      "bytes": 215216,
+      "role": "sprites",
+      "assetId": "sheet_10_locomotion_and_wave_walk_step_a_r01_c03",
+      "sourceSheet": "sheet_10_locomotion_and_wave",
+      "row": 1,
+      "column": 3,
+      "cropRectPx": {
+        "left": 724,
+        "top": 0,
+        "right": 1086,
+        "bottom": 543
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_10_locomotion_and_wave_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_10_locomotion_and_wave_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_10_locomotion_and_wave_walk_step_b_r01_c04.png",
+      "sourceBundlePath": "sprites/sheet_10_locomotion_and_wave_walk_step_b_r01_c04.png",
+      "sha256": "f3b7557c44ed02f11f88ac6b32a3c8d47895e568df2020fc7c1a338bdc4e2278",
+      "bytes": 212083,
+      "role": "sprites",
+      "assetId": "sheet_10_locomotion_and_wave_walk_step_b_r01_c04",
+      "sourceSheet": "sheet_10_locomotion_and_wave",
+      "row": 1,
+      "column": 4,
+      "cropRectPx": {
+        "left": 1086,
+        "top": 0,
+        "right": 1448,
+        "bottom": 543
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_10_locomotion_and_wave_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_10_locomotion_and_wave_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_10_locomotion_and_wave_walk_turn_r02_c02.png",
+      "sourceBundlePath": "sprites/sheet_10_locomotion_and_wave_walk_turn_r02_c02.png",
+      "sha256": "e7d9855db87c86cfdaafec95a5d83260838290cb248f82f4bacbcc938d58f797",
+      "bytes": 228320,
+      "role": "sprites",
+      "assetId": "sheet_10_locomotion_and_wave_walk_turn_r02_c02",
+      "sourceSheet": "sheet_10_locomotion_and_wave",
+      "row": 2,
+      "column": 2,
+      "cropRectPx": {
+        "left": 362,
+        "top": 543,
+        "right": 724,
+        "bottom": 1086
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_10_locomotion_and_wave_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_10_locomotion_and_wave_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    },
+    {
+      "path": "packs/cutsy/sprites/sheet_10_locomotion_and_wave_wave_r02_c01.png",
+      "sourceBundlePath": "sprites/sheet_10_locomotion_and_wave_wave_r02_c01.png",
+      "sha256": "02e89398da9681f1b18beccbdd278a85ae84f81200bf1fbe3fb4a2030eacd25d",
+      "bytes": 228243,
+      "role": "sprites",
+      "assetId": "sheet_10_locomotion_and_wave_wave_r02_c01",
+      "sourceSheet": "sheet_10_locomotion_and_wave",
+      "row": 2,
+      "column": 1,
+      "cropRectPx": {
+        "left": 0,
+        "top": 543,
+        "right": 362,
+        "bottom": 1086
+      },
+      "sourceRawPath": "assets/source/original-sheets/sheet_10_locomotion_and_wave_raw.png",
+      "sourceProcessedPath": "assets/source/processed-sheets/sheet_10_locomotion_and_wave_processed.png",
+      "reviewStatus": "pending-visual-audit"
+    }
+  ],
+  "importVerification": {
+    "spriteCount": 80,
+    "visualAuditComplete": false,
+    "byteEqualityVerified": true,
+    "pngCount": 102
+  }
+}
