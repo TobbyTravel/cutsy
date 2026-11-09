@@ -1,3 +1,4 @@
+using System.Buffers.Binary;
 using System.Drawing.Drawing2D;
 using System.Drawing.Imaging;
 using Cutsy.Core;
@@ -26,9 +27,19 @@ internal sealed class PackContent
             encoded += data.Length;
             if (encoded > 64L * 1024 * 1024)
                 throw new InvalidDataException("Encoded pack exceeds 64 MiB.");
-            files.Add(path, data);
+            bool png = path.EndsWith(".png", StringComparison.OrdinalIgnoreCase) && data.Length >= 24;
+            if (png)
+            {
+                dimensions.TryAdd(path, new Size(BinaryPrimitives.ReadInt32BigEndian(data.AsSpan(16)),
+                    BinaryPrimitives.ReadInt32BigEndian(data.AsSpan(20))));
+            }
+            if (!png || keepEncodedImages)
+                files.Add(path, data);
             return data;
         });
+
+        if (!keepEncodedImages)
+            return;
 
         foreach (string path in Pack.Sprites.Values.SelectMany(s => new[] { s.Path, s.MaskPath }).Distinct())
         {
@@ -36,9 +47,8 @@ internal sealed class PackContent
             {
                 using var stream = new MemoryStream(files[path], writable: false);
                 using var image = Image.FromStream(stream, useEmbeddedColorManagement: false, validateImageData: true);
-                dimensions.Add(path, image.Size);
-                if (!keepEncodedImages)
-                    files.Remove(path);
+                if (image.Size != dimensions[path])
+                    throw new InvalidDataException($"{path}: decoded size differs from the PNG header.");
             }
             catch (Exception ex) when (ex is ArgumentException or OutOfMemoryException or System.Runtime.InteropServices.ExternalException)
             {
