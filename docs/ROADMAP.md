@@ -1,6 +1,6 @@
 # Roadmap
 
-Status: repository bootstrap complete; application implementation pending. [Windows 11 v0.1 milestone](https://github.com/TobbyTravel/cutsy/milestone/1) contains the umbrella and C01–C10. K01 is deferred and outside the milestone.
+Status: Windows 11 v0.1 implementation and packaging are available in focused review branches. See [acceptance results](V0.1_VERIFICATION.md) for verified behavior and open checks. [Windows 11 v0.1 milestone](https://github.com/TobbyTravel/cutsy/milestone/1) contains the umbrella and C01–C10. K01 is deferred and outside the milestone.
 
 | Task | GitHub issue | Depends on |
 | --- | --- | --- |

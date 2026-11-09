@@ -1,4 +1,3 @@
-using System.Buffers.Binary;
 using System.Drawing.Drawing2D;
 using System.Drawing.Imaging;
 using Cutsy.Core;
@@ -9,10 +8,13 @@ internal sealed class PackContent
 {
     private const string Prefix = "Cutsy.Pack/";
     private readonly Dictionary<string, byte[]> files = new(StringComparer.Ordinal);
+    private readonly Dictionary<string, Size> dimensions = new(StringComparer.Ordinal);
+    private readonly Func<string, int, byte[]?> source;
     internal ValidatedPack Pack { get; }
 
-    internal PackContent(Func<string, int, byte[]?> source)
+    internal PackContent(Func<string, int, byte[]?> source, bool keepEncodedImages = true)
     {
+        this.source = source;
         long encoded = 0;
         Pack = PackLoader.Load((path, limit) =>
         {
@@ -34,6 +36,9 @@ internal sealed class PackContent
             {
                 using var stream = new MemoryStream(files[path], writable: false);
                 using var image = Image.FromStream(stream, useEmbeddedColorManagement: false, validateImageData: true);
+                dimensions.Add(path, image.Size);
+                if (!keepEncodedImages)
+                    files.Remove(path);
             }
             catch (Exception ex) when (ex is ArgumentException or OutOfMemoryException or System.Runtime.InteropServices.ExternalException)
             {
@@ -44,15 +49,17 @@ internal sealed class PackContent
 
     internal void Export(string directory)
     {
-        foreach (var (path, bytes) in files)
+        foreach (string path in files.Keys.Concat(dimensions.Keys).Distinct(StringComparer.Ordinal))
         {
             string target = Path.Combine(directory, path);
             Directory.CreateDirectory(Path.GetDirectoryName(target)!);
-            System.IO.File.WriteAllBytes(target, bytes);
+            System.IO.File.WriteAllBytes(target, File(path));
         }
     }
 
-    internal byte[] File(string path) => files[path];
+    internal Size ImageSize(string path) => dimensions[path];
+    internal byte[] File(string path) => files.TryGetValue(path, out var bytes) ? bytes :
+        source(path, PackLoader.MaxImageBytes) ?? throw new InvalidDataException($"Missing validated resource {path}.");
 
     internal static PackContent Embedded()
     {
@@ -69,7 +76,7 @@ internal sealed class PackContent
             var bytes = new byte[(int)stream.Length];
             stream.ReadExactly(bytes);
             return bytes;
-        });
+        }, keepEncodedImages: false);
     }
 }
 
@@ -123,9 +130,9 @@ internal sealed class SpriteRenderer(LayeredWindow body, LayeredWindow decoratio
     {
         var pack = content!;
         var sprite = pack.Pack.Sprites[pose.SpriteId];
-        byte[] art = pack.File(sprite.Path);
-        int w = BinaryPrimitives.ReadInt32BigEndian(art.AsSpan(16));
-        int h = BinaryPrimitives.ReadInt32BigEndian(art.AsSpan(20));
+        Size original = pack.ImageSize(sprite.Path);
+        int w = original.Width;
+        int h = original.Height;
         double scale = pose.CharacterHeight * sprite.ScaleCorrection / pack.Pack.Manifest.ReferenceHeightPx;
         var size = new Size(Math.Clamp((int)Math.Round(w * scale), 1, 1200),
             Math.Clamp((int)Math.Round(h * scale), 1, 1200));
@@ -138,7 +145,7 @@ internal sealed class SpriteRenderer(LayeredWindow body, LayeredWindow decoratio
             visible.Intersect(new Rectangle(clip.X - origin.X, clip.Y - origin.Y, clip.Width, clip.Height));
 
         var key = new Key(pose.SpriteId, size, visible);
-        return (GetLayers(key, art, pack.File(sprite.MaskPath)), origin);
+        return (GetLayers(key, sprite), origin);
     }
 
     internal void Hide()
@@ -148,7 +155,7 @@ internal sealed class SpriteRenderer(LayeredWindow body, LayeredWindow decoratio
         last = null;
     }
 
-    private Layers GetLayers(Key key, byte[] art, byte[] mask)
+    private Layers GetLayers(Key key, SpriteSpec sprite)
     {
         if (cache.TryGetValue(key, out var existing))
         {
@@ -157,8 +164,8 @@ internal sealed class SpriteRenderer(LayeredWindow body, LayeredWindow decoratio
             return existing;
         }
 
-        using var image = Scale(art, key.Size, InterpolationMode.HighQualityBicubic);
-        using var silhouette = Scale(mask, key.Size, InterpolationMode.NearestNeighbor);
+        using var image = Scale(content!.File(sprite.Path), key.Size, InterpolationMode.HighQualityBicubic);
+        using var silhouette = Scale(content!.File(sprite.MaskPath), key.Size, InterpolationMode.NearestNeighbor);
         var baseLayer = new Bitmap(key.Size.Width, key.Size.Height, PixelFormat.Format32bppPArgb);
         var decoration = new Bitmap(key.Size.Width, key.Size.Height, PixelFormat.Format32bppPArgb);
         bool any;

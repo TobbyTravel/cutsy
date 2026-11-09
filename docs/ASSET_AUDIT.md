@@ -1,6 +1,6 @@
 # Asset audit: required before release
 
-Status: NOT complete. All 102 PNGs are present and their bytes are verified against the supplied pack. This does not establish visual correctness, frame alignment, natural animation, or release-ready transparency.
+Status: runtime derivatives and exclusions are recorded below. All 102 source PNGs are preserved and verified against the supplied pack. In-motion and desktop verification are tracked separately.
 
 ## Known findings
 

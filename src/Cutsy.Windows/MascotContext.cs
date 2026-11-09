@@ -106,7 +106,8 @@ internal sealed partial class MascotContext : ApplicationContext
         if (tracker.Refresh(Environment.TickCount64))
             UpdateDesktop();
 
-        engine.Advance(elapsed);
+        if (!pressed || engine.Dragging)
+            engine.Advance(elapsed);
         if (engine.TakeSound() is { } cue && !quiet.Active && !engine.Paused)
             audio.Play(content, cue);
         Draw();

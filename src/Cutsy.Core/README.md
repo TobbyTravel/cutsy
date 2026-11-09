@@ -1,3 +1,3 @@
 # Cutsy.Core
 
-Planned net10.0 library: deterministic behavior scheduling, animation timing, geometry, movement and render/audio requests. No native UI or OS dependency. Implemented under C01/C04; see ../../docs/ARCHITECTURE.md.
+Portable .NET 10 pack validation, deterministic recipe scheduling, animation timing, geometry, movement and render/audio requests. Desktop observation, filesystem reads and output belong to the host. See ../../docs/ARCHITECTURE.md.

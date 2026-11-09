@@ -1,3 +1,3 @@
 # Cutsy.Core.Tests
 
-Planned deterministic core/loader tests with fake clock, desktop snapshots and seeded RNG. C01 creates the test project. See ../../docs/TESTING.md.
+Portable xUnit cases for world coordinates, the example pack, deterministic click/jump timing, invalid paths, optional cues and zero-time recipes. Run from the repository root with pwsh -File scripts/test.ps1.

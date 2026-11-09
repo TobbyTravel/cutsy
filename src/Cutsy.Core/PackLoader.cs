@@ -1,3 +1,4 @@
+using System.Buffers;
 using System.Buffers.Binary;
 using System.Collections.Immutable;
 using System.IO.Compression;
@@ -229,34 +230,45 @@ public static partial class PackLoader
         Require(width is > 0 and <= MaxDimension && height is > 0 and <= MaxDimension &&
             bytes[24] == 8 && channels > 0 && bytes[26] == 0 && bytes[27] == 0 && bytes[28] == 0,
             "PNG", "expected non-interlaced 8-bit grayscale, RGB, gray-alpha, or RGBA within 2048×2048");
-        using var compressed = new MemoryStream();
-        bool end = false;
-        for (int offset = 8; offset <= bytes.Length - 12;)
+        byte[] buffer = ArrayPool<byte>.Shared.Rent(bytes.Length);
+        try
         {
-            int length = BinaryPrimitives.ReadInt32BigEndian(bytes[offset..]);
-            Require(length >= 0 && length <= bytes.Length - offset - 12, "PNG", "invalid chunk length");
-            var chunk = bytes.Slice(offset + 4, length + 4);
-            uint crc = BinaryPrimitives.ReadUInt32BigEndian(bytes[(offset + length + 8)..]);
-            Require(Crc32(chunk) == crc, "PNG", "invalid chunk checksum");
-            if (chunk[..4].SequenceEqual("IDAT"u8))
-                compressed.Write(chunk[4..]);
-            offset += length + 12;
-            if (chunk[..4].SequenceEqual("IEND"u8))
+            int compressedLength = 0;
+            bool end = false;
+            for (int offset = 8; offset <= bytes.Length - 12;)
             {
-                end = length == 0 && offset == bytes.Length;
-                break;
+                int length = BinaryPrimitives.ReadInt32BigEndian(bytes[offset..]);
+                Require(length >= 0 && length <= bytes.Length - offset - 12, "PNG", "invalid chunk length");
+                var chunk = bytes.Slice(offset + 4, length + 4);
+                uint crc = BinaryPrimitives.ReadUInt32BigEndian(bytes[(offset + length + 8)..]);
+                Require(Crc32(chunk) == crc, "PNG", "invalid chunk checksum");
+                if (chunk[..4].SequenceEqual("IDAT"u8))
+                {
+                    chunk[4..].CopyTo(buffer.AsSpan(compressedLength));
+                    compressedLength += length;
+                }
+                offset += length + 12;
+                if (chunk[..4].SequenceEqual("IEND"u8))
+                {
+                    end = length == 0 && offset == bytes.Length;
+                    break;
+                }
             }
+            Require(end && compressedLength > 0, "PNG", "missing image data or terminator");
+            using var compressed = new MemoryStream(buffer, 0, compressedLength, writable: false);
+            using var decoded = new ZLibStream(compressed, CompressionMode.Decompress);
+            var scanline = new byte[1 + width * channels];
+            for (int y = 0; y < height; y++)
+            {
+                decoded.ReadExactly(scanline);
+                Require(scanline[0] <= 4, "PNG", "invalid scanline filter");
+            }
+            Require(decoded.ReadByte() == -1, "PNG", "too much image data");
         }
-        Require(end && compressed.Length > 0, "PNG", "missing image data or terminator");
-        compressed.Position = 0;
-        using var decoded = new ZLibStream(compressed, CompressionMode.Decompress);
-        var scanline = new byte[1 + width * channels];
-        for (int y = 0; y < height; y++)
+        finally
         {
-            decoded.ReadExactly(scanline);
-            Require(scanline[0] <= 4, "PNG", "invalid scanline filter");
+            ArrayPool<byte>.Shared.Return(buffer);
         }
-        Require(decoded.ReadByte() == -1, "PNG", "too much image data");
         return (width, height);
     }
 
