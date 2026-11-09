@@ -6,6 +6,7 @@ namespace Cutsy.Windows;
 
 internal sealed class LayeredWindow : NativeWindow, IDisposable
 {
+    private readonly bool interactive;
     private Bitmap? lastImage;
     private Point lastLocation;
     private bool visible;
@@ -14,6 +15,7 @@ internal sealed class LayeredWindow : NativeWindow, IDisposable
 
     internal LayeredWindow(string name, bool interactive)
     {
+        this.interactive = interactive;
         CreateHandle(new CreateParams
         {
             Caption = name,
@@ -119,6 +121,13 @@ internal sealed class LayeredWindow : NativeWindow, IDisposable
         if (m.Msg == Native.WmMouseActivate)
         {
             m.Result = 3; // MA_NOACTIVATE: deliver the mouse event without activation.
+            return;
+        }
+
+        if (interactive && m.Msg == Native.WmSetCursor)
+        {
+            Cursor.Current = Cursors.Arrow;
+            m.Result = 1;
             return;
         }
 

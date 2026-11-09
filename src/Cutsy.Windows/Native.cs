@@ -9,6 +9,7 @@ internal static partial class Native
     internal const int ExToolWindow = 0x80;
     internal const int ExTopmost = 0x8;
     internal const int ExTransparent = 0x20;
+    internal const int WmSetCursor = 0x20;
     internal const int WmMouseActivate = 0x21;
     internal const int WmMouseMove = 0x200;
     internal const int WmMouseLeave = 0x2a3;
