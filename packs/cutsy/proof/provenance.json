@@ -1,0 +1,13 @@
+{
+  "source": "packs/cutsy/sprites/sheet_05_hanging_and_rest_idle_stand_r01_c01.png",
+  "sourceSha256": "b6c403a26ae91bfd06ad3c040d375709fd1a775cae7c0900adbdfa32d6c052d6",
+  "cropLTRBExclusive": [
+    94,
+    13,
+    382,
+    432
+  ],
+  "mask": "largest 4-connected component at alpha >= 96, expanded one pixel",
+  "alpha": "retain source alpha inside mask, zero elsewhere",
+  "pose": "front standing, hands on hips, shoulder bag"
+}

@@ -6,6 +6,7 @@ internal static class Program
     private static void Main()
     {
         ApplicationConfiguration.Initialize();
-        MessageBox.Show("The interactive mascot is implemented in C03.", "Cutsy");
+        using var cutsy = new MascotContext();
+        Application.Run(cutsy);
     }
 }
