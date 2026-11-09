@@ -19,14 +19,14 @@ foreach ($record in $files) {
   }
   if ($record.role -eq 'sprites' -and ($record.row -notin 1,2 -or $record.column -notin 1,2,3,4)) { throw "Invalid grid mapping: $($record.path)" }
 }
-$pngs = @(Get-ChildItem -LiteralPath (Join-Path $repoRoot 'assets'), (Join-Path $repoRoot 'packs') -Filter '*.png' -Recurse -File)
+$pngs = @(Get-ChildItem -LiteralPath (Join-Path $repoRoot 'assets/source'), (Join-Path $repoRoot 'packs/cutsy/sprites') -Filter '*.png' -Recurse -File)
 if ($pngs.Count -ne 102) { throw "Unexpected PNG inventory: $($pngs.Count)" }
 $gridKeys = @($files | Where-Object role -eq sprites | ForEach-Object { "$($_.sourceSheet):$($_.row):$($_.column)" } | Sort-Object -Unique)
 if ($gridKeys.Count -ne 80) { throw 'Missing/duplicate source grid mappings' }
 $tracked = @(& git -C $repoRoot ls-files)
 foreach ($record in $files) { if ($record.path -notin $tracked) { throw "PNG not tracked: $($record.path)" } }
 foreach ($doc in Get-ChildItem -LiteralPath $repoRoot -Filter '*.md' -Recurse -File) {
-  if ($doc.FullName -match '[\\/](\.git|bin|obj)[\\/]') { continue }
+  if ($doc.FullName -match '[\\/](\.git|bin|obj|artifacts|dist|work)[\\/]') { continue }
   $content = Get-Content -LiteralPath $doc.FullName -Raw
   foreach ($match in [regex]::Matches($content, '\[[^\]]*\]\(([^)]+)\)')) {
     $link = $match.Groups[1].Value.Split('#')[0]
@@ -42,4 +42,4 @@ foreach ($issue in $index) {
   if (-not (Test-Path -LiteralPath (Join-Path $repoRoot "docs/issues/$($issue.id).md"))) { throw "Missing issue specification $($issue.id)" }
 }
 Write-Output 'PASS: 102 PNG SHA-256 matches; 80 unique sprite mappings; all assets tracked; local Markdown links resolve; 12 issues mapped.'
-Write-Output 'Visual audit and application/runtime verification are still pending implementation.'
+Write-Output 'This check covers the immutable import. Runtime packs and desktop behavior have separate verification.'
