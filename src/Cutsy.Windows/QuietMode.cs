@@ -57,7 +57,8 @@ internal sealed class QuietMode(nint window) : IDisposable
             return "Presentation mode";
         if (state == 3)
             return "Exclusive fullscreen";
-        if (IsMonitorFilling(foreground) || (state == 2 && !IsOrdinaryMaximized(foreground)))
+        // Windows can report BUSY for an ordinary maximized window. Confirm geometry.
+        if (IsMonitorFilling(foreground))
             return "Fullscreen app";
         return null;
     }
