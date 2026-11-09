@@ -1,6 +1,6 @@
 # Roadmap
 
-Status: Windows 11 v0.1 implementation and packaging are available in focused review branches. See [acceptance results](V0.1_VERIFICATION.md) for verified behavior and open checks. [Windows 11 v0.1 milestone](https://github.com/TobbyTravel/cutsy/milestone/1) contains the umbrella and C01–C10. K01 is deferred and outside the milestone.
+The Windows 11 v0.1 prerelease is distributed through [GitHub Releases](https://github.com/TobbyTravel/cutsy/releases). See [baseline acceptance results](V0.1_VERIFICATION.md) and [walking and window verification](WALK_AND_WINDOWS_VERIFICATION.md) for evidence and open checks. [Windows 11 v0.1 milestone](https://github.com/TobbyTravel/cutsy/milestone/1) contains the umbrella and C01–C10. K01 is deferred and outside the milestone.
 
 | Task | GitHub issue | Depends on |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 A quiet, cute desktop companion for Windows 11. She walks along window tops, peeks, rests, and reacts when clicked. Click and drag her out of the way.
 
-**Status: Windows 11 v0.1 review build.** The Windows 11 v0.1 milestone tracks implementation and acceptance evidence.
+Download the Windows 11 x64 prerelease from [GitHub Releases](https://github.com/TobbyTravel/cutsy/releases). The standalone EXE includes the default pack. The portable ZIP includes an editable pack and instructions.
 
 ## Start here
 
@@ -27,7 +27,7 @@ pwsh -File scripts/verify-bootstrap.ps1
 pwsh -File scripts/publish.ps1
 ~~~
 
-The publish command creates Cutsy.exe, the editable portable ZIP and SHA256SUMS.txt under dist. See [portable instructions](docs/PORTABLE.md), [pack editing](docs/PACK_EDITING.md) and [acceptance results](docs/V0.1_VERIFICATION.md).
+The publish command creates Cutsy.exe, the editable portable ZIP and SHA256SUMS.txt under dist. See [portable instructions](docs/PORTABLE.md), [pack editing](docs/PACK_EDITING.md) and [baseline acceptance results](docs/V0.1_VERIFICATION.md) and [walking and window verification](docs/WALK_AND_WINDOWS_VERIFICATION.md).
 
 The solution contains a portable core, a Windows Forms host, a pack CLI and xUnit core tests. Build output stays in each bin directory.
 
