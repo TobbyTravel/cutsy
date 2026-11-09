@@ -10,6 +10,8 @@ internal sealed partial class MascotContext : ApplicationContext
     private readonly LayeredWindow body = new("Cutsy Mascot", interactive: true);
     private readonly LayeredWindow decorations = new("Cutsy Decorations", interactive: false);
     private readonly WindowTracker tracker = new();
+    private readonly QuietMode quiet;
+    private long nextQuietCheck;
     private readonly SpriteRenderer renderer;
     private readonly NotifyIcon tray;
     private readonly ContextMenuStrip menu = new();
@@ -26,9 +28,11 @@ internal sealed partial class MascotContext : ApplicationContext
 
     internal MascotContext()
     {
+        quiet = new QuietMode(body.Handle);
+        quiet.Evaluate(Environment.TickCount64);
         PackContent content = PackContent.Embedded();
         tracker.Refresh(Environment.TickCount64);
-        engine = new BehaviorEngine(content.Pack, tracker.Snapshot(logicalHeight, quiet: false), Random.Shared.Next());
+        engine = new BehaviorEngine(content.Pack, tracker.Snapshot(logicalHeight, quiet.Active), Random.Shared.Next());
         renderer = new SpriteRenderer(body, decorations);
         renderer.Use(content);
 
@@ -39,6 +43,12 @@ internal sealed partial class MascotContext : ApplicationContext
         foreach (int size in new[] { 80, 120, 160, 240, 320 })
             sizes.DropDownItems.Add(new ToolStripMenuItem($"{size} px", null, (_, _) => ResizeMascot(size)));
         menu.Items.Add(sizes);
+        var gaming = new ToolStripMenuItem("Gaming mode", null, (_, _) =>
+        {
+            quiet.Gaming = !quiet.Gaming;
+            CheckQuiet(force: true);
+        });
+        menu.Items.Add(gaming);
         menu.Items.Add("Settings", null, (_, _) => ShowSettings());
         menu.Items.Add("Recover position", null, (_, _) => Recover());
         menu.Items.Add(new ToolStripSeparator());
@@ -48,6 +58,7 @@ internal sealed partial class MascotContext : ApplicationContext
             ((ToolStripMenuItem)menu.Items[0]).Checked = engine.Paused;
             ((ToolStripMenuItem)menu.Items[1]).Checked = engine.StayHere;
             ((ToolStripMenuItem)menu.Items[2]).Checked = muted;
+            gaming.Checked = quiet.Gaming;
             foreach (ToolStripMenuItem item in sizes.DropDownItems)
                 item.Checked = item.Text == $"{logicalHeight} px";
         };
@@ -61,7 +72,7 @@ internal sealed partial class MascotContext : ApplicationContext
         };
         tray.DoubleClick += (_, _) => ShowSettings();
         body.MessageReceived = HandleBodyMessage;
-        renderer.Draw(engine.Pose);
+        Draw();
         lastTick = Stopwatch.GetTimestamp();
         simulation.Tick += (_, _) => Tick();
         simulation.Start();
@@ -73,14 +84,45 @@ internal sealed partial class MascotContext : ApplicationContext
         TimeSpan elapsed = Stopwatch.GetElapsedTime(lastTick, timestamp);
         lastTick = timestamp;
 
+        CheckQuiet(force: tracker.ForegroundChanged);
+        tracker.ForegroundChanged = false;
         if (tracker.Refresh(Environment.TickCount64))
             UpdateDesktop();
 
         engine.Advance(elapsed);
-        renderer.Draw(engine.Pose);
+        Draw();
     }
 
-    private void UpdateDesktop() => engine.SetDesktop(tracker.Snapshot(logicalHeight, quiet: false));
+    private void Draw()
+    {
+        if (!quiet.Active)
+            renderer.Draw(engine.Pose);
+    }
+
+    private void CheckQuiet(bool force)
+    {
+        long now = Environment.TickCount64;
+        if (!force && now < nextQuietCheck)
+            return;
+        nextQuietCheck = now + 500;
+        bool changed = quiet.Evaluate(now);
+        string status = quiet.Reason is { } reason ? $"Cutsy · {reason}" : "Cutsy";
+        tray.Text = status[..Math.Min(status.Length, 63)];
+        if (!changed)
+            return;
+        if (quiet.Active)
+        {
+            CancelPointer();
+            renderer.Hide();
+            OnQuietEntered();
+        }
+        UpdateDesktop();
+        Draw();
+    }
+
+    partial void OnQuietEntered();
+
+    private void UpdateDesktop() => engine.SetDesktop(tracker.Snapshot(logicalHeight, quiet.Active));
 
     private void HandleBodyMessage(Message message)
     {
@@ -126,8 +168,15 @@ internal sealed partial class MascotContext : ApplicationContext
                 CancelPointer();
                 tracker.Invalidate();
                 break;
-            case Native.WmDpiChanged:
+            case Native.WmSessionChange:
+                quiet.SessionChanged((int)message.WParam);
+                CheckQuiet(force: true);
+                break;
             case Native.WmSettingChange:
+                CheckQuiet(force: true);
+                tracker.Invalidate();
+                break;
+            case Native.WmDpiChanged:
                 tracker.Invalidate();
                 break;
         }
@@ -152,7 +201,7 @@ internal sealed partial class MascotContext : ApplicationContext
             Native.SetCapture(body.Handle);
         }
         engine.DragTo(contact);
-        renderer.Draw(engine.Pose);
+        Draw();
     }
 
     private void FinishPointer(Point pointer)
@@ -184,7 +233,7 @@ internal sealed partial class MascotContext : ApplicationContext
         CancelPointer();
         engine.Paused = false;
         engine.Recover();
-        renderer.Draw(engine.Pose);
+        Draw();
     }
 
     private void ResizeMascot(int size)
@@ -193,7 +242,7 @@ internal sealed partial class MascotContext : ApplicationContext
         logicalHeight = size;
         engine.LogicalHeight = size;
         UpdateDesktop();
-        renderer.Draw(engine.Pose);
+        Draw();
     }
 
     private void TogglePause()
@@ -239,6 +288,7 @@ internal sealed partial class MascotContext : ApplicationContext
             CancelPointer();
             renderer.Dispose();
             tracker.Dispose();
+            quiet.Dispose();
             body.Dispose();
             decorations.Dispose();
             simulation.Dispose();
