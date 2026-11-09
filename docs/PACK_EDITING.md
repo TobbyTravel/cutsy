@@ -2,7 +2,7 @@
 
 The editable pack has pack.json, behaviors.json, art, masks and optional sounds. Use the portable ZIP's pack directory or the local pack folder shown in Cutsy Settings. Keep the embedded fallback available by removing or renaming a broken override. The tray's Settings window can reload a saved edit and preview a recipe.
 
-- **Hold longer.** In behaviors.json, find idle and change its stand step's durationMs from 5100 to 6500.
+- **Hold longer.** In behaviors.json, find idle and change its stand step's durationMs from 3500 to 6500.
 - **Build a sequence.** Find shy-glance. In its playFrames step, append an entry with spriteId set to smile and durationMs set to 300.
 - **Tune the pivot.** In pack.json, find edge-sit and adjust anchors.seat.y by one pixel. Preview window-sit to check where it contacts the edge.
 - **Tune scheduling.** Change the weight of phone from 1 to 2 or change cooldownMs from 26000 to 36000. Weight is relative to other eligible idle behaviors.

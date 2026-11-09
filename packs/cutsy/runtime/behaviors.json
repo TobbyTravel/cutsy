@@ -13,7 +13,7 @@
         {
           "type": "hold",
           "spriteId": "stand",
-          "durationMs": 5100
+          "durationMs": 3500
         }
       ],
       "next": []
@@ -686,23 +686,31 @@
         },
         {
           "type": "moveAlongSurface",
-          "durationMs": 2400,
+          "durationMs": 2280,
           "frames": [
             {
-              "spriteId": "phone-walk-left-a",
-              "durationMs": 155
-            },
-            {
-              "spriteId": "phone-walk-left-b",
-              "durationMs": 155
-            },
-            {
               "spriteId": "walk-left",
-              "durationMs": 155
+              "durationMs": 120
+            },
+            {
+              "spriteId": "phone-walk-left-a",
+              "durationMs": 110
+            },
+            {
+              "spriteId": "walk-pass-left",
+              "durationMs": 145
+            },
+            {
+              "spriteId": "walk-lift-left",
+              "durationMs": 130
             },
             {
               "spriteId": "phone-walk-left-b",
-              "durationMs": 155
+              "durationMs": 125
+            },
+            {
+              "spriteId": "walk-pass-left",
+              "durationMs": 130
             }
           ],
           "speed": -0.54
@@ -795,23 +803,31 @@
         },
         {
           "type": "moveAlongSurface",
-          "durationMs": 2400,
+          "durationMs": 2280,
           "frames": [
             {
-              "spriteId": "phone-walk-left-a",
-              "durationMs": 155
-            },
-            {
-              "spriteId": "phone-walk-left-b",
-              "durationMs": 155
-            },
-            {
               "spriteId": "walk-left",
-              "durationMs": 155
+              "durationMs": 120
+            },
+            {
+              "spriteId": "phone-walk-left-a",
+              "durationMs": 110
+            },
+            {
+              "spriteId": "walk-pass-left",
+              "durationMs": 145
+            },
+            {
+              "spriteId": "walk-lift-left",
+              "durationMs": 130
             },
             {
               "spriteId": "phone-walk-left-b",
-              "durationMs": 155
+              "durationMs": 125
+            },
+            {
+              "spriteId": "walk-pass-left",
+              "durationMs": 130
             }
           ],
           "speed": -0.46
@@ -857,23 +873,31 @@
         },
         {
           "type": "moveAlongSurface",
-          "durationMs": 2400,
+          "durationMs": 2280,
           "frames": [
             {
-              "spriteId": "phone-walk-right-a",
-              "durationMs": 155
-            },
-            {
-              "spriteId": "phone-walk-right-b",
-              "durationMs": 155
-            },
-            {
               "spriteId": "walk-right",
-              "durationMs": 155
+              "durationMs": 120
+            },
+            {
+              "spriteId": "phone-walk-right-a",
+              "durationMs": 110
+            },
+            {
+              "spriteId": "walk-pass-right",
+              "durationMs": 145
+            },
+            {
+              "spriteId": "walk-lift-right",
+              "durationMs": 130
             },
             {
               "spriteId": "phone-walk-right-b",
-              "durationMs": 155
+              "durationMs": 125
+            },
+            {
+              "spriteId": "walk-pass-right",
+              "durationMs": 130
             }
           ],
           "speed": 0.54
@@ -966,23 +990,31 @@
         },
         {
           "type": "moveAlongSurface",
-          "durationMs": 2400,
+          "durationMs": 2280,
           "frames": [
             {
-              "spriteId": "phone-walk-right-a",
-              "durationMs": 155
-            },
-            {
-              "spriteId": "phone-walk-right-b",
-              "durationMs": 155
-            },
-            {
               "spriteId": "walk-right",
-              "durationMs": 155
+              "durationMs": 120
+            },
+            {
+              "spriteId": "phone-walk-right-a",
+              "durationMs": 110
+            },
+            {
+              "spriteId": "walk-pass-right",
+              "durationMs": 145
+            },
+            {
+              "spriteId": "walk-lift-right",
+              "durationMs": 130
             },
             {
               "spriteId": "phone-walk-right-b",
-              "durationMs": 155
+              "durationMs": 125
+            },
+            {
+              "spriteId": "walk-pass-right",
+              "durationMs": 130
             }
           ],
           "speed": 0.46
@@ -1212,8 +1244,8 @@
     {
       "id": "perch-hop",
       "family": "edge",
-      "selectionWeight": 3,
-      "cooldownMs": 19000,
+      "selectionWeight": 5.5,
+      "cooldownMs": 11000,
       "requiredCapabilities": [
         "windowEdges"
       ],
@@ -1264,14 +1296,18 @@
         {
           "behaviorId": "climb",
           "weight": 1
+        },
+        {
+          "behaviorId": "top-peek",
+          "weight": 4
         }
       ]
     },
     {
       "id": "window-sit",
       "family": "edge",
-      "selectionWeight": 4,
-      "cooldownMs": 24000,
+      "selectionWeight": 3.3,
+      "cooldownMs": 18000,
       "requiredCapabilities": [
         "windowEdges"
       ],
@@ -1298,8 +1334,8 @@
     {
       "id": "top-peek",
       "family": "edge",
-      "selectionWeight": 2,
-      "cooldownMs": 22000,
+      "selectionWeight": 3.5,
+      "cooldownMs": 17000,
       "requiredCapabilities": [
         "windowEdges"
       ],
@@ -1313,7 +1349,8 @@
           "spriteId": "top-peek",
           "durationMs": 1900,
           "anchor": "hands",
-          "clip": true
+          "clip": true,
+          "peekSlide": 0.34
         },
         {
           "type": "hold",
@@ -1367,8 +1404,8 @@
     {
       "id": "peek-left",
       "family": "edge",
-      "selectionWeight": 1.5,
-      "cooldownMs": 31000,
+      "selectionWeight": 2.3,
+      "cooldownMs": 22000,
       "requiredCapabilities": [
         "windowEdges"
       ],
@@ -1384,7 +1421,8 @@
           "spriteId": "side-peek-left",
           "anchor": "sideGrip",
           "clip": true,
-          "durationMs": 2250
+          "durationMs": 2100,
+          "peekSlide": 0.42
         },
         {
           "type": "fall",
@@ -1398,8 +1436,8 @@
     {
       "id": "peek-right",
       "family": "edge",
-      "selectionWeight": 1.5,
-      "cooldownMs": 31000,
+      "selectionWeight": 2.3,
+      "cooldownMs": 22000,
       "requiredCapabilities": [
         "windowEdges"
       ],
@@ -1415,7 +1453,8 @@
           "spriteId": "side-peek-right",
           "anchor": "sideGrip",
           "clip": true,
-          "durationMs": 2250
+          "durationMs": 2100,
+          "peekSlide": 0.42
         },
         {
           "type": "fall",
@@ -1754,6 +1793,260 @@
           "type": "hold",
           "spriteId": "smile",
           "durationMs": 430
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "peek-twice-left",
+      "family": "edge",
+      "selectionWeight": 1.6,
+      "cooldownMs": 29000,
+      "requiredCapabilities": [
+        "windowEdges"
+      ],
+      "eligibility": {
+        "nearbySurface": "windowLeft",
+        "grounded": true
+      },
+      "interruptPolicy": "interruptible",
+      "steps": [
+        {
+          "type": "attach",
+          "target": "windowLeft",
+          "spriteId": "side-peek-left",
+          "anchor": "sideGrip",
+          "clip": true,
+          "durationMs": 780,
+          "peekSlide": 0.43
+        },
+        {
+          "type": "hold",
+          "spriteId": "side-peek-left",
+          "durationMs": 1260,
+          "anchor": "sideGrip",
+          "clip": true,
+          "peekSlide": 0.43
+        },
+        {
+          "type": "fall",
+          "spriteId": "fall-airborne",
+          "anchor": "feet",
+          "durationMs": 850
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "peek-twice-right",
+      "family": "edge",
+      "selectionWeight": 1.6,
+      "cooldownMs": 29000,
+      "requiredCapabilities": [
+        "windowEdges"
+      ],
+      "eligibility": {
+        "nearbySurface": "windowRight",
+        "grounded": true
+      },
+      "interruptPolicy": "interruptible",
+      "steps": [
+        {
+          "type": "attach",
+          "target": "windowRight",
+          "spriteId": "side-peek-right",
+          "anchor": "sideGrip",
+          "clip": true,
+          "durationMs": 780,
+          "peekSlide": 0.43
+        },
+        {
+          "type": "hold",
+          "spriteId": "side-peek-right",
+          "durationMs": 1260,
+          "anchor": "sideGrip",
+          "clip": true,
+          "peekSlide": 0.43
+        },
+        {
+          "type": "fall",
+          "spriteId": "fall-airborne",
+          "anchor": "feet",
+          "durationMs": 850
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "quick-top-peek",
+      "family": "edge",
+      "selectionWeight": 2,
+      "cooldownMs": 18000,
+      "requiredCapabilities": [
+        "windowEdges"
+      ],
+      "eligibility": {
+        "surfaceKind": "windowTop"
+      },
+      "interruptPolicy": "interruptible",
+      "steps": [
+        {
+          "type": "hold",
+          "spriteId": "top-peek",
+          "durationMs": 800,
+          "anchor": "hands",
+          "clip": true,
+          "peekSlide": 0.38
+        },
+        {
+          "type": "hold",
+          "spriteId": "top-peek",
+          "durationMs": 1140,
+          "anchor": "hands",
+          "clip": true,
+          "peekSlide": 0.38
+        },
+        {
+          "type": "hold",
+          "spriteId": "stand",
+          "durationMs": 260,
+          "anchor": "feet"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "edge-lean",
+      "family": "edge",
+      "selectionWeight": 2,
+      "cooldownMs": 21000,
+      "requiredCapabilities": [
+        "windowEdges"
+      ],
+      "eligibility": {
+        "surfaceKind": "windowTop"
+      },
+      "interruptPolicy": "interruptible",
+      "steps": [
+        {
+          "type": "hold",
+          "spriteId": "top-climb",
+          "durationMs": 1400,
+          "anchor": "hands"
+        },
+        {
+          "type": "hold",
+          "spriteId": "edge-sit",
+          "durationMs": 1400,
+          "anchor": "seat"
+        },
+        {
+          "type": "hold",
+          "spriteId": "stand",
+          "durationMs": 260,
+          "anchor": "feet"
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "little-celebration",
+      "family": "reaction",
+      "selectionWeight": 1.5,
+      "cooldownMs": 35000,
+      "requiredCapabilities": [],
+      "eligibility": {
+        "grounded": true
+      },
+      "interruptPolicy": "interruptible",
+      "steps": [
+        {
+          "type": "hold",
+          "spriteId": "proud",
+          "durationMs": 360
+        },
+        {
+          "type": "jump",
+          "spriteId": "fall-celebrate",
+          "durationMs": 410,
+          "height": 0.19
+        },
+        {
+          "type": "hold",
+          "spriteId": "landing-crouch",
+          "durationMs": 160
+        },
+        {
+          "type": "hold",
+          "spriteId": "smile",
+          "durationMs": 750
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "wave-hello",
+      "family": "reaction",
+      "selectionWeight": 1.6,
+      "cooldownMs": 24000,
+      "requiredCapabilities": [],
+      "eligibility": {
+        "grounded": true
+      },
+      "interruptPolicy": "interruptible",
+      "steps": [
+        {
+          "type": "hold",
+          "spriteId": "boba-idle",
+          "durationMs": 420
+        },
+        {
+          "type": "hold",
+          "spriteId": "boba-wave",
+          "durationMs": 860
+        },
+        {
+          "type": "hold",
+          "spriteId": "boba-sip",
+          "durationMs": 760
+        },
+        {
+          "type": "hold",
+          "spriteId": "boba-idle",
+          "durationMs": 330
+        },
+        {
+          "type": "hold",
+          "spriteId": "stand",
+          "durationMs": 230
+        }
+      ],
+      "next": []
+    },
+    {
+      "id": "taskbar-peek",
+      "family": "edge",
+      "selectionWeight": 1.6,
+      "cooldownMs": 31000,
+      "requiredCapabilities": [],
+      "eligibility": {
+        "surfaceKind": "floor"
+      },
+      "interruptPolicy": "interruptible",
+      "steps": [
+        {
+          "type": "hold",
+          "spriteId": "top-peek",
+          "durationMs": 1430,
+          "anchor": "hands",
+          "clip": true,
+          "peekSlide": 0.38
+        },
+        {
+          "type": "hold",
+          "spriteId": "smile",
+          "durationMs": 840,
+          "anchor": "feet"
         }
       ],
       "next": []

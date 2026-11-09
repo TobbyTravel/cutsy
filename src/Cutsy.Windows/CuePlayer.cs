@@ -12,7 +12,7 @@ internal sealed class CuePlayer : IDisposable
     private long ambientUntil;
     private long clickUntil;
 
-    internal double Volume { get; set; } = .10;
+    internal double Volume { get; set; } = Preferences.DefaultVolume / 100.0;
     internal bool Muted { get; set; }
 
     internal bool Play(PackContent content, SoundRequest cue, bool preview = false)

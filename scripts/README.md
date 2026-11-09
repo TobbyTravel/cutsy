@@ -9,3 +9,5 @@ Use PowerShell 7.4 or later. Build and test use the SDK in global.json and the c
 - **publish.ps1** publishes the locked self-contained win-x64 EXE and stages the editable ZIP and checksums under dist.
 - **derive-sprites.py** regenerates the reviewed runtime art and contact sheets with Pillow, NumPy and SciPy.
 - **generate-sounds.py** regenerates the original WAV cues using Python's standard library.
+
+- **import-walk-inbetweens.py** regenerates the four supplemental walk sprites, masks and pack metadata using Pillow, NumPy and SciPy.

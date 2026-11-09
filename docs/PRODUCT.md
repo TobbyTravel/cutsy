@@ -11,17 +11,17 @@ Ship one character with editable JSON behavior recipes, quiet sounds, multiple-m
 | Setting | Default |
 | --- | --- |
 | Character height | 160 logical pixels, configurable 80–320 |
-| Activity | Calm: 60% idle/rest, 20% movement, 15% edge interaction, 5% reactions |
+| Activity | Calm: 46% idle/rest, 30% movement, 19% edge interaction, 5% reactions |
 | Sprite playback | Usually 4–8 FPS, explicit frame durations allowed |
 | Position updates | 30 Hz while moving; redraw only when necessary |
-| Volume | 10%; no startup sound |
+| Volume | 80%; no startup sound |
 | Ambient sound cooldown | 90 seconds globally |
 | Click sound cooldown | 5 seconds |
 | Fullscreen hiding | Enabled, all monitors |
 | Startup with Windows | Off, opt-in |
 | Instances | One per user session |
 
-Weights are selection weights among eligible behaviors, not guaranteed wall-clock percentages. Cooldowns and long holds prevent repetition.
+Weights are selection weights among eligible behaviors, not guaranteed wall-clock percentages. Cooldowns and long holds prevent repetition. On the same monitor, walking tends toward the active work area while leaving some space around it. Exposed edges of the active window get priority when reachable. Cutsy sometimes peeks over the taskbar when on the floor.
 
 ## Click and drag
 

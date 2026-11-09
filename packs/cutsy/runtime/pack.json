@@ -1725,6 +1725,106 @@
         "boba",
         "bag"
       ]
+    },
+    {
+      "id": "walk-pass-left",
+      "path": "art/walk-pass-left.png",
+      "sourceAssetId": "walk-pass-left-generated",
+      "facing": "left",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 270,
+        "height": 485
+      },
+      "anchors": {
+        "feet": {
+          "x": 114,
+          "y": 484
+        }
+      },
+      "scaleCorrection": 0.828157,
+      "maskPath": "masks/walk-pass-left.png",
+      "bakedInProps": [
+        "phone",
+        "boba",
+        "bag"
+      ]
+    },
+    {
+      "id": "walk-lift-left",
+      "path": "art/walk-lift-left.png",
+      "sourceAssetId": "walk-lift-left-generated",
+      "facing": "left",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 269,
+        "height": 485
+      },
+      "anchors": {
+        "feet": {
+          "x": 116,
+          "y": 484
+        }
+      },
+      "scaleCorrection": 0.836439,
+      "maskPath": "masks/walk-lift-left.png",
+      "bakedInProps": [
+        "phone",
+        "boba",
+        "bag"
+      ]
+    },
+    {
+      "id": "walk-pass-right",
+      "path": "art/walk-pass-right.png",
+      "sourceAssetId": "walk-pass-right-generated",
+      "facing": "right",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 292,
+        "height": 489
+      },
+      "anchors": {
+        "feet": {
+          "x": 175,
+          "y": 488
+        }
+      },
+      "scaleCorrection": 0.821355,
+      "maskPath": "masks/walk-pass-right.png",
+      "bakedInProps": [
+        "phone",
+        "boba",
+        "bag"
+      ]
+    },
+    {
+      "id": "walk-lift-right",
+      "path": "art/walk-lift-right.png",
+      "sourceAssetId": "walk-lift-right-generated",
+      "facing": "right",
+      "contentBounds": {
+        "x": 0,
+        "y": 0,
+        "width": 286,
+        "height": 488
+      },
+      "anchors": {
+        "feet": {
+          "x": 166,
+          "y": 487
+        }
+      },
+      "scaleCorrection": 0.829569,
+      "maskPath": "masks/walk-lift-right.png",
+      "bakedInProps": [
+        "phone",
+        "boba",
+        "bag"
+      ]
     }
   ],
   "sounds": [

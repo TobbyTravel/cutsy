@@ -32,7 +32,7 @@ public sealed record Eligibility(
 public sealed record Step(
     StepType Type, int DurationMs = 0, string? SpriteId = null, ImmutableArray<Frame> Frames = default,
     double Speed = 0, double Height = 0, SurfaceKind? Target = null, string? Anchor = null,
-    string? SoundId = null, bool Clip = false);
+    string? SoundId = null, bool Clip = false, double PeekSlide = 0);
 public sealed record Behavior(
     string Id, BehaviorFamily Family, double SelectionWeight, int CooldownMs,
     ImmutableArray<string> RequiredCapabilities, Eligibility Eligibility, InterruptPolicy InterruptPolicy,

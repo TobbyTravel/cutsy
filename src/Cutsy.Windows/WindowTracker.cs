@@ -93,7 +93,7 @@ internal sealed class WindowTracker : IDisposable
                 if (!window.CanSupport)
                     continue;
                 Rectangle box = window.Bounds;
-                string id = $"window-{window.Handle:X}";
+                string id = SurfaceId(window.Handle);
                 var origin = new WorldPoint(box.Left, box.Top);
                 int start = Math.Max(work.Left, box.Left);
                 int end = Math.Min(work.Right, box.Right);
@@ -131,9 +131,17 @@ internal sealed class WindowTracker : IDisposable
             }
         }
 
+        Point pointer = Cursor.Position;
+        nint foreground = Native.GetForegroundWindow();
+        var active = windows.Find(window => window.Handle == foreground && window.CanSupport);
+        Point area = active.Handle == 0 || active.Bounds.Contains(pointer) ? pointer
+            : new Point(active.Bounds.Left + active.Bounds.Width / 2, active.Bounds.Top + active.Bounds.Height / 2);
         return new DesktopSnapshot(monitors.ToImmutable(), surfaces.ToImmutable(),
-            ImmutableHashSet.Create("pointer", "windowEdges", "absolutePlacement"), quiet);
+            ImmutableHashSet.Create("pointer", "windowEdges", "absolutePlacement"), quiet,
+            new WorldPoint(area.X, area.Y), active.Handle == 0 ? null : SurfaceId(active.Handle));
     }
+
+    private static string SurfaceId(nint handle) => $"window-{handle:X}";
 
     private List<(int Start, int End)> Exposed(int index, int start, int end,
         int crossStart, int crossEnd, bool vertical)

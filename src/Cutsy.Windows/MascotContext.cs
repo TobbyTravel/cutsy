@@ -299,6 +299,7 @@ internal sealed partial class MascotContext : ApplicationContext
         quiet.Reason,
     }.Where(value => !string.IsNullOrEmpty(value)).DefaultIfEmpty(storage.Portable ? "Portable mode" : "Ready"));
     internal string Diagnostics => $"{Status}{Environment.NewLine}Behavior: {engine.BehaviorId}{Environment.NewLine}" +
+        $"Support: {engine.SupportKind?.ToString() ?? "airborne"}{Environment.NewLine}" +
         $"{content.Pack.Sprites.Count} sprites, {content.Pack.Behaviors.Count} recipes, {content.Pack.Sounds.Count} sounds." +
         $"{Environment.NewLine}{storage.Diagnostics}";
 

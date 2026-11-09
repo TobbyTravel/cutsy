@@ -25,13 +25,15 @@ public sealed class BehaviorEngine
     private WorldPoint stayAnchor;
     private string spriteId;
     private string anchor = "feet";
-    private Bounds? clip;
+    private bool clipToSupport;
+    private double peekInset;
     private SoundRequest? sound;
     private bool interactionSound;
     private bool preview;
 
     public WorldPoint Contact { get; private set; }
     public string BehaviorId => behavior.Id;
+    public SurfaceKind? SupportKind => support?.Kind;
     public double LogicalHeight { get; set; } = 160;
     public double Activity { get; set; } = 1;
     public bool Paused { get; set; }
@@ -47,7 +49,24 @@ public sealed class BehaviorEngine
         }
     }
 
-    public RenderPose Pose => new(spriteId, Contact, HeightAt(Contact), anchor, pack.Sprites[spriteId].Facing, clip);
+    public RenderPose Pose
+    {
+        get
+        {
+            double height = HeightAt(Contact);
+            var clip = clipToSupport ? support?.PeekClip : null;
+            double inset = peekInset * height;
+            var visibleContact = clip is null ? Contact : support?.Kind switch
+            {
+                SurfaceKind.WindowLeft => Contact with { X = Contact.X + inset },
+                SurfaceKind.WindowRight => Contact with { X = Contact.X - inset },
+                SurfaceKind.WindowTop or SurfaceKind.Floor => Contact with { Y = Contact.Y + inset },
+                SurfaceKind.WindowBottom => Contact with { Y = Contact.Y - inset },
+                _ => Contact
+            };
+            return new RenderPose(spriteId, visibleContact, height, anchor, pack.Sprites[spriteId].Facing, clip);
+        }
+    }
 
     public BehaviorEngine(ValidatedPack pack, DesktopSnapshot desktop, int seed)
     {
@@ -127,6 +146,7 @@ public sealed class BehaviorEngine
         dragging = true;
         falling = false;
         support = null;
+        clipToSupport = false;
         Contact = contact;
         React(Interaction.Pickup);
     }
@@ -214,7 +234,8 @@ public sealed class BehaviorEngine
             Step step = behavior.Steps[stepIndex];
             if (!stepStarted)
             {
-                BeginStep(step);
+                if (!BeginStep(step))
+                    return;
                 stepStarted = true;
             }
             double duration = Duration(step);
@@ -246,8 +267,18 @@ public sealed class BehaviorEngine
         }
     }
 
-    private void BeginStep(Step step)
+    private bool BeginStep(Step step)
     {
+        if (!dragging && step.Type == StepType.Attach && step.Target is { } kind)
+        {
+            var target = NearbySurface(kind);
+            if (target is null)
+            {
+                Start(pack.Behaviors[pack.Manifest.DefaultBehaviorId]);
+                return false;
+            }
+            SetSupport(target, target.Along(Contact));
+        }
         if (step.SpriteId is not null)
             spriteId = step.SpriteId;
         if (step.Anchor is not null)
@@ -255,15 +286,10 @@ public sealed class BehaviorEngine
         if (step.SoundId is not null && pack.Sounds.ContainsKey(step.SoundId))
             sound = new SoundRequest(step.SoundId, interactionSound || preview);
         if (dragging)
-            return;
+            return true;
 
         switch (step.Type)
         {
-            case StepType.Attach when step.Target is { } kind:
-                var target = NearbySurface(kind);
-                if (target is not null)
-                    SetSupport(target, target.Along(Contact));
-                break;
             case StepType.Detach:
             case StepType.Fall:
                 LoseSupport();
@@ -274,7 +300,9 @@ public sealed class BehaviorEngine
                 support = null;
                 break;
         }
-        clip = step.Clip ? support?.PeekClip : null;
+        clipToSupport = step.Clip;
+        peekInset = step.PeekSlide;
+        return true;
     }
 
     private void Execute(Step step, double elapsed, double duration)
@@ -295,6 +323,13 @@ public sealed class BehaviorEngine
         }
         if (dragging || falling)
             return;
+
+        if (clipToSupport && step.PeekSlide > 0 && duration > 0)
+        {
+            double ramp = Math.Min(.36, duration / 2);
+            double reveal = Math.Clamp(Math.Min(stepAge, duration - stepAge) / ramp, 0, 1);
+            peekInset = step.PeekSlide * (1 - reveal * reveal * (3 - 2 * reveal));
+        }
 
         double height = HeightAt(Contact);
         if (step.Type == StepType.MoveAlongSurface && support is { SupportsFeet: true } surface)
@@ -333,7 +368,8 @@ public sealed class BehaviorEngine
     private void LoseSupport()
     {
         support = null;
-        clip = null;
+        clipToSupport = false;
+        peekInset = 0;
         anchor = "feet";
         falling = true;
         fallSpeed = 0;
@@ -392,11 +428,23 @@ public sealed class BehaviorEngine
         .Where(s => s.SupportsFeet && Fits(s) && contact.X >= s.Start && contact.X <= s.End &&
             Math.Abs(s.Line - contact.Y) <= distance).MinBy(s => Math.Abs(s.Line - contact.Y));
 
-    private Surface? NearbySurface(SurfaceKind kind) => desktop.Surfaces
-        .Where(s => s.Kind == kind && Fits(s) &&
-            Contact.DistanceSquaredTo(s.Contact(Math.Clamp(s.Along(Contact), s.Start, s.End))) <=
-            Math.Pow(HeightAt(Contact) * (preview ? 4 : 1.7), 2))
-        .MinBy(s => Contact.DistanceSquaredTo(s.Contact(Math.Clamp(s.Along(Contact), s.Start, s.End))));
+    private Surface? NearbySurface(SurfaceKind kind)
+    {
+        double height = HeightAt(Contact);
+        return desktop.Surfaces.Where(s => s.Kind == kind && Fits(s))
+            .Select(s =>
+            {
+                WorldPoint edge = s.Contact(ClampTo(s, s.Along(Contact)));
+                bool preferred = s.Id == desktop.PreferredSurfaceId;
+                double horizontal = Math.Abs(Contact.X - edge.X);
+                double reach = preview ? 4 : preferred && kind == SurfaceKind.WindowTop && horizontal <= height ? 3.2 : 1.7;
+                return (Surface: s, Distance: Contact.DistanceSquaredTo(edge), Reach: reach * height, Preferred: preferred);
+            })
+            .Where(match => match.Distance <= match.Reach * match.Reach)
+            .OrderBy(match => match.Distance * (match.Preferred ? .55 : 1))
+            .Select(match => match.Surface)
+            .FirstOrDefault();
+    }
 
     private double ScaleAt(WorldPoint point) =>
         desktop.Monitors.FirstOrDefault(m => point.X >= m.WorkArea.X && point.X < m.WorkArea.Right &&
@@ -428,7 +476,7 @@ public sealed class BehaviorEngine
         if (interaction is null && candidate.Family != BehaviorFamily.Idle && (falling ||
             seconds < graceUntil || Activity <= 0))
             return false;
-        if (candidate.Family == BehaviorFamily.Movement && support is { SupportsFeet: true } surface)
+        if (support is { SupportsFeet: true } surface)
         {
             double delta = candidate.Steps.FirstOrDefault(step => step.Type == StepType.MoveAlongSurface)?.Speed ?? 0;
             double room = delta < 0 ? Contact.X - surface.Start : surface.End - Contact.X;
@@ -459,8 +507,8 @@ public sealed class BehaviorEngine
             // Normalize within each eligible family so authoring additional poses does not increase its activity share.
             (BehaviorFamily Family, double Weight)[] families =
             [
-                (BehaviorFamily.Idle, 60), (BehaviorFamily.Movement, 20 * Activity),
-                (BehaviorFamily.Edge, 15 * Activity), (BehaviorFamily.Reaction, 5 * Activity)
+                (BehaviorFamily.Idle, 46), (BehaviorFamily.Movement, 30 * Activity),
+                (BehaviorFamily.Edge, 19 * Activity), (BehaviorFamily.Reaction, 5 * Activity)
             ];
             var available = pack.SelectionOrder.Where(b => b.SelectionWeight > 0 && Eligible(b, null)).ToLookup(b => b.Family);
             double roll = random.NextDouble() * families.Where(f => available.Contains(f.Family)).Sum(f => f.Weight);
@@ -469,13 +517,28 @@ public sealed class BehaviorEngine
                 roll -= family.Weight;
                 if (roll < 0)
                 {
-                    var next = Choose(available[family.Family].Select(b => (b, b.SelectionWeight)));
+                    var next = Choose(available[family.Family].Select(b => (b, AttentionWeight(b))));
                     if (next is not null)
                         return next;
                 }
             }
         }
         return pack.Behaviors[pack.Manifest.DefaultBehaviorId];
+    }
+
+    private double AttentionWeight(Behavior candidate)
+    {
+        if (stayHere || desktop.AttentionPoint is not { } attention || support is not { SupportsFeet: true } surface ||
+            !desktop.Monitors.Any(m => IsOnMonitor(m.WorkArea, Contact) &&
+                attention.X >= m.WorkArea.X && attention.X < m.WorkArea.Right &&
+                attention.Y >= m.WorkArea.Y && attention.Y < m.WorkArea.Bottom))
+            return candidate.SelectionWeight;
+
+        double speed = candidate.Steps.FirstOrDefault(step => step.Type == StepType.MoveAlongSurface)?.Speed ?? 0;
+        double distance = ClampTo(surface, attention.X) - Contact.X;
+        if (speed == 0 || Math.Abs(distance) < HeightAt(Contact))
+            return candidate.SelectionWeight;
+        return candidate.SelectionWeight * (Math.Sign(speed) == Math.Sign(distance) ? 2.8 : .45);
     }
 
     private Behavior? Choose(IEnumerable<(Behavior Behavior, double Weight)> choices)
@@ -504,7 +567,8 @@ public sealed class BehaviorEngine
         interactionSound = fromInteraction;
         preview = isPreview;
         anchor = "feet";
-        clip = null;
+        clipToSupport = false;
+        peekInset = 0;
         cooldownUntil[next.Id] = seconds + next.CooldownMs / 1000.0;
     }
 

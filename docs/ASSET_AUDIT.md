@@ -33,3 +33,7 @@ The source files and legacy labels remain available as provenance. The runtime a
 The extraction uses full connected components from the processed sheets to recover art crossing the legacy cells. It separates body input masks from detached decorations. Eight sheet 06 poses were excluded because of the matte halo and built-in rails, with sheet 03 supplying the rail-free alternatives. The clipped sheet 07 surprise pose was excluded in favor of the complete surprise pose from sheet 02. The result is 71 runtime sprites with masks.
 
 To regenerate the derivatives and 160 px contact sheets, use Python with Pillow, NumPy and SciPy, then run python scripts/derive-sprites.py. It writes review images against dark, white, saturated and checkerboard backgrounds under artifacts. The previews mark the selected contact. In-motion continuity still depends on the authored recipes.
+
+## Supplemental walk poses
+
+The four same-facing passing and lift poses come from a supplemental sheet under assets/derivatives. They are additional source art. The original 102 imported PNGs remain under the immutable inventory. See packs/cutsy/walk-inbetweens-provenance.json for the source hash, reference sprites, crop coordinates, feet contacts and mask hashes. Regenerate these four crops and pack entries with python scripts/import-walk-inbetweens.py.

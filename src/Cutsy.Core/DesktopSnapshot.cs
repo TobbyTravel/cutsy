@@ -20,14 +20,15 @@ public sealed record Surface(string Id, SurfaceKind Kind, WorldPoint Origin,
     {
         SurfaceKind.WindowLeft => new Bounds(-1000000, -1000000, (int)Line + 1000000, 2000000),
         SurfaceKind.WindowRight => new Bounds((int)Line, -1000000, 1000000 - (int)Line, 2000000),
-        SurfaceKind.WindowTop => new Bounds(-1000000, -1000000, 2000000, (int)Line + 1000000),
+        SurfaceKind.WindowTop or SurfaceKind.Floor => new Bounds(-1000000, -1000000, 2000000, (int)Line + 1000000),
         SurfaceKind.WindowBottom => new Bounds(-1000000, (int)Line, 2000000, 1000000 - (int)Line),
         _ => null
     };
 }
 
 public sealed record DesktopSnapshot(ImmutableArray<MonitorArea> Monitors, ImmutableArray<Surface> Surfaces,
-    ImmutableHashSet<string> Capabilities, bool Quiet = false);
+    ImmutableHashSet<string> Capabilities, bool Quiet = false, WorldPoint? AttentionPoint = null,
+    string? PreferredSurfaceId = null);
 
 public readonly record struct RenderPose(string SpriteId, WorldPoint Contact, double CharacterHeight,
     string Anchor, Facing Facing, Bounds? Clip);

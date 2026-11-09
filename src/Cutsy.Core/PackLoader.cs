@@ -116,6 +116,8 @@ public static partial class PackLoader
                 Require(step is not null, field, "null step");
                 Require(step!.DurationMs is >= 0 and <= 120000, field + ".durationMs", "outside 0–120000");
                 Require(Number(step.Speed, -5, 5) && Number(step.Height, 0, 4), field, "unsafe speed or height");
+                Require(Number(step.PeekSlide, 0, .6) && (step.PeekSlide == 0 || step.Clip),
+                    field + ".peekSlide", "expected 0–0.6 and clipping enabled for a slide");
                 Require(step.SoundId is null || soundIds.Contains(step.SoundId), field + ".soundId", "unknown sound");
                 Require(step.Type != StepType.PlaySound || step.SoundId is not null, field + ".soundId", "required");
                 Require(step.Type != StepType.Attach || step.Target is not null, field + ".target", "required");

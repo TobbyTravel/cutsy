@@ -176,7 +176,8 @@
                 },
                 "clip": {
                   "type": "boolean"
-                }
+                },
+                "peekSlide": { "type": "number", "minimum": 0, "maximum": 0.6 }
               },
               "required": [
                 "type"

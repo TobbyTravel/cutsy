@@ -14,7 +14,7 @@ A quiet, cute desktop companion for Windows 11. She walks along window tops, pee
 - [Pack format contract](docs/PACK_FORMAT.md)
 - [Acceptance and release tests](docs/TESTING.md)
 
-The repo includes 80 individual PNGs plus 22 source/reference PNGs. They are ordinary Git files; no additional download or Git LFS is required. The runtime pack uses 71 reviewed derivatives with separate masks, editable recipes and eight original sound cues.
+The repo includes 80 individual PNGs plus 22 source/reference PNGs. They are ordinary Git files; no additional download or Git LFS is required. The runtime pack uses 75 reviewed runtime sprites with separate masks, editable recipes and eight original sound cues.
 
 ## Development
 

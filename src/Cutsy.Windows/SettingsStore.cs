@@ -13,7 +13,8 @@ internal sealed record Preferences
     public int Version { get; init; } = 1;
     public int Height { get; init; } = 160;
     public ActivityLevel Activity { get; init; } = ActivityLevel.Calm;
-    public int Volume { get; init; } = 10;
+    internal const int DefaultVolume = 80;
+    public int Volume { get; init; } = DefaultVolume;
     public bool Muted { get; init; }
     public bool StayHere { get; init; }
     public bool HideInFullscreen { get; init; } = true;
